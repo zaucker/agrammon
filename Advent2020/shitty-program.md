@@ -1,8 +1,8 @@
 # Shitty Program - A Raku Christmas Tale
 
-Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in Perl 5. When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly. As the previous year had seen a real Christmas wonder, namely the release of Perl 6c, the elf suggested, that instead of bolting yet another feature onto the web application's Perl 5 backend, a rewrite in Perl 6 would be a bold but also appropriate move. The reason being that the application used a specially developed format for describing it's functionality by none-programmers. What better choice for rewriting the parser than Perl 6's grammars, the elf reasoned. Fittingly, the new AGRAMMON was going to be version 6.
+Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://www.agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in Perl 5. When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly. As the previous year had seen a real Christmas wonder, namely the release of Perl 6c, the elf suggested, that instead of bolting yet another feature onto the web application's Perl 5 backend, a rewrite in Perl 6 would be a bold but also appropriate move. The reason being that the application used a specially developed format for describing it's functionality by none-programmers. What better choice for rewriting the parser than Perl 6's grammars, the elf reasoned. Fittingly, the new AGRAMMON was going to be version 6.
 
-When Santa asked when the rewrite would be finished, the obivous answer was "By Christmas". And as things went in Perl 6 land, by the time the rewrite is finally going into production, the backend is now implemented in Raku.
+When Santa asked when the rewrite would be finished, the obivous answer was "by Christmas". And as things went in Perl 6 land, by the time the rewrite is finally going into production, the backend is now implemented in Raku.
 
 ## AGRAMMON
 
@@ -364,10 +364,23 @@ paths:
 ```
 handled by `Cro::OpenAPI::RoutesFromDefinition`.
 
+### Agrammon::OutputFormatter::PDF
+
+... using `Cro::WebApp::Template`
+
+### Agrammon::OutputFormatter::XLSX
+
+... using `Spreadsheet::XLSX`
+
+### Agrammon::Email
+
+... using `Net::SMTP::Client::Async` and `Email::MIME`
+
+
 ## Which Christmas?
 
 Well, as you can see from this [presentation](./swp2018.pdf] at the [Swiss Perl Workshop 2018](https://act.perl-workshop.ch/spw2018/), the original plan was not quite met, mostly due to another project being given higher priority (which was a very poor decision, but this is another long story). We had hoped to have AGRAMMON 6 deployed and in production before the appearance of this article and we almost suceeded. All the critical features are in place, a bit of polishing is still to be done. In addition, the customer has done a pretty extensive refactoring of the model description itself and is currently in the process of verifying both the model calculations and the functionality of the Raku based web application. The current setup is already online as [demo/test version](https://model.agrammon.ch/single/test) and you are welcome to give it a try. We expect the Raku implementation to go into production in early 2021 and to replace the current [Perl 5 implementation][https://model.agrammon.ch/single).
 
 ## Conclusion
 
-Is Raku ready for use in production? Definitely yes! While having already delivered a few smaller customer projects implemented in Perl 6 and Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://oetiker.ch) first publically accessible (web) application and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://agrammon.ch/en/development-of-the-model/) for this opportunity.
+Is Raku ready for use in production? Definitely yes! While having already delivered a few smaller customer projects implemented in Perl 6 and Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://www.oetiker.ch) first publically accessible (web) application and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://www.agrammon.ch/en/development-of-the-model/) for this opportunity.

@@ -1,6 +1,5 @@
 use v6;
 use Net::SMTP::Client::Async;
-use MIME::Base64;
 use Email::MIME;
 
 class Agrammon::Email {

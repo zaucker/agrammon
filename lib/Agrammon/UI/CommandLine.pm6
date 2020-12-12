@@ -160,7 +160,6 @@ sub run (IO::Path $path, IO::Path $input-path, $technical-file, $variants, $form
 
     my $rc = Agrammon::ResultCollector.new;
     my atomicint $n = 0;
-    my %results;
     my class X::EarlyFinish is Exception {}
     race for $ds.read($fh).race(:$batch, :$degree) -> $dataset {
         my $my-n = ++⚛$n;

@@ -137,7 +137,7 @@ The refactored backend as of today consists of 59 `.pm6` modules/packes with 6,9
 ```
 Note that `Spreadsheet::XLSX` was specifically implemented for this project.
 
-Speaking of the actual implementation, although our brave elf didn't have much experience with either grammars, parsers, or even Perl 6 / Raku, he was smart enough to engage a real (expert elf)[https://www.edument.se/en/page/jonathan-worthington-eng] for that. This elf did most of the heavy lifting of the backend implementation and helped our elf with advice and code review for the parts he implemented himself. Please note that the goal of this rewrite was to leave most of the syntax of the model implementation and also the frontend as is, so the blame for all the sub-optimal design decisions are solely on our primary elf (as all the implementation details passing under the review radar).
+Speaking of the actual implementation, although our brave elf didn't have much experience with either grammars, parsers, or even Perl 6 / Raku, he was smart enough to engage a real [expert elf](https://www.edument.se/en/page/jonathan-worthington-eng) for that. This elf did most of the heavy lifting of the backend implementation and helped our elf with advice and code review for the parts he implemented himself. Please note that the goal of this rewrite was to leave most of the syntax of the model implementation and also the frontend as is, so the blame for all the sub-optimal design decisions are solely on our primary elf (as all the implementation details passing under the review radar).
 
 ## Raku features used in AGRAMMON
 
@@ -367,3 +367,7 @@ handled by `Cro::OpenAPI::RoutesFromDefinition`.
 ## Which Christmas?
 
 Well, as you can see from this [presentation](./swp2018.pdf] at the [Swiss Perl Workshop 2018](https://act.perl-workshop.ch/spw2018/), the original plan was not quite met, mostly due to another project being given higher priority (which was a very poor decision, but this is another long story). We had hoped to have AGRAMMON 6 deployed and in production before the appearance of this article and we almost suceeded. All the critical features are in place, a bit of polishing is still to be done. In addition, the customer has done a pretty extensive refactoring of the model description itself and is currently in the process of verifying both the model calculations and the functionality of the Raku based web application. The current setup is already online as [demo/test version](https://model.agrammon.ch/single/test) and you are welcome to give it a try. We expect the Raku implementation to go into production in early 2021 and to replace the current [Perl 5 implementation][https://model.agrammon.ch/single).
+
+## Conclusion
+
+Is Raku ready for use in production? Definitely yes! While having already delivered a few smaller customer projects implemented in Perl 6 and Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://oetiker.ch) first publically accessible (web) application and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://agrammon.ch/en/development-of-the-model/) for this opportunity.

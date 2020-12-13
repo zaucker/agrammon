@@ -2,7 +2,7 @@
 
 Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://www.agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in Perl (called Perl 5 then). When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly. As the previous year had seen a real Christmas wonder, namely the release of Perl 6c, the elf suggested, that instead of bolting yet another feature onto the web application's Perl 5 backend, a rewrite in Perl 6 would be a bold but also appropriate move. The reason being that the application used a specially developed format for describing it's functionality by none-programmers. What better choice for rewriting the parser than Perl 6's grammars, the elf reasoned. Fittingly, the new AGRAMMON was going to be version 6.
 
-When Santa asked when the rewrite would be finished, the obivous answer was "by Christmas". And as things went in Perl 6 land, by the time the rewrite is finally going into production, the backend is now implemented in Raku.
+When Santa asked when the rewrite would be finished, the obivous answer was ["by Christmas"](https://perl6advent.wordpress.com/2015/12/). And as things went in Perl 6 land, by the time the rewrite is finally going into production, the backend is now implemented in Raku.
 
 ## AGRAMMON
 

@@ -101,10 +101,16 @@ therefore added to the Nsol fraction.
 In the current version of the AGRAMMON model there are 133 such files with 31,014 lines. From those, the backend can generate
 
 * the PDF documentation of the model (allowing LaTeX formatting in the files)
-* a description of the web GUI which can be rendered by the frontend
 * the actual model simulation using the user's input data
+* a description of the web GUI which can be rendered by the frontend
 
-The results are presented in the web GUI in tabular form (showing various subsets of the data that can also be defined in the model files) and can be exported as PDF report or Excel file, together with the actual inputs provided by the user.
+<p align="center"><img align="center" src="https://github.com/zaucker/agrammon/blob/Advent/Advent2020/inputs.png" /></p>
+
+The results are presented in the web GUI in tabular form (showing various subsets of the data that can also be defined in the model files)
+
+<p align="center"><img align="center" src="https://github.com/zaucker/agrammon/blob/Advent/Advent2020/results.png" /></p>
+
+ and can be exported as [PDF report](TestSingle6.pdf) or [Excel file](TestSingle6.xlsx), together with the actual inputs provided by the user.
 
 A special instance of AGRAMMON is used by a [regional government agency](https://lawa.lu.ch/) in the evaluation process of the environmental impact of modifications to local farms and the approval of the respective building applications. For this, the ammonia emissions before and after the planned modifications must be simulated by the applicant and can be directly submitted to the agency's AGRAMMON account, including a notification of the agency by eMail with the PDF report attached.
 

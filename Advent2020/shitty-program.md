@@ -680,6 +680,16 @@ with await Net::SMTP::Client::Async.connect(:host<mail.agrammon.ch>, :port(25), 
 ```
 The [`await`](https://docs.raku.org/type/Promise#sub_await) function is used to handle the asynchronous communication with the [SMPT](https://tools.ietf.org/html/rfc5321) server. The [`LEAVE`](https://docs.raku.org/language/phasers#index-entry-Phasers__LEAVE-LEAVE) is called upon exit from the `with await { ... }` block to close the connection to the server.
 
+### Unicode operators
+
+My favorite code fragments used in AGRAMMON demonstrate the use auf [Unicode codepoints in Raku source code](https://docs.raku.org/language/unicode_ascii):
+* `my $my-n = ++⚛$n;` is incrementing a variable of type [`atomicint`](https://docs.raku.org/type/atomicint),
+* and `$var-print.split(',') ∩ @print-set` gives the intersection of two [sets](https://docs.raku.org/language/setbagmix).
+
+While Unicode can also be used for other purposes, e.g. for numerical values like ⅓, 𝑒, π, or τ or in variable names `my $Δ = 1;`, their use as operators definitely makes for better readable code (compare `∩` to `(&)`).
+
+Apart from using the appropriate mathematical symbol, the existence of such powerful [operators](https://docs.raku.org/language/operators) is by itself a great feature of Raku and makes for much shorter code than implementing such operations in other programming languages.
+
 ### Parser and Compiler
 
 Finally, a few words about the parser and compiler used to process the AGRAMMON model files shown above. [`Agrammon::ModuleParser`](../lib/Agrammon/ModuleParser.pm6) is the top-level element for parsing the model files:
@@ -813,7 +823,9 @@ with optional `?elsif` and `?else` parts. The keywords can also be negated, such
 
 Well, as you can see from this [presentation](./swp2018.pdf) at the [Swiss Perl Workshop 2018](https://act.perl-workshop.ch/spw2018/), the original plan was not quite met, mostly due to another project being given higher priority (which was a very poor decision, but this is another long story).
 
-We had hoped to have AGRAMMON 6 deployed and in production before the appearance of this article and almost suceeded. All the critical features are in place, a bit of polishing is still to be done. In addition, the customer has done a pretty extensive refactoring of the model files and is currently in the process of verifying both the model calculations and the functionality of the Raku based web application. 
+We had hoped to have AGRAMMON 6 deployed and in production before the appearance of this article and almost suceeded. All the critical features are in place, a bit of polishing is still to be done. One of the biggest relieves for our brave elf was that test calculations done with the Perl and Raku backends using the same model and input values gave identical results. As those implementations were done not only in two different languages, but also by different programmers with a completely different architecture, this gives a lot of trust in their correctness.
+
+In addition, the customer has done a pretty extensive refactoring of the model files and is currently in the process of verifying both the model calculations and the functionality of the Raku based web application. 
 
 The current setup is already online as [demo/test version](https://model.agrammon.ch/single/test) and you are welcome to give it a try. We expect the Raku implementation to finally go into production in early 2021 and to replace the current [Perl implementation](https://model.agrammon.ch/single).
 

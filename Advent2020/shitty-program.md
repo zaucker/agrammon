@@ -1,14 +1,14 @@
 # Shitty Program - A Raku Christmas Tale
 
-Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://www.agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in Perl 5. When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly. As the previous year had seen a real Christmas wonder, namely the release of Perl 6c, the elf suggested, that instead of bolting yet another feature onto the web application's Perl 5 backend, a rewrite in Perl 6 would be a bold but also appropriate move. The reason being that the application used a specially developed format for describing it's functionality by none-programmers. What better choice for rewriting the parser than Perl 6's grammars, the elf reasoned. Fittingly, the new AGRAMMON was going to be version 6.
+Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://www.agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in Perl (called Perl 5 then). When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly. As the previous year had seen a real Christmas wonder, namely the release of Perl 6c, the elf suggested, that instead of bolting yet another feature onto the web application's Perl 5 backend, a rewrite in Perl 6 would be a bold but also appropriate move. The reason being that the application used a specially developed format for describing it's functionality by none-programmers. What better choice for rewriting the parser than Perl 6's grammars, the elf reasoned. Fittingly, the new AGRAMMON was going to be version 6.
 
 When Santa asked when the rewrite would be finished, the obivous answer was "by Christmas". And as things went in Perl 6 land, by the time the rewrite is finally going into production, the backend is now implemented in Raku.
 
 ## AGRAMMON
 
-While most people nowadays know about the negative side-effects of agriculture on climate, a lesser known, but also significant environmental problem are ammonia (NH3) and nitrous oxide (NxOx) emissions. Those emissions are a result of the excrements of farm animals, mainly from cows, pigs, and pultry. Both solid and liquid excrements contain ammonia compounds such as urea which are decomposing either on the farm grounds, storage, and application as fertilizer. In addition to being an environmental pollutant, those emissions are also a big loss of nitrogen (N) from those natural fertilizers that must be replaced by artificial ones. 
+While most people nowadays know about the negative side-effects of agriculture on climate, a lesser known, but also significant environmental problem are ammonia (NH3) and nitrous oxide (NxOx) emissions. The source of these emissions are the excrements of farm animals, mainly from cows, pigs, and poultry. Both solid (manure) and liquid (slurry) excrements contain ammonia compounds such as urea. These compounds are decomposing either when the excrements are lying on the farm grounds, while being stored in manure heaps or slurry storage, and when brought out on the field as fertilizer. In addition to being an environmental pollutant, those emissions are also a big loss of nitrogen (N) from those natural fertilizers and either result in diminished productivity of farming or must be replaced by artificial fertilizers at additional costs to the farmers. 
 
-In order to address these problems, the processes of ammonia volatilisation are being studied, optimizations for its reductions developed, and the effects measured where possible under controlled conditions. However, as those controlled conditions don't exist on a large scale, the effects of the reduction measures as well as the total amount of emissions can only be simulated by model calculations. AGRAMMAN is a tool that facilitates such simulations on the scale of a single farm and can also used for calculations on regional scales by means of simulating "typical farm types" using average process types and cumulated numbers of animals, storage areas, and fertilizer application. The following picture shows the processes simulated in the model:
+In order to address these problems, the processes of ammonia volatilisation are being studied, optimizations for its reductions developed, and the effects measured where possible under controlled conditions. However, as those controlled conditions don't exist on a large scale, the effects of the reduction measures as well as the total amount of emissions can only be simulated by model calculations. AGRAMMON is a tool that facilitates such simulations on the scale of a single farm and can also used for calculations on regional scales by means of simulating "typical farm types" using average process types and cumulated numbers of animals, storage areas, and fertilizer application. The following picture shows the processes simulated in the model:
 
 <p align="center"><img align="center" src="https://github.com/zaucker/agrammon/blob/Advent/Advent2020/N-model.jpg" /></p>
   
@@ -17,7 +17,7 @@ By now it might be obvious to the reader that this article's title is not mainly
 
 ## The Application
 
-AGRAMMON is a typical web application, with data stored in a PostgreSQL database, a web frontend implemented in JavaScript using the [Qooxdoo](https://qooxdoo.org), and the Raku backend. The physical and chemical processes are not directly implemented in the backend, but as already mentioned in a none-programmer-friendly custom "language", describing (user) inputs, model parameters, calculations, and outputs (results). Each process is broken down into smaller sub-processes and each is described in its own file, including documentation and references to appropriate scientific sources. Here is a small example for such a file:
+AGRAMMON is a typical web application, with data stored in a PostgreSQL database, a web frontend implemented in JavaScript using the [Qooxdoo](https://qooxdoo.org) framework, and the Raku backend. The physical and chemical processes are not directly implemented in the backend, but as already mentioned in a none-programmer-friendly custom "language", describing (user) inputs, model parameters, calculations, and outputs (results). Each process is broken down into smaller sub-processes and each is described in its own file, including documentation and references to appropriate scientific sources. Here is a small example for such a file:
 
 ```
 *** general ***
@@ -106,11 +106,11 @@ In the current version of the AGRAMMON model there are 133 such files with 31,01
 
 The results are presented in the web GUI in tabular form (showing various subsets of the data that can also be defined in the model files) and can be exported as PDF report or Excel file, together with the actual inputs provided by the user.
 
-A special instance of AGRAMMON is used by a [regional government agency](https://lawa.lu.ch/) in the evaluation process of the environmental impact of modifications to local farms and the approval of the respective building applications. For this, the ammonia emissions before and after the planned modifications must be simulated by the applicant and can be directly submitted to the agencies AGRAMMON account, including a notification of the agency by eMail with the PDF report attached.
+A special instance of AGRAMMON is used by a [regional government agency](https://lawa.lu.ch/) in the evaluation process of the environmental impact of modifications to local farms and the approval of the respective building applications. For this, the ammonia emissions before and after the planned modifications must be simulated by the applicant and can be directly submitted to the agency's AGRAMMON account, including a notification of the agency by eMail with the PDF report attached.
 
 ## The Raku backend
 
-The refactored backend as of today consists of 59 `.pm6` modules/packes with 6,942 lines and is covered by tests in 38 `.t` files with 5,854 lines. It uses the 13  Raku modules shown in the following excerpt of the [META6.json](../META6.json) file:
+The refactored backend as of today consists of 59 `.pm6` [modules/packages](https://docs.raku.org/language/modules) with 6,942 lines and is covered by tests in 38 `.t` files with 5,854 lines. It uses the 13  Raku modules shown in the following excerpt of the [META6.json](https://docs.raku.org/language/modules#index-entry-META6.json-META6.json) file:
 ```
   "depends": [
     "Cro::HTTP",
@@ -135,7 +135,7 @@ The refactored backend as of today consists of 59 `.pm6` modules/packes with 6,9
     "Test::NoTabs"
   ],
 ```
-Note that `Spreadsheet::XLSX` was specifically implemented for this project.
+Those modules can be found on the [Raku Modules Directory](https://modules.raku.org/). Note that [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx) was specifically implemented for this project.
 
 Speaking of the actual implementation, although our brave elf didn't have much experience with either grammars, parsers, or even Perl 6 / Raku, he was smart enough to engage a real [expert elf](https://www.edument.se/en/page/jonathan-worthington-eng) for that. This elf did most of the heavy lifting of the backend implementation and helped our elf with advice and code review for the parts he implemented himself. Please note that the goal of this rewrite was to leave most of the syntax of the model implementation and also the frontend as is, so the blame for all the sub-optimal design decisions are solely on our primary elf (as all the implementation details passing under the review radar).
 
@@ -150,9 +150,9 @@ In this section you'll see a few Raku features used in AGRAMMON. This is not mea
 use lib "lib"
 use Agrammon::UI::CommandLine;
 ```
-The acutal AGRAMMON "executable" is just a three-liner (of which only two are Raku). This exploits the fact that Rakudo (the Raku implementation used here) has a pretty nice pre-compilation feature which is useful for minimizing (the still not neglegible) startup time after the first run of the program.
+The actual AGRAMMON "executable" is just a three-liner (of which only two are Raku). This exploits the fact that Rakudo (the Raku implementation used here) has a pretty nice [pre-compilation](https://docs.raku.org/language/faq#index-entry-Precompile_(FAQ)) feature which is useful for minimizing (the still not neglegible) startup time after the first run of the program.
 
-### [Agrammon::UI::CommandLine]](../lib/Agrammon/UI/CommandLine.pm6)
+### [Agrammon::UI::CommandLine](../lib/Agrammon/UI/CommandLine.pm6)
 
 #### Usage
 
@@ -164,12 +164,22 @@ Usage:
   ./bin/agrammon.pl6 [--variants=<Str>] [--sort=<SortOrder>] dump <filename> -- Dump model
   ./bin/agrammon.pl6 [--variants=<Str>] [--sort=<SortOrder>] latex <filename> [<technical-file>]
   ./bin/agrammon.pl6 create-user <username> <firstname> <lastname> -- Create Agrammon user
+  
+    <cfg-filename>        configuration file
+    <model-filename>      top-level model file
+    [<technical-file>]    optionally override model parameters from this file
+
     See https://www.agrammon.ch for more information about Agrammon.
 ```
-This usage message is created automatically from the implementation of the `multi sub MAIN` instances as shown for the first line:
+This usage message is created automatically from the implementation of the [`multi`](https://docs.raku.org/language/functions#Multi-dispatch) subroutine [`MAIN`](https://docs.raku.org/routine/MAIN) instances as shown for the first line:
 ```
 #| Start the web interface
-multi sub MAIN('web', ExistingFile $cfg-filename, ExistingFile $model-filename, Str $technical-file?) is export {
+multi sub MAIN(
+        'web',
+        ExistingFile $cfg-filename,   #= configuration file
+        ExistingFile $model-filename, #= top-level model file
+        Str $technical-file?          #= override model parameters from this file
+    ) is export {
     my $http = web($cfg-filename, $model-filename, $technical-file);
     react {
         whenever signal(SIGINT) {
@@ -180,16 +190,17 @@ multi sub MAIN('web', ExistingFile $cfg-filename, ExistingFile $model-filename, 
     }
 }
 ```
+Note that the parameter `$technical-file` is marked as optional by the trailing `?` and that the usage message thus also marks this parameter as optional by enclosing it in `[  ]`.
 
 #### sub web() 
 
-This subroutine is called to start the web service as shown in the first line of the above usage message (some lines for initialization omitted).
+This [subroutine](https://docs.raku.org/language/functions) is called to start the web service as shown in the first line of the above usage message.
 
 ```
 sub web(Str $cfg-filename, Str $model-filename, Str $technical-file?) is export {
 
     # initialization
-    ...
+    # ...
     
     my $model = timed "Load model from $module-path/$module.nhd", {
         load-model-using-cache($*HOME.add('.agrammon'), $module-path, $module, preprocessor-options($variants));
@@ -218,6 +229,7 @@ sub web(Str $cfg-filename, Str $model-filename, Str $technical-file?) is export 
     return $http;
 }
 ```
+The [subroutine](https://docs.raku.org/language/functions) use a [signature](https://docs.raku.org/type/Signature) to describe it's parameters (all of them are of [type `Str`](https://docs.raku.org/type/Str) and the third parameter is again marked as optional by the trailing `?`.
 
 #### sub run()
 
@@ -225,8 +237,8 @@ sub web(Str $cfg-filename, Str $model-filename, Str $technical-file?) is export 
 sub run (IO::Path $path, IO::Path $input-path, $technical-file, $variants, $format, $language, $prints,
          Bool $include-filters, $batch, $degree, $max-runs, :$all-filters) is export {
          
-    ### initialization
-    ...
+    # initialization
+    # ...
     
     my $rc = Agrammon::ResultCollector.new;
     my atomicint $n = 0;
@@ -240,11 +252,13 @@ sub run (IO::Path $path, IO::Path $input-path, $technical-file, $variants, $form
                 technical => %technical-parameters,
             );
         }
-        ### create output
-        ...
+        # create output
+        # ...
     }
 ```
-Here we use the concurrency features of Raku to run the actual model simulation using multiple threads to speed-up execution.
+Here we use [`race`](https://docs.raku.org/routine/race), one of the various [concurrency features](https://docs.raku.org/language/concurrency) of Raku, to run the actual model simulation using multiple threads in parallel to speed-up execution.
+
+The [function's](https://docs.raku.org/language/functions) [signature](https://docs.raku.org/type/Signature) again specifies the types of some parameters. In addition to (too many) positional arguments, `:$all-filters`is a by default optional [named argument](https://docs.raku.org/language/functions#Arguments).
 
 
 ### [Agrammon::Web::Routes](../lib/Agrammon/Web/Routes.pm6)
@@ -307,7 +321,7 @@ sub api-routes (Str $schema, $ws) {
     ...
 }
 ```
-the latter using the (abbreviated) OpenAPI definition
+the latter using the (abbreviated) [OpenAPI](https://swagger.io/specification/) definition
 ```
 openapi: 3.0.0
 info:
@@ -364,23 +378,262 @@ paths:
 ```
 handled by `Cro::OpenAPI::RoutesFromDefinition`.
 
-### Agrammon::OutputFormatter::PDF
+### [Agrammon::OutputFormatter::PDF](../lib/Agrammon/OutputFormatter/PDF.pm6)
 
 ... using `Cro::WebApp::Template`
+```
+sub create-latex($template, %data) is export {
+    template-location $*PROGRAM.parent.add('../share/templates');
+    render-template($template ~ ".crotmp", %data);
+}
+```
 
-### Agrammon::OutputFormatter::XLSX
+```
+    %data<titles>    = %titles;
+    %data<dataset>   = $dataset-name // 'NO DATASET';
+    %data<username>  = $user.username // 'NO USER';
+    %data<model>     = $cfg.gui-variant // 'NO MODEL';
+    %data<timestamp> = ~DateTime.now( formatter => sub ($_) {
+        sprintf '%02d.%02d.%04d %02d:%02d:%02d',
+            .day, .month, .year,.hour, .minute, .second,
+    });
+    %data<version>    = latex-escape($cfg.gui-title{$language} // 'NO  VERSION');
+    %data<outputs>    = @output-formatted;
+    %data<inputs>     = @input-formatted;
+    %data<submission> = %submission;
+```
 
-... using `Spreadsheet::XLSX`
+to create a [LaTeX](https://www.latex-project.org/) file with a template like
+```
+\nonstopmode
+%\documentclass[10pt,a4paper,landscape,twocolumn]{article}
+\documentclass[10pt,a4paper]{article}
 
-### Agrammon::Email
+\begin{document}
+
+\section*{<.titles.report>}
+\section{<.titles.data.section>}
+\begin{tabular}[t]{@{}l@{\hspace{2em}}p{7cm}}
+<?.submission>
+\textbf{<.titles.submission.farm>:} & <.submission.farm-number>\\
+\textbf{<.titles.submission.situation>:} & <.submission.farm-situation>\\
+\textbf{<.titles.submission.sender>:} & <.submission.sender-name>\\
+</?>
+\textbf{<.titles.data.dataset>:} & <.dataset>\\
+\textbf{<.titles.data.user>:} & <.username>\\
+\textbf{Version:} & <.model>\\
+<?.submission>
+\textbf{<.titles.submission.recipient>:} & <.submission.recipient-name>\\
+\textbf{<.titles.submission.comment>:} & <.submission.comment>\\
+</?>
+\end{tabular}
+
+\section{<.titles.outputs>}
+<@outputs>
+<?.section>
+<!.first>
+\bottomrule
+\end{tabular}
+</!>
+\subsection{<.section>}
+\noindent
+\rowcolors{1}{LightGrey}{White}
+\begin{tabular}[t]{lllrl}
+\toprule
+</?>
+<!.section>
+&  & <.label> & <.value> & <.unit>\\
+</!>
+</@>
+\bottomrule
+\end{tabular}
+```
+
+The LaTeX file is then rendered into a PDF file with the external program [lualatex](`http://www.luatex.org/) and the built-in [`Proc::Async`](https://docs.raku.org/type/Proc::Async) class
+
+```
+sub create-pdf($temp-dir-name, $pdf-prog, $username, $dataset-name, %data) is export {
+    # setup temp dir and files
+    my $temp-dir = $*TMPDIR.add($temp-dir-name);
+    my $source-file = "$temp-dir/$filename.tex".IO;
+    my $pdf-file    = "$temp-dir/$filename.pdf".IO;
+    my $aux-file    = "$temp-dir/$filename.aux".IO;
+    my $log-file    = "$temp-dir/$filename.log".IO;
+
+    # create LaTeX source with template
+    $source-file.spurt(create-latex('pdfexport', %data));
+
+    # create PDF, discard STDOUT and STDERR (see .log file if necessary)
+    my $exit-code;
+    my $signal;
+    my $reason = 'Unknown';
+
+    # don't use --safer
+    my $proc = Proc::Async.new: :w, $pdf-prog,
+            "--output-directory=$temp-dir",  '--no-shell-escape', '--', $source-file, ‘-’;
+
+    react {
+        # just ignore any output
+        whenever $proc.stdout.lines {
+        }
+        whenever $proc.stderr {
+        }
+        whenever $proc.start {
+            $exit-code = .exitcode;
+            $signal    = .signal;
+            done; # gracefully jump from the react block
+        }
+        whenever Promise.in(5) {
+            $reason = 'Timeout';
+            note ‘Timeout. Asking the process to stop’;
+            $proc.kill; # sends SIGHUP, change appropriately
+            whenever Promise.in(2) {
+                note ‘Timeout. Forcing the process to stop’;
+                $proc.kill: SIGKILL
+            }
+        }
+    }
+
+
+    if $exit-code {
+        note "$pdf-prog failed for $source-file, exit-code=$exit-code";
+        die X::Agrammon::OutputFormatter::PDF::Failed.new: :$exit-code;
+    }
+    if $signal {
+        note "$pdf-prog killed for $source-file, signal=$signal, reason=$reason";
+        die X::Agrammon::OutputFormatter::PDF::Killed.new: :$reason;
+    }
+
+    # read content of PDF file created
+    my $pdf = $pdf-file.slurp(:bin);
+    # cleanup if successful, otherwise kept for debugging.
+    unlink $source-file, $pdf-file, $aux-file, $log-file unless %*ENV<AGRAMMON_KEEP_FILES>;
+
+    return $pdf;
+}
+
+```
+
+### [Agrammon::OutputFormatter::Excel](../lib/Agrammon/OutputFormatter/Excel.pm6)
+
+With this module we create Excel exports of the simulation results and the user inputs, using [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx). This module allows to read and write [XLSX](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-xlsx/) files from Raku. The current functionality is by no means complete, but implements what was needed for AGRAMMON. Please feel free to provide pull requests or funds for the implementation of additional features.
+```
+    # get data to be shown
+    my %data = collect-data();
+    # ...
+    
+    my $workbook = Spreadsheet::XLSX.new;
+
+    # prepare sheets
+    my $output-sheet = $workbook.create-worksheet('Results');
+    my $input-sheet = $workbook.create-worksheet('Inputs');
+    my $timestamp = ~DateTime.now( formatter => sub ($_) {
+        sprintf '%02d.%02d.%04d %02d:%02d:%02d',
+                .day, .month, .year, .hour, .minute, .second,
+    });
+    # add some meta data to the sheets
+    for ($output-sheet, $input-sheet) -> $sheet {
+        $sheet.set(0, 0, $dataset-name, :bold);
+        $sheet.set(1, 0, $user.username);
+        $sheet.set(2, 0, $model-version);
+        $sheet.set(3, 0, $timestamp);
+    }
+
+    # set column width
+    for ($output-sheet, $input-sheet) -> $sheet {
+        $sheet.columns[0] = Spreadsheet::XLSX::Worksheet::Column.new:
+                :custom-width, :width(20);
+        $sheet.columns[1] = Spreadsheet::XLSX::Worksheet::Column.new:
+                :custom-width, :width(32);
+        $sheet.columns[2] = Spreadsheet::XLSX::Worksheet::Column.new:
+                :custom-width, :width(20);
+        $sheet.columns[3] = Spreadsheet::XLSX::Worksheet::Column.new:
+                :custom-width, :width(10);
+    }
+    
+    # add input data to sheets
+    my $row = 0;
+    my $col = 0;
+    my @records := %data<inputs>;
+    for @records -> %rec {
+        $input-sheet.set($row, $col+2, %rec<input>);
+        $input-sheet.set($row, $col+3, %rec<value>, :number-format('#,#'), :horizontal-align(RightAlign));
+        $input-sheet.set($row, $col+4, %rec<unit>);
+        $row++;
+    }
+    
+    # add output data to sheets
+    # ...
+    
+```
+This example shows a variety of [Raku basics](https://docs.raku.org/language/101-basics):
+- `%data`, `%rec` are [hash](https://docs.raku.org/language/101-basics#Hashes) [variables](https://docs.raku.org/language/variables). Contrary to Perl, in Raku the [sigils](https://docs.raku.org/language/101-basics#Sigils_and_identifiers) don't change when accessing elements of variables.
+- `for ($output-sheet, $input-sheet) -> $sheet { ... }` and `for @records -> %rec { ... }` are [loops](https://docs.raku.org/language/101-basics#for_and_blocks) over a [list](https://docs.raku.org/language/list), each assigning the current element to a variable in the loop's [scope](https://docs.raku.org/language/variables#Variable_declarators_and_scope) using the [pointy block](https://docs.raku.org/language/functions#Blocks_and_lambdas) syntax.
+- `my $timestamp = ~DateTime.now( formatter => sub ($_) { ... } ...)` uses the builtin [DateTime](https://docs.raku.org/routine/DateTime) method to create a timestamp, using the [`~`operator](https://docs.raku.org/routine/~) to coerce it into a string. The string is being formatted by the anonymous subroutine `sub ($_) { ... }` which use the [topic variable `$_`](https://docs.raku.org/language/101-basics#Topic_variable) as argument on which the various methods of the the DateTime [class](https://docs.raku.org/language/classtut) are being called on by just prepending a `.` For example, `.year` is just a short-cut for `$_.year`.
+
+### [Agrammon::Email](../lib/Agrammon/Email.pm6)
 
 ... using `Net::SMTP::Client::Async` and `Email::MIME`
+
+```
+# create PDF attachment
+my $attachment = Email::MIME.create(
+    attributes => {
+        'content-type' => "application/pdf; name=$filename",
+        'charset'      => 'utf-8',
+        'encoding'     => 'base64',
+    },
+    body => $pdf,
+);
+# create main body part            
+my $msg = Email::MIME.create(
+    attributes => {
+        'content-type' => 'text/plain',
+        'charset'      => 'utf-8',
+        'encoding'     => 'quoted-printable'
+    },
+    body-str => 'Attached please find a PDF report from a AGRAMMON simulation,
+);
+# build multi-part Email
+my $from = 'support@agrammon.ch';
+my $to   = 'foo@bar.com';
+my $mail = Email::MIME.create(
+    header-str => [
+        'to'      => $to,
+        'from'    => $from,
+        'subject' => 'Mail from AGRAMMON'
+    ],
+    parts => [
+        $msg,
+        $attachment,
+    ]
+);
+# asynchronously send Email via AGRAMMON's SMTP server
+with await Net::SMTP::Client::Async.connect(:host<mail.agrammon.ch>, :port(25), :!secure) {
+    # wait for SMTP server's welcome response
+    await .hello;
+    # send message
+    await .send-message(
+        :$from,
+        :to([ $to ]),
+        :message(~$mail),
+    );
+    # terminate connection on exit
+    LEAVE .quit;
+    # catch exceptions and emit user friendly error message
+    CATCH {
+        when X::Net::SMTP::Client::Async {
+            note "Unable to send email message: $_";
+        }
+    }
+}
+```
 
 
 ## Which Christmas?
 
-Well, as you can see from this [presentation](./swp2018.pdf] at the [Swiss Perl Workshop 2018](https://act.perl-workshop.ch/spw2018/), the original plan was not quite met, mostly due to another project being given higher priority (which was a very poor decision, but this is another long story). We had hoped to have AGRAMMON 6 deployed and in production before the appearance of this article and we almost suceeded. All the critical features are in place, a bit of polishing is still to be done. In addition, the customer has done a pretty extensive refactoring of the model description itself and is currently in the process of verifying both the model calculations and the functionality of the Raku based web application. The current setup is already online as [demo/test version](https://model.agrammon.ch/single/test) and you are welcome to give it a try. We expect the Raku implementation to go into production in early 2021 and to replace the current [Perl 5 implementation][https://model.agrammon.ch/single).
+Well, as you can see from this [presentation](./swp2018.pdf] at the [Swiss Perl Workshop 2018](https://act.perl-workshop.ch/spw2018/), the original plan was not quite met, mostly due to another project being given higher priority (which was a very poor decision, but this is another long story). We had hoped to have AGRAMMON 6 deployed and in production before the appearance of this article and we almost suceeded. All the critical features are in place, a bit of polishing is still to be done. In addition, the customer has done a pretty extensive refactoring of the model description itself and is currently in the process of verifying both the model calculations and the functionality of the Raku based web application. The current setup is already online as [demo/test version](https://model.agrammon.ch/single/test) and you are welcome to give it a try. We expect the Raku implementation to go into production in early 2021 and to replace the current [Perl implementation][https://model.agrammon.ch/single).
 
 ## Conclusion
 
-Is Raku ready for use in production? Definitely yes! While having already delivered a few smaller customer projects implemented in Perl 6 and Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://www.oetiker.ch) first publically accessible (web) application and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://www.agrammon.ch/en/development-of-the-model/) for this opportunity.
+Is Raku ready for use in production? Definitely yes! While having already delivered a few smaller customer projects implemented in Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://www.oetiker.ch) first publically accessible (web) application and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://www.agrammon.ch/en/development-of-the-model/) for this opportunity.

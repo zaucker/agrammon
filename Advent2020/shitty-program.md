@@ -1,4 +1,4 @@
-# Shitty Program - A Raku Christmas Tale
+# Christmas Tale About a Shitty Raku Program
 
 Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://www.agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in Perl (called Perl 5 then). When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly. As the previous year had seen a real Christmas wonder, namely the release of Perl 6c, the elf suggested, that instead of bolting yet another feature onto the web application's Perl 5 backend, a rewrite in Perl 6 would be a bold but also appropriate move. The reason being that the application used a specially developed format for describing it's functionality by none-programmers. What better choice for rewriting the parser than Perl 6's grammars, the elf reasoned. Fittingly, the new AGRAMMON was going to be version 6.
 
@@ -145,7 +145,7 @@ Those modules can be found on the [Raku Modules Directory](https://modules.raku.
 
 Speaking of the actual implementation, although our brave elf didn't have much experience with either grammars, parsers, or even Perl 6 / Raku, he was smart enough to engage a real [expert elf](https://www.edument.se/en/page/jonathan-worthington-eng) for that. This elf did most of the heavy lifting of the backend implementation and helped our elf with advice and code review for the parts he implemented himself. Please note that the goal of this rewrite was to leave most of the syntax of the model implementation and also the frontend as is, so the blame for all the sub-optimal design decisions are solely on our primary elf (as all the implementation details passing under the review radar).
 
-## Raku features used in AGRAMMON
+## Some Raku features used in AGRAMMON
 
 In this section you'll see a few Raku features used in AGRAMMON. This is not meant as a hardcore technical explanation for experts, but rather as a means to give a taste to people interested in Raku.
 
@@ -386,14 +386,35 @@ handled by `Cro::OpenAPI::RoutesFromDefinition`.
 
 ### [Agrammon::OutputFormatter::PDF](../lib/Agrammon/OutputFormatter/PDF.pm6)
 
-... using `Cro::WebApp::Template`
+For documenting AGRAMMON calculations, PDF reports of the inputs to the model and the simulation results can be created by first creating a LaTeX file using the [`Cro::WebApp::Template`](https://github.com/croservices/cro-webapp) module. While tailored towards generation of HTML pages, it worked quite well for our purpose. The module does escape its input data appropriate for HTML, however, a simple-minded escaping of characters with special meaning in LaTeX was implemented outside the module:
+
 ```
-sub create-latex($template, %data) is export {
-    template-location $*PROGRAM.parent.add('../share/templates');
-    render-template($template ~ ".crotmp", %data);
+sub latex-escape(Str $in) is export {
+    my $out = $in // '';
+    $out ~~ s:g/<[\\]>/\\backslash/;
+    $out ~~ s:g/(<[%#{}&$|]>)/\\$0/;
+    $out ~~ s:g/(<[~^]>)/\\$0\{\}/;
+    # this is a special case for Agrammon as we use __ in
+    # the frontend at the moment for indentation in the table
+    $out ~~ s:g/__/\\hspace\{2em\}/;
+    $out ~~ s:g/_/\\_/;
+    return $out;
 }
 ```
 
+An addition function is used for beautification of chemical molecules:
+
+```
+sub latex-chemify(Str $in) is export {
+    my $out = $in // '';
+    $out ~~ s:g/NOx/\\ce\{NO_\{\(x\)\}\}/;
+    $out ~~ s:g/(N2O|NH3|N2|NO2)/\\ce\{$0\}/;
+    return $out;
+}
+```
+These functions use simple [regular expression](https://docs.raku.org/language/regexes) substitutions. A more generic handling of LaTeX special characters would  need porting something like the [`LaTeX::Encode`](https://metacpan.org/pod/LaTeX::Encode) Perl module to Raku. Alternatively, [`Inline::Perl5`](https://github.com/niner/Inline-Perl5) could be employed to utilize the Perl module. 
+
+This code fragment shows how a [LaTeX](https://www.latex-project.org/) file is created
 ```
     %data<titles>    = %titles;
     %data<dataset>   = $dataset-name // 'NO DATASET';
@@ -407,9 +428,18 @@ sub create-latex($template, %data) is export {
     %data<outputs>    = @output-formatted;
     %data<inputs>     = @input-formatted;
     %data<submission> = %submission;
+    
+    template-location $*PROGRAM.parent.add('../share/templates');
+    my $temp-dir    = $*TMPDIR.add($temp-dir-name);
+    my $source-file = "$temp-dir/$filename.tex".IO;
+
+    my $latex-source = render-template('pdfexport.crotmp', %data);
+    
+    $source-file.spurt($latex-source, %data);   
 ```
 
-to create a [LaTeX](https://www.latex-project.org/) file with a template like
+by calling `render-template` with a `%data` hash and a template file `pdfexport.crotmp` like
+
 ```
 \nonstopmode
 \documentclass[10pt,a4paper]{article}
@@ -445,124 +475,124 @@ to create a [LaTeX](https://www.latex-project.org/) file with a template like
 \end{tabular}
 \end{document}
 ```
-While this template might seem a bit cryptic if you are not familiar with LaTeX, the relevant parts are the HTML-like tags like `<.titles.report>` accessing a value of the hash data structured passed to `render-template`, `<@output> ... </@>` being an array in this data structure being iterated over, or the conditionals `<?.section> ... </?>` or `<!.section> ... </!>`. For details please consult the documentation of the [... using `Cro::WebApp::Template`](https://github.com/croservices/cro-webapp) module.
 
-The LaTeX file is then rendered into a PDF file with the external program [lualatex](`http://www.luatex.org/) and the built-in [`Proc::Async`](https://docs.raku.org/type/Proc::Async) class
+as arguments. The generated LaTeX source is then written to a file using the [`spurt`](https://docs.raku.org/routine/spurt) function.
+
+While the above template might seem a bit cryptic if you are not familiar with LaTeX, the relevant parts are the HTML-like tags like `<.titles.report>` accessing a value of the hash data structured passed to `render-template`, `<@output> ... </@>` being an array in this data structure being iterated over, or the conditionals `<?.section> ... </?>` or `<!.section> ... </!>`. For details please consult the documentation of the [`Cro::WebApp::Template`](https://github.com/croservices/cro-webapp) module.
+
+The LaTeX file is then rendered into a PDF file with the external program [`lualatex`](`http://www.luatex.org/) and the built-in [`Proc::Async`](https://docs.raku.org/type/Proc::Async) class:
 
 ```
-sub create-pdf($temp-dir-name, $pdf-prog, $username, $dataset-name, %data) is export {
-    # setup temp dir and files
-    my $temp-dir = $*TMPDIR.add($temp-dir-name);
-    my $source-file = "$temp-dir/$filename.tex".IO;
-    my $pdf-file    = "$temp-dir/$filename.pdf".IO;
-    my $aux-file    = "$temp-dir/$filename.aux".IO;
-    my $log-file    = "$temp-dir/$filename.log".IO;
+# setup temp dir and files
+my $temp-dir = $*TMPDIR.add($temp-dir-name);
+my $source-file = "$temp-dir/$filename.tex".IO;
+my $pdf-file    = "$temp-dir/$filename.pdf".IO;
+my $log-file    = "$temp-dir/$filename.log".IO;
 
-    # create LaTeX source with template
-    $source-file.spurt(create-latex('pdfexport', %data));
+# create PDF, discard STDOUT and STDERR (see .log file if necessary)
+my $exit-code;
+my $signal;
+my $reason = 'Unknown';
 
-    # create PDF, discard STDOUT and STDERR (see .log file if necessary)
-    my $exit-code;
-    my $signal;
-    my $reason = 'Unknown';
+my $proc = Proc::Async.new: :w, '/usr/bin/lualatex',
+        "--output-directory=$temp-dir",  '--no-shell-escape', '--', $source-file, ‘-’;
 
-    # don't use --safer
-    my $proc = Proc::Async.new: :w, $pdf-prog,
-            "--output-directory=$temp-dir",  '--no-shell-escape', '--', $source-file, ‘-’;
-
-    react {
-        # just ignore any output
-        whenever $proc.stdout.lines {
-        }
-        whenever $proc.stderr {
-        }
-        whenever $proc.start {
-            $exit-code = .exitcode;
-            $signal    = .signal;
-            done; # gracefully jump from the react block
-        }
-        whenever Promise.in(5) {
-            $reason = 'Timeout';
-            note ‘Timeout. Asking the process to stop’;
-            $proc.kill; # sends SIGHUP, change appropriately
-            whenever Promise.in(2) {
-                note ‘Timeout. Forcing the process to stop’;
-                $proc.kill: SIGKILL
-            }
+react {
+    # discard any output of the external program
+    whenever $proc.stdout.lines {
+    }
+    whenever $proc.stderr {
+    }
+    # save exit code and signal if program was terminated
+    whenever $proc.start {
+        $exit-code = .exitcode;
+        $signal    = .signal;
+        done; # gracefully jump from the react block
+    }
+    # make sure we don't end up with a hung-up lualatex process
+    whenever Promise.in(5) {
+        $reason = 'Timeout';
+        note ‘Timeout. Asking the process to stop’;
+        $proc.kill; # sends SIGHUP, change appropriately
+        whenever Promise.in(2) {
+            note ‘Timeout. Forcing the process to stop’;
+            $proc.kill: SIGKILL
         }
     }
-
-
-    if $exit-code {
-        note "$pdf-prog failed for $source-file, exit-code=$exit-code";
-        die X::Agrammon::OutputFormatter::PDF::Failed.new: :$exit-code;
-    }
-    if $signal {
-        note "$pdf-prog killed for $source-file, signal=$signal, reason=$reason";
-        die X::Agrammon::OutputFormatter::PDF::Killed.new: :$reason;
-    }
-
-    # read content of PDF file created
-    my $pdf = $pdf-file.slurp(:bin);
-    # cleanup if successful, otherwise kept for debugging.
-    unlink $source-file, $pdf-file, $aux-file, $log-file unless %*ENV<AGRAMMON_KEEP_FILES>;
-
-    return $pdf;
 }
 
+# write appropriate error messages if program didn't terminate sucessfully
+if $exit-code {
+    note "$pdf-prog failed for $source-file, exit-code=$exit-code";
+    die X::Agrammon::OutputFormatter::PDF::Failed.new: :$exit-code;
+}
+if $signal {
+    note "$pdf-prog killed for $source-file, signal=$signal, reason=$reason";
+    die X::Agrammon::OutputFormatter::PDF::Killed.new: :$reason;
+}
+
+# read content of PDF file created in binary format for further use
+my $pdf = $pdf-file.slurp(:bin);
+# remove created files if successful, otherwise keep for debugging
+unlink $source-file, $pdf-file, $aux-file, $log-file unless %*ENV<AGRAMMON_KEEP_FILES>;
 ```
+
+A [`react`](https://docs.raku.org/language/concurrency#index-entry-react) block with several `whenever` blocks is used to handle the events from the asynchronously running external program to avoid blocking of the otherwise already asynchronous backend.
+
+[Typed exceptions](https://docs.raku.org/language/exceptions#Typed_exceptions) are used to handle errors occuring in the external process. 
 
 ### [Agrammon::OutputFormatter::Excel](../lib/Agrammon/OutputFormatter/Excel.pm6)
 
 Here we create Excel exports of the simulation results and the user inputs, using [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx). This module allows to read and write [XLSX](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-xlsx/) files from Raku. The current functionality is by no means complete, but implements what was needed for AGRAMMON. Please feel free to provide pull requests or funds for the implementation of additional features.
+
 ```
-    # get data to be shown
-    my %data = collect-data();
-    # ...
-    
-    my $workbook = Spreadsheet::XLSX.new;
+# get data to be shown
+my %data = collect-data();
+# ...
 
-    # prepare sheets
-    my $output-sheet = $workbook.create-worksheet('Results');
-    my $input-sheet = $workbook.create-worksheet('Inputs');
-    my $timestamp = ~DateTime.now( formatter => sub ($_) {
-        sprintf '%02d.%02d.%04d %02d:%02d:%02d',
-                .day, .month, .year, .hour, .minute, .second,
-    });
-    # add some meta data to the sheets
-    for ($output-sheet, $input-sheet) -> $sheet {
-        $sheet.set(0, 0, $dataset-name, :bold);
-        $sheet.set(1, 0, $user.username);
-        $sheet.set(2, 0, $model-version);
-        $sheet.set(3, 0, $timestamp);
-    }
+my $workbook = Spreadsheet::XLSX.new;
 
-    # set column width
-    for ($output-sheet, $input-sheet) -> $sheet {
-        $sheet.columns[0] = Spreadsheet::XLSX::Worksheet::Column.new:
-                :custom-width, :width(20);
-        $sheet.columns[1] = Spreadsheet::XLSX::Worksheet::Column.new:
-                :custom-width, :width(32);
-        $sheet.columns[2] = Spreadsheet::XLSX::Worksheet::Column.new:
-                :custom-width, :width(20);
-        $sheet.columns[3] = Spreadsheet::XLSX::Worksheet::Column.new:
-                :custom-width, :width(10);
-    }
-    
-    # add input data to sheets
-    my $row = 0;
-    my $col = 0;
-    my @records := %data<inputs>;
-    for @records -> %rec {
-        $input-sheet.set($row, $col+2, %rec<input>);
-        $input-sheet.set($row, $col+3, %rec<value>, :number-format('#,#'), :horizontal-align(RightAlign));
-        $input-sheet.set($row, $col+4, %rec<unit>);
-        $row++;
-    }
-    
-    # add output data to sheets
-    # ...
-    
+# prepare sheets
+my $output-sheet = $workbook.create-worksheet('Results');
+my $input-sheet = $workbook.create-worksheet('Inputs');
+my $timestamp = ~DateTime.now( formatter => sub ($_) {
+    sprintf '%02d.%02d.%04d %02d:%02d:%02d',
+            .day, .month, .year, .hour, .minute, .second,
+});
+# add some meta data to the sheets
+for ($output-sheet, $input-sheet) -> $sheet {
+    $sheet.set(0, 0, $dataset-name, :bold);
+    $sheet.set(1, 0, $user.username);
+    $sheet.set(2, 0, $model-version);
+    $sheet.set(3, 0, $timestamp);
+}
+
+# set column width
+for ($output-sheet, $input-sheet) -> $sheet {
+    $sheet.columns[0] = Spreadsheet::XLSX::Worksheet::Column.new:
+            :custom-width, :width(20);
+    $sheet.columns[1] = Spreadsheet::XLSX::Worksheet::Column.new:
+            :custom-width, :width(32);
+    $sheet.columns[2] = Spreadsheet::XLSX::Worksheet::Column.new:
+            :custom-width, :width(20);
+    $sheet.columns[3] = Spreadsheet::XLSX::Worksheet::Column.new:
+            :custom-width, :width(10);
+}
+
+# add input data to sheets
+my $row = 0;
+my $col = 0;
+my @records := %data<inputs>;
+for @records -> %rec {
+    $input-sheet.set($row, $col+2, %rec<input>);
+    $input-sheet.set($row, $col+3, %rec<value>, :number-format('#,#'), :horizontal-align(RightAlign));
+    $input-sheet.set($row, $col+4, %rec<unit>);
+    $row++;
+}
+
+# add output data to sheets
+# ...
+
 ```
 This example shows a variety of [Raku basics](https://docs.raku.org/language/101-basics):
 - `%data`, `%rec` are [hash](https://docs.raku.org/language/101-basics#Hashes) [variables](https://docs.raku.org/language/variables). Contrary to Perl, in Raku the [sigils](https://docs.raku.org/language/101-basics#Sigils_and_identifiers) don't change when accessing elements of variables.
@@ -571,7 +601,7 @@ This example shows a variety of [Raku basics](https://docs.raku.org/language/101
 
 ### [Agrammon::Email](../lib/Agrammon/Email.pm6)
 
-... using `Net::SMTP::Client::Async` and `Email::MIME`
+As mentioned above PDF reports of simulations can be mailed to certain AGRAMMON users directly from the web application. First, a [multi-part MIME](https://tools.ietf.org/html/rfc1521) message is created using the [`Email::MIME`](https://modules.raku.org/dist/Email::MIME) module.
 
 ```
 # create PDF attachment
@@ -606,6 +636,11 @@ my $mail = Email::MIME.create(
         $attachment,
     ]
 );
+```
+
+This message is then sent to the mail's recipient using the [promise](https://docs.raku.org/type/Promise) based [`Net::SMTP::Client::Async`](https://modules.raku.org/dist/Net::SMTP::Client::Async) module:
+
+```
 # asynchronously send Email via AGRAMMON's SMTP server
 with await Net::SMTP::Client::Async.connect(:host<mail.agrammon.ch>, :port(25), :!secure) {
     # wait for SMTP server's welcome response
@@ -626,11 +661,18 @@ with await Net::SMTP::Client::Async.connect(:host<mail.agrammon.ch>, :port(25), 
     }
 }
 ```
+The [`await`](https://docs.raku.org/type/Promise#sub_await) function is used to handle the asynchronous communication with the [SMPT](https://tools.ietf.org/html/rfc5321) server. The [`LEAVE`](https://docs.raku.org/language/phasers#index-entry-Phasers__LEAVE-LEAVE) is called upon exit from the `with await { ... }` block to close the connection to the server.
 
 ## Which Christmas?
 
-Well, as you can see from this [presentation](./swp2018.pdf) at the [Swiss Perl Workshop 2018](https://act.perl-workshop.ch/spw2018/), the original plan was not quite met, mostly due to another project being given higher priority (which was a very poor decision, but this is another long story). We had hoped to have AGRAMMON 6 deployed and in production before the appearance of this article and we almost suceeded. All the critical features are in place, a bit of polishing is still to be done. In addition, the customer has done a pretty extensive refactoring of the model description itself and is currently in the process of verifying both the model calculations and the functionality of the Raku based web application. The current setup is already online as [demo/test version](https://model.agrammon.ch/single/test) and you are welcome to give it a try. We expect the Raku implementation to go into production in early 2021 and to replace the current [Perl implementation](https://model.agrammon.ch/single).
+Well, as you can see from this [presentation](./swp2018.pdf) at the [Swiss Perl Workshop 2018](https://act.perl-workshop.ch/spw2018/), the original plan was not quite met, mostly due to another project being given higher priority (which was a very poor decision, but this is another long story).
+
+We had hoped to have AGRAMMON 6 deployed and in production before the appearance of this article and almost suceeded. All the critical features are in place, a bit of polishing is still to be done. In addition, the customer has done a pretty extensive refactoring of the model files and is currently in the process of verifying both the model calculations and the functionality of the Raku based web application. 
+
+The current setup is already online as [demo/test version](https://model.agrammon.ch/single/test) and you are welcome to give it a try. We expect the Raku implementation to finally go into production in early 2021 and to replace the current [Perl implementation](https://model.agrammon.ch/single).
 
 ## Conclusion
 
-Is Raku ready for use in production? Definitely yes! While having already delivered a few smaller customer projects implemented in Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://www.oetiker.ch) first publically accessible (web) application and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://www.agrammon.ch/en/development-of-the-model/) for this opportunity.
+Is Raku ready for use in production? Definitely yes!
+
+While having already delivered a few smaller customer projects implemented in Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://www.oetiker.ch) first publically accessible (web) application and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://www.agrammon.ch/en/development-of-the-model/) for this opportunity.

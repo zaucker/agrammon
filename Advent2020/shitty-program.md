@@ -821,6 +821,6 @@ The current setup is already online as [demo/test version](https://model.agrammo
 
 Is Raku ready for use in production? Definitely yes!
 
-While having already delivered a few smaller customer projects implemented in Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://www.oetiker.ch) first publically accessible (web) application and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://www.agrammon.ch/en/development-of-the-model/) for this opportunity.
+While having already delivered a few smaller customer projects implemented in Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://www.oetiker.ch) first publically accessible web application with a Raku backend and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://www.agrammon.ch/en/development-of-the-model/) for this opportunity.
 
 And the most important outcome: Santa now has another elf at least partially able to work on future Raku projects.

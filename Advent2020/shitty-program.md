@@ -217,10 +217,10 @@ multi sub MAIN(
 Note that the parameter `$technical-file` is marked as optional by the trailing `?` and that the usage message thus also marks this parameter as optional by enclosing it in `[  ]`.
 
 The usage message also shows the command line calls for
-- running the model in batch mode from the command line (`run`),
-- showing the simulation flow by `dump`ing the model structur,
-- generation of the model documentation (`latex`),
-- and for creation of user accounts for the web application.
+* running the model in batch mode from the command line (`run`),
+* showing the simulation flow by `dump`ing the model structur,
+* generation of the model documentation (`latex`),
+* and for creation of user accounts for the web application.
 
 #### sub web() 
 
@@ -263,7 +263,7 @@ The [subroutine](https://docs.raku.org/language/functions) uses a [signature](ht
 
 #### sub run()
 
-The AGRAMMON application can also be used directly from the command line by providing input data from a [CSV](https://tools.ietf.org/html/rfc4180] file. This mode is used from scientists to automate the running large amounts of simulations for regional and national projections. It is planned to make this mode available via a [REST](https://tools.ietf.org/html/rfc6690) API call in the future.
+The AGRAMMON application can also be used directly from the command line by providing input data from a [CSV](https://tools.ietf.org/html/rfc4180) file. This mode is used from scientists to automate the running large amounts of simulations for regional and national projections. It is planned to make this mode available via a [REST](https://tools.ietf.org/html/rfc6690) API call in the future.
 
 ```
 sub run (IO::Path $path, IO::Path $input-path, $technical-file, $variants, $format, $language, $prints,
@@ -295,7 +295,7 @@ The [function's](https://docs.raku.org/language/functions) [signature](https://d
 
 ### [Agrammon::Web::Routes](../lib/Agrammon/Web/Routes.pm6)
 
-While already having shown the start-up of the web service above, here we see an example of setting up the routes of AGRAMMON's REST interface using `Cro::HTTP::Router` from [Edument's](https://www.edument.se/en) [Cro Services](https://cro.services/):
+While already having shown the start-up of the web service above, here we see an example of setting up the routes of AGRAMMON's REST interface using [`Cro::HTTP::Router`](https://cro.services/docs/reference/cro-http-router) from [Edument's](https://www.edument.se/en) [Cro Services](https://cro.services/):
 ```
 use Cro::HTTP::Router;
 use Cro::OpenAPI::RoutesFromDefinition;
@@ -463,9 +463,7 @@ This code fragment shows how a [LaTeX](https://www.latex-project.org/) file is c
     
     $source-file.spurt($latex-source, %data);   
 ```
-
 by calling `render-template` with a `%data` hash and a template file `pdfexport.crotmp` like
-
 ```
 \nonstopmode
 \documentclass[10pt,a4paper]{article}
@@ -501,13 +499,11 @@ by calling `render-template` with a `%data` hash and a template file `pdfexport.
 \end{tabular}
 \end{document}
 ```
-
 as arguments. The generated LaTeX source is then written to a file using the [`spurt`](https://docs.raku.org/routine/spurt) function.
 
 While the above template might seem a bit cryptic if you are not familiar with LaTeX, the relevant parts are the HTML-like tags like `<.titles.report>` accessing a value of the hash data structured passed to `render-template`, `<@output> ... </@>` being an array in this data structure being iterated over, or the conditionals `<?.section> ... </?>` or `<!.section> ... </!>`. For details please consult the documentation of the [`Cro::WebApp::Template`](https://github.com/croservices/cro-webapp) module.
 
 The LaTeX file is then rendered into a PDF file with the external program [`lualatex`](`http://www.luatex.org/) and the built-in [`Proc::Async`](https://docs.raku.org/type/Proc::Async) class:
-
 ```
 # setup temp dir and files
 my $temp-dir = $*TMPDIR.add($temp-dir-name);
@@ -570,7 +566,6 @@ A [`react`](https://docs.raku.org/language/concurrency#index-entry-react) block 
 ### [Agrammon::OutputFormatter::Excel](../lib/Agrammon/OutputFormatter/Excel.pm6)
 
 Here we create Excel exports of the simulation results and the user inputs, using [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx). This module allows to read and write [XLSX](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-xlsx/) files from Raku. The current functionality is by no means complete, but implements what was needed for AGRAMMON. Please feel free to provide pull requests or funds for the implementation of additional features.
-
 ```
 # get data to be shown
 my %data = collect-data();
@@ -618,17 +613,15 @@ for @records -> %rec {
 
 # add output data to sheets
 # ...
-
 ```
 This example shows a variety of [Raku basics](https://docs.raku.org/language/101-basics):
-- `%data`, `%rec` are [hash](https://docs.raku.org/language/101-basics#Hashes) [variables](https://docs.raku.org/language/variables). Contrary to Perl, in Raku the [sigils](https://docs.raku.org/language/101-basics#Sigils_and_identifiers) don't change when accessing elements of variables.
-- `for ($output-sheet, $input-sheet) -> $sheet { ... }` and `for @records -> %rec { ... }` are [loops](https://docs.raku.org/language/101-basics#for_and_blocks) over a [lists](https://docs.raku.org/language/list), each assigning the current element to a variable in the loop's [scope](https://docs.raku.org/language/variables#Variable_declarators_and_scope) using the [pointy block](https://docs.raku.org/language/functions#Blocks_and_lambdas) syntax.
-- `my $timestamp = ~DateTime.now( formatter => sub ($_) { ... } ...)` uses the builtin [`DateTime`](https://docs.raku.org/routine/DateTime) method to create a timestamp, using the [`~`operator](https://docs.raku.org/routine/~) to coerce it into a string. The string is being formatted by the unamed [anonymous subroutine](https://docs.raku.org/language/functions#Defining/Creating/Using_functions) `sub ($_) { ... }` which uses the [topic variable `$_`](https://docs.raku.org/language/101-basics#Topic_variable) as argument on which the various methods of the the DateTime [class](https://docs.raku.org/language/classtut) are being called by just prepending a `.` For example, `.year` is just a short-cut for `$_.year`.
+* `%data`, `%rec` are [hash](https://docs.raku.org/language/101-basics#Hashes) [variables](https://docs.raku.org/language/variables). Contrary to Perl, in Raku the [sigils](https://docs.raku.org/language/101-basics#Sigils_and_identifiers) don't change when accessing elements of variables.
+* `for ($output-sheet, $input-sheet) -> $sheet { ... }` and `for @records -> %rec { ... }` are [loops](https://docs.raku.org/language/101-basics#for_and_blocks) over a [lists](https://docs.raku.org/language/list), each assigning the current element to a variable in the loop's [scope](https://docs.raku.org/language/variables#Variable_declarators_and_scope) using the [pointy block](https://docs.raku.org/language/functions#Blocks_and_lambdas) syntax.
+* `my $timestamp = ~DateTime.now( formatter => sub ($_) { ... } ...)` uses the builtin [`DateTime`](https://docs.raku.org/routine/DateTime) method to create a timestamp, using the [`~`operator](https://docs.raku.org/routine/~) to coerce it into a string. The string is being formatted by the unamed [anonymous subroutine](https://docs.raku.org/language/functions#Defining/Creating/Using_functions) `sub ($_) { ... }` which uses the [topic variable `$_`](https://docs.raku.org/language/101-basics#Topic_variable) as argument on which the various methods of the the DateTime [class](https://docs.raku.org/language/classtut) are being called by just prepending a `.` For example, `.year` is just a short-cut for `$_.year`.
 
 ### [Agrammon::Email](../lib/Agrammon/Email.pm6)
 
 As mentioned above PDF reports of simulations can be mailed to certain AGRAMMON users directly from the web application. First, a [multi-part MIME](https://tools.ietf.org/html/rfc1521) message is created using the [`Email::MIME`](https://modules.raku.org/dist/Email::MIME) module.
-
 ```
 # create PDF attachment
 my $attachment = Email::MIME.create(
@@ -663,9 +656,7 @@ my $mail = Email::MIME.create(
     ]
 );
 ```
-
 This message is then sent to the mail's recipient using the [promise](https://docs.raku.org/type/Promise) based [`Net::SMTP::Client::Async`](https://modules.raku.org/dist/Net::SMTP::Client::Async) module:
-
 ```
 # asynchronously send Email via AGRAMMON's SMTP server
 with await Net::SMTP::Client::Async.connect(:host<mail.agrammon.ch>, :port(25), :!secure) {
@@ -692,7 +683,6 @@ The [`await`](https://docs.raku.org/type/Promise#sub_await) function is used to 
 ### Parser and Compiler
 
 Finally, a few words about the parser and compiler used to process the AGRAMMON model files shown above. [`Agrammon::ModuleParser`](../lib/Agrammon/ModuleParser.pm6) is the top-level element for parsing the model files:
-
 ```
 use v6;
 use Agrammon::CommonParser;
@@ -799,17 +789,15 @@ It handles parsing of the various sections of the model file sections, using var
         | \h+ $
     }
 ```
-
 Raku [grammars](https://docs.raku.org/type/Grammar) are basically build top-down from [regular expressions](https://docs.raku.org/language/regexes). Such grammars can be extended by means of [action classes](https://docs.raku.org/language/grammar_tutorial#Grammar_actions) that further process the [match objects](https://docs.raku.org/type/Match) generated while parsing the data fed to the grammar.
 
 Please consult [this tutorial](https://docs.raku.org/language/grammar_tutorial) or other resources to learn more about those concepts.
 
-If you want to know more about the (real-world) AGRAMMON parser/compiler you can have a look at the other parser elements in the [`Agrammon::Formula::Parser`](../lib/Agrammon/Formula/Parser.pm6), [`Agrammon::Formula::Builder`](../lib/Agrammon/Formula/Builder.pm6), [`Agrammon::ModuleBuilder`](../lib/Agrammon/ModuleBuilder.pm6), [`Agrammon::TechnicalParser`](../lib/Agrammon/TechnicalParser.pm6), [`Agrammon::TechnicalBuilder`](../lib/Agrammon/TechnicalBuilder.pm6), and [`Agrammon::`](../lib/Agrammon/LanguageParser.pm6) modules, the latter being a simple none-grammmar based element.
+If you want to know more about the (real-world) AGRAMMON parser/compiler you can have a look at the other parser elements in the [`Agrammon::Formula::Parser`](../lib/Agrammon/Formula/Parser.pm6), [`Agrammon::Formula::Builder`](../lib/Agrammon/Formula/Builder.pm6), [`Agrammon::ModuleBuilder`](../lib/Agrammon/ModuleBuilder.pm6), [`Agrammon::TechnicalParser`](../lib/Agrammon/TechnicalParser.pm6), [`Agrammon::TechnicalBuilder`](../lib/Agrammon/TechnicalBuilder.pm6), and [`Agrammon::LanguageParser`](../lib/Agrammon/LanguageParser.pm6) modules, the latter being a simple none-grammmar based function.
 
-The compiler finally is implemented in the modules [`Agrammon::Formula::Compiler`](../lib/Agrammon/Formula/Compiler.pm6) and  [`Agrammon::Formula::Builtins`](../lib/Agrammon/Formula/Builtins.pm6).
+The compiler consists of the modules [`Agrammon::Formula::Compiler`](../lib/Agrammon/Formula/Compiler.pm6) and  [`Agrammon::Formula::Builtins`](../lib/Agrammon/Formula/Builtins.pm6).
 
 Finally, as a recent addition, AGRAMMON also got a C-style preprocessor in [`Agrammon::Preprocessor`](../lib/Agrammon/Preprocessor.pm6) for conditionally including or excluding parts of the model using the following syntax:
-
 ```
 ?if FOO
 ...
@@ -819,7 +807,6 @@ Finally, as a recent addition, AGRAMMON also got a C-style preprocessor in [`Agr
 ...
 ?endif
 ```
-
 with optional `?elsif` and `?else` parts. The keywords can also be negated, such as `?if !FOO`. 
 
 ## So, which Christmas?

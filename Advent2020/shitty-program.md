@@ -412,7 +412,6 @@ sub create-latex($template, %data) is export {
 to create a [LaTeX](https://www.latex-project.org/) file with a template like
 ```
 \nonstopmode
-%\documentclass[10pt,a4paper,landscape,twocolumn]{article}
 \documentclass[10pt,a4paper]{article}
 
 \begin{document}
@@ -420,18 +419,9 @@ to create a [LaTeX](https://www.latex-project.org/) file with a template like
 \section*{<.titles.report>}
 \section{<.titles.data.section>}
 \begin{tabular}[t]{@{}l@{\hspace{2em}}p{7cm}}
-<?.submission>
-\textbf{<.titles.submission.farm>:} & <.submission.farm-number>\\
-\textbf{<.titles.submission.situation>:} & <.submission.farm-situation>\\
-\textbf{<.titles.submission.sender>:} & <.submission.sender-name>\\
-</?>
-\textbf{<.titles.data.dataset>:} & <.dataset>\\
-\textbf{<.titles.data.user>:} & <.username>\\
-\textbf{Version:} & <.model>\\
-<?.submission>
-\textbf{<.titles.submission.recipient>:} & <.submission.recipient-name>\\
-\textbf{<.titles.submission.comment>:} & <.submission.comment>\\
-</?>
+    \textbf{<.titles.data.dataset>:} & <.dataset>\\
+    \textbf{<.titles.data.user>:} & <.username>\\
+    \textbf{Version:} & <.model>\\
 \end{tabular}
 
 \section{<.titles.outputs>}
@@ -453,7 +443,9 @@ to create a [LaTeX](https://www.latex-project.org/) file with a template like
 </@>
 \bottomrule
 \end{tabular}
+\end{document}
 ```
+While this template might seem a bit cryptic if you are not familiar with LaTeX, the relevant parts are the HTML-like tags like `<.titles.report>` accessing a value of the hash data structured passed to `render-template`, `<@output> ... </@>` being an array in this data structure being iterated over, or the conditionals `<?.section> ... </?>` or `<!.section> ... </!>. For details please consult the documentation of the [... using `Cro::WebApp::Template`](https://github.com/croservices/cro-webapp) module.
 
 The LaTeX file is then rendered into a PDF file with the external program [lualatex](`http://www.luatex.org/) and the built-in [`Proc::Async`](https://docs.raku.org/type/Proc::Async) class
 
@@ -522,7 +514,7 @@ sub create-pdf($temp-dir-name, $pdf-prog, $username, $dataset-name, %data) is ex
 
 ### [Agrammon::OutputFormatter::Excel](../lib/Agrammon/OutputFormatter/Excel.pm6)
 
-With this module we create Excel exports of the simulation results and the user inputs, using [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx). This module allows to read and write [XLSX](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-xlsx/) files from Raku. The current functionality is by no means complete, but implements what was needed for AGRAMMON. Please feel free to provide pull requests or funds for the implementation of additional features.
+Here we create Excel exports of the simulation results and the user inputs, using [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx). This module allows to read and write [XLSX](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-xlsx/) files from Raku. The current functionality is by no means complete, but implements what was needed for AGRAMMON. Please feel free to provide pull requests or funds for the implementation of additional features.
 ```
     # get data to be shown
     my %data = collect-data();
@@ -574,8 +566,8 @@ With this module we create Excel exports of the simulation results and the user 
 ```
 This example shows a variety of [Raku basics](https://docs.raku.org/language/101-basics):
 - `%data`, `%rec` are [hash](https://docs.raku.org/language/101-basics#Hashes) [variables](https://docs.raku.org/language/variables). Contrary to Perl, in Raku the [sigils](https://docs.raku.org/language/101-basics#Sigils_and_identifiers) don't change when accessing elements of variables.
-- `for ($output-sheet, $input-sheet) -> $sheet { ... }` and `for @records -> %rec { ... }` are [loops](https://docs.raku.org/language/101-basics#for_and_blocks) over a [list](https://docs.raku.org/language/list), each assigning the current element to a variable in the loop's [scope](https://docs.raku.org/language/variables#Variable_declarators_and_scope) using the [pointy block](https://docs.raku.org/language/functions#Blocks_and_lambdas) syntax.
-- `my $timestamp = ~DateTime.now( formatter => sub ($_) { ... } ...)` uses the builtin [DateTime](https://docs.raku.org/routine/DateTime) method to create a timestamp, using the [`~`operator](https://docs.raku.org/routine/~) to coerce it into a string. The string is being formatted by the anonymous subroutine `sub ($_) { ... }` which use the [topic variable `$_`](https://docs.raku.org/language/101-basics#Topic_variable) as argument on which the various methods of the the DateTime [class](https://docs.raku.org/language/classtut) are being called on by just prepending a `.` For example, `.year` is just a short-cut for `$_.year`.
+- `for ($output-sheet, $input-sheet) -> $sheet { ... }` and `for @records -> %rec { ... }` are [loops](https://docs.raku.org/language/101-basics#for_and_blocks) over a [lists](https://docs.raku.org/language/list), each assigning the current element to a variable in the loop's [scope](https://docs.raku.org/language/variables#Variable_declarators_and_scope) using the [pointy block](https://docs.raku.org/language/functions#Blocks_and_lambdas) syntax.
+- `my $timestamp = ~DateTime.now( formatter => sub ($_) { ... } ...)` uses the builtin [`DateTime`](https://docs.raku.org/routine/DateTime) method to create a timestamp, using the [`~`operator](https://docs.raku.org/routine/~) to coerce it into a string. The string is being formatted by the unamed [anonymous subroutine](https://docs.raku.org/language/functions#Defining/Creating/Using_functions) `sub ($_) { ... }` which uses the [topic variable `$_`](https://docs.raku.org/language/101-basics#Topic_variable) as argument on which the various methods of the the DateTime [class](https://docs.raku.org/language/classtut) are being called by just prepending a `.` For example, `.year` is just a short-cut for `$_.year`.
 
 ### [Agrammon::Email](../lib/Agrammon/Email.pm6)
 
@@ -634,7 +626,6 @@ with await Net::SMTP::Client::Async.connect(:host<mail.agrammon.ch>, :port(25), 
     }
 }
 ```
-
 
 ## Which Christmas?
 

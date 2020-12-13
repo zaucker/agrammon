@@ -1,23 +1,30 @@
 # Christmas Tale About a Shitty Raku Program
 
-Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://www.agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in Perl (called Perl 5 then). When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly. As the previous year had seen a real Christmas wonder, namely the release of Perl 6c, the elf suggested, that instead of bolting yet another feature onto the web application's Perl 5 backend, a rewrite in Perl 6 would be a bold but also appropriate move. The reason being that the application used a specially developed format for describing it's functionality by none-programmers. What better choice for rewriting the parser than Perl 6's grammars, the elf reasoned. Fittingly, the new AGRAMMON was going to be version 6.
+Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://www.agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in what then was called Perl 5. When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly.
 
-When Santa asked when the rewrite would be finished, the obivous answer was ["by Christmas"](https://perl6advent.wordpress.com/2015/12/). And as things went in Perl 6 land, by the time the rewrite is finally going into production, the backend is now implemented in Raku.
+As the previous year had seen a real Christmas wonder, namely the [release of Perl 6c](https://perl6advent.wordpress.com/2015/12/), the elf suggested, that instead of bolting yet another feature onto the web application's Perl backend, a rewrite in Perl 6 would be a bold but also appropriate move. The reason being that the application used a specially developed format for describing it's functionality by none-programmers. What better choice for rewriting the parser than Perl 6's grammars, the elf reasoned. Fittingly, the new AGRAMMON was going to be version 6.
+
+When Santa asked when the rewrite would be finished, the elf's obivous answer was "by Christmas". And as things went in Perl 6 land, by the time the rewrite is finally going into production, the backend is now implemented in Raku.
 
 ## AGRAMMON
 
-While most people nowadays know about the negative side-effects of agriculture on climate, a lesser known, but also significant environmental problem are ammonia (NH3) and nitrous oxide (NxOx) emissions. The source of these emissions are the excrements of farm animals, mainly from cows, pigs, and poultry. Both solid (manure) and liquid (slurry) excrements contain ammonia compounds such as urea. These compounds are decomposing either when the excrements are lying on the farm grounds, while being stored in manure heaps or slurry storage, and when brought out on the field as fertilizer. In addition to being an environmental pollutant, those emissions are also a big loss of nitrogen (N) from those natural fertilizers and either result in diminished productivity of farming or must be replaced by artificial fertilizers at additional costs to the farmers. 
+Most people nowadays know about the negative side-effects of agriculture on climate, namely emissions of methane (a strong greenhouse gas) and deforestation. A lesser known, but also significant environmental problem, are ammonia (NH3) and nitrous oxide (NxOx) emissions.
 
-In order to address these problems, the processes of ammonia volatilisation are being studied, optimizations for its reductions developed, and the effects measured where possible under controlled conditions. However, as those controlled conditions don't exist on a large scale, the effects of the reduction measures as well as the total amount of emissions can only be simulated by model calculations. AGRAMMON is a tool that facilitates such simulations on the scale of a single farm and can also used for calculations on regional scales by means of simulating "typical farm types" using average process types and cumulated numbers of animals, storage areas, and fertilizer application. The following picture shows the processes simulated in the model:
+The main source of these emissions are excrements of farm animals, mainly from cows, pigs, and poultry. Both solid (manure) and liquid (slurry) excrements contain ammonia compounds such as urea. These compounds are decomposing when the excrements are lying on the farm grounds, while being stored in manure heaps or slurry storage, and when brought out on the field as fertilizer.
+
+In addition to being an environmental pollutant, those emissions are also entail a big loss of nitrogen (N) from those natural fertilizers and either result in diminished productivity of farming or must be replaced by artificial fertilizers at additional costs to the farmers. In Switzerland alone about 40,000 tonnes of nitrogen are lost every year, amounting to about 30% of the N load of farmland manure.
+
+In order to address these problems, the processes of ammonia volatilisation are being studied, optimizations for its reductions developed, and the effects measured where possible under controlled conditions. However, as those controlled conditions don't exist on a large scale, the effects of the reduction measures as well as the total amount of emissions can only be simulated by model calculations. AGRAMMON is a tool that facilitates such simulations on the scale of a single farm. Those calculations can also be done on regional scales by means of simulating "typical farm types" using average process types and cumulated numbers of animals, storage areas, and fertilizer application. The following picture shows the processes simulated in the model:
 
 <p align="center"><img align="center" src="https://github.com/zaucker/agrammon/blob/Advent/Advent2020/N-model.jpg" /></p>
   
-
 By now it might be obvious to the reader that this article's title is not mainly about code quality.
 
 ## The Application
 
-AGRAMMON is a typical web application, with data stored in a PostgreSQL database, a web frontend implemented in JavaScript using the [Qooxdoo](https://qooxdoo.org) framework, and the Raku backend. The physical and chemical processes are not directly implemented in the backend, but as already mentioned in a none-programmer-friendly custom "language", describing (user) inputs, model parameters, calculations, and outputs (results). Each process is broken down into smaller sub-processes and each is described in its own file, including documentation and references to appropriate scientific sources. Here is a small example for such a file:
+AGRAMMON is a typical web application, with data stored in a PostgreSQL database, a web frontend implemented in JavaScript using the [Qooxdoo framework](https://qooxdoo.org) , and a Raku backend. The physical and chemical processes are not directly implemented in the backend, but as already mentioned in a none-programmer-friendly custom "language", describing (user) inputs, model parameters, calculations, and outputs (results).
+
+Each process is broken down into smaller sub-processes and each is described in its own file, including documentation and references to appropriate scientific sources. Here is a small example for such a file:
 
 ```
 *** general ***
@@ -98,9 +105,9 @@ therefore added to the Nsol fraction.
       number of animals.
 ```
 
-In the current version of the AGRAMMON model there are 133 such files with 31,014 lines. From those, the backend can generate
+In the current version of the AGRAMMON model there are 133 such model files with 31,014 lines. From those, the backend can generate
 
-* the PDF documentation of the model (allowing LaTeX formatting in the files)
+* the PDF documentation of the model (allowing [LaTeX](https://www.latex-project.org/) formatting in the files)
 * the actual model simulation using the user's input data
 * a description of the web GUI which can be rendered by the frontend
 
@@ -143,26 +150,34 @@ The refactored backend as of today consists of 59 `.pm6` [modules/packages](http
 ```
 Those modules can be found on the [Raku Modules Directory](https://modules.raku.org/). Note that [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx) was specifically implemented for this project.
 
-Speaking of the actual implementation, although our brave elf didn't have much experience with either grammars, parsers, or even Perl 6 / Raku, he was smart enough to engage a real [expert elf](https://www.edument.se/en/page/jonathan-worthington-eng) for that. This elf did most of the heavy lifting of the backend implementation and helped our elf with advice and code review for the parts he implemented himself. Please note that the goal of this rewrite was to leave most of the syntax of the model implementation and also the frontend as is, so the blame for all the sub-optimal design decisions are solely on our primary elf (as all the implementation details passing under the review radar).
+Speaking of the actual implementation, although our brave elf didn't have much experience with either grammars, parsers, or even Perl 6 / Raku, he was smart enough to engage a real [expert elf](https://www.edument.se/en/page/jonathan-worthington-eng) for that. This elf did most of the heavy lifting of the backend implementation and helped our elf with advice and code review for the parts he implemented himself.
+
+Please note that the goal of this rewrite was to leave most of the syntax of the model implementation and also the frontend as is, so the blame for all the sub-optimal design decisions are solely on our primary elf as well as the responsibility for imperfect implementation details passing under the review radar.
 
 ## Some Raku features used in AGRAMMON
 
-In this section you'll see a few Raku features used in AGRAMMON. This is not meant as a hardcore technical explanation for experts, but rather as a means to give a taste to people interested in Raku.
+In this section we'll present a few Raku features used in AGRAMMON. This is not meant as a hardcore technical explanation for experts, but rather as a means to give a taste to people interested in Raku.
 
 ### [bin/agrammon.pl6](../bin/agrammon.pl6)
+
+The actual AGRAMMON "executable" is just a three-liner (of which only two are Raku):
 
 ```
 #!/usr/bin/env raku
 use lib "lib"
 use Agrammon::UI::CommandLine;
 ```
-The actual AGRAMMON "executable" is just a three-liner (of which only two are Raku). This exploits the fact that Rakudo (the Raku implementation used here) has a pretty nice [pre-compilation](https://docs.raku.org/language/faq#index-entry-Precompile_(FAQ)) feature which is useful for minimizing (the still not neglegible) startup time after the first run of the program.
+
+This exploits the fact that Rakudo (the Raku implementation used here) has a pretty nice [pre-compilation](https://docs.raku.org/language/faq#index-entry-Precompile_(FAQ)) feature which is useful for minimizing (the still not neglegible) startup time after the first run of the program.
 
 ### [Agrammon::UI::CommandLine](../lib/Agrammon/UI/CommandLine.pm6)
+
+This module contains the main functions of the AGRAMMON application available from the command line.
 
 #### Usage
 
 Running `./bin/agrammon.pl6` gives the following output:
+
 ```console
 Usage:
   ./bin/agrammon.pl6 web <cfg-filename> <model-filename> [<technical-file>] -- Start the web interface
@@ -177,7 +192,9 @@ Usage:
 
     See https://www.agrammon.ch for more information about Agrammon.
 ```
+
 This usage message is created automatically from the implementation of the [`multi`](https://docs.raku.org/language/functions#Multi-dispatch) subroutine [`MAIN`](https://docs.raku.org/routine/MAIN) instances as shown for the first line:
+
 ```
 #| Start the web interface
 multi sub MAIN(
@@ -196,7 +213,14 @@ multi sub MAIN(
     }
 }
 ```
+
 Note that the parameter `$technical-file` is marked as optional by the trailing `?` and that the usage message thus also marks this parameter as optional by enclosing it in `[  ]`.
+
+The usage message also shows the command line calls for
+- running the model in batch mode from the command line (`run`),
+- showing the simulation flow by `dump`ing the model structur,
+- generation of the model documentation (`latex`),
+- and for creation of user accounts for the web application.
 
 #### sub web() 
 
@@ -235,9 +259,11 @@ sub web(Str $cfg-filename, Str $model-filename, Str $technical-file?) is export 
     return $http;
 }
 ```
-The [subroutine](https://docs.raku.org/language/functions) use a [signature](https://docs.raku.org/type/Signature) to describe it's parameters (all of them are of [type `Str`](https://docs.raku.org/type/Str) and the third parameter is again marked as optional by the trailing `?`.
+The [subroutine](https://docs.raku.org/language/functions) uses a [signature](https://docs.raku.org/type/Signature) to describe it's arguments (all of them are of [type `Str`](https://docs.raku.org/type/Str) and the third argument is again marked as optional by the trailing `?`.
 
 #### sub run()
+
+The AGRAMMON application can also be used directly from the command line by providing input data from a [CSV](https://tools.ietf.org/html/rfc4180] file. This mode is used from scientists to automate the running large amounts of simulations for regional and national projections. It is planned to make this mode available via a [REST](https://tools.ietf.org/html/rfc6690) API call in the future.
 
 ```
 sub run (IO::Path $path, IO::Path $input-path, $technical-file, $variants, $format, $language, $prints,
@@ -262,10 +288,10 @@ sub run (IO::Path $path, IO::Path $input-path, $technical-file, $variants, $form
         # ...
     }
 ```
+
 Here we use [`race`](https://docs.raku.org/routine/race), one of the various [concurrency features](https://docs.raku.org/language/concurrency) of Raku, to run the actual model simulation using multiple threads in parallel to speed-up execution.
 
 The [function's](https://docs.raku.org/language/functions) [signature](https://docs.raku.org/type/Signature) again specifies the types of some parameters. In addition to (too many) positional arguments, `:$all-filters`is a by default optional [named argument](https://docs.raku.org/language/functions#Arguments).
-
 
 ### [Agrammon::Web::Routes](../lib/Agrammon/Web/Routes.pm6)
 
@@ -663,7 +689,140 @@ with await Net::SMTP::Client::Async.connect(:host<mail.agrammon.ch>, :port(25), 
 ```
 The [`await`](https://docs.raku.org/type/Promise#sub_await) function is used to handle the asynchronous communication with the [SMPT](https://tools.ietf.org/html/rfc5321) server. The [`LEAVE`](https://docs.raku.org/language/phasers#index-entry-Phasers__LEAVE-LEAVE) is called upon exit from the `with await { ... }` block to close the connection to the server.
 
-## Which Christmas?
+### Parser and Compiler
+
+Finally, a few words about the parser and compiler used to process the AGRAMMON model files shown above. [`Agrammon::ModuleParser`](../lib/Agrammon/ModuleParser.pm6) is the top-level element for parsing the model files:
+
+```
+use v6;
+use Agrammon::CommonParser;
+
+grammar Agrammon::ModuleParser does Agrammon::CommonParser {
+    token TOP {
+        :my $*TAXONOMY = '';
+        :my $*CUR-SECTION = '';
+        <.blank-line>*
+        <section>+
+        [
+        || $
+        || <.panic('Confused')>
+        ]
+    }
+
+    proto token section { * }
+
+    token section:sym<general> {
+        <.section-heading('general')>
+        [
+        | <option=.single-line-option>
+        | <option=.multi-line-str-option('+')>
+        | <.blank-line>
+        ]*
+    }
+
+    token section:sym<external> {
+        <.section-heading('external')>
+        [
+        | <.blank-line>
+        | <external=.option-section>
+        ]*
+    }
+
+    token section:sym<input> {
+        <.section-heading('input')>
+        [
+        | <.blank-line>
+        | <input=.option-section>
+        ]*
+    }
+
+    token section:sym<technical> {
+        <.section-heading('technical')>
+        [
+        | <.blank-line>
+        | <technical=.option-section>
+        ]*
+    }
+
+    token section:sym<output> {
+        <.section-heading('output')>
+        [
+        | <.blank-line>
+        | <output=.option-section>
+        ]*
+    }
+
+    token section:sym<results> {
+        <.section-heading('results')>
+        [
+        | <.blank-line>
+        | <results=.option-section>
+        ]*
+    }
+
+    token section:sym<tests> {
+        <.section-heading('tests')>
+        [
+        | <.blank-line>
+        | <tests=.option-section>
+        ]*
+    }
+}
+```
+It handles parsing of the various sections of the model file sections, using various elements from module [`Agrammon::CommonParser`](../lib/Agrammon/CommonParser.pm6) such as
+```
+   token section-heading($title) {
+        \h* '***' \h* $title \h* '***' \h* \n
+        { $*CUR-SECTION = $title }
+    }
+
+    token option-section {
+        \h* '+' \h* <name> \h* \n
+        [
+        | <.blank-line>
+        | <option=.single-line-option>
+        | <option=.subsection-map>
+        | <option=.multi-line-str-option('++')>
+        ]*
+    }
+
+    token single-line-option {
+        \h* <key> \h* '=' \h*
+        $<value>=[[<!before \h*'#'>\N]*]
+        \h* ['#'\N*]?
+        [\n || $]
+    }
+    
+   token blank-line {
+        | \h* \n
+        | \h* '#' \N* \n
+        | \h+ $
+    }
+```
+
+Raku [grammars](https://docs.raku.org/type/Grammar) are basically build top-down from [regular expressions](https://docs.raku.org/language/regexes). Such grammars can be extended by means of [action classes](https://docs.raku.org/language/grammar_tutorial#Grammar_actions) that further process the [match objects](https://docs.raku.org/type/Match) generated while parsing the data fed to the grammar.
+
+Please consult [this tutorial](https://docs.raku.org/language/grammar_tutorial) or other resources to learn more about those concepts.
+
+If you want to know more about the (real-world) AGRAMMON parser/compiler you can have a look at the other parser elements in the [`Agrammon::Formula::Parser`](../lib/Agrammon/Formula/Parser.pm6), [`Agrammon::Formula::Builder`](../lib/Agrammon/Formula/Builder.pm6), [`Agrammon::ModuleBuilder`](../lib/Agrammon/ModuleBuilder.pm6), [`Agrammon::TechnicalParser`](../lib/Agrammon/TechnicalParser.pm6), [`Agrammon::TechnicalBuilder`](../lib/Agrammon/TechnicalBuilder.pm6), and [`Agrammon::`](../lib/Agrammon/LanguageParser.pm6) modules, the latter being a simple none-grammmar based element.
+
+The compiler finally is implemented in the modules [`Agrammon::Formula::Compiler`](../lib/Agrammon/Formula/Compiler.pm6) and  [`Agrammon::Formula::Builtins`](../lib/Agrammon/Formula/Builtins.pm6).
+
+Finally, as a recent addition, AGRAMMON also got a C-style preprocessor in [`Agrammon::Preprocessor`](../lib/Agrammon/Preprocessor.pm6) for conditionally including or excluding parts of the model using the following syntax:
+
+```
+?if FOO
+...
+?elsif BAR
+...
+?else
+...
+?endif
+```
+
+with optional `?elsif` and `?else` parts. The keywords can also be negated, such as `?if !FOO`. 
+
+## So, which Christmas?
 
 Well, as you can see from this [presentation](./swp2018.pdf) at the [Swiss Perl Workshop 2018](https://act.perl-workshop.ch/spw2018/), the original plan was not quite met, mostly due to another project being given higher priority (which was a very poor decision, but this is another long story).
 

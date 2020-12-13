@@ -445,7 +445,7 @@ to create a [LaTeX](https://www.latex-project.org/) file with a template like
 \end{tabular}
 \end{document}
 ```
-While this template might seem a bit cryptic if you are not familiar with LaTeX, the relevant parts are the HTML-like tags like `<.titles.report>` accessing a value of the hash data structured passed to `render-template`, `<@output> ... </@>` being an array in this data structure being iterated over, or the conditionals `<?.section> ... </?>` or `<!.section> ... </!>. For details please consult the documentation of the [... using `Cro::WebApp::Template`](https://github.com/croservices/cro-webapp) module.
+While this template might seem a bit cryptic if you are not familiar with LaTeX, the relevant parts are the HTML-like tags like `<.titles.report>` accessing a value of the hash data structured passed to `render-template`, `<@output> ... </@>` being an array in this data structure being iterated over, or the conditionals `<?.section> ... </?>` or `<!.section> ... </!>`. For details please consult the documentation of the [... using `Cro::WebApp::Template`](https://github.com/croservices/cro-webapp) module.
 
 The LaTeX file is then rendered into a PDF file with the external program [lualatex](`http://www.luatex.org/) and the built-in [`Proc::Async`](https://docs.raku.org/type/Proc::Async) class
 

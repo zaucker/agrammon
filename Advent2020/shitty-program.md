@@ -196,12 +196,14 @@ Usage:
 This usage message is created automatically from the implementation of the [`multi`](https://docs.raku.org/language/functions#Multi-dispatch) subroutine [`MAIN`](https://docs.raku.org/routine/MAIN) instances as shown for the first line:
 
 ```
+subset ExistingFile of Str where { .IO.e or note("No such file $_") && exit 1 }
+
 #| Start the web interface
 multi sub MAIN(
         'web',
         ExistingFile $cfg-filename,   #= configuration file
         ExistingFile $model-filename, #= top-level model file
-        Str $technical-file?          #= override model parameters from this file
+        ExistingFile $technical-file? #= override model parameters from this file
     ) is export {
     my $http = web($cfg-filename, $model-filename, $technical-file);
     react {
@@ -215,6 +217,8 @@ multi sub MAIN(
 ```
 
 Note that the parameter `$technical-file` is marked as optional by the trailing `?` and that the usage message thus also marks this parameter as optional by enclosing it in `[  ]`.
+
+The first line in the above code example defines a [`subset`](https://docs.raku.org/language/typesystem#index-entry-subset-subset) `ExistingFile` of the data [type](https://docs.raku.org/language/typesystem) `Str`, namely those strings that refer to a locally existing file. If called with a filename `foo.cfg` of a none-existing file, the program aborts with the message `No such file foo.cfg`.
 
 The usage message also shows the command line calls for
 * running the model in batch mode from the command line (`run`),

@@ -30,7 +30,12 @@ subset SortOrder of Str where { $_ ~~ /^ model|calculation $/ or note("ERROR: --
 subset OutputFormat of Str where { $_ ~~ /^ csv|json|text $/ or note("ERROR: --format=[csv|json|text]") && exit 1 };
 
 #| Start the web interface
-multi sub MAIN('web', ExistingFile $cfg-filename, ExistingFile $model-filename, Str $technical-file?) is export {
+multi sub MAIN(
+        'web',
+        ExistingFile $cfg-filename,   #= configuration file
+        ExistingFile $model-filename, #= top-level model file
+        ExistingFile $technical-file?          #= optionally override model parameters from this file
+    ) is export {
     my $http = web($cfg-filename, $model-filename, $technical-file);
     react {
         whenever signal(SIGINT) {

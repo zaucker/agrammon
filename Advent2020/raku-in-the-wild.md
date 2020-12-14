@@ -18,8 +18,6 @@ In order to address these problems, the processes of ammonia volatilisation are 
 
 <p align="center"><img align="center" src="https://github.com/zaucker/agrammon/blob/Advent/Advent2020/N-model.jpg" /></p>
   
-By now it might be obvious to the reader that this article's title is not mainly about code quality.
-
 ## The Application
 
 AGRAMMON is a typical web application, with data stored in a PostgreSQL database, a web frontend implemented in JavaScript using the [Qooxdoo framework](https://qooxdoo.org) , and a Raku backend. The physical and chemical processes are not directly implemented in the backend, but as already mentioned in a none-programmer-friendly custom "language", describing (user) inputs, model parameters, calculations, and outputs (results).

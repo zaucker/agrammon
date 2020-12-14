@@ -191,7 +191,7 @@ Usage:
     See https://www.agrammon.ch for more information about Agrammon.
 ```
 
-This usage message is created automatically from the implementation of the [`multi`](https://docs.raku.org/language/functions#Multi-dispatch) subroutine [`MAIN`](https://docs.raku.org/routine/MAIN) instances as shown for the first line:
+This usage message is created automagically from the implementation of the [`multi`](https://docs.raku.org/language/functions#Multi-dispatch) subroutine [`MAIN`](https://docs.raku.org/routine/MAIN) instances as shown for the first line:
 
 ```
 subset ExistingFile of Str where { .IO.e or note("No such file $_") && exit 1 }
@@ -222,7 +222,8 @@ The usage message also shows the command line calls for
 * running the model in batch mode from the command line (`run`),
 * showing the simulation flow by `dump`ing the model structur,
 * generation of the model documentation (`latex`),
-* and for creation of user accounts for the web application.
+* and for creation of user accounts for the web application (`create-user`),
+* and at the end lists those parameters that have comments "attached" in the source of the `sub MAIN` above shown above.
 
 #### sub web() 
 

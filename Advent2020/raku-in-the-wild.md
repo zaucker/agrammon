@@ -411,7 +411,7 @@ paths:
                             schema:
                                 $ref: "#/components/schemas/Error"
 ```
-handled by `Cro::OpenAPI::RoutesFromDefinition`.
+handled by [`Cro::OpenAPI::RoutesFromDefinition`](https://modules.raku.org/dist/Cro::OpenAPI::RoutesFromDefinition).
 
 ### [Agrammon::OutputFormatter::PDF](../lib/Agrammon/OutputFormatter/PDF.pm6)
 

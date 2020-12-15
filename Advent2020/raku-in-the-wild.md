@@ -840,4 +840,6 @@ Is Raku ready for use in production? Definitely yes!
 
 While having already delivered a few smaller customer projects implemented in Raku, AGRAMMON 6 will be [Oetiker+Partner AG's](https://www.oetiker.ch) first publically accessible web application with a Raku backend and we hope for many more to come. It was a great pleasure to work with our [colleague](https://www.edument.se/en/page/jonathan-worthington-eng) on this project and we also want to thank our [customer and partners](https://www.agrammon.ch/en/development-of-the-model/) for this opportunity.
 
-And the most important outcome: Santa now has another elf at least partially able to work on future Raku projects.
+And the most important outcome: Santa now has another elf able to work on future Raku projects. Raku is a very rich language and have no doubt, ["There's more than one way to do it"](https://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it), for any defintion of "it". While it is not necessary to learn everything at once, it is certainly helpful to have some expert knowledge near by to ask questions and to learn about the more elegant and often very concise options available. The Raku community is very friendly and welcoming to newcomers (and even to the occasional trolls hanging around).
+
+Raku itself tries very hard to help the programmer to not shoot himself into the foot. Error messages are often very helpful and so are the problem reports or suggestions the Comma IDE has to offer (and they become more and more with every release). So, go ahead and take a dive!

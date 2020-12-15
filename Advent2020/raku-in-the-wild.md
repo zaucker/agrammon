@@ -156,7 +156,9 @@ Please note that the goal of this rewrite was to leave most of the syntax of the
 
 In this section we'll present a few Raku features used in AGRAMMON. This is not meant as a hardcore technical explanation for experts, but rather as a means to give a taste to people interested in Raku.
 
-### [bin/agrammon.pl6](../bin/agrammon.pl6)
+Most code examples are taken straight from the current implementation, sometimes the examples are slightly shortened by leaving of code that is irrelevant to the concept presented. There are many links to the original modules on GitHub. As AGRAMMON is still being worked on, those links might point at a more recent version of the module.
+
+### [bin/agrammon.pl6](https://github.com/oposs/agrammon/blob/master/bin/agrammon.pl6)
 
 The actual AGRAMMON "executable" is just a three-liner (of which only two are Raku):
 
@@ -168,7 +170,7 @@ use Agrammon::UI::CommandLine;
 
 This exploits the fact that Rakudo (the Raku implementation used here) has a pretty nice [pre-compilation](https://docs.raku.org/language/faq#index-entry-Precompile_(FAQ)) feature which is useful for minimizing (the still not neglegible) startup time after the first run of the program.
 
-### [Agrammon::UI::CommandLine](../lib/Agrammon/UI/CommandLine.pm6)
+### [Agrammon::UI::CommandLine](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/UI/CommandLine.pm6)
 
 This module contains the main functions of the AGRAMMON application available from the command line.
 
@@ -296,7 +298,7 @@ Here we use [`race`](https://docs.raku.org/routine/race), one of the various [co
 
 The [function's](https://docs.raku.org/language/functions) [signature](https://docs.raku.org/type/Signature) again specifies the types of some parameters. In addition to (too many) positional arguments, `:$all-filters`is a by default optional [named argument](https://docs.raku.org/language/functions#Arguments).
 
-### [Agrammon::Web::Routes](../lib/Agrammon/Web/Routes.pm6)
+### [Agrammon::Web::Routes](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/Web/Routes.pm6)
 
 While already having shown the start-up of the web service above, here we see an example of setting up the routes of AGRAMMON's REST interface using [`Cro::HTTP::Router`](https://cro.services/docs/reference/cro-http-router) from [Edument's](https://www.edument.se/en) [Cro Services](https://cro.services/):
 ```
@@ -413,7 +415,7 @@ paths:
 ```
 handled by [`Cro::OpenAPI::RoutesFromDefinition`](https://modules.raku.org/dist/Cro::OpenAPI::RoutesFromDefinition).
 
-### [Agrammon::OutputFormatter::PDF](../lib/Agrammon/OutputFormatter/PDF.pm6)
+### [Agrammon::OutputFormatter::PDF](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/OutputFormatter/PDF.pm6)
 
 For documenting AGRAMMON calculations, PDF reports of the inputs to the model and the simulation results can be created by first creating a LaTeX file using the [`Cro::WebApp::Template`](https://github.com/croservices/cro-webapp) module. While tailored towards generation of HTML pages, it worked quite well for our purpose. The module does escape its input data appropriate for HTML, however, a simple-minded escaping of characters with special meaning in LaTeX was implemented outside the module:
 
@@ -566,7 +568,7 @@ A [`react`](https://docs.raku.org/language/concurrency#index-entry-react) block 
 
 [Typed exceptions](https://docs.raku.org/language/exceptions#Typed_exceptions) are used to handle errors occuring in the external process. 
 
-### [Agrammon::OutputFormatter::Excel](../lib/Agrammon/OutputFormatter/Excel.pm6)
+### [Agrammon::OutputFormatter::Excel](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/OutputFormatter/Excel.pm6)
 
 Here we create Excel exports of the simulation results and the user inputs, using [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx). This module allows to read and write [XLSX](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-xlsx/) files from Raku. The current functionality is by no means complete, but implements what was needed for AGRAMMON. Please feel free to provide pull requests or funds for the implementation of additional features.
 ```
@@ -622,7 +624,7 @@ This example shows a variety of [Raku basics](https://docs.raku.org/language/101
 * `for ($output-sheet, $input-sheet) -> $sheet { ... }` and `for @records -> %rec { ... }` are [loops](https://docs.raku.org/language/101-basics#for_and_blocks) over a [lists](https://docs.raku.org/language/list), each assigning the current element to a variable in the loop's [scope](https://docs.raku.org/language/variables#Variable_declarators_and_scope) using the [pointy block](https://docs.raku.org/language/functions#Blocks_and_lambdas) syntax.
 * `my $timestamp = ~DateTime.now( formatter => sub ($_) { ... } ...)` uses the builtin [`DateTime`](https://docs.raku.org/routine/DateTime) method to create a timestamp, using the [`~`operator](https://docs.raku.org/routine/~) to coerce it into a string. The string is being formatted by the unamed [anonymous subroutine](https://docs.raku.org/language/functions#Defining/Creating/Using_functions) `sub ($_) { ... }` which uses the [topic variable `$_`](https://docs.raku.org/language/101-basics#Topic_variable) as argument on which the various methods of the the DateTime [class](https://docs.raku.org/language/classtut) are being called by just prepending a `.` For example, `.year` is just a short-cut for `$_.year`.
 
-### [Agrammon::Email](../lib/Agrammon/Email.pm6)
+### [Agrammon::Email](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/Email.pm6)
 
 As mentioned above PDF reports of simulations can be mailed to certain AGRAMMON users directly from the web application. First, a [multi-part MIME](https://tools.ietf.org/html/rfc1521) message is created using the [`Email::MIME`](https://modules.raku.org/dist/Email::MIME) module.
 ```
@@ -695,7 +697,7 @@ Apart from using the appropriate mathematical symbol, the existence of such powe
 
 ### Parser and Compiler
 
-Finally, a few words about the parser and compiler used to process the AGRAMMON model files shown above. [`Agrammon::ModuleParser`](../lib/Agrammon/ModuleParser.pm6) is the top-level element for parsing the model files:
+Finally, a few words about the parser and compiler used to process the AGRAMMON model files shown above. [`Agrammon::ModuleParser`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/ModuleParser.pm6) is the top-level element for parsing the model files:
 ```
 use v6;
 use Agrammon::CommonParser;
@@ -772,7 +774,7 @@ grammar Agrammon::ModuleParser does Agrammon::CommonParser {
     }
 }
 ```
-It handles parsing of the various sections of the model file sections, using various elements from module [`Agrammon::CommonParser`](../lib/Agrammon/CommonParser.pm6) such as
+It handles parsing of the various sections of the model file sections, using various elements from module [`Agrammon::CommonParser`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/CommonParser.pm6) such as
 ```
    token section-heading($title) {
         \h* '***' \h* $title \h* '***' \h* \n
@@ -806,11 +808,11 @@ Raku [grammars](https://docs.raku.org/type/Grammar) are basically build top-down
 
 Please consult [this tutorial](https://docs.raku.org/language/grammar_tutorial) or other resources to learn more about those concepts.
 
-If you want to know more about the (real-world) AGRAMMON parser/compiler you can have a look at the other parser elements in the [`Agrammon::Formula::Parser`](../lib/Agrammon/Formula/Parser.pm6), [`Agrammon::Formula::Builder`](../lib/Agrammon/Formula/Builder.pm6), [`Agrammon::ModuleBuilder`](../lib/Agrammon/ModuleBuilder.pm6), [`Agrammon::TechnicalParser`](../lib/Agrammon/TechnicalParser.pm6), [`Agrammon::TechnicalBuilder`](../lib/Agrammon/TechnicalBuilder.pm6), and [`Agrammon::LanguageParser`](../lib/Agrammon/LanguageParser.pm6) modules, the latter being a simple none-grammmar based function.
+If you want to know more about the (real-world) AGRAMMON parser/compiler you can have a look at the other parser elements in the [`Agrammon::Formula::Parser`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/Formula/Parser.pm6), [`Agrammon::Formula::Builder`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/Formula/Builder.pm6), [`Agrammon::ModuleBuilder`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/ModuleBuilder.pm6), [`Agrammon::TechnicalParser`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/TechnicalParser.pm6), [`Agrammon::TechnicalBuilder`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/TechnicalBuilder.pm6), and [`Agrammon::LanguageParser`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/LanguageParser.pm6) modules, the latter being a simple none-grammmar based function.
 
-The compiler consists of the modules [`Agrammon::Formula::Compiler`](../lib/Agrammon/Formula/Compiler.pm6) and  [`Agrammon::Formula::Builtins`](../lib/Agrammon/Formula/Builtins.pm6).
+The compiler consists of the modules [`Agrammon::Formula::Compiler`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/Formula/Compiler.pm6) and  [`Agrammon::Formula::Builtins`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/Formula/Builtins.pm6).
 
-Finally, as a recent addition, AGRAMMON also got a C-style preprocessor in [`Agrammon::Preprocessor`](../lib/Agrammon/Preprocessor.pm6) for conditionally including or excluding parts of the model using the following syntax:
+Finally, as a recent addition, AGRAMMON also got a C-style preprocessor in [`Agrammon::Preprocessor`](https://github.com/oposs/agrammon/blob/master/lib/Agrammon/Preprocessor.pm6) for conditionally including or excluding parts of the model using the following syntax:
 ```
 ?if FOO
 ...

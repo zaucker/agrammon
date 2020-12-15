@@ -1,4 +1,4 @@
-# A Christmas Tale - Raku in the Wild
+# A Raku in the Wild
 
 Quite a while ago, Santa got a feature request for a web application called [AGRAMMON](https://www.agrammon.ch/en), developed by the elves of one of his sub-contractors [Oetiker+Partner AG](https://www.oetiker.ch) in what then was called Perl 5. When Santa asked the [elf responsible](https://www.oetiker.ch/en/company/team/fz) for this application to get to work, the elf suggested that some refactoring was in order, as the application dated back almost 10 years and had been extended regularly.
 

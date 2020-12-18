@@ -146,7 +146,7 @@ The refactored backend as of today consists of 59 `.pm6` [modules/packages](http
     "Test::NoTabs"
   ],
 ```
-Those modules can be found on the [Raku Modules Directory](https://modules.raku.org/). Note that [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx) was specifically implemented for this project.
+Those modules can be found on the [Raku Modules Directory](https://modules.raku.org/). Note that [`Spreadsheet::XLSX`](https://github.com/jnthn/spreadsheet-xlsx) was specifically implemented for this project. As a side-effect, just yesterday our expert elf (see below) submitted a [pull request](https://github.com/libxml-raku/LibXML-raku/pull/49) for [LibXML](https://github.com/libxml-raku/LibXML-raku) used in Spreadsheet::XLSX leading to a factor 2 performance improvement.
 
 Speaking of the actual implementation, although our brave elf didn't have much experience with either grammars, parsers, or even Perl 6 / Raku, he was smart enough to engage a real [expert elf](https://www.edument.se/en/page/jonathan-worthington-eng) for that. This elf did most of the heavy lifting of the backend implementation and helped our elf with advice and code review for the parts he implemented himself.
 

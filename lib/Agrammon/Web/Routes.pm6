@@ -308,7 +308,7 @@ sub api-routes (Str $schema, $ws) {
                 response.append-header(
                     'Content-disposition',
                     # prevent header injection
-                    "attachment; filename=%params<datasetName>.subst(/<-[\w_.-]>/, '', :g).xlsx"
+                    "attachment; filename=%params<datasetName>.subst(/\s+/, '_', :g).subst(/<-[\w_.-]>/, '', :g).xlsx"
                 );
                 content 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                     $ws.get-excel-export($user, %params).to-blob;
@@ -326,7 +326,7 @@ sub api-routes (Str $schema, $ws) {
                 response.append-header(
                     'Content-disposition',
                     # prevent header injection
-                    "attachment; filename=%params<datasetName>.subst(/<-[\w_.-]>/, '', :g).pdf"
+                    "attachment; filename=%params<datasetName>.subst(/\s+/, '_', :g).subst(/<-[\w_.-]>/, '', :g).pdf"
                     );
                 content 'application/pdf',
                         $ws.get-pdf-export($user, %params);
@@ -434,7 +434,7 @@ sub dataset-routes(Agrammon::Web::Service $ws) {
             }
         }
 
-        # TODO: implement/test submit_dataset()
+        # TODO: test
         post -> LoggedIn $user, 'submit_dataset' {
             request-body -> %params {
                 my $data = $ws.submit-dataset($user, %params);

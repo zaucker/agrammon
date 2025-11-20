@@ -323,7 +323,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The N excretion entered for horses and other equides differs from the standard by more than 30%!",
             de => "Die eingegebene N-Ausscheidung für Pferde und andere Equiden weicht um mehr als 30% vom Standard ab!",
             fr => "Les excrétions azotées saisies Chevaux et autres équidés s'écartent de plus de 30 % du standard!",
-            it => "TODO",
+            it => "L'escrezione di N inserita per i cavalli e altri equidi si discosta di oltre il 30% dallo standard!",
         });
     }
     return $exc;
@@ -362,7 +362,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The TAN fraction of N excretion entered for horses and other equids differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für Pferde und andere Equiden weicht um mehr als 20% vom Standard ab!",
             fr => "La proportion du TAN des excrétions azotées saisies pour les chevaux et autres équidés s'écartent de plus de 20 % du standard!",
-            it => "TODO",
+            it => "La quota TAN dell'escrezione di N inserita per i cavalli e altri equidi si discosta di oltre il 20% dallo standard!",
         });
       }
       return $tan * Out(n_excretion);

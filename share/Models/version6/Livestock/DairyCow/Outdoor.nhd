@@ -354,11 +354,11 @@ taxonomy = Livestock::DairyCow::Outdoor
       if ( In(free_correction_factor) != 0 ) {
         writeLog({
           en => "You have entered an additional emission mitigation measure for a dairy cows exercise yard of " 
-                . In(free_correction_factor) . "\%!\n", 
-          de => "Sie haben eine zusätzliche emissionsmindernde Massnahme für einen Laufhof der Milchkühe von " 
-                . In(free_correction_factor) . "\% eingegeben!\n", 
+                . In(free_correction_factor) . "\%!\n",
+          de => "Sie haben eine zusätzliche emissionsmindernde Massnahme für einen Laufhof der Milchkühe von "
+                . In(free_correction_factor) . "\% eingegeben!\n",
           fr => "Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'un parcours extérieur pour vâches laitières de " . In(free_correction_factor) . "\% !\n",
-          it => "TODO",
+          it => "Ha introdotto una misura supplementare di riduzione delle emissioni per un'area esterna delle vacche da latte del " . In(free_correction_factor) . "\%!\n",
         });
         return 1 - In(free_correction_factor) / 100;     
       } else {
@@ -395,7 +395,7 @@ taxonomy = Livestock::DairyCow::Outdoor
         en => "The number of grazing days is not more than 270 days in most cases.",
         de => "Die Weidedauer beträgt in der Regel nicht mehr als 270 Tage.",
         fr => "De manière générale, la durée de pâturage ne dépasse pas 270 jours.",
-        it => "TODO",
+        it => "Di norma la durata del pascolo non supera i 270 giorni.",
       });
     } 
     In(grazing_days);

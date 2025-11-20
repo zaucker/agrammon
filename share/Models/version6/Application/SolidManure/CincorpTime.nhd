@@ -343,7 +343,7 @@ taxonomy = Application::SolidManure::CincorpTime
             en => "Please correct accordingly: the categories of solid manure incorporated do not add up to 100\%!",
             de => "Bitte korrigieren: die Summe der Kategorien Einarbeitung von Mist ist nicht gleich 100\%!",
             fr => "Veuillez corriger : la somme des catégories «Part de fumier incorporé» n'est pas égale à 100\% !",
-            it => "TODO",
+            it => "Si prega di correggere: la somma delle categorie di incorporazione del letame non è uguale al 100\%!",
         });
    	return  0;
   }

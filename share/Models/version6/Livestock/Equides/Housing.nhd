@@ -100,7 +100,7 @@ taxonomy = Livestock::Equides::Housing
             en => "NH3 emission factor for equides housing systems is greater than (thus will be limited to) 1.",
             de => "NH3 emission factor for equides housing systems is greater than (thus will be limited to) 1.",
             fr => "NH3 emission factor for equides housing systems is greater than (thus will be limited to) 1.",
-            it => "TODO",
+            it => "Il fattore di emissione NH3 per i sistemi di stabulazione per equidi è maggiore di 1 (quindi sarà limitato a 1).",
         });
         $c_housing = 1;
     }

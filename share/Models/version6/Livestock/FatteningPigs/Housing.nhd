@@ -83,7 +83,7 @@ taxonomy = Livestock::FatteningPigs::Housing
             en => "NH3 emission factor for indoor part before air scrubber removal of other pig housing systems is greater than (thus will be limited to) 1.",
             de => "NH3 emission factor for indoor part before air scrubber removal of other pig housing systems is greater than (thus will be limited to) 1.",
             fr => "NH3 emission factor for indoor part before air scrubber removal of other pig housing systems is greater than (thus will be limited to) 1.",
-            it => "TODO",
+            it => "Il fattore di emissione NH3 per la parte interna prima della rimozione del depuratore d'aria dei sistemi di stabulazione per altri suini è maggiore di 1 (quindi sarà limitato a 1).",
         });
         $ef = 1;
     }
@@ -120,7 +120,7 @@ taxonomy = Livestock::FatteningPigs::Housing
             en => "NH3 emission factor for outdoor part of fattening pig housing systems is greater than (thus will be limited to) 1.",
             de => "NH3 emission factor for outdoor part of fattening pig housing systems is greater than (thus will be limited to) 1.",
             fr => "NH3 emission factor for outdoor part of fattening pig housing systems is greater than (thus will be limited to) 1.",
-            it => "TODO",
+            it => "Il fattore di emissione NH3 per la parte esterna dei sistemi di stabulazione per suini da ingrasso è maggiore di 1 (quindi sarà limitato a 1).",
         });
         $ef = 1;
     }

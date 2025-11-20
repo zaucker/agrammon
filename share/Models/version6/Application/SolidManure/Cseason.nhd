@@ -152,7 +152,7 @@ Model calculation according to the model of Katz (Menzi et al. 1997b) with meteo
             en => "Please correct accordingly: the categories of seasonal solid manure incorporated do not add up to 100\%!\n",
             de => "Bitte korrigieren: die Summe der Kategorien der saisonalen Einarbeitung von Mist ist nicht gleich 100\%!\n",
             fr => "Veuillez corriger : la somme des catégories «Part de fumier incorporé» n'est pas égale à 100% !",
-            it => "TODO",
+            it => "Si prega di correggere: la somma delle categorie di incorporazione stagionale del letame non è uguale al 100\%!\n",
 	});
     	(1 + ( Out(appl_summer) * Tech(c_summer) +
         	Out(appl_autumn_winter_spring) * Tech(c_autumn_winter_spring)

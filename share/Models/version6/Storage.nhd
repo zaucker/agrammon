@@ -284,7 +284,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
             en => "No storage for slurry defined although slurry is produced!\n",
             de => "Es ist kein Güllelager eingegeben, obwohl Gülle anfällt!\n",
             fr => "Aucun stock de lisier n'est mentionné, alors qu'il y a production de lisier!\n",
-            it => "TODO",
+            it => "Nessun deposito di liquami è stato definito anche se viene prodotto del liquame!\n",
         });  
       }
       return 0;
@@ -365,8 +365,8 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
             en => "The size of the slurry store induces an NH3 loss which is larger than the TAN flow into the store. NH3 loss from storage liquid is corrected accordingly!\n",
             de => "Die Grösse des Güllelagers hat zur Folge, dass die NH3 Verluste grösser sind als der TAN Fluss ins Lager. Die NH3 Verluste von Hofdüngerlagerung flüssig werden entsprechend korrigiert!\n",
             fr => "La dimension de la fosse à lisier induit une perte de NH3 plus élevée que le flux de TAN dans la fosse. La perte de NH3 issue du stockage des engrais de ferme liquide sera ainsi corrigée!\n",
-            it => "TODO",
-        });  
+            it => "La dimensione del deposito di liquami induce una perdita di NH3 maggiore del flusso di TAN nel deposito. La perdita di NH3 dallo stoccaggio di liquame viene corretta di conseguenza!\n",
+        });
         Out(tan_available_nh3_nstorage_liquid_pigs);         
       }
       default {
@@ -418,8 +418,8 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
             en => "The size of the slurry store induces an NH3 loss which is larger than the TAN flow into the store. NH3 loss from storage liquid is corrected accordingly!\n",
             de => "Die Grösse des Güllelagers hat zur Folge, dass die NH3 Verluste grösser sind als der TAN Fluss ins Lager. Die NH3 Verluste von Hofdüngerlagerung flüssig werden entsprechend korrigiert!\n",
             fr => "La dimension de la fosse à lisier induit une perte de NH3 plus élevée que le flux de TAN dans la fosse. La perte de NH3 issue du stockage des engrais de ferme liquide sera ainsi corrigée!\n",
-            it => "TODO",
-        });  
+            it => "La dimensione del deposito di liquami induce una perdita di NH3 maggiore del flusso di TAN nel deposito. La perdita di NH3 dallo stoccaggio di liquame viene corretta di conseguenza!\n",
+        });
         Out(tan_available_nh3_nstorage_liquid_cattle);         
       }
       default {

@@ -105,10 +105,10 @@ Selects the free correction factor for housing emission for dairy cows.
       writeLog({
         en => "You have entered an additional emission mitigation measure for a dairy cows housing of"
               . In(free_correction_factor) . "%\!\n" ,
-        de => "Sie haben eine zusätzliche emissionsmindernde Massnahme für einen Stall der Milchkühe von " 
+        de => "Sie haben eine zusätzliche emissionsmindernde Massnahme für einen Stall der Milchkühe von "
               . In(free_correction_factor) . "\% eingegeben!\n" ,
         fr => "Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'une stabulation pour vâches laitières de " . In(free_correction_factor) . "\% !\n",
-        it => "TODO",
+        it => "Ha introdotto una misura supplementare di riduzione delle emissioni per una stalla della categoria vacche da latte del " . In(free_correction_factor) . "\%!\n",
       });
       return 1 - In(free_correction_factor) / 100;  
     } 

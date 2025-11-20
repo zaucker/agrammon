@@ -234,8 +234,8 @@ taxonomy = Application::Slurry::Ctech
 	writeLog({en => "Please correct accordingly: the categories of slurry application do not add up to 100\%!\n",
 		  de => "Bitte korrigieren: die Summe der Kategorien Gülleausbringung ist nicht gleich 100\%!\n",
 		  fr => "Veuillez corriger : la somme des catégories «Epandage du lisier» n'est pas égale à 100% !\%!\n",
-		  it => "TODO",
-      # Warning + Test!
+		  it => "Si prega di correggere: la somma delle categorie di applicazione del liquame non è uguale al 100\%!\n",
+      }); # Warning + Test!
     }
     return $apptech_sum;
 

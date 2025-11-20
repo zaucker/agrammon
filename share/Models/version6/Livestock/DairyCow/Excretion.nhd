@@ -306,7 +306,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The N excretion entered for dairy cows differs from the standard by more than 30%!",
             de => "Die eingegebene N-Ausscheidung für Milchkühe weicht um mehr als 30% vom Standard ab!",
             fr => "Les excrétions azotées saisies pour les vâches laitières s'écartent de plus de 30 % du standard!",
-            it => "TODO",
+            it => "L'escrezione di N inserita per le vacche da latte si discosta di oltre il 30% dallo standard!",
         });
       }
       In(inp_n_excretion);
@@ -352,7 +352,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The TAN fraction of N excretion entered for diary cows differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für Milchkühe weicht um mehr als 20% vom Standard ab!",
             fr => "La proportion du TAN des excrétions azotées saisies pour les vâches laitières s'écartent de plus de 20 % du standard!",
-            it => "TODO",
+            it => "La quota TAN dell'escrezione di N inserita per le vacche da latte si discosta di oltre il 20% dallo standard!",
           });
         }
         return $tan;
@@ -421,7 +421,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
         en => "The number of available animal places must be equal or higher than the number of animals.",
         de => "Anzahl Tierplätze muss grösser oder gleich der Anzahl der Tiere sein.",
         fr => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux.",
-        it => "TODO",
+        it => "Il numero di posti per animali nella stalla deve corrispondere almeno al numero di animali.",
       });
       return "barn dimensioning too small";
     } 

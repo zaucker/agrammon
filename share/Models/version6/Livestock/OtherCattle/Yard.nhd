@@ -143,7 +143,7 @@ taxonomy = Livestock::OtherCattle::Yard
         en => "The category \"roughage is exclusively supplied in the exercise yard\" is not compatible with the number of grazing days entered!\n",
         de => "Verabreichung von Grundfutter ausschliesslich auf dem Laufhof ist nicht möglich mit den eingegebenen Weidetagen!\n",
         fr => "La distribution de fourrage exclusivement dans le parcours extérieur pour les vâches laitières n'est pas possible pendant les jours de pâturage !\n",
-        it => "TODO",
+        it => "La distribuzione di foraggio grezzo esclusivamente nell'area di esercizio non è compatibile con i giorni di pascolo inseriti!\n",
       }); 
       return Tech(share_available_roughage_is_partly_supplied_in_the_exercise_yard);
     } else {

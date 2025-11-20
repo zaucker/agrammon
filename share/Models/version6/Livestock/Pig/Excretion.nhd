@@ -761,7 +761,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
           en => Out(animalcategory) . ": The entries for the contents of energy and crude protein of the ration result in a N excretion below the minimum for pigs.\nThe excretion was set to " . $minimal ." kg N per animal!",
           de => Out(animalcategory) . ": Der gewählte Energie- und Rohproteingehalt der Ration bewirken eine N Ausscheidung unterhalb des Minimums für Schweine!\nDie Ausscheidung wurde auf ". $minimal ."  kg N pro Tier gesetzt!",
           fr => Out(animalcategory) . ": La teneur de la ration en énergie et en matière azotée engendrent une excrétion de N inférieure au minimum pour les porcs!\nLes excrétions azotées ont été fixées à". $minimal ."  kg N par animal!",
-          it => Out(animalcategory) . "TODO",
+          it => Out(animalcategory) . ": Il contenuto selezionato di energia e proteine grezze della razione causano una escrezione di N al di sotto del minimo per i suini!\nL'escrezione è stata impostata su " . $minimal . " kg N per animale!",
         });
         return $minimal;
       } else {
@@ -773,7 +773,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
           en => Out(animalcategory) . ": The entry for N excretion is below the minimum for pigs!",
           de => Out(animalcategory) . ": Die gewählte N Ausscheidung liegt unterhalb des Minimums für Schweine!",
           fr => Out(animalcategory) . ": Les excrétions azotées sont inférieures au minimum pour les porcs!",
-          it => Out(animalcategory) . "TODO",
+          it => Out(animalcategory) . ": L'escrezione di N selezionata è al di sotto del minimo per i suini!",
         });
       }
       if ( In(inp_n_excretion) < 0.7 * $stdN or
@@ -782,7 +782,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
           en => Out(animalcategory) . ": The N excretion entered for pigs differs from the standard by more than 30%!",
           de => Out(animalcategory) . ": Die eingegebene N-Ausscheidung für Zuchtschweine weicht um mehr als 30% vom Standard ab!",
           fr => Out(animalcategory) . ": Les excrétions azotées saisies pour les porcs s'écartent de plus de 30% du standard!",
-          it => Out(animalcategory) . "TODO",
+          it => Out(animalcategory) . ": L'escrezione di N inserita per i suini si discosta di oltre il 30% dallo standard!",
         });
       }
       return In(inp_n_excretion);
@@ -822,7 +822,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The TAN fraction of N excretion entered for pigs differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für Schweine weicht um mehr als 20% vom Standard ab!",
             fr => "La proportion du TAN des excrétions azotées saisies pour les porcs s'écartent de plus de 20 % du standard!",
-            it => "TODO",
+            it => "La quota TAN dell'escrezione di N inserita per i suini si discosta di oltre il 20% dallo standard!",
           });
         }
         return $tan * Out(n_excretion);
@@ -876,7 +876,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
         en => "The number of available animal places must be equal or higher than the number of animals.",
         de => "Anzahl Tierplätze muss grösser oder gleich der Anzahl der Tiere sein.",
         fr => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux.",
-        it => "TODO",
+        it => "Il numero di posti per animali nella stalla deve corrispondere almeno al numero di animali.",
       });
       return "barn dimensioning too small";
     }

@@ -12,7 +12,7 @@
         "email": "fritz.zaucker@oetiker.ch"
       }
     ],
-    "version": "6.0.0-rc1"
+    "version": "6.x"
   },
   "provides": {
     "namespace": "agrammon",

@@ -29,12 +29,12 @@ taxonomy = Livestock::DairyCow::Excretion::CConcentrates
     en = Amount of concentrates per animal and per day in summer
     de = Durchschnittliche Kraftfuttermenge pro Kuh und Tag im Sommer
     fr = Quantité moyenne de concentrés par vache et par jour en été
-    it = Quantité moyenne de concentrés par vache et par jour en été
+    it = Quantità media di mangime concentrato per vacca al giorno in estate
   ++units 
     en = kg/day
     de = kg/Tag
     fr = kg/jour
-    it = kg/jour
+    it = kg/giorno
   ++description
      Amount of concentrates per animal per day in summer. 
   ++help
@@ -55,12 +55,12 @@ taxonomy = Livestock::DairyCow::Excretion::CConcentrates
     en = Amount of concentrates per animal and per day in winter
     de = Durchschnittliche Kraftfuttermenge pro Kuh und Tag im Winter
     fr = Quantité moyenne de concentrés par vache et par jour en hiver
-    it = Quantité moyenne de concentrés par vache et par jour en hiver
+    it = Quantità media di mangime concentrato per vacca al giorno in inverno
   ++units 
     en = kg/day
     de = kg/Tag
     fr = kg/jour
-    it = kg/jour
+    it = kg/giorno
   ++description
     Amount of concentrates per animal and per day in winter.
   ++help
@@ -82,7 +82,7 @@ taxonomy = Livestock::DairyCow::Excretion::CConcentrates
     en = day/kg
     de = Tag/kg
     fr = jour/kg
-    it = jour/kg
+    it = Giorno/kg
   ++description
      Parameter a of linear regression a + b*x.       
 
@@ -99,7 +99,7 @@ taxonomy = Livestock::DairyCow::Excretion::CConcentrates
     en = day/kg
     de = Tag/kg
     fr = jour/kg
-    it = jour/kg
+    it = Giorno/kg
   ++description
      Parameter a of linear regression a + b*x.
 

@@ -23,7 +23,7 @@ cow as a function of the winter feed ration.
     en = Proportion of animals receiving maize silage in winter
     de = Anteil der Tiere, die im Winter Maissilage erhalten
     fr = Proportion d'animaux recevant de l'ensilage de maïs en hiver
-    it = Proportion d'animaux recevant de l'ensilage de maïs en hiver
+    it = Quota di animali che ricevono insilato di mais in inverno
   ++units 
     en = %
   ++description
@@ -47,7 +47,7 @@ cow as a function of the winter feed ration.
     en = Proportion of animals receiving grass silage in winter
     de = Anteil der Tiere, die im Winter Grassilage erhalten
     fr = Proportion d'animaux recevant de l'ensilage d'herbe en hiver
-    it = Proportion d'animaux recevant de l'ensilage d'herbe en hiver
+    it = Quota di animali che ricevono insilato d'erba in inverno
   ++units 
     en = %
   ++description
@@ -71,7 +71,7 @@ cow as a function of the winter feed ration.
     en = Proportion of animals receiving maize pellets in winter
     de = Anteil der Tiere, die im Winter Maiswürfel erhalten
     fr = Proportion d'animaux recevant des pellets de maïs en hiver
-    it = Proportion d'animaux recevant des pellets de maïs en hiver
+    it = Quota di animali che ricevono cubetti di mais in inverno
   ++units 
     en = %
   ++description
@@ -95,7 +95,7 @@ cow as a function of the winter feed ration.
     en = Proportion of animals receiving potatoes in winter
     de = Anteil der Tiere, die im Winter Kartoffeln erhalten
     fr = Proportion d'animaux recevant des pommes de terre en hiver
-    it = Proportion d'animaux recevant des pommes de terre en hiver
+    it = Quota di animali che ricevono patate in inverno
   ++units 
     en = %
   ++description
@@ -119,7 +119,7 @@ cow as a function of the winter feed ration.
     en = Proportion of animals receiving beets in winter
     de = Anteil der Tiere, die im Winter Futterrüben erhalten
     fr = Proportion d'animaux recevant des betteraves en hiver
-    it = Proportion d'animaux recevant des betteraves en hiver
+    it = Quota di animali che ricevono barbabietole da foraggio in inverno
   ++units 
     en = %
   ++description

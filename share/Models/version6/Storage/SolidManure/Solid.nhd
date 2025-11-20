@@ -22,7 +22,7 @@ taxonomy = Storage::SolidManure::Solid
     en = Share of cattle manure applied to land without storage
     de = Anteil von direkt ohne Lagerung ausgebrachtem Mist von Rindvieh
     fr = Part du fumier de bovins épandu directement sans stockage
-    it = Part du fumier de bovins épandu directement sans stockage
+    it = Quota di letame bovino distribuito direttamente senza stoccaggio
   ++units 
     en = % 
   ++description
@@ -51,7 +51,7 @@ taxonomy = Storage::SolidManure::Solid
     en = Share of cattle manure covered during storage
     de = Anteil von gedeckt gelagertem Mist von Rindvieh
     fr = Part du fumier de bovins stocké qui est couvert
-    it = Part du fumier de bovins stocké qui est couvert
+    it = Quota di letame bovino conservato coperto
   ++units 
     en = % 
   ++description
@@ -90,7 +90,7 @@ taxonomy = Storage::SolidManure::Solid
       en = Additional emission mitigation measure for cattle manure storage
       de = Zusätzliche emissionsmindernde Massnahme Mist Rindvieh (siehe Spalte Hilfe)
       fr = Mesure supplémentaire limitant les émissions dues au stockage du fumier de bovins (cf. aide)
-      it = Mesure supplémentaire limitant les émissions dues au stockage du fumier de bovins (cf. aide)
+      it = Misura aggiuntiva di riduzione delle emissioni letame bovino (vedi colonna Aiuto)
     ++units 
       en = %
     ++description
@@ -157,7 +157,7 @@ taxonomy = Storage::SolidManure::Solid
     en = Share of pig manure applied to land without storage
     de = Anteil von direkt ohne Lagerung ausgebrachtem Schweinemist
     fr = Part du fumier de porcs épandu directement sans stockage
-    it = Part du fumier de porcs épandu directement sans stockage
+    it = Quota di letame suino distribuito direttamente senza stoccaggio
   ++units 
     en = % 
   ++description
@@ -179,7 +179,7 @@ taxonomy = Storage::SolidManure::Solid
     en = Share of pig manure covered during storage
     de = Anteil von gedeckt gelagertem Schweinemist
     fr = Part du fumier de porcs stocké qui est couvert
-    it = Part du fumier de porcs stocké qui est couvert
+    it = Quota di letame suino conservato coperto
   ++units 
     en = % 
   ++description
@@ -214,7 +214,7 @@ taxonomy = Storage::SolidManure::Solid
       en = Additional emission mitigation measure for pig manure storage
       de = Zusätzliche emissionsmindernde Massnahme Schweinemist (siehe Spalte Hilfe)
       fr = Mesure supplémentaire limitant les émissions dues au stockage du fumier de porcs (cf. aide)
-      it = Mesure supplémentaire limitant les émissions dues au stockage du fumier de porcs (cf. aide)
+      it = Misura aggiuntiva di riduzione delle emissioni letame suino (vedi colonna Aiuto)
     ++units 
       en = %
     ++description
@@ -325,7 +325,7 @@ taxonomy = Storage::SolidManure::Solid
         writeLog({en=>"The sum of share of cattle manure applied to land without storage and share of cattle manure covered during storage must be equal or lower than 100 %",
                   de=>"Die Summe von Anteil von direkt ohne Lagerung ausgebrachtem Mist von Rindvieh und Anteil von gedeckt gelagertem Mist von Rindvieh darf maximal 100 % betragen",
                   fr=>"La somme de part du fumier de bovins épandu directement sans stockage et de part du fumier de bovins stocké qui est couvert ne peut être supérieur à 100 %",
-                  it=>"La somme de part du fumier de bovins épandu directement sans stockage et de part du fumier de bovins stocké qui est couvert ne peut être supérieur à 100 %"
+                  it=>"TODO",
                  });
     }
     return;
@@ -341,7 +341,7 @@ taxonomy = Storage::SolidManure::Solid
         writeLog({en=>"The sum of share of cattle manure applied to land without storage and share of cattle manure covered during storage must be equal or lower than 100 %",
                   de=>"Die Summe von Anteil von direkt ohne Lagerung ausgebrachtem Schweinemist und Anteil von gedeckt gelagertem Schweinemist darf maximal 100 % betragen",
                   fr=>"La somme de part du fumier de porcs épandu directement sans stockage et de part du fumier de porcs stocké qui est couvert ne peut être supérieur à 100 %",
-                  it=>"La somme de part du fumier de porcs épandu directement sans stockage et de part du fumier de porcs stocké qui est couvert ne peut être supérieur à 100 %"
+                  it=>"",
                  });
     }
     return;
@@ -427,7 +427,7 @@ taxonomy = Storage::SolidManure::Solid
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux into solid storage from pigs.
   ++formula
@@ -448,7 +448,7 @@ taxonomy = Storage::SolidManure::Solid
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from solid storage.
 ?if Kantonal_LU
@@ -487,7 +487,7 @@ taxonomy = Storage::SolidManure::Solid
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN immobilized from TAN fraction in solid manure storage.
   ++formula

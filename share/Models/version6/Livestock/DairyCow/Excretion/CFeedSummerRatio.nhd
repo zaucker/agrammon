@@ -23,7 +23,7 @@ cow as a function of the summer feed ration.
     en = Proportion of animals receiving hay in summer
     de = Anteil der Tiere, die im Sommer Heu erhalten
     fr = Proportion d'animaux recevant du foin en été
-    it = Proportion d'animaux recevant du foin en été
+    it = Quota di animali che ricevono fieno in estate
   ++units 
     en = %
   ++description
@@ -47,7 +47,7 @@ cow as a function of the summer feed ration.
     en = Proportion of animals receiving maize silage in summer
     de = Anteil der Tiere, die im Sommer Maissilage erhalten
     fr = Proportion d'animaux recevant de l'ensilage de maïs en été
-    it = Proportion d'animaux recevant de l'ensilage de maïs en été
+    it = Quota di animali che ricevono insilato di mais in estate
   ++units 
     en = %
   ++description
@@ -71,7 +71,7 @@ cow as a function of the summer feed ration.
     en = Proportion of animals receiving maize pellets in summer
     de = Anteil der Tiere, die im Sommer Maiswürfel erhalten
     fr = Proportion d'animaux recevant des pellets de maïs en été
-    it = Proportion d'animaux recevant des pellets de maïs en été
+    it = Quota di animali che ricevono cubetti di mais in estate
   ++units 
     en = %
   ++description

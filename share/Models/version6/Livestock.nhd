@@ -132,12 +132,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Excretion
     de = Ausscheidung
     fr = Excrétion
-    it = Excrétion
+    it = Escrezione
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -158,12 +158,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = __Housing
     de = __Stall
     fr = __Stabulation
-    it = __Stabulation
+    it = __Stalla
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -184,12 +184,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = __Yard
     de = __Laufhof
     fr = __Parcours extérieur
-    it = __Parcours extérieur
+    it = __Cortile d'esercizio
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -205,12 +205,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Into housing and exercise yard
     de = In Stall und Laufhof
     fr = Dans la stabulation et le parcours extérieur
-    it = Dans la stabulation et le parcours extérieur
+    it = Nella stalla e nel cortile d'esercizio
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -225,12 +225,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Into grazing
     de = In Weide
     fr = Dans le pâturage
-    it = Dans le pâturage
+    it = Nel pascolo
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -255,12 +255,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Excretion
     de = Ausscheidung
     fr = Excrétion
-    it = Excrétion
+    it = Escrezione
   ++units
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -281,12 +281,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = __Housing
     de = __Stall
     fr = __Stabulation
-    it = __Stabulation
+    it = __Stalla
   ++units
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -307,12 +307,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = __Yard
     de = __Laufhof
     fr = __Parcours extérieur
-    it = __Parcours extérieur
+    it = __Cortile d'esercizio
   ++units
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -328,12 +328,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Into housing and exercise yard
     de = In Stall und Laufhof
     fr = Dans la stabulation et le parcours extérieur
-    it = Dans la stabulation et le parcours extérieur
+    it = Nella stalla e nel cortile d'esercizio
   ++units
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Total annual TAN excreted by all animals.
   ++formula
@@ -348,12 +348,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Into grazing
     de = In Weide
     fr = Dans le pâturage
-    it = Dans le pâturage
+    it = Nel pascolo
   ++units
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Total annual N excreted by all animals.
   ++formula
@@ -493,7 +493,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux (liquid share) out of housing.
   ++formula
@@ -508,7 +508,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux (liquid share) out of housing.
   ++formula
@@ -534,7 +534,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux (liquid share) out of yard.
   ++formula
@@ -547,7 +547,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux (liquid share) out of yard.
   ++formula
@@ -566,7 +566,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux (liquid share) from housing and yard into the
     storage from all animal besides poultry.
@@ -599,7 +599,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux (solid share) from housing and yard into the
     storage from all animals besides poultry.
@@ -615,12 +615,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Total N into storage
     de = Total N ins Hofdüngerlager
     fr = N total dans le stock d'engrais de ferme
-    it = N total dans le stock d'engrais de ferme
+    it = Totale N nel deposito di effluenti aziendali
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux (liquid and solid share) from housing
     and yard into the storage from all animals.
@@ -641,7 +641,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual N flux (liquid share) out of housing.
   ++formula
@@ -656,7 +656,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual N flux (solid share) as TAN from housing and yard into
     the storage from all animals besides poultry.
@@ -683,7 +683,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual N flux (liquid share) out of yard.
   ++formula
@@ -696,7 +696,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual N flux (solid share) as TAN from yard and yard into
     the storage from all animals besides poultry.
@@ -716,7 +716,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual N flux (liquid share) as TAN from housing and yard into
     the storage from all animals besides poultry.
@@ -749,7 +749,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual N flux (solid share) as TAN from housing and yard into
     the storage from all animals besides poultry.
@@ -765,12 +765,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Total TAN into storage
     de = Total Nlös ins Hofdüngerlager
     fr = TAN total dans le stock d'engrais de ferme
-    it = TAN total dans le stock d'engrais de ferme
+    it = Totale N solubile nel deposito di effluenti aziendali
   ++units
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual TAN flux as TAN from housing and yard into the
     storage from all animals besides poultry.
@@ -793,12 +793,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Grazing
     de = Weide
     fr = Pâturage
-    it = Pâturage
+    it = Pascolo
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all grazing areas and Poultry grazing activities.
   ++formula
@@ -819,12 +819,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = __Housing
     de = __Stall
     fr = __Stabulation
-    it = __Stabulation
+    it = __Stalla
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all housings.
   ++formula
@@ -845,12 +845,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = __Yard
     de = __Laufhof
     fr = __Parcours extérieur
-    it = __Parcours extérieur
+    it = __Cortile d'esercizio
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all yards.
   ++formula
@@ -867,12 +867,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Housing and Yard
     de = Stall und Laufhof
     fr = Stabulation et parcours extérieur
-    it = Stabulation et parcours extérieur
+    it = Stalla e cortile d'esercizio
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all housings and yards.
   ++formula
@@ -884,13 +884,13 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
   ++labels
     en = NH3-Emissions from Housing, Yard and Grazing
     de = NH3-Emission aus Stall, Laufhof und Weide
-    fr = TODO: Emission de NH3 
-    it = TODO: Emission de NH3
+    fr = Émissions de NH3 provenant de la grange, du terrain d'exercice et du pâturage
+    it = Emissione NH3 da stalla, cortile d'esercizio e pascolo
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from livestock from all animals.
   ++formula
@@ -911,7 +911,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N2 emission from solid manure from housing, yard and storage.
   ++formula
@@ -930,7 +930,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N2 emission from liquid manure from housing, yard and storage.
   ++formula
@@ -947,12 +947,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Housing, yard and storage
     de = Stall, Laufhof und Lager
     fr = Stabulation, parcours extérieur et stockage
-    it = Stabulation, parcours extérieur et stockage
+    it = Stalla, cortile d'esercizio e deposito
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N2 emission from housing, yard and storage.
   ++formula
@@ -974,7 +974,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NO emission from solid manure from housing, yard and storage.
   ++formula
@@ -993,7 +993,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NO emission from liquid manure from housing, yard and storage.
   ++formula
@@ -1010,12 +1010,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Housing, yard and storage
     de = Stall, Laufhof und Lager
     fr = Stabulation, parcours extérieur et stockage
-    it = Stabulation, parcours extérieur et stockage
+    it = Stalla, cortile d'esercizio e deposito
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NO emission from housing, yard and storage.
   ++formula
@@ -1036,7 +1036,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N2O emission from solid manure from housing, yard and storage.
   ++formula
@@ -1055,7 +1055,7 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N2O emission from liquid manure from housing, yard and storage.
   ++formula
@@ -1072,12 +1072,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Housing, yard and storage
     de = Stall, Laufhof und Lager
     fr = Stabulation, parcours extérieur et stockage
-    it = Stabulation, parcours extérieur et stockage
+    it = Stalla, cortile d'esercizio e deposito
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N2O emission from housing, yard and storage.
   ++formula
@@ -1100,12 +1100,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Grazing
     de = Weide
     fr = Pâturage
-    it = Pâturage
+    it = Pascolo
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all grazing areas and Poultry grazing activities.
   ++formula
@@ -1126,12 +1126,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Grazing
     de = Weide
     fr = Pâturage
-    it = Pâturage
+    it = Pascolo
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all grazing areas and Poultry grazing activities.
   ++formula
@@ -1153,12 +1153,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Grazing
     de = Weide
     fr = Pâturage
-    it = Pâturage
+    it = Pascolo
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all grazing areas and Poultry grazing activities.
   ++formula
@@ -1179,12 +1179,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Into soil from grazing
     de = In Boden von Weide
     fr = Dans le sol suite au pâturage
-    it = Dans le sol suite au pâturage
+    it = Nel suolo dal pascolo
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N remaining on pasture from all grazing areas.
   ++formula
@@ -1205,12 +1205,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Into soil from grazing
     de = In Boden von Weide
     fr = Dans le sol suite au pâturage
-    it = Dans le sol suite au pâturage
+    it = Nel suolo dal pascolo
   ++units
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual N remaining on pasture from all grazing areas.
   ++formula
@@ -1238,12 +1238,12 @@ gui      = Livestock,Tierhaltung,Production animale,Livestock
     en = Degradation in air scrubber
     de = Abbau im Luftwäscher
     fr = Dégradation dans les épuratuers d'air
-    it = Dégradation dans les épuratuers d'air
+    it = Degradazione nel depuratore d'aria
   ++units
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
-    it = kg TAN/an
+    it = kg TAN/anno
   ++description
     Annual N remaining on pasture from all grazing areas.
   ++formula

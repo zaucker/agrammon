@@ -46,7 +46,7 @@ taxonomy = Livestock::OtherCattle::Housing::Type
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
-    it = Type de stabulation
+    it = Tipo di stabulazione
   ++units  
     en = -
   ++description

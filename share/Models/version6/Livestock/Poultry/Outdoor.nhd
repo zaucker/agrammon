@@ -35,7 +35,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = Do the animals have access to a free range?
     de = Haben die Tiere Zugang zu einer Weide?
     fr = Les animaux ont-ils accès à un pâturage?
-    it = Les animaux ont-ils accès à un pâturage?
+    it = Gli animali hanno accesso a un pascolo?
   ++units  
     en = -
   ++description
@@ -82,7 +82,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Average free range days per year.
 
@@ -92,7 +92,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -112,7 +112,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Average free range days per year.
 
@@ -122,7 +122,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -142,7 +142,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Average free range days per year.
 
@@ -152,7 +152,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Average free range hours per day, assumed is 4% of Day
 
@@ -172,7 +172,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Average free range days per year.
 
@@ -182,7 +182,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -202,7 +202,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Average free range days per year.
 
@@ -212,7 +212,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Average free range hours per day, assumed is 4% of Day
 
@@ -234,7 +234,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Average free range days per year.
   ++formula
@@ -250,7 +250,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Average free range hours per day.
   ++formula

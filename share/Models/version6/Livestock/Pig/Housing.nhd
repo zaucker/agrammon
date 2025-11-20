@@ -45,7 +45,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux into the house.
   ++formula
@@ -57,7 +57,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux as TAN into the house.
   ++formula
@@ -81,9 +81,9 @@ taxonomy = Livestock::Pig::Housing
     if ( $ef > 1 ) {
         writeLog({
             en => "NH3 emission factor for indoor part before air scrubber removal of other pig housing systems is greater than (thus will be limited to) 1.",
-            de => "NH3 emission factor for indoor part before air scrubber removal of other pig housing systems is greater than (thus will be limited to) 1.",
-            fr => "NH3 emission factor for indoor part before air scrubber removal of other pig housing systems is greater than (thus will be limited to) 1.",
-            it => "NH3 emission factor for indoor part before air scrubber removal of other pig housing systems is greater than (thus will be limited to) 1."
+            de => "Der NH3-Emissionsfaktor für den Innenraum vor dem Abschalten der Luftreinigungsanlage anderer Schweinehaltungssysteme ist größer als (und wird daher auf) 1 begrenzt.",
+            fr => "Le facteur d'émission de NH3 pour la partie intérieure avant l'élimination du laveur d'air des autres systèmes d'élevage porcin est supérieur à (sera donc limité à) 1.",
+            it => "Il fattore di emissione di NH3 per la parte interna prima della rimozione del depuratore d'aria di altri sistemi di allevamento di suini è maggiore di (quindi sarà limitato a) 1.",
         });
         $ef = 1;
     }
@@ -118,9 +118,9 @@ taxonomy = Livestock::Pig::Housing
     if ( $ef > 1 ) {
         writeLog({
             en => "NH3 emission factor for outdoor part of other pig housing systems is greater than (thus will be limited to) 1.",
-            de => "NH3 emission factor for outdoor part of other pig housing systems is greater than (thus will be limited to) 1.",
-            fr => "NH3 emission factor for outdoor part of other pig housing systems is greater than (thus will be limited to) 1.",
-            it => "NH3 emission factor for outdoor part of other pig housing systems is greater than (thus will be limited to) 1."
+            de => "Der NH3-Emissionsfaktor für den Außenbereich anderer Schweinehaltungssysteme ist größer als (und wird daher auf) 1 begrenzt.",
+            fr => "Le facteur d'émission de NH3 pour la partie extérieure des autres systèmes d'élevage porcin est supérieur à (sera donc limité à) 1.",
+            it => "Il fattore di emissione di NH3 per la parte esterna di altri sistemi di allevamento di suini è maggiore di (quindi sarà limitato a) 1.",
         });
         $ef = 1;
     }
@@ -147,7 +147,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual NH3 emission from pig housing systems.
   ++formula
@@ -160,7 +160,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an 
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N of NH3 emission remaining in air scrubber from pig housing systems.
   ++formula
@@ -183,7 +183,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux out of the housing excluding N remained in biotrickling filter.
   ++formula
@@ -195,7 +195,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux as TAN out of the housing excluding N remained in biotrickling filter.
     (without remains from acid filter)
@@ -208,7 +208,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux out of housing, slurry or liquid fraction from pigs. 
   ++formula
@@ -220,7 +220,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux as TAN out of housing, slurry or liquid fraction from pigs. 
   ++formula
@@ -232,7 +232,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux out of housing, manure fraction of N flux from pigs.
   ++formula
@@ -244,7 +244,7 @@ taxonomy = Livestock::Pig::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux as TAN out of housing, manure fraction of N flux from pigs.  
   ++formula

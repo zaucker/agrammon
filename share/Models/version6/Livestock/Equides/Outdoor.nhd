@@ -23,12 +23,12 @@ taxonomy = Livestock::Equides::Outdoor
     en = Grazing days per year
     de = Jährliche Weidetage
     fr = Jours de pâturage par an
-    it = Jours de pâturage par an
+    it = Giorni di pascolo annuali
   ++units  
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Average grazing days per year.
   ++help
@@ -49,12 +49,12 @@ taxonomy = Livestock::Equides::Outdoor
     en = Grazing hours per day
     de = Tägliche Weidestunden
     fr = Heures de pâturage par jour
-    it = Heures de pâturage par jour
+    it = Ore giornaliere di pascolo
   ++units  
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Average grazing hours per day.
  ++help
@@ -79,12 +79,12 @@ taxonomy = Livestock::Equides::Outdoor
     en = Duration of access to exercise yard over the year
     de = Jährliche Zutrittsdauer zum Laufhof
     fr = Nombre de jours avec accès au parcours extérieur (par an)
-    it = Nombre de jours avec accès au parcours extérieur (par an)
+    it = Durata annuale di accesso al cortile d'esercizio
   ++units  
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Access to exercise yard in days per year.
   ++help
@@ -105,12 +105,12 @@ taxonomy = Livestock::Equides::Outdoor
     en = Duration of access to exercise yard per day
     de = Tägliche Zutrittsdauer zum Laufhof
     fr = Nombre d'heures avec accès au parcours extérieur (par jour)
-    it = Nombre d'heures avec accès au parcours extérieur (par jour)
+    it = Durata giornaliera di accesso al cortile d'esercizio
   ++units  
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Access to exercise yard in hours per day.
   ++help
@@ -150,7 +150,7 @@ taxonomy = Livestock::Equides::Outdoor
     en = Type of exercise yard
     de = Laufhoftyp
     fr = Type de parcours extérieur
-    it = Type de parcours extérieur
+    it = Tipo di cortile d'esercizio
   ++units  
     en = -
   ++description
@@ -194,7 +194,7 @@ taxonomy = Livestock::Equides::Outdoor
       en = Additional emission mitigation measure for the exercice yard (see column Help)
       de = Zusätzliche emissionsmindernde Massnahme Laufhof (siehe Spalte Hilfe)
       fr = Mesure supplémentaire limitant les émissions sur le parcours extérieur (cf. aide)
-      it = Mesure supplémentaire limitant les émissions sur le parcours extérieur (cf. aide)
+      it = Misura aggiuntiva di riduzione delle emissioni cortile d'esercizio (vedi colonna Aiuto)
     ++units 
       en = %
     ++description
@@ -265,7 +265,7 @@ taxonomy = Livestock::Equides::Outdoor
      en = hours/day
      de = Stunden/Tag
      fr = heure/jour
-     it = heure/jour
+     it = Ore/giorno
   ++description
     Grazing hours per day.
   ++formula
@@ -277,7 +277,7 @@ taxonomy = Livestock::Equides::Outdoor
      en = days/year
      de = Tage/Jahr
      fr = jour/an
-     it = jour/an
+     it = Giorni/anno
   ++description
     Grazing days per year.
   ++formula
@@ -289,7 +289,7 @@ taxonomy = Livestock::Equides::Outdoor
      en = hours/day
      de = Stunden/Tag
      fr = heure/jour
-     it = heure/jour
+     it = Ore/giorno
   ++description
     Yard hours per day.
   ++formula
@@ -301,7 +301,7 @@ taxonomy = Livestock::Equides::Outdoor
      en = days/year
      de = Tage/Jahr
      fr = jour/an
-     it = jour/an
+     it = Giorni/anno
   ++description
     Yard days per year.
   ++formula
@@ -313,7 +313,7 @@ taxonomy = Livestock::Equides::Outdoor
     en = days
     de = Tage
     fr = jours
-    it = jours
+    it = Giorni
   ++description
     Number of Days whith access to yard and pasture
   ++formula
@@ -329,7 +329,7 @@ taxonomy = Livestock::Equides::Outdoor
     en = hours
     de = Stunden
     fr = heures
-    it = heures
+    it = Ore
   ++description
     Number of Hours per Day whith access to yard and pasture
   ++formula

@@ -58,7 +58,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux into the house.
   ++formula
@@ -73,7 +73,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux as TAN into the house.
   ++formula
@@ -88,7 +88,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual NH3 emission from equides housing systems.
   ++formula
@@ -100,7 +100,7 @@ taxonomy = Livestock::Equides::Housing
             en => "NH3 emission factor for equides housing systems is greater than (thus will be limited to) 1.",
             de => "NH3 emission factor for equides housing systems is greater than (thus will be limited to) 1.",
             fr => "NH3 emission factor for equides housing systems is greater than (thus will be limited to) 1.",
-            it => "NH3 emission factor for equides housing systems is greater than (thus will be limited to) 1.",
+            it => "TODO",
         });
         $c_housing = 1;
     }
@@ -112,7 +112,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux out of the housing.
   ++formula
@@ -124,7 +124,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux as TAN out of the housing.
   ++formula
@@ -136,7 +136,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux out of housing, slurry or liquid fraction of N flux.
   ++formula
@@ -148,7 +148,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux as TAN out of housing, slurry or liquid fraction of N flux.
   ++formula
@@ -160,7 +160,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux out of housing, manure fraction of N flux.
   ++formula
@@ -172,7 +172,7 @@ taxonomy = Livestock::Equides::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N flux as TAN out of housing, manure fraction of N flux. 
   ++formula

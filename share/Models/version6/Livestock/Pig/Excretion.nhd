@@ -55,7 +55,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Animal category
     de = Tierkategorie
     fr = Catégorie d'animaux
-    it = Catégorie d'animaux
+    it = Categoria di animali
   ++units
     en = -
 ++description
@@ -79,7 +79,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Number of animals
     de = Anzahl Tiere
     fr = Nombre d'animaux
-    it = Nombre d'animaux
+    it = Numero di animali
   ++units
     en = -
   ++description
@@ -104,7 +104,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Number of available animal places
     de = Anzahl Tierplätze im Stall
     fr = Nombre de places dans l'étable
-    it = Nombre de places dans l'étable
+    it = Numero di posti per animali nella stalla
   ++units
     en = -
   ++description
@@ -129,12 +129,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       en = N excretion
       de = N Ausscheidung
       fr = Excrétions azotées
-      it = Excrétions azotées
+      it = Escrezione N
     ++units
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
     ++description
       Annual standard N excretion for a pig
     ++help
@@ -197,7 +197,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       en = TAN fraction of N excretion
       de = TAN Anteil der N Ausscheidung
       fr = Proportion de TAN des excrétions azotées
-      it = Proportion de TAN des excrétions azotées
+      it = Quota TAN dell'escrezione N
     ++units
       en = %
       de = %
@@ -233,12 +233,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
      en = Crude protein content of the ration
      de = Rohproteingehalt der Ration
      fr = Teneur de la ration en matière azotée
-     it = Teneur de la ration en matière azotée
+     it = Contenuto di proteina grezza della razione
   ++units
      en = g CP/kg
      de = g RP/kg
      fr = g MA/kg
-     it = g MA/kg
+     it = g PG/kg
   ++description
        Crude protein content in the ration
   ++help
@@ -310,12 +310,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Energy content of the ration
     de = Energiegehalt der Ration
     fr = Teneur de la ration en énergie
-    it = Teneur de la ration en énergie
+    it = Contenuto energetico della razione
   ++units
     en = MJ DE
     de = MJ VES/kg
     fr = MJ EDP/kg
-    it = MJ EDP/kg
+    it = MJ UFL/kg
   ++description
        Digestible energy content in the ration
   ++help
@@ -387,7 +387,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for animal category (nursing sows) according to
     Flisch et al. (2009).
@@ -398,7 +398,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for animal category (dry sows) according to
      Flisch et al. (2009).
@@ -409,7 +409,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for animal category (gilts) according to
      Flisch et al. (2009).
@@ -420,7 +420,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for animal category (piglets) according to
     Flisch et al. (2009).
@@ -431,7 +431,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for animal category (boars) according to
     Flisch et al. (2009).
@@ -444,7 +444,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
      en = g CP/kg
      de = g RP/kg
      fr = g MA/kg
-     it = g MA/kg
+     it = g PG/kg
   ++description
     Standard crude protein content of a feed ration for
     nursing sows (BLW, SRVA, LBL 2003). Agridea, BLW (2010).
@@ -455,7 +455,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
      en = g CP/kg
      de = g RP/kg
      fr = g MA/kg
-     it = g MA/kg
+     it = g PG/kg
   ++description
     Standard crude protein content of a feed ration for
     dry sows(BLW, SRVA, LBL 2003). Agridea, BLW (2010).
@@ -466,7 +466,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
      en = g CP/kg
      de = g RP/kg
      fr = g MA/kg
-     it = g MA/kg
+     it = g PG/kg
   ++description
     Standard crude protein content of a feed ration for
     gilts (BLW, SRVA, LBL 2003). Agridea, BLW (2010).
@@ -477,7 +477,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
      en = g CP/kg
      de = g RP/kg
      fr = g MA/kg
-     it = g MA/kg
+     it = g PG/kg
   ++description
     Standard crude protein content of a feed ration for
     piglets (BLW, SRVA, LBL 2003). Agridea, BLW (2010).
@@ -488,7 +488,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
      en = g CP/kg
      de = g RP/kg
      fr = g MA/kg
-     it = g MA/kg
+     it = g PG/kg
   ++description
     Standard crude protein content of a feed ration for
     boars (BLW, SRVA, LBL 2003). Agridea, BLW (2010).
@@ -503,7 +503,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = MJ DE
     de = MJ VES/kg
     fr = MJ EDP/kg
-    it = MJ EDP/kg
+    it = MJ UFL/kg
   ++description
     Standard energy content of a feed ration for
     nursing sows (BLW, SRVA, LBL 2003). Agridea, BLW (2010).
@@ -514,7 +514,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = MJ DE
     de = MJ VES/kg
     fr = MJ EDP/kg
-    it = MJ EDP/kg
+    it = MJ UFL/kg
   ++description
     Standard energy content of a feed ration for
     dry sows (BLW, SRVA, LBL 2003). Agridea, BLW (2010).
@@ -525,7 +525,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = MJ DE
     de = MJ VES/kg
     fr = MJ EDP/kg
-    it = MJ EDP/kg
+    it = MJ UFL/kg
   ++description
     Standard energy content of a feed ration for
 
@@ -536,7 +536,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = MJ DE
     de = MJ VES/kg
     fr = MJ EDP/kg
-    it = MJ EDP/kg
+    it = MJ UFL/kg
   ++description
     Standard energy content of a feed ration for
 
@@ -547,7 +547,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = MJ DE
     de = MJ VES/kg
     fr = MJ EDP/kg
-    it = MJ EDP/kg
+    it = MJ UFL/kg
   ++description
     Standard energy content of a feed ration for
 
@@ -602,7 +602,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual minimal N excretion for pig category  (nursing sows) according to
 
@@ -612,7 +612,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual minimal N excretion for pig category (dry sows) according to
     Flisch et al. (2009). Agridea, BLW (2010).
@@ -623,7 +623,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual minimal N excretion for pig category (gilts) according to
     Flisch et al. (2009). Agridea, BLW (2010).
@@ -634,7 +634,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual minimal N excretion for pig category (piglets) according to
     Flisch et al. (2009). Agridea, BLW (2010).
@@ -645,7 +645,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual minimal N excretion for pig category (boars) according to
     Flisch et al. (2009). Agridea, BLW (2010).
@@ -687,7 +687,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Crude protein content of feed ration.
   ++formula
@@ -699,7 +699,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = MJ DE
     de = MJ VES/kg
     fr = MJ EDP/kg
-    it = MJ EDP/kg
+    it = MJ UFL/kg
   ++description
     Energy content of feed ration
   ++formula
@@ -711,7 +711,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual total N excreted per animal.
 ?if Kantonal_LU
@@ -728,14 +728,10 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
               $TE->{'cfeed_' . Out(animalcategory)});
     if( $Nexcr < $minimal ) {
       writeLog({
-        en => "The entries for the contents of energy and crude protein of the ration result in a N excretion below the minimum for pigs.\n"
-              . "The excretion was set to " . $minimal ." kg N per animal!",
-        de => "Der gewählte Energie- und Rohproteingehalt der Ration bewirken eine N Ausscheidung unterhalb des Minimums für Schweine!\n"
-              . "Die Ausscheidung wurde auf ". $minimal ."  kg N pro Tier gesetzt!",
-        fr => "Franz.: Der gewählte Energie- und Rohproteingehalt der Ration bewirken eine N Ausscheidung unterhalb des Minimums für Schweine!\n"
-              . "Die Ausscheidung wurde auf ". $minimal ."  kg N pro Tier gesetzt!",
-        it => "Franz.: Der gewählte Energie- und Rohproteingehalt der Ration bewirken eine N Ausscheidung unterhalb des Minimums für Schweine!\n"
-              . "Die Ausscheidung wurde auf ". $minimal ."  kg N pro Tier gesetzt!"
+        en => "The entries for the contents of energy and crude protein of the ration result in a N excretion below the minimum for pigs.\nThe excretion was set to " . $minimal ." kg N per animal!",
+        de => "Der gewählte Energie- und Rohproteingehalt der Ration bewirken eine N Ausscheidung unterhalb des Minimums für Schweine!\nDie Ausscheidung wurde auf ". $minimal ."  kg N pro Tier gesetzt!",
+        fr => "Les valeurs indiquées pour la teneur en énergie et en protéines brutes de la ration entraînent une excrétion d'azote inférieure au minimum pour les porcs. L'excrétion a été fixée à " . $minimal " kg N par animal !"",
+        it => "Le voci relative al contenuto di energia e proteine ​​grezze della razione determinano un'escrezione di N inferiore al minimo per i suini.\nL'escrezione è stata impostata su " . $minimo . " kg N per animale!"
       });
       return $minimal;
     } else {
@@ -762,14 +758,10 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
                 $TE->{'cfeed_' . Out(animalcategory)});
       if( $Nexcr < $minimal ) {
         writeLog({
-          en => Out(animalcategory) . ": The entries for the contents of energy and crude protein of the ration result in a N excretion below the minimum for pigs.\n"
-                . "The excretion was set to " . $minimal ." kg N per animal!",
-          de => Out(animalcategory) . ": Der gewählte Energie- und Rohproteingehalt der Ration bewirken eine N Ausscheidung unterhalb des Minimums für Schweine!\n"
-                . "Die Ausscheidung wurde auf ". $minimal ."  kg N pro Tier gesetzt!",
-          fr => Out(animalcategory) . ": La teneur de la ration en énergie et en matière azotée engendrent une excrétion de N inférieure au minimum pour les porcs!\n"
-                . "Les excrétions azotées ont été fixées à". $minimal ."  kg N par animal!",
-          it => Out(animalcategory) . ": La teneur de la ration en énergie et en matière azotée engendrent une excrétion de N inférieure au minimum pour les porcs!\n"
-                . "Les excrétions azotées ont été fixées à". $minimal ."  kg N par animal!"
+          en => Out(animalcategory) . ": The entries for the contents of energy and crude protein of the ration result in a N excretion below the minimum for pigs.\nThe excretion was set to " . $minimal ." kg N per animal!",
+          de => Out(animalcategory) . ": Der gewählte Energie- und Rohproteingehalt der Ration bewirken eine N Ausscheidung unterhalb des Minimums für Schweine!\nDie Ausscheidung wurde auf ". $minimal ."  kg N pro Tier gesetzt!",
+          fr => Out(animalcategory) . ": La teneur de la ration en énergie et en matière azotée engendrent une excrétion de N inférieure au minimum pour les porcs!\nLes excrétions azotées ont été fixées à". $minimal ."  kg N par animal!",
+          it => Out(animalcategory) . "TODO",
         });
         return $minimal;
       } else {
@@ -779,9 +771,9 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       if( In(inp_n_excretion) < $minimal ) {
         writeLog({
           en => Out(animalcategory) . ": The entry for N excretion is below the minimum for pigs!",
-          de => Out(animalcategory) . ": Der gewählte N Ausscheidung liegt unterhalb des Minimums für Schweine!",
+          de => Out(animalcategory) . ": Die gewählte N Ausscheidung liegt unterhalb des Minimums für Schweine!",
           fr => Out(animalcategory) . ": Les excrétions azotées sont inférieures au minimum pour les porcs!",
-          it => Out(animalcategory) . ": Les excrétions azotées sont inférieures au minimum pour les porcs!"
+          it => Out(animalcategory) . "TODO",
         });
       }
       if ( In(inp_n_excretion) < 0.7 * $stdN or
@@ -790,7 +782,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
           en => Out(animalcategory) . ": The N excretion entered for pigs differs from the standard by more than 30%!",
           de => Out(animalcategory) . ": Die eingegebene N-Ausscheidung für Zuchtschweine weicht um mehr als 30% vom Standard ab!",
           fr => Out(animalcategory) . ": Les excrétions azotées saisies pour les porcs s'écartent de plus de 30% du standard!",
-          it => Out(animalcategory) . ": Les excrétions azotées saisies pour les porcs s'écartent de plus de 30% du standard!"
+          it => Out(animalcategory) . "TODO",
         });
       }
       return In(inp_n_excretion);
@@ -803,7 +795,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual total N excreted by a specified number of animals.
   ++formula
@@ -815,7 +807,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual soluble N excreted by a specified number fo pigs.
 ?if !Kantonal_LU
@@ -830,7 +822,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The TAN fraction of N excretion entered for pigs differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für Schweine weicht um mehr als 20% vom Standard ab!",
             fr => "La proportion du TAN des excrétions azotées saisies pour les porcs s'écartent de plus de 20 % du standard!",
-            it => "La proportion du TAN des excrétions azotées saisies pour les porcs s'écartent de plus de 20 % du standard!"
+            it => "TODO",
           });
         }
         return $tan * Out(n_excretion);
@@ -884,7 +876,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
         en => "The number of available animal places must be equal or higher than the number of animals.",
         de => "Anzahl Tierplätze muss grösser oder gleich der Anzahl der Tiere sein.",
         fr => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux.",
-        it => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux."
+        it => "TODO",
       });
       return "barn dimensioning too small";
     }

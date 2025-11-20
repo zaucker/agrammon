@@ -47,7 +47,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
-    it = Type de stabulation
+    it = Tipo di stabulazione
   ++units  
     en = -
   ++description
@@ -134,7 +134,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
     en = Manure removal interval (manure belts)
     de = Entmistungsintervall bei Kotbandentmistung
     fr = Fréquence d'évacuation du fumier par le tapis
-    it = Fréquence d'évacuation du fumier par le tapis
+    it = Intervallo di pulizia con nastro trasportatore delle deiezioni
   ++units  
     en = -
   ++description
@@ -183,7 +183,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
     en = Drinking system
     de = Tränkesystem
     fr = Type d'abreuvoir
-    it = Type d'abreuvoir
+    it = Sistema di abbeveraggio
   ++units  
     en = -
   ++description
@@ -312,7 +312,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
     en = -
   ++description
     Emission rate for the poultry drinking type additional emission. Empirical assumption by Reidy/Menzi. 
-  \\TODO: Give better description!
+    ToDo: Give better description!
 
 
 +k_area
@@ -347,31 +347,25 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
                 when 'manure_belt_without_manure_belt_drying_system' {
                     writeLog({
                       en => "The category manure belt without manure belt drying system is not valid, please select the housing system deep litter for broilers.",
-                      de => "Für Mastpoulets ist Kotbandentmistung als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung "
-                            . "(für die Berechnung wird Bodenhaltung gesetzt).",
-                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec ",
-                      it => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
-                            . "tapis d'évacuation du fumier. Choisissez plutôt ‘Litière profonde'."
+                      de => "Für Mastpoulets ist Kotbandentmistung als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung (für die Berechnung wird Bodenhaltung gesetzt).",
+                      fr => "Le système d'évacuation des déchets par tapis roulant n'est pas adapté à l'élevage de poulets de chair. Privilégiez plutôt un élevage au sol (ce type d'élevage sera utilisé pour les calculs).",
+                      it => "La pulizia del nastro trasportatore del letame non è un sistema di allevamento adatto ai polli da carne. Si consiglia di optare per un allevamento a pavimento (il calcolo si baserà su questo sistema).",
                     });
                   } 
                 when 'manure_belt_with_manure_belt_drying_system' {
                     writeLog({
                       en => "Manure belt with manure belt drying system not valid, please select deep litter as housing type for broilers.",
-                      de => "Für Mastpoulets ist Kotbandentmistung als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung "
-                            . "(für die Berechnung wird Bodenhaltung gesetzt).",
-                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec ",
-                      it => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
-                            . "tapis d'évacuation du fumier. Choisissez plutôt ‘Litière profonde'."
+                      de => "Für Mastpoulets ist Kotbandentmistung als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung (für die Berechnung wird Bodenhaltung gesetzt).",
+                      fr => "Le système d'évacuation des déchets par tapis roulant n'est pas adapté à l'élevage de poulets de chair. Privilégiez plutôt un élevage au sol (ce type d'élevage sera utilisé pour les calculs).",
+                      it => "La pulizia del nastro trasportatore del letame non è un sistema di allevamento adatto ai polli da carne. Si consiglia di optare per un allevamento a pavimento (il calcolo si baserà su questo sistema).",
                     });
                 }  
                 when 'deep_pit' {
                     writeLog({
                       en => "Deep pit not valid, please select deep litter as housing type for broilers.",
-                      de => "Für Mastpoulets ist Kotgrube als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung. "
-                            . "(für die Berechnung wird Bodenhaltung gesetzt).",
-                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec ",
-                      it => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
-                             . "fosse à déjections. Choisissez plutôt ‘Litière profonde'."
+                      de => "Für Mastpoulets ist Kotgrube als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung (für die Berechnung wird Bodenhaltung gesetzt).",
+                      fr => "Les fosses à lisier ne constituent pas une option d'élevage adaptée aux poulets de chair. Privilégiez plutôt un élevage au sol (ce type d'élevage sera utilisé pour le calcul).",
+                      it => "Le fosse di letame non sono un'opzione di allevamento adatta per i polli da carne. Si consiglia di optare per un allevamento a pavimento (il pavimento verrà utilizzato per il calcolo)."
                     });
                 }
             }
@@ -444,23 +438,20 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
           writeLog({
             en => "The category 'No manure belt' is not applicable for housing systems with a manure belt!",
             de => "Kategorie 'keine Kotbandentmistung', ist nicht erlaubt bei Aufstallung, Kotbandentmistung!",
-            fr => "La catégorie ‘Pas de tapis d'évacuation' n'est pas valable pour une ",
-            it => "La catégorie ‘Pas de tapis d'évacuation' n'est pas valable pour une "
-                  . "stabulation avec tapis d'évacuation du fumier!",
+            fr => "La catégorie « sans enlèvement de la bande à fumier » n'est pas autorisée pour les systèmes d'élevage avec enlèvement de la bande à fumier !",
+            it => "La categoria 'nessuna rimozione del nastro trasportatore del letame' non è consentita per i sistemi di allevamento con rimozione del nastro trasportatore del letame!",
           });
-         return Tech(c_manure_removal_interval_twice_a_month);  # default no correctios
+          return Tech(c_manure_removal_interval_twice_a_month);  # default no correctios
         }
       }
     } 
-    else{                                           # Housing Type deep pit or deep litter
+    else { # Housing Type deep pit or deep litter
       if ( not (In(manure_removal_interval) eq "no_manure_belt") ) {
         writeLog({
           en => "Please enter under manure removal interval 'No manure belt' in combination with the housing systems deep pit or deep litter!",
           de => "Bitte wählen Sie unter Entmistungsintervall 'keine Kotbandentmistung' in Kombination mit der Aufstallung, Bodenhaltung oder Kotgrube!",
-          fr => "Sous ‘Fréquence d'évacuation du fumier', veuillez choisir la catégorie ",
-          it => "Sous ‘Fréquence d'évacuation du fumier', veuillez choisir la catégorie "
-                . "‘Pas de tapis d'évacuation' en combinaison avec la stabulation ‘Litière "
-                . "profonde' ou ‘Fosse à déjections' !",
+          fr => "Sous ‘Fréquence d'évacuation du fumier', veuillez choisir la catégorie ‘Pas de tapis d'évacuation' en combinaison avec la stabulation ‘Litière profonde' ou ‘Fosse à déjections' !",
+          it => "Selezionare "nessuna rimozione del nastro del letame" nell'intervallo di rimozione del letame in combinazione con alloggiamento, alloggiamento a pavimento o fossa del letame!",
         });
       }
       return 1; # default no correctios
@@ -483,8 +474,8 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
         en => "Invalid 'drinking_system' entered!",
         de => "Ungültiges Tränkesystem eingegeben!",
         fr => "Ce type d'abreuvoir n'est pas valable!",
-        it => "Ce type d'abreuvoir n'est pas valable!",
-		  });
+        it => "È stato inserito un sistema di pozioni non valido!",
+      });
       return 1.0;
     }
 

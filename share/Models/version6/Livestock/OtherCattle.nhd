@@ -60,7 +60,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual total N excreted by the specified number of animals.
   ++formula
@@ -72,7 +72,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual total TAN excreted by the specified number of animals.
   ++formula
@@ -90,7 +90,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux into housing.
   ++formula
@@ -102,7 +102,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux into housing.
   ++formula
@@ -114,7 +114,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 loss from housing.
   ++formula
@@ -126,7 +126,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux out of housing, liquid manure.
   ++formula
@@ -138,7 +138,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux out of housing, solid manure.
   ++formula
@@ -150,7 +150,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux out of housing, liquid manure.
   ++formula
@@ -162,7 +162,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux out of housing, solid manure.
   ++formula
@@ -180,7 +180,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux into yard.
   ++formula
@@ -192,7 +192,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux into yard.
   ++formula
@@ -204,7 +204,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 loss from yard.
   ++formula
@@ -216,7 +216,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux out of yard, liquid manure.
   ++formula
@@ -228,7 +228,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux out of yard, solid manure.
   ++formula
@@ -240,7 +240,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux out of yard, liquid manure.
   ++formula
@@ -252,7 +252,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux out of yard, solid manure.
   ++formula
@@ -270,7 +270,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux into grazing.
   ++formula
@@ -282,7 +282,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux into grazing.
   ++formula
@@ -294,7 +294,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 loss from grazing.
   ++formula
@@ -306,7 +306,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux out of yard, liquid manure.
   ++formula
@@ -318,7 +318,7 @@ gui       = Livestock::OtherCattle,Tierhaltung::Übriges Rindvieh,Production ani
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux out of yard, liquid manure.
   ++formula

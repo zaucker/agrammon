@@ -33,7 +33,7 @@ is applied.
       en = Share of slurry applied June to August (in %)
       de = Ausbringung von Gülle im Sommer (Juni, Juli, August): Anteil in Prozent
       fr = Part de lisier épandu en été (de juin à août)(en %)
-      it = Part de lisier épandu en été (de juin à août)(en %)
+      it = Spandimento di liquame in estate (giugno, luglio, agosto): quota in percentuale
     ++units  
       en = %
     ++description
@@ -62,7 +62,7 @@ is applied.
       en = Share of slurry applied September to May (in %)
       de = Ausbringung von Gülle von September bis und mit Mai: Anteil in Prozent
       fr = Part de lisier épandu de septembre à mai y.c. (en %)
-      it = Part de lisier épandu de septembre à mai y.c. (en %)
+      it = Spandimento di liquame da settembre a maggio incluso: quota in percentuale
     ++units  
       en = %
     ++description

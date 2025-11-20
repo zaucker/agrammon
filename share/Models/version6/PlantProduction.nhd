@@ -33,12 +33,12 @@ gui      = PlantProduction,Pflanzenbau,Production végétale,Plant production
     en = Total
     de = Total
     fr = Total
-    it = Total
+    it = Totale
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from plant production.
   ++formula
@@ -53,12 +53,12 @@ gui      = PlantProduction,Pflanzenbau,Production végétale,Plant production
     en = Amount of compost (t fresh matter per year)
     de = Kompost (t Frischsubstanz pro Jahr)
     fr = Compost (en t matière fraîche par an)
-    it = Compost (en t matière fraîche par an)
+    it = Compost (t sostanza fresca per anno)
   ++units  
     en = t/year
     de = t/Jahr
     fr = t/an
-    it = t/an
+    it = t/anno
   ++description
     Amount of compost in t per year.
   ++formula
@@ -72,12 +72,12 @@ gui      = PlantProduction,Pflanzenbau,Production végétale,Plant production
     en = Amount of solid digestate (t fresh matter per year)
     de = Festes Gärgut (t Frischsubstanz pro Jahr)
     fr = Quantité de digestats solides issus d'installations industrielles (en t matière fraîche par an) 
-    it = Quantité de digestats solides issus d'installations industrielles (en t matière fraîche par an)
+    it = Digestato solido (t sostanza fresca per anno)
   ++units  
     en = t/year
     de = t/Jahr
     fr = t/an
-    it = t/an
+    it = t/anno
   ++description
     Amount of Solid digestate in t per year.
   ++formula
@@ -91,12 +91,12 @@ gui      = PlantProduction,Pflanzenbau,Production végétale,Plant production
     en = Amount of liquid digestate (m3 per year)
     de = Flüssiges Gärgut (m3 pro Jahr)
     fr = Quantité de digestats liquides issus d'installations industrielles (en m3 par an)
-    it = Quantité de digestats liquides issus d'installations industrielles (en m3 par an)
+    it = Digestato liquido (m3 per anno)
   ++units  
     en = m3/year
     de = m3/Jahr
     fr = m3/an
-    it = m3/an
+    it = m3/anno
   ++description
     Amount of liquid digestate in m3 per year.
   ++formula

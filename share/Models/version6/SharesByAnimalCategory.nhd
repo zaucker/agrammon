@@ -38,7 +38,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing dairy cows NH3-emissions
     de = Milchkühe Weide NH3-Emission
     fr = Vâches laitières Emission de NH3 Pâturage  
-    it = Vâches laitières Emission de NH3 Pâturage
+    it = Vacche da latte pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -57,7 +57,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard dairy cows NH3-Emissions
     de = Milchkühe Stall und Laufhof NH3-Emission
     fr = Vâches laitières Emission de NH3 Stabulation et parcours extérieur 
-    it = Vâches laitières Emission de NH3 Stabulation et parcours extérieur
+    it = Vacche da latte stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -76,7 +76,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage dairy cows NH3-Emissions
     de = Milchkühe Hofdüngerlager NH3-Emission
     fr = Vâches laitières Emission de NH3 Stockage des engrais de ferme 
-    it = Vâches laitières Emission de NH3 Stockage des engrais de ferme
+    it = Vacche da latte stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -95,7 +95,7 @@ taxonomy = SharesByAnimalCategory
     en = Application dairy cows NH3-Emissions
     de = Milchkühe Hofdüngerausbringung NH3-Emission
     fr = Vâches laitières Emission de NH3 Epandage des engrais de ferme 
-    it = Vâches laitières Emission de NH3 Epandage des engrais de ferme
+    it = Vacche da latte spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -117,7 +117,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing other cattle NH3-Emissions
     de = Übriges Rindvieh Weide NH3-Emission
     fr = Autres bovins Emission de NH3 Pâturage 
-    it = Autres bovins Emission de NH3 Pâturage
+    it = Altri bovini pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -136,7 +136,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard other cattle NH3-Emissions
     de = Übriges Rindvieh Stall und Laufhof NH3-Emission
     fr = Autres bovins Emission de NH3 Stabulation et parcours extérieur
-    it = Autres bovins Emission de NH3 Stabulation et parcours extérieur
+    it = Altri bovini stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -155,7 +155,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage other cattle NH3-Emissions
     de = Übriges Rindvieh Hofdüngerlager NH3-Emission
     fr = Autres bovins Emission de NH3 Stockage des engrais de ferme  
-    it = Autres bovins Emission de NH3 Stockage des engrais de ferme
+    it = Altri bovini stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -174,7 +174,7 @@ taxonomy = SharesByAnimalCategory
     en = Application other cattle NH3-Emissions
     de = Übriges Rindvieh Hofdüngerausbringung NH3-Emission
     fr = Autres bovins Emission de NH3 Epandage des engrais de ferm 
-    it = Autres bovins Emission de NH3 Epandage des engrais de ferm
+    it = Altri bovini spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -195,7 +195,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing cattle NH3-Emissions
     de = Rinder Weide NH3-Emission
     fr = Bovins Emission de NH3 Pâturage 
-    it = Bovins Emission de NH3 Pâturage
+    it = Bovini pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -214,7 +214,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard cattle NH3-Emissions
     de = Rinder Stall und Laufhof NH3-Emission
     fr = Bovins Emission de NH3 Stabulation et parcours extérieur 
-    it = Bovins Emission de NH3 Stabulation et parcours extérieur
+    it = Bovini stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -233,7 +233,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage cattle NH3-Emissions
     de = Rinder Hofdüngerlager NH3-Emission
     fr = Bovins Emission de NH3 Stockage des engrais de ferme 
-    it = Bovins Emission de NH3 Stockage des engrais de ferme
+    it = Bovini stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -252,7 +252,7 @@ taxonomy = SharesByAnimalCategory
     en = Application cattle NH3-Emissions
     de = Rinder Hofdüngerausbringung NH3-Emission
     fr = Bovins Emission de NH3 Epandage des engrais de ferme 
-    it = Bovins Emission de NH3 Epandage des engrais de ferme
+    it = Bovini spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -274,7 +274,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing pigs NH3-Emissions
     de = Schweine Weide NH3-Emission
     fr = Porcs Emission de NH3 Pâturage 
-    it = Porcs Emission de NH3 Pâturage
+    it = Suini pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -293,7 +293,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard all pigs NH3-Emissions
     de = Schweine Stall und Laufhof NH3-Emission
     fr = Porcs Emission de NH3 Stabulation et parcours extérieur 
-    it = Porcs Emission de NH3 Stabulation et parcours extérieur
+    it = Suini stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -312,7 +312,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage pigs NH3-Emissions
     de = Schweine Hofdüngerlager NH3-Emission
     fr = Porcs Emission de NH3 Stockage des engrais de ferme  
-    it = Porcs Emission de NH3 Stockage des engrais de ferme
+    it = Suini stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -331,7 +331,7 @@ taxonomy = SharesByAnimalCategory
     en = Application pigs NH3-Emissions
     de = Schweine Hofdüngerausbringung NH3-Emission
     fr = Porcs Emission de NH3 Epandage des engrais de ferme 
-    it = Porcs Emission de NH3 Epandage des engrais de ferme
+    it = Suini spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -353,7 +353,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing other pigs NH3-Emissions
     de = Zuchtschweine Weide NH3-Emission
     fr = Porcs d'élevage Emission de NH3 Pâturage 
-    it = Porcs d'élevage Emission de NH3 Pâturage
+    it = Scrofe pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -372,7 +372,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard other pigs NH3-Emissions
     de = Zuchtschweine Stall und Laufhof NH3-Emission
     fr = Porcs d'élevage Emission de NH3 Stabulation et parcours extérieur   
-    it = Porcs d'élevage Emission de NH3 Stabulation et parcours extérieur
+    it = Scrofe stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -391,7 +391,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage other pigs NH3-Emissions
     de = Zuchtschweine Hofdüngerlager NH3-Emission
     fr = Porcs d'élevage Emission de NH3 Stockage des engrais de ferme
-    it = Porcs d'élevage Emission de NH3 Stockage des engrais de ferme
+    it = Scrofe stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -410,7 +410,7 @@ taxonomy = SharesByAnimalCategory
     en = Application other pigs NH3-Emissions
     de = Zuchtschweine Hofdüngerausbringung NH3-Emission
     fr = Porcs d'élevage Emission de NH3 Epandage des engrais de ferme  
-    it = Porcs d'élevage Emission de NH3 Epandage des engrais de ferme
+    it = Scrofe spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -431,7 +431,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing fattening pigs NH3-Emissions
     de = Mastschweine Weide NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 Pâturage
-    it = Porcs à l'engrais Emission de NH3 Pâturage
+    it = Suini all'ingrasso pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -450,7 +450,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard fattening pigs NH3-Emissions
     de = Mastschweine Stall und Laufhof NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 Stabulation et parcours extérieur  
-    it = Porcs à l'engrais Emission de NH3 Stabulation et parcours extérieur
+    it = Suini all'ingrasso stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -469,7 +469,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage fattening pigs NH3-Emissions
     de = Mastschweine Hofdüngerlager NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 Stockage des engrais de ferme  
-    it = Porcs à l'engrais Emission de NH3 Stockage des engrais de ferme
+    it = Suini all'ingrasso stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -488,7 +488,7 @@ taxonomy = SharesByAnimalCategory
     en = Application fattening pigs NH3-Emissions
     de = Mastschweine Hofdüngerausbringung NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 Epandage des engrais de ferme 
-    it = Porcs à l'engrais Emission de NH3 Epandage des engrais de ferme
+    it = Suini all'ingrasso spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -508,7 +508,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing poultry NH3-Emissions
     de = Geflügel Weide NH3-Emission
     fr = Volaille Emission de NH3 Pâturage
-    it = Volaille Emission de NH3 Pâturage
+    it = Pollame pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -527,7 +527,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard poultry NH3-Emissions
     de = Geflügel Stall und Laufhof NH3-Emission
     fr = Volaille Emission de NH3 Stabulation et parcours extérieur 
-    it = Volaille Emission de NH3 Stabulation et parcours extérieur
+    it = Pollame stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -546,7 +546,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage poultry NH3-Emissions
     de = Geflügel Hofdüngerlager NH3-Emission
     fr = Volaille Emission de NH3 Stockage des engrais de ferme 
-    it = Volaille Emission de NH3 Stockage des engrais de ferme
+    it = Pollame stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -565,7 +565,7 @@ taxonomy = SharesByAnimalCategory
     en = Application poultry NH3-Emissions
     de = Geflügel Hofdüngerausbringung NH3-Emission
     fr = Volaille Emission de NH3 Epandage des engrais de ferme 
-    it = Volaille Emission de NH3 Epandage des engrais de ferme
+    it = Pollame spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -586,7 +586,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing equides and small ruminants NH3-Emissions
     de = Pferde und Kleinwiederkäuer Weide NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 Pâturage  
-    it = Equidés et petits ruminants Emission de NH3 Pâturage
+    it = Cavalli e piccoli ruminanti pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -605,7 +605,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard equides and small ruminants NH3-Emissions
     de = Pferde und Kleinwiederkäuer Stall und Laufhof NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 Stabulation et parcours extérieur  
-    it = Equidés et petits ruminants Emission de NH3 Stabulation et parcours extérieur
+    it = Cavalli e piccoli ruminanti stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -624,7 +624,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage equides and small ruminants NH3-Emissions
     de = Pferde und Kleinwiederkäuer Hofdüngerlager NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme  
-    it = Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme
+    it = Cavalli e piccoli ruminanti stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -643,7 +643,7 @@ taxonomy = SharesByAnimalCategory
     en = Application equides and small ruminants NH3-Emissions
     de = Pferde und Kleinwiederkäuer Hofdüngerausbringung NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme  
-    it = Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme
+    it = Cavalli e piccoli ruminanti spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -663,7 +663,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing equides NH3-Emissions
     de = Pferde und andere Equiden Weide NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3 Pâturage  
-    it = Chevaux et autres équidés Emission de NH3 Pâturage
+    it = Cavalli e altri equidi pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -682,7 +682,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard equides NH3-Emissions
     de = Pferde und andere Equiden Stall und Laufhof NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3 Stabulation et parcours extérieur  
-    it = Chevaux et autres équidés Emission de NH3 Stabulation et parcours extérieur
+    it = Cavalli e altri equidi stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -701,7 +701,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage equides NH3-Emissions
     de = Pferde und andere Equiden Hofdüngerlager NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3 Stockage des engrais de ferme  
-    it = Chevaux et autres équidés Emission de NH3 Stockage des engrais de ferme
+    it = Cavalli e altri equidi stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -720,7 +720,7 @@ taxonomy = SharesByAnimalCategory
     en = Application equides NH3-Emissions
     de = Pferde und andere Equiden Hofdüngerausbringung NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3 Epandage des engrais de ferme  
-    it = Chevaux et autres équidés Emission de NH3 Epandage des engrais de ferme
+    it = Cavalli e altri equidi spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -740,7 +740,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing small ruminants NH3-Emissions
     de = Kleinwiederkäuer Weide NH3-Emission
     fr = Petits ruminants Emission de NH3 Pâturage  
-    it = Petits ruminants Emission de NH3 Pâturage
+    it = Piccoli ruminanti pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -759,7 +759,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard small ruminants NH3-Emissions
     de = Kleinwiederkäuer Stall und Laufhof NH3-Emission
     fr = Petits ruminants Emission de NH3 Stabulation et parcours extérieur 
-    it = Petits ruminants Emission de NH3 Stabulation et parcours extérieur
+    it = Piccoli ruminanti stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -778,7 +778,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage small ruminants NH3-Emissions
     de = Kleinwiederkäuer Hofdüngerlager NH3-Emission
     fr = Petits ruminants Emission de NH3 Stockage des engrais de ferme 
-    it = Petits ruminants Emission de NH3 Stockage des engrais de ferme
+    it = Piccoli ruminanti stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -797,7 +797,7 @@ taxonomy = SharesByAnimalCategory
     en = Application small ruminants NH3-Emissions
     de = Kleinwiederkäuer Hofdüngerausbringung NH3-Emission
     fr = Petits ruminants Emission de NH3 Epandage des engrais de ferme 
-    it = Petits ruminants Emission de NH3 Epandage des engrais de ferme
+    it = Piccoli ruminanti spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -817,7 +817,7 @@ taxonomy = SharesByAnimalCategory
     en = Grazing lievstock NH3-Emissions
     de = Tierhaltung Weide NH3-Emission
     fr = Production animale Emission de NH3 Pâturage  
-    it = Production animale Emission de NH3 Pâturage
+    it = Allevamento pascolo emissione NH3
   ++units
     en = %
   ++description
@@ -836,7 +836,7 @@ taxonomy = SharesByAnimalCategory
     en = Housing and yard livestock NH3-Emissions
     de = Tierhaltung Stall und Laufhof NH3-Emission
     fr = Production animale Emission de NH3 Stabulation et parcours extérieur 
-    it = Production animale Emission de NH3 Stabulation et parcours extérieur
+    it = Allevamento stalla e cortile d'esercizio emissione NH3
   ++units
     en = %
   ++description
@@ -855,7 +855,7 @@ taxonomy = SharesByAnimalCategory
     en = Storage livestock NH3-Emissions
     de = Tierhaltung Hofdüngerlager NH3-Emission
     fr = Production animale Emission de NH3 Stockage des engrais de ferme 
-    it = Production animale Emission de NH3 Stockage des engrais de ferme
+    it = Allevamento stoccaggio effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -874,7 +874,7 @@ taxonomy = SharesByAnimalCategory
     en = Application livestock NH3-Emissions
     de = Tierhaltung Hofdüngerausbringung NH3-Emission
     fr = Production animale Emission de NH3 Epandage des engrais de ferme 
-    it = Production animale Emission de NH3 Epandage des engrais de ferme
+    it = Allevamento spandimento effluenti aziendali emissione NH3
   ++units
     en = %
   ++description
@@ -893,7 +893,7 @@ taxonomy = SharesByAnimalCategory
     en = Livestock NH3-Emissions
     de = Tierhaltung NH3-Emission
     fr = Emission de NH3 Production animale 
-    it = Emission de NH3 Production animale
+    it = Allevamento emissione NH3
   ++units
     en = %
   ++description
@@ -913,7 +913,7 @@ taxonomy = SharesByAnimalCategory
     en = Share Plantproduction NH3-Emissions
     de = Total Anteil Pflanzenbau NH3-Emission
     fr = Total Emission de NH3 Part production végétale  
-    it = Total Emission de NH3 Part production végétale
+    it = Totale quota produzione vegetale emissione NH3
   ++units
     en = %
   ++description
@@ -932,7 +932,7 @@ taxonomy = SharesByAnimalCategory
     en = Mineral Fertiliser NH3-Emissions
     de = Mineraldünger NH3-Emission
     fr = Emission de NH3 Engrais minéraux  
-    it = Emission de NH3 Engrais minéraux
+    it = Concime minerale emissione NH3
   ++units
     en = %
   ++description
@@ -951,7 +951,7 @@ taxonomy = SharesByAnimalCategory
     en = Recycling Fertiliser NH3-Emissions
     de = Recyclingdünger NH3-Emission
     fr = Emission de NH3 Engrais de recyclage 
-    it = Emission de NH3 Engrais de recyclage
+    it = Concimi da riciclaggio emissione NH3
   ++units
     en = %
   ++description
@@ -970,7 +970,7 @@ taxonomy = SharesByAnimalCategory
     en = Total NH3-Emission
     de = Total NH3-Emission
     fr = Emission de NH3 Total 
-    it = Emission de NH3 Total
+    it = Totale emissione NH3
   ++units
     en = %
   ++description

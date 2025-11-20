@@ -22,7 +22,7 @@ Selects the free correction factor for housing emission for dairy cows.
     en = Additional emission mitigation measure for the housing (see column Help)
     de = Zusätzliche emissionsmindernde Massnahme Stall (siehe Spalte Hilfe)
     fr = Mesure supplémentaire limitant les émissions dans les stabulations (cf. aide)
-    it = Mesure supplémentaire limitant les émissions dans les stabulations (cf. aide)
+    it = Misura aggiuntiva di riduzione delle emissioni stalla (vedi colonna Aiuto)
   ++units 
     en = %
   ++description
@@ -107,10 +107,8 @@ Selects the free correction factor for housing emission for dairy cows.
               . In(free_correction_factor) . "%\!\n" ,
         de => "Sie haben eine zusätzliche emissionsmindernde Massnahme für einen Stall der Milchkühe von " 
               . In(free_correction_factor) . "\% eingegeben!\n" ,
-        fr => "Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'une "
-              . "stabulation pour vâches laitières de " . In(free_correction_factor) . "\% !\n",
-        it => "Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'une "
-              . "stabulation pour vâches laitières de " . In(free_correction_factor) . "\% !\n"
+        fr => "Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'une stabulation pour vâches laitières de " . In(free_correction_factor) . "\% !\n",
+        it => "TODO",
       });
       return 1 - In(free_correction_factor) / 100;  
     } 

@@ -47,7 +47,7 @@ Selects the emission rate and other correciton factors for the specific housing 
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
-    it = Type de stabulation
+    it = Tipo di stabulazione
   ++units  
     en = -
   ++description

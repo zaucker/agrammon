@@ -41,7 +41,7 @@ taxonomy = Application::Slurry::Applrate
       en = Dilution of slurry (liters of water added to one liter of fresh excreta)
       de = Gülleverdünnung (Liter Wasser pro Liter unverdünnter Gülle)
       fr = Dilution du lisier (litres d'eau par litre de lisier non dilué)
-      it = Dilution du lisier (litres d'eau par litre de lisier non dilué)
+      it = Diluizione del liquame (litri d'acqua per litro di liquame non diluito)
     ++units
       en = 1:x
     ++description
@@ -65,7 +65,7 @@ taxonomy = Application::Slurry::Applrate
       en = Mean dose per application
       de = Mittlere Ausbringungsmenge pro Gabe
       fr = Quantité moyenne apandue par application
-      it = Quantité moyenne apandue par application
+      it = Quantità media di spandimento per applicazione
     ++units
       en = m3/ha
     ++description

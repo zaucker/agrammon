@@ -121,7 +121,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all dairy cows.
   ++formula
@@ -136,12 +136,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing dairy cows NH3-emissions
     de = Milchkühe Weide NH3-Emission
     fr = Vâches laitières Emission de NH3 Pâturage 
-    it = Vâches laitières Emission de NH3 Pâturage
+    it = Vacche da latte pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from dairy cows grazing areas.
   ++formula
@@ -156,12 +156,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard dairy cows NH3-Emissions
     de = Milchkühe Stall und Laufhof NH3-Emission
     fr = Vâches laitières Emission de NH3 Stabulation et parcours extérieur 
-    it = Vâches laitières Emission de NH3 Stabulation et parcours extérieur
+    it = Vacche da latte stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from dairy cows from all housings and yards.
   ++formula
@@ -176,7 +176,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage solid dairy cow
     de = Milchkühe Anteile Lagerinput fest
     fr = Vâches laitières Part Stockage solide 
-    it = Vâches laitières Part Stockage solide
+    it = Vacche da latte quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -194,7 +194,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Application solid dairy cow  
     de = Milchkühe Anteile Ausbringung fest
     fr = Vâches laitières Part Epandage solide
-    it = Vâches laitières Part Epandage solide
+    it = Vacche da latte quota spandimento solido
   ++units
     en = %
   ++description
@@ -213,7 +213,7 @@ taxonomy = SummaryByAnimalCategory
     en = Sum of weighting factor for  Application Slurry
     de = Milchkühe Anteile Ausbringung fest
     fr = Vâches laitières Part Epandage solide 
-    it = Vâches laitières Part Epandage solide
+    it = Vacche da latte quota spandimento solido
   ++units
     en = %
   ++description
@@ -230,7 +230,7 @@ taxonomy = SummaryByAnimalCategory
     en =  Share input Storage liquid dairy cow
     de = Milchkühe Anteile Lagerinput flüssig
     fr = Vâches laitières Part Stockage liquide
-    it = Vâches laitières Part Stockage liquide
+    it = Vacche da latte quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -248,7 +248,7 @@ taxonomy = SummaryByAnimalCategory
     en =  Share input Storage liquid dairy cow
     de = Milchkühe Anteile Lagerinput flüssig
     fr =  Vâches laitières Part Stockage liquide
-    it = Vâches laitières Part Stockage liquide
+    it = Vacche da latte quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -267,12 +267,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid dairy cows NH3-Emissions
     de = _Milchkühe Hofdüngerlager fest NH3-Emission
     fr = _Vâches laitières Emission de NH3 Stockage des engrais de ferme solides
-    it = _Vâches laitières Emission de NH3 Stockage des engrais de ferme solides
+    it = _Vacche da latte stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -287,12 +287,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid dairy cows NH3-Emissions
     de = _Milchkühe Hofdüngerlager flüssig NH3-Emission
     fr = _Vâches laitières Emission de NH3 Stockage des engrais de ferme liquides 
-    it = _Vâches laitières Emission de NH3 Stockage des engrais de ferme liquides
+    it = _Vacche da latte stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -307,12 +307,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage dairy cows NH3-Emissions
     de = Milchkühe Hofdüngerlager NH3-Emission
     fr = Vâches laitières Emission de NH3 Stockage des engrais de ferme 
-    it = Vâches laitières Emission de NH3 Stockage des engrais de ferme
+    it = Vacche da latte stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -327,12 +327,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid dairy cows NH3-Emissions
     de = _Milchkühe Hofdüngerausbringung fest NH3-Emission
     fr = _Vâches laitières Emission de NH3 Epandage des engrais de ferme solides
-    it = _Vâches laitières Emission de NH3 Epandage des engrais de ferme solides
+    it = _Vacche da latte spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -347,12 +347,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid dairy cows NH3-Emissions
     de = _Milchkühe Hofdüngerausbringung flüssig NH3-Emission
     fr = _Vâches laitières Emission de NH3 Epandage des engrais de ferme liquides
-    it = _Vâches laitières Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Vacche da latte spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -367,12 +367,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application dairy cows NH3-Emissions
     de = Milchkühe Hofdüngerausbringung NH3-Emission	
     fr = Vâches laitières Emission de NH3 Epandage des engrais de ferme  
-    it = Vâches laitières Emission de NH3 Epandage des engrais de ferme
+    it = Vacche da latte spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -387,12 +387,12 @@ taxonomy = SummaryByAnimalCategory
     en = Dairy cows NH3-Emissions
     de = Milchkühe NH3-Emission
     fr = Vâches laitières Emission de NH3  
-    it = Vâches laitières Emission de NH3
+    it = Vacche da latte emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from dairycow ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -409,12 +409,12 @@ taxonomy = SummaryByAnimalCategory
     en =  Excretion other cattle
     de = Ausscheidung übriges Rindvieh
     fr = Déjections Autres bovins 
-    it = Déjections Autres bovins
+    it = Escrezione altri bovini
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all other cattle.
   ++formula
@@ -429,12 +429,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing other cattle NH3-Emissions
     de = Übriges Rindvieh Weide NH3-Emission
     fr = Autres bovins Emission de NH3 Pâturage 
-    it = Autres bovins Emission de NH3 Pâturage
+    it = Altri bovini pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from other cattle grazing areas.
   ++formula
@@ -449,12 +449,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard other cattle NH3-Emissions
     de = Übriges Rindvieh Stall und Laufhof NH3-Emission
     fr = Autres bovins Emission de NH3 Stabulation et parcours extérieur  
-    it = Autres bovins Emission de NH3 Stabulation et parcours extérieur
+    it = Altri bovini stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from cattle from all housings and yards.
   ++formula
@@ -469,7 +469,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input storage solid other cattle
     de = Übriges Rindvieh Anteile Lagerinput fest
     fr = Autres bovins Part Stockage solide
-    it = Autres bovins Part Stockage solide
+    it = Altri bovini quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -487,7 +487,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input storage liquid other cattle
     de = Übriges Rindvieh Anteile Lagerinput flüssig
     fr = Autres bovins Part Stockage liquide
-    it = Autres bovins Part Stockage liquide
+    it = Altri bovini quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -505,7 +505,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input storage other cattle 
     de = Übriges Rindvieh Anteile Lagerinput
     fr = Autres bovins Part Epandage solide  
-    it = Autres bovins Part Epandage solide
+    it = Altri bovini quota input stoccaggio
   ++units
     en = %
   ++description
@@ -524,7 +524,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid other cattle
     de = Übriges Rindvieh Anteile Gewicht Ausbringemissionen flüssig Lager
     fr = Autres bovins Part Stockage liquide
-    it = Autres bovins Part Stockage liquide
+    it = Altri bovini quota peso emissioni spandimento liquido deposito
   ++units
     en = %
   ++description
@@ -543,12 +543,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid other cattle NH3-Emissions
     de = _Übriges Rindvieh Hofdüngerlager fest NH3-Emission
     fr = _Autres bovins Emission de NH3 Stockage des engrais de ferme solide 
-    it = _Autres bovins Emission de NH3 Stockage des engrais de ferme solide
+    it = _Altri bovini stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to tan input of animalcategory in storage)
   ++formula
@@ -563,12 +563,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid other cattle NH3-Emissions
     de = _Übriges Rindvieh Hofdüngerlager flüssig NH3-Emission
     fr = _Autres bovins Emission de NH3 Stockage des engrais de ferme liquide 
-    it = _Autres bovins Emission de NH3 Stockage des engrais de ferme liquide
+    it = _Altri bovini stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -583,12 +583,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage other cattle NH3-Emissions
     de = Übriges Rindvieh Hofdüngerlager NH3-Emission
     fr = Autres bovins Emission de NH3 Stockage des engrais de ferme 
-    it = Autres bovins Emission de NH3 Stockage des engrais de ferme
+    it = Altri bovini stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -603,12 +603,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid other cattle NH3-Emissions
     de = _Übriges Rindvieh Hofdüngerausbringung fest NH3-Emission
     fr = _Autres bovins Emission de NH3 Epandage des engrais de ferme solides
-    it = _Autres bovins Emission de NH3 Epandage des engrais de ferme solides
+    it = _Altri bovini spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -623,12 +623,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid other cattle NH3-Emissions
     de = _Übriges Rindvieh Hofdüngerausbringung flüssig NH3-Emission
     fr = _Autres bovins Emission de NH3 Epandage des engrais de ferme liquides 
-    it = _Autres bovins Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Altri bovini spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -643,12 +643,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application other cattle NH3-Emissions
     de = Übriges Rindvieh Hofdüngerausbringung NH3-Emission
     fr = Autres bovins Emission de NH3 Epandage des engrais de ferme 
-    it = Autres bovins Emission de NH3 Epandage des engrais de ferme
+    it = Altri bovini spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -663,12 +663,12 @@ taxonomy = SummaryByAnimalCategory
     en = Other cattle NH3-Emission
     de = Übriges Rindvieh NH3-Emission
     fr = Autres bovins Emission de NH3
-    it = Autres bovins Emission de NH3
+    it = Altri bovini emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from other cattle ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -684,12 +684,12 @@ taxonomy = SummaryByAnimalCategory
     en = Excretion cattle
     de = Ausscheidung Rinder
     fr = Déjections Bovins 
-    it = Déjections Bovins
+    it = Escrezione bovini
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all cattle (dairy cows and other cattle).
   ++formula
@@ -705,12 +705,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing cattle NH3-Emissions
     de = Rinder Weide NH3-Emission
     fr = Bovins Emission de NH3 Pâturage 
-    it = Bovins Emission de NH3 Pâturage
+    it = Bovini pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from cattle grazing areas.
   ++formula
@@ -726,12 +726,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard cattle NH3-Emissions
     de = Rinder Stall und Laufhof NH3-Emission
     fr = Bovins Emission de NH3 Stabulation et parcours extérieur  
-    it = Bovins Emission de NH3 Stabulation et parcours extérieur
+    it = Bovini stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from cattle from all housings and yards.
   ++formula
@@ -748,7 +748,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input storage cattle 
     de = Rinder Anteile Lagerinput
     fr = Bovins Part Stockage   
-    it = Bovins Part Stockage
+    it = Bovini quota input stoccaggio
   ++units
     en = %
   ++description
@@ -767,7 +767,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input storage solid cattle
     de = Rinder Anteile Lagerinput fest
     fr = Bovins Part Stockage solide 
-    it = Bovins Part Stockage solide
+    it = Bovini quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -786,7 +786,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input storage liquid cattle
     de = Rinder Anteile Lagerinput flüssig
     fr = Bovins Part Stockage liquide 
-    it = Bovins Part Stockage liquide
+    it = Bovini quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -806,12 +806,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid cattle NH3-Emissions
     de = _Rinder Hofdüngerlager flüssig NH3-Emission
     fr = _Bovins Emission de NH3 Stockage des engrais de ferme liquides
-    it = _Bovins Emission de NH3 Stockage des engrais de ferme liquides
+    it = _Bovini stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -826,12 +826,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid cattle NH3-Emissions
     de = _Rinder Hofdüngerlager fest NH3-Emission
     fr = _Bovins Emission de NH3 Stockage des engrais de ferme solides 
-    it = _Bovins Emission de NH3 Stockage des engrais de ferme solides
+    it = _Bovini stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -846,12 +846,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage cattle NH3-Emissions
     de = Rinder Hofdüngerlager NH3-Emission
     fr = Bovins Emission de NH3 Stockage des engrais de ferme 
-    it = Bovins Emission de NH3 Stockage des engrais de ferme
+    it = Bovini stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -866,12 +866,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid cattle NH3-Emissions
     de = _Rinder Hofdüngerausbringung fest NH3-Emission
     fr = _Bovins Emission de NH3 Epandage des engrais de ferme solides 
-    it = _Bovins Emission de NH3 Epandage des engrais de ferme solides
+    it = _Bovini spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -886,12 +886,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid cattle NH3-Emissions
     de = _Rinder Hofdüngerausbringung flüssig NH3-Emission
     fr = _Bovins Emission de NH3 Epandage des engrais de ferme liquides 
-    it = _Bovins Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Bovini spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -906,12 +906,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application cattle NH3-Emissions
     de = Rinder Hofdüngerausbringung NH3-Emission
     fr = Bovins Emission de NH3 Epandage des engrais de ferme 
-    it = Bovins Emission de NH3 Epandage des engrais de ferme
+    it = Bovini spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -926,12 +926,12 @@ taxonomy = SummaryByAnimalCategory
     en = Cattle NH3-Emissions
     de = Rindvieh NH3-Emission
     fr = Bovins Emission de NH3 
-    it = Bovins Emission de NH3
+    it = Bovini emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from cattle ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -949,7 +949,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all other pigs.
   ++formula
@@ -964,12 +964,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing other pigs NH3-Emissions
     de = Zuchtschweine Weide NH3-Emission
     fr = Porcs d'élevage Emission de NH3 Pâturage  
-    it = Porcs d'élevage Emission de NH3 Pâturage
+    it = Scrofe pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from other pigs grazing areas.
   ++formula
@@ -984,12 +984,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard other pigs NH3-Emissions
     de = Zuchtschweine Stall und Laufhof NH3-Emission
     fr = Porcs d'élevage Emission de NH3 Stabulation et parcours extérieur 
-    it = Porcs d'élevage Emission de NH3 Stabulation et parcours extérieur
+    it = Scrofe stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from other pigs form all housings and yards.
   ++formula
@@ -1003,7 +1003,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage solid other pigs
     de = Zuchtschweine Anteile Lagerinput fest
     fr = Porcs d'élevage Part Stockage solide  
-    it = Porcs d'élevage Part Stockage solide
+    it = Scrofe quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -1021,7 +1021,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid other pigs
     de = Zuchtschweine Anteile Lagerinput flüssig
     fr = Porcs d'élevage Part Stockage liquide
-    it = Porcs d'élevage Part Stockage liquide
+    it = Scrofe quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -1039,7 +1039,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage solid other pigs
     de = Zuchtschweine Anteile Lagerinput fest
     fr = Porcs d'élevage Part Epandage solide 
-    it = Porcs d'élevage Part Epandage solide
+    it = Scrofe quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -1058,7 +1058,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid other pigs
     de = Zuchtschweine Anteile Gewicht Ausbringemissionen flüssig Lager
     fr = Porcs d'élevage Part Stockage liquide
-    it = Porcs d'élevage Part Stockage liquide
+    it = Scrofe quota peso emissioni spandimento liquido deposito
   ++units
     en = %
   ++description
@@ -1077,12 +1077,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid other pigs NH3-Emissions
     de = _Zuchtschweine Hofdüngerlager fest NH3-Emission
     fr = _Porcs d'élevage Emission de NH3 Stockage des engrais de ferme solides 
-    it = _Porcs d'élevage Emission de NH3 Stockage des engrais de ferme solides
+    it = _Scrofe stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1097,12 +1097,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid other pigs NH3-Emissions
     de = _Zuchtschweine Hofdüngerlager flüssig NH3-Emission
     fr = _Porcs d'élevage Emission de NH3 Stockage des engrais de ferme liquides 
-    it = _Porcs d'élevage Emission de NH3 Stockage des engrais de ferme liquides
+    it = _Scrofe stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1117,12 +1117,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage other pigs NH3-Emissions
     de = Zuchtschweine Hofdüngerlager NH3-Emission
     fr = Porcs d'élevage Emission de NH3 Stockage des engrais de ferme 
-    it = Porcs d'élevage Emission de NH3 Stockage des engrais de ferme
+    it = Scrofe stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1137,12 +1137,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid other pigs NH3-Emissions
     de = _Zuchtschweine Hofdüngerausbringung fest NH3-Emission
     fr = _Porcs d'élevage Emission de NH3 Epandage des engrais de ferme solides 
-    it = _Porcs d'élevage Emission de NH3 Epandage des engrais de ferme solides
+    it = _Scrofe spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1157,12 +1157,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid other pigs NH3-Emissions
     de = _Zuchtschweine Hofdüngerausbringung flüssig NH3-Emission
     fr = _Porcs d'élevage Emission de NH3 Epandage des engrais de ferme liquides 
-    it = _Porcs d'élevage Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Scrofe spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1177,12 +1177,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application other pigs NH3-Emissions
     de = Zuchtschweine Hofdüngerausbringung NH3-Emission
     fr = Porcs d'élevage Emission de NH3 Epandage des engrais de ferme 
-    it = Porcs d'élevage Emission de NH3 Epandage des engrais de ferme
+    it = Scrofe spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1197,12 +1197,12 @@ taxonomy = SummaryByAnimalCategory
     en = Other pigs NH3-Emissions
     de = Zuchtschweine NH3-Emission
     fr = Porcs d'élevage Emission de NH3 
-    it = Porcs d'élevage Emission de NH3
+    it = Scrofe emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from pig ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1220,7 +1220,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by fattening pigs.
   ++formula
@@ -1235,12 +1235,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing fattening pigs NH3-Emissions
     de = Mastschweine Weide NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 Pâturage 
-    it = Porcs à l'engrais Emission de NH3 Pâturage
+    it = Suini all'ingrasso pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from fattening pigs grazing areas.
   ++formula
@@ -1255,12 +1255,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard fattening pigs NH3-Emissions
     de = Mastschweine Stall und Laufhof NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 Stabulation et parcours extérieur 
-    it = Porcs à l'engrais Emission de NH3 Stabulation et parcours extérieur
+    it = Suini all'ingrasso stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from fattening pigs from all housings and yards.
   ++formula
@@ -1274,7 +1274,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage solid fattening pigs
     de = Mastschweine Anteile Lagerinput fest
     fr = Porcs à l'engrais Part Stockage solide 
-    it = Porcs à l'engrais Part Stockage solide
+    it = Suini all'ingrasso quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -1292,7 +1292,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid fattening pigs
     de = Mastschweine Anteile Lagerinput flüssig
     fr = Porcs à l'engrais Part Stockage liquide 
-    it = Porcs à l'engrais Part Stockage liquide
+    it = Suini all'ingrasso quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -1311,7 +1311,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Application solid fattening pigs
     de = Mastschweine Anteile Ausbringung fest
     fr = Porcs à l'engrais Part Epandage solide  
-    it = Porcs à l'engrais Part Epandage solide
+    it = Suini all'ingrasso quota spandimento solido
   ++units
     en = %
   ++description
@@ -1330,7 +1330,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid fattening pigs
     de = Mastschweine Anteile Gewicht Ausbringemissionen flüssig Lager
     fr = Porcs à l'engrais Part Stockage liquide
-    it = Porcs à l'engrais Part Stockage liquide
+    it = Suini all'ingrasso quota peso emissioni spandimento liquido deposito
   ++units
     en = %
   ++description
@@ -1349,12 +1349,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid fattening pigs NH3-Emissions
     de = _Mastschweine Hofdüngerlager fest NH3-Emission
     fr = _Porcs à l'engrais Emission de NH3 Stockage des engrais de ferme solides 
-    it = _Porcs à l'engrais Emission de NH3 Stockage des engrais de ferme solides
+    it = _Suini all'ingrasso stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1369,12 +1369,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid fattening pigs NH3-Emissions
     de = _Mastschweine Hofdüngerlager flüssig NH3-Emission
     fr = _Porcs à l'engrais Emission de NH3 Stockage des engrais de ferme liquides 
-    it = _Porcs à l'engrais Emission de NH3 Stockage des engrais de ferme liquides
+    it = _Suini all'ingrasso stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1389,12 +1389,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage fattening pigs NH3-Emissions
     de = Mastschweine Hofdüngerlager NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 Stockage des engrais de ferme 
-    it = Porcs à l'engrais Emission de NH3 Stockage des engrais de ferme
+    it = Suini all'ingrasso stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1409,12 +1409,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid fattening pigs NH3-Emissions
     de = _Mastschweine Hofdüngerausbringung fest NH3-Emission
     fr = _Porcs à l'engrais Emission de NH3 Epandage des engrais de ferme solides 
-    it = _Porcs à l'engrais Emission de NH3 Epandage des engrais de ferme solides
+    it = _Suini all'ingrasso spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1429,12 +1429,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid fattening pigs NH3-Emissions
     de = _Mastschweine Hofdüngerausbringung flüssig NH3-Emission
     fr = _Porcs à l'engrais Emission de NH3 Epandage des engrais de ferme liquides 
-    it = _Porcs à l'engrais Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Suini all'ingrasso spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application liquid(estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1449,12 +1449,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application fattening pigs NH3-Emissions
     de = Mastschweine Hofdüngerausbringung NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 Epandage des engrais de ferme 
-    it = Porcs à l'engrais Emission de NH3 Epandage des engrais de ferme
+    it = Suini all'ingrasso spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1469,12 +1469,12 @@ taxonomy = SummaryByAnimalCategory
     en = Fattening pigs NH3-Emissions
     de = Mastschweine NH3-Emission
     fr = Porcs à l'engrais Emission de NH3 
-    it = Porcs à l'engrais Emission de NH3
+    it = Suini all'ingrasso emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from pig ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1491,7 +1491,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all pigs (pigs and fattening pigs).
   ++formula
@@ -1507,12 +1507,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing pigs NH3-Emissions
     de = Schweine Weide NH3-Emission
     fr = Porcs Emission de NH3 Pâturage  
-    it = Porcs Emission de NH3 Pâturage
+    it = Suini pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all pigs grazing areas.
   ++formula
@@ -1528,12 +1528,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard all pigs NH3-Emissions
     de = Schweine Stall und Laufhof NH3-Emission
     fr = Porcs Emission de NH3 Stabulation et parcours extérieur  
-    it = Porcs Emission de NH3 Stabulation et parcours extérieur
+    it = Suini stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from all pigs from all housings and yards.
   ++formula
@@ -1548,7 +1548,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage pigs
     de = Schweine Anteile Lagerinput
     fr = Porcs Part Stockage  
-    it = Porcs Part Stockage
+    it = Suini quota input stoccaggio
   ++units
     en = %
   ++description
@@ -1567,7 +1567,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage solid pigs
     de = Schweine Anteile Lagerinput fest
     fr = Porcs Part Stockage solide  
-    it = Porcs Part Stockage solide
+    it = Suini quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -1586,7 +1586,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid pigs
     de = Schweine Anteile Lagerinput flüssig
     fr = Porcs Part Stockage liquide 
-    it = Porcs Part Stockage liquide
+    it = Suini quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -1606,12 +1606,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid pigs NH3-Emissions
     de = _Schweine Hofdüngerlager fest NH3-Emission
     fr = _Porcs Emission de NH3 Stockage des engrais de ferme solides 
-    it = _Porcs Emission de NH3 Stockage des engrais de ferme solides
+    it = _Suini stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage solid(estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1626,12 +1626,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid pigs NH3-Emissions
     de = _Schweine Hofdüngerlager flüssig NH3-Emission
     fr = _Porcs Emission de NH3 Stockage des engrais de ferme liquides 
-    it = _Porcs Emission de NH3 Stockage des engrais de ferme liquides
+    it = _Suini stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1646,12 +1646,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage pigs NH3-Emissions
     de = Schweine Hofdüngerlager NH3-Emission
     fr = Porcs Emission de NH3 Stockage des engrais de ferme 
-    it = Porcs Emission de NH3 Stockage des engrais de ferme
+    it = Suini stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1666,12 +1666,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid pigs NH3-Emissions
     de = _Schweine Hofdüngerausbringung fest NH3-Emission 
     fr = _Porcs Emission de NH3 Epandage des engrais de ferme solides
-    it = _Porcs Emission de NH3 Epandage des engrais de ferme solides
+    it = _Suini spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1686,12 +1686,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid pigs NH3-Emissions
     de = _Schweine Hofdüngerausbringung flüssig NH3-Emission
     fr = _Porcs Emission de NH3 Epandage des engrais de ferme liquides
-    it = _Porcs Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Suini spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1706,12 +1706,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application pigs NH3-Emissions
     de = Schweine Hofdüngerausbringung NH3-Emission
     fr = Porcs Emission de NH3 Epandage des engrais de ferme  
-    it = Porcs Emission de NH3 Epandage des engrais de ferme
+    it = Suini spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1726,12 +1726,12 @@ taxonomy = SummaryByAnimalCategory
     en = Pig NH3-Emissions
     de = Schweine NH3-Emission
     fr = Porcs Emission de NH3
-    it = Porcs Emission de NH3
+    it = Suini emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from pig ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1748,7 +1748,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all poultry animals.
   ++formula
@@ -1763,12 +1763,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing poultry NH3-Emissions
     de = Geflügel Weide NH3-Emission
     fr = Volaille Emission de NH3 Pâturage 
-    it = Volaille Emission de NH3 Pâturage
+    it = Pollame pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from poultry grazing areas.
   ++formula
@@ -1783,12 +1783,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard poultry NH3-Emissions
     de = Geflügel Stall und Laufhof NH3-Emission
     fr = Volaille Emission de NH3 Stabulation et parcours extérieur 
-    it = Volaille Emission de NH3 Stabulation et parcours extérieur
+    it = Pollame stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from poultry from all housings and yards.
   ++formula
@@ -1803,12 +1803,12 @@ taxonomy = SummaryByAnimalCategory
     en =  Storage poultry NH3-Emissions
     de =  Geflügel Hofdüngerlager NH3-Emission
     fr =  Volaille Emission de NH3 Stockage des engrais de ferme 
-    it = Volaille Emission de NH3 Stockage des engrais de ferme
+    it = Pollame stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage 
   ++formula
@@ -1823,12 +1823,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application poultry NH3-Emissions
     de = Geflügel Hofdüngerausbringung NH3-Emission
     fr = Volaille Emission de NH3 Epandage des engrais de ferme 
-    it = Volaille Emission de NH3 Epandage des engrais de ferme
+    it = Pollame spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application 
   ++formula
@@ -1843,12 +1843,12 @@ taxonomy = SummaryByAnimalCategory
     en = Poultry NH3-Emissions
     de = Geflügel NH3-Emission
     fr = Volaille Emission de NH3
-    it = Volaille Emission de NH3
+    it = Pollame emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from pig ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -1865,7 +1865,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all equides and small ruminants.
   ++formula
@@ -1881,12 +1881,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing equides and small ruminants NH3-Emissions
     de = Pferde und Kleinwiederkäuer Weide NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 Pâturage 
-    it = Equidés et petits ruminants Emission de NH3 Pâturage
+    it = Cavalli e piccoli ruminanti pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from equides and small ruminants grazing areas.
   ++formula
@@ -1902,12 +1902,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard equides and small ruminants NH3-Emissions
     de = Pferde und Kleinwiederkäuer Stall und Laufhof NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 Stabulation et parcours extérieur 
-    it = Equidés et petits ruminants Emission de NH3 Stabulation et parcours extérieur
+    it = Cavalli e piccoli ruminanti stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from equides and small ruminants from all housings and yards.
   ++formula
@@ -1923,7 +1923,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage equides and small ruminants
     de = Pferde und Kleinwiederkäuer Anteile Lagerinput
     fr = Equidés et petits ruminants Part Stockage 
-    it = Equidés et petits ruminants Part Stockage
+    it = Cavalli e piccoli ruminanti quota input stoccaggio
   ++units
     en = %
   ++description
@@ -1942,7 +1942,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage solid equides and small ruminants
     de = Pferde und Kleinwiederkäuer Anteile Lagerinput fest
     fr = Equidés et petits ruminants Part Stockage solide
-    it = Equidés et petits ruminants Part Stockage solide
+    it = Cavalli e piccoli ruminanti quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -1961,7 +1961,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid equides and small ruminants
     de = Pferde und Kleinwiederkäuer Anteile Lagerinput flüssig
     fr = Equidés et petits ruminants Part Stockage liquide
-    it = Equidés et petits ruminants Part Stockage liquide
+    it = Cavalli e piccoli ruminanti quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -1981,12 +1981,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid equides and small ruminants NH3-Emissions
     de = _Pferde und Kleinwiederkäuer Hofdüngerlager fest NH3-Emission
     fr = _Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme solides 
-    it = _Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme solides
+    it = _Cavalli e piccoli ruminanti stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2001,12 +2001,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid equides and small ruminants NH3-Emissions
     de = _Pferde und Kleinwiederkäuer Hofdüngerlager flüssig NH3-Emission	
     fr = _Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme liquides  
-    it = _Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme liquides
+    it = _Cavalli e piccoli ruminanti stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2021,12 +2021,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage equides and small ruminants NH3-Emissions
     de = Pferde und Kleinwiederkäuer Hofdüngerlager NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme 
-    it = Equidés et petits ruminants Emission de NH3 Stockage des engrais de ferme
+    it = Cavalli e piccoli ruminanti stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2041,12 +2041,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid equides and small ruminants NH3-Emissions
     de = _Pferde und Kleinwiederkäuer Hofdüngerausbringung fest NH3-Emission
     fr = _Equidés et petits ruminants Emission de NH3 Epandage des engrais de ferme solides 
-    it = _Equidés et petits ruminants Emission de NH3 Epandage des engrais de ferme solides
+    it = _Cavalli e piccoli ruminanti spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2061,12 +2061,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid equides and small ruminants NH3-Emissions
     de = _Pferde und Kleinwiederkäuer Hofdüngerausbringung flüssig NH3-Emission
     fr = _Equidés et petits ruminants Emission de NH3 Epandage des engrais de ferme liquides 
-    it = _Equidés et petits ruminants Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Cavalli e piccoli ruminanti spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2081,12 +2081,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application equides and small ruminants NH3-Emissions
     de = Pferde und Kleinwiederkäuer Hofdüngerausbringung NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 Epandage des engrais de ferme 
-    it = Equidés et petits ruminants Emission de NH3 Epandage des engrais de ferme
+    it = Cavalli e piccoli ruminanti spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2101,12 +2101,12 @@ taxonomy = SummaryByAnimalCategory
     en = Equides and small ruminant NH3-Emissions
     de = Pferde und Kleinwiederkäuer NH3-Emission
     fr = Equidés et petits ruminants Emission de NH3 
-    it = Equidés et petits ruminants Emission de NH3
+    it = Cavalli e piccoli ruminanti emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from other ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2123,7 +2123,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all equides.
   ++formula
@@ -2138,12 +2138,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing equides NH3-Emissions
     de = Pferde und andere Equiden Weide NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3 Pâturage 
-    it = Chevaux et autres équidés Emission de NH3 Pâturage
+    it = Cavalli e altri equidi pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from equides grazing areas.
   ++formula
@@ -2158,12 +2158,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard equides NH3-Emissions
     de = Pferde und andere Equiden Stall und Laufhof NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3 Stabulation et parcours extérieur 
-    it = Chevaux et autres équidés Emission de NH3 Stabulation et parcours extérieur
+    it = Cavalli e altri equidi stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from equides from all housings and yards.
   ++formula
@@ -2178,7 +2178,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage solid equides
     de = Pferde und andere Equiden Anteile Lagerinput fest
     fr = Chevaux et autres équidés Part Stockage solide 
-    it = Chevaux et autres équidés Part Stockage solide
+    it = Cavalli e altri equidi quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -2196,7 +2196,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid equides
     de = Pferde und andere Equiden Anteile Lagerinput flüssig
     fr = Chevaux et autres équidés Part Stockage liquide
-    it = Chevaux et autres équidés Part Stockage liquide
+    it = Cavalli e altri equidi quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -2214,7 +2214,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid dairy cow
     de = Milchkühe Anteile Lagerinput flüssig
     fr = Vâches laitières Part Stockage liquide
-    it = Vâches laitières Part Stockage liquide
+    it = Vacche da latte quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -2233,12 +2233,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid equides NH3-Emissions
     de = _Pferde und andere Equiden Hofdüngerlager fest NH3-Emission
     fr = _Chevaux et autres équidés Emission de NH3 Stockage des engrais de ferme solides 
-    it = _Chevaux et autres équidés Emission de NH3 Stockage des engrais de ferme solides
+    it = _Cavalli e altri equidi stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2253,12 +2253,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid equides NH3-Emissions
     de = _Pferde und andere Equiden Hofdüngerlager flüssig NH3-Emission
     fr = _Chevaux et autres équidés Emission de NH3 Stockage des engrais de ferme liquides 
-    it = _Chevaux et autres équidés Emission de NH3 Stockage des engrais de ferme liquides
+    it = _Cavalli e altri equidi stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2273,12 +2273,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage equides NH3-Emissions
     de = Pferde und andere Equiden Hofdüngerlager NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3 Stockage des engrais de ferme 
-    it = Chevaux et autres équidés Emission de NH3 Stockage des engrais de ferme
+    it = Cavalli e altri equidi stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2293,12 +2293,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid equides NH3-Emissions
     de = _Pferde und andere Equiden Hofdüngerausbringung fest NH3-Emission
     fr = _Chevaux et autres équidés Emission de NH3 Epandage des engrais de ferme solides 
-    it = _Chevaux et autres équidés Emission de NH3 Epandage des engrais de ferme solides
+    it = _Cavalli e altri equidi spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2313,12 +2313,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid equides NH3-Emissions
     de = _Pferde und andere Equiden Hofdüngerausbringung flüssig NH3-Emission
     fr = _Chevaux et autres équidés Emission de NH3 Epandage des engrais de ferme liquides 
-    it = _Chevaux et autres équidés Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Cavalli e altri equidi spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2333,12 +2333,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application equides NH3-Emissions
     de = Pferde und andere Equiden Hofdüngerausbringung NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3 Epandage des engrais de ferme  
-    it = Chevaux et autres équidés Emission de NH3 Epandage des engrais de ferme
+    it = Cavalli e altri equidi spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2353,12 +2353,12 @@ taxonomy = SummaryByAnimalCategory
     en = Equides NH3-Emissions
     de = Pferde und andere Equiden NH3-Emission
     fr = Chevaux et autres équidés Emission de NH3
-    it = Chevaux et autres équidés Emission de NH3
+    it = Cavalli e altri equidi emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from equides ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2376,7 +2376,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all small ruminants.
   ++formula
@@ -2391,12 +2391,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing small ruminants NH3-Emissions
     de = Kleinwiederkäuer Weide NH3-Emission
     fr = Petits ruminants Emission de NH3 Pâturage 
-    it = Petits ruminants Emission de NH3 Pâturage
+    it = Piccoli ruminanti pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from small ruminants grazing areas.
   ++formula
@@ -2411,12 +2411,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard small ruminants NH3-Emissions
     de = Kleinwiederkäuer Stall und Laufhof NH3-Emission
     fr = Petits ruminants Emission de NH3 Stabulation et parcours extérieur 
-    it = Petits ruminants Emission de NH3 Stabulation et parcours extérieur
+    it = Piccoli ruminanti stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from small ruminants from all housings and yards.
   ++formula
@@ -2430,7 +2430,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage solid small ruminants  
     de = Kleinwiederkäuer Anteile Lagerinput fest
     fr = Petits ruminants Part Stockage solide
-    it = Petits ruminants Part Stockage solide
+    it = Piccoli ruminanti quota input stoccaggio solido
   ++units
     en = %
   ++description
@@ -2448,7 +2448,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid small ruminants ;\ 
     de = Kleinwiederkäuer Anteile Lagerinput flüssig;\
     fr = Petits ruminants Part Stockage liquide } 
-    it = Petits ruminants Part Stockage liquide }
+    it = Piccoli ruminanti quota input stoccaggio liquido;\
   ++units
     en = %
   ++description
@@ -2466,7 +2466,7 @@ taxonomy = SummaryByAnimalCategory
     en = Share input Storage liquid small ruminants
     de = Kleinwiederkäuer Anteile Lagerinput flüssig
     fr = Petits ruminants Part Stockage liquide
-    it = Petits ruminants Part Stockage liquide
+    it = Piccoli ruminanti quota input stoccaggio liquido
   ++units
     en = %
   ++description
@@ -2485,12 +2485,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage solid small ruminants NH3-Emissions
     de = _Kleinwiederkäuer Hofdüngerlager fest NH3-Emission
     fr = _Petits ruminants Emission de NH3  Stockage des engrais de ferme solides 
-    it = _Petits ruminants Emission de NH3  Stockage des engrais de ferme solides
+    it = _Piccoli ruminanti stoccaggio effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2505,12 +2505,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Storage liquid small ruminants NH3-Emissions
     de = _Kleinwiederkäuer Hofdüngerlager flüssig NH3-Emission
     fr = _Petits ruminants Emission de NH3 Stockage des engrais de ferme liquides  
-    it = _Petits ruminants Emission de NH3 Stockage des engrais de ferme liquides
+    it = _Piccoli ruminanti stoccaggio effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2525,12 +2525,12 @@ taxonomy = SummaryByAnimalCategory
     en = Storage small ruminants NH3-Emissions
     de = Kleinwiederkäuer Hofdüngerlager NH3-Emission
     fr = Petits ruminants Emission de NH3  Stockage des engrais de ferme 
-    it = Petits ruminants Emission de NH3  Stockage des engrais de ferme
+    it = Piccoli ruminanti stoccaggio effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from storage (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2545,12 +2545,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application solid small ruminants NH3-Emissions
     de = _Kleinwiederkäuer Hofdüngerausbringung fest NH3-Emission
     fr = _Petits ruminants Emission de NH3  Epandage des engrais de ferme solides 
-    it = _Petits ruminants Emission de NH3  Epandage des engrais de ferme solides
+    it = _Piccoli ruminanti spandimento effluenti aziendali solido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application solid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2565,12 +2565,12 @@ taxonomy = SummaryByAnimalCategory
     en = _Application liquid small ruminants NH3-Emissions
     de = _Kleinwiederkäuer Hofdüngerausbringung flüssig NH3-Emission
     fr = _Petits ruminants Emission de NH3 Epandage des engrais de ferme liquides 
-    it = _Petits ruminants Emission de NH3 Epandage des engrais de ferme liquides
+    it = _Piccoli ruminanti spandimento effluenti aziendali liquido emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application liquid (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2585,12 +2585,12 @@ taxonomy = SummaryByAnimalCategory
     en = Application small ruminants NH3-Emissions
     de = Kleinwiederkäuer Hofdüngerausbringung NH3-Emission
     fr = Petits ruminants Emission de NH3  Epandage des engrais de ferme
-    it = Petits ruminants Emission de NH3  Epandage des engrais de ferme
+    it = Piccoli ruminanti spandimento effluenti aziendali emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from application (estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2605,12 +2605,12 @@ taxonomy = SummaryByAnimalCategory
     en = Small ruminants NH3-Emissions
     de = Kleinwiederkäuer NH3-Emission
     fr = Petits ruminants Emission de NH3
-    it = Petits ruminants Emission de NH3
+    it = Piccoli ruminanti emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from equides ( Application and storage, estimation proportional to input of animalcategory in storage)
   ++formula
@@ -2628,7 +2628,7 @@ taxonomy = SummaryByAnimalCategory
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Total annual N excreted by all roughage consuming.
   ++formula
@@ -2642,12 +2642,12 @@ taxonomy = SummaryByAnimalCategory
     en = Grazing roughage consuming NH3-Emissions
     de = Andere Raufutterverzehrer Weide NH3-Emission
     fr = Autre consommant des fourrages gross Emission de NH3 Pâturage 
-    it = Autre consommant des fourrages gross Emission de NH3 Pâturage
+    it = Altri consumatori di foraggio grezzo pascolo emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from roughage consuming grazing areas.
   ++formula
@@ -2661,12 +2661,12 @@ taxonomy = SummaryByAnimalCategory
     en = Housing and yard roughage consuming NH3-Emissions
     de = Andere Raufutterverzehrer Stall und Laufhof NH3-Emission
     fr = Autre consommant des fourrages gross Emission de NH3 Stabulation et parcours extérieur 
-    it = Autre consommant des fourrages gross Emission de NH3 Stabulation et parcours extérieur
+    it = Altri consumatori di foraggio grezzo stalla e cortile d'esercizio emissione NH3
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from roughage consuming from all housings and yards.
   ++formula

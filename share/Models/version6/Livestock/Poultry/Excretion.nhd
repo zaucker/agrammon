@@ -62,7 +62,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = Animal category
     de = Tierkategorie
     fr = Catégorie d'animaux
-    it = Catégorie d'animaux
+    it = Categoria di animali
   ++units
     en = -
   ++description
@@ -86,7 +86,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en= Number of animals
     de = Anzahl Tiere
     fr = Nombre d'animaux
-    it = Nombre d'animaux
+    it = Numero di animali
   ++units
     en = -
   ++description
@@ -111,7 +111,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = Number of available animal places
     de = Anzahl Tierplätze im Stall
     fr = Nombre de places dans l'étable
-    it = Nombre de places dans l'étable
+    it = Numero di posti per animali nella stalla
   ++units  
     en = -
   ++description
@@ -140,12 +140,12 @@ Spezialpublikation, pp. 4/1-4/24.
       en = N excretion
       de = N Ausscheidung
       fr = Excrétions azotées
-      it = Excrétions azotées
+      it = Escrezione N
     ++units
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
     ++description
       Annual standard N excretion for poultry
     ++help
@@ -208,7 +208,7 @@ Spezialpublikation, pp. 4/1-4/24.
       en = TAN fraction of N excretion
       de = TAN Anteil der N Ausscheidung
       fr = Proportion de TAN des excrétions azotées
-      it = Proportion de TAN des excrétions azotées
+      it = Quota TAN dell'escrezione N
     ++units
       en = %
       de = %
@@ -243,7 +243,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for poultry category (layers) according to
     Flisch et al. (2009).
@@ -254,7 +254,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for poultry category (growers) according to
     a decission of the Group suisse bilanz.
@@ -265,7 +265,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for poultry category (broilers) according to
     Flisch et al. (2009).
@@ -276,7 +276,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for poultry category according (turkeys) to
     Flisch et al. (2009).
@@ -287,7 +287,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for other poultry category according to
     Flisch et al. (2009).
@@ -364,7 +364,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for specified poultry category according to
     Flisch et al. (2009).
@@ -382,7 +382,7 @@ Spezialpublikation, pp. 4/1-4/24.
             en => "The N excretion entered for poultry differs from the standard by more than 30%!",
             de => "Die eingegebene N-Ausscheidung für Geflügel weicht um mehr als 30% vom Standard ab!",
             fr => "Les excrétions azotées saisies pour les volaille s'écartent de plus de 30 % du standard!",
-            it => "Les excrétions azotées saisies pour les volaille s'écartent de plus de 30 % du standard!"
+            it => "TODO",
         });
     }
     return $exc;
@@ -394,7 +394,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N excreted by a specified number of animals.
   ++formula
@@ -407,7 +407,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual soluble N excreted by an animalgroup of selected poultry category.
 ?if !Kantonal_LU
@@ -421,7 +421,7 @@ Spezialpublikation, pp. 4/1-4/24.
             en => "The TAN fraction of N excretion entered for poultry differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für Geflügel weicht um mehr als 20% vom Standard ab!",
             fr => "La proportion du TAN des excrétions azotées saisies pour les volaille s'écartent de plus de 20 % du standard!",
-            it => "La proportion du TAN des excrétions azotées saisies pour les volaille s'écartent de plus de 20 % du standard!"
+            it => "TODO",
         });
       }
       return $tan * Out(n_excretion);
@@ -437,7 +437,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N excreted by poultry.
   ++formula
@@ -456,7 +456,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N excreted by poultry.
   ++formula
@@ -513,7 +513,7 @@ Spezialpublikation, pp. 4/1-4/24.
         en => "The number of available animal places must be equal or higher than the number of animals.",
         de => "Anzahl Tierplätze muss grösser oder gleich der Anzahl der Tiere sein.",
         fr => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux.",
-        it => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux."
+        it => "TODO",
       });
       return "barn dimensioning too small";
     } 

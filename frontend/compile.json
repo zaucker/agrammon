@@ -23,7 +23,8 @@
   "locales": [
     "en",
     "de",
-    "fr"
+    "fr",
+    "it"
   ],
   "environment": {
     "qx.icontheme": "Tango"

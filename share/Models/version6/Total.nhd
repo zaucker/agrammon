@@ -31,10 +31,12 @@ taxonomy = Total
     en = Total
     de = Total
     fr = Total
+    it = Total
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from farm.
   ++formula
@@ -50,10 +52,12 @@ taxonomy = Total
     en = Total
     de = Total
     fr = Total
+    it = Total
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from farm.
   ++formula
@@ -69,10 +73,12 @@ taxonomy = Total
     en = Into soil total
     de = In Boden Total
     fr = Total dans le sol
+    it = Total dans le sol
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual total N remaining in soil.
   ++formula
@@ -87,10 +93,12 @@ taxonomy = Total
     en = Into soil total
     de = In Boden Total
     fr = Total dans le sol
+    it = Total dans le sol
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual total TAN remaining in soil.
   ++formula

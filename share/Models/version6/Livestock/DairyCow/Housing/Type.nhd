@@ -47,6 +47,7 @@ Selects the emission rate and other correction factors for the specific housing 
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
+    it = Type de stabulation
   ++units  
     en = -
   ++description
@@ -67,6 +68,19 @@ Selects the emission rate and other correction factors for the specific housing 
       <p/>
       <p>Vorschlag für Standardwert: Laufstall mit Produktion von Vollgülle</p> 
     +++fr
+       <dl>
+               <dt>Stabulation libre avec production de lisier complet:</dt>
+               <dd>Stabulation libre à aires multiples, stabulation libre équipée de logettes</dd>
+               <dt>Stabulation libre avec production de lisier et de fumier:</dt>
+               <dd>Stabulation libre à aires multiples, stabulation libre équipée de logettes avec production de lisier et de quantités importantes de fumier</dd>
+               <dd>Stabulation libre à aires multiples, aire de repos avec litière profonde ou litière sur plan incliné</dd>
+               <dt>Stabulation libre avec litière profonde ou litière sur plan incliné:</dt>
+               <dd>Stabulation libre à aire unique avec litière profonde ou litière sur plan incliné (uniquement du fumier)</dd>
+      </dl>
+      <p/>
+      <p>Proposition de valeurs standard: stabulation libre avec production de lisier complet</p>
+
+    +++it
        <dl>
                <dt>Stabulation libre avec production de lisier complet:</dt>
                <dd>Stabulation libre à aires multiples, stabulation libre équipée de logettes</dd>

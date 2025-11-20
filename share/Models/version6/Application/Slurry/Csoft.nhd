@@ -33,6 +33,7 @@ taxonomy = Application::Slurry::Csoft
       en = Share of slurry applied in the evening after 18:00
       de = Anteil Gülleausbringung am Abend nach 18:00 Uhr
       fr = Part de lisier épandu le soir après 18:00h
+      it = Part de lisier épandu le soir après 18:00h
     ++units  
       en = %
     ++description
@@ -43,6 +44,9 @@ taxonomy = Application::Slurry::Csoft
       +++de
          <p>Vorschlag für Standardwert: 20%</p>
       +++fr
+         <p>Proposition de valeur standard: 20%</p>
+   
+      +++it
          <p>Proposition de valeur standard: 20%</p>
    
   +appl_hotdays
@@ -72,6 +76,7 @@ taxonomy = Application::Slurry::Csoft
       en = Frequency of slurry applied on hot days
       de = Bringen Sie Gülle an für die Jahreszeit besonders warmen Tagen aus?
       fr = Epandez-vous du lisier les jours particulièrement chauds pour la saison?
+      it = Epandez-vous du lisier les jours particulièrement chauds pour la saison?
     ++units 
       en = -
     ++description
@@ -82,6 +87,8 @@ taxonomy = Application::Slurry::Csoft
       +++de
          <p>Vorschlag für Standardwert: manchmal</p>
       +++fr
+         <p>Proposition de valeur standard: Parfois</p>
+      +++it
          <p>Proposition de valeur standard: Parfois</p>
 ?endif         
 

@@ -47,6 +47,7 @@ Selects the emission rate and other correciton factors for the specific housing 
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
+    it = Type de stabulation
   ++units  
     en = -
   ++description
@@ -81,6 +82,29 @@ Selects the emission rate and other correciton factors for the specific housing 
        <p>Ferkel abgesetzt (bis 25 kg): Konventioneller Stall ohne Auslauf</p>
        <p>Eber: Labelstall mit Mehrflächenbucht und Auslauf</p>
     +++fr
+       <p>Dans les systèmes de stabulation, on distingue
+          principalement les systèmes conventionnels sans parcours
+          extérieur et les systèmes labellisés à aires multiples et
+          parcours extérieur. Les stabulations à litière profonde et
+          la garde au pâturage sont de moindre importance.  Pour les
+          truies allaitantes, introduire les catégories suivantes:
+          système conventionnel sans parcours extérieur, s'il n'y a
+          pas de parcours extérieur. Cela est valable également pour
+          les systèmes labellisés sans parcours extérieur pour les
+          truies allaitantes.</p>
+       <p>Stabulation sans isolation thermique : porcheries sans
+          isolation thermique à ventilation naturelle (stabulation à
+          climat extérieur) et à zones de microclimat.</p>
+
+       <p>Proposition de valeurs standard:</p>
+       <p>Truies allaitantes: système conventionnel sans parcours extérieur</p>
+       <p>Truies en gestation: système labellisé à aires multiples et parcours extérieur</p>
+       <p>Remontes: système labellisé à aires multiples et parcours extérieur</p>
+       <p>Porcelets sevrés (jusqu'à 25 kg): système conventionnel sans parcours extérieur </p>
+       <p>Verrats: système labellisé à aires multiples et parcours extérieur </p>
+
+
+    +++it
        <p>Dans les systèmes de stabulation, on distingue
           principalement les systèmes conventionnels sans parcours
           extérieur et les systèmes labellisés à aires multiples et

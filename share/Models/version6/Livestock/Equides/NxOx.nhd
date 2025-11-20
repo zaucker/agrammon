@@ -50,6 +50,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from equides housing and yard (production).
   ++formula
@@ -62,6 +63,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NO emission from equides housing and yard (production).
   ++formula
@@ -74,6 +76,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2O emission from equides housing and yard (production).
   ++formula

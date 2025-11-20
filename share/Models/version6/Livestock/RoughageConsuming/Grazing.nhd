@@ -78,10 +78,12 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
     en = Grazing days per year
     de = Jährliche Weidetage
     fr = Jours de pâturage par an
+    it = Jours de pâturage par an
   ++units  
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average grazing days per year.
   ++help
@@ -94,6 +96,10 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
        <p>Nombre de jours de pâturage sans la période d'estivage</p>
        <p>Proposition de valeurs standard: 220 jours par an pour les moutons et 200 jours par an pour les chèvres (valeur moyenne pour les régions de plaine, de collines et de montagne). Ces chiffres se rapportent au nombre de jours de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage.</p>
 
+    +++it
+       <p>Nombre de jours de pâturage sans la période d'estivage</p>
+       <p>Proposition de valeurs standard: 220 jours par an pour les moutons et 200 jours par an pour les chèvres (valeur moyenne pour les régions de plaine, de collines et de montagne). Ces chiffres se rapportent au nombre de jours de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage.</p>
+
 +grazing_hours
   type  = float
   validator = between(0,24);
@@ -101,10 +107,12 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
     en = Grazing hours per day
     de = Tägliche Weidestunden
     fr = Heures de pâturage par jour
+    it = Heures de pâturage par jour
   ++units  
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average grazing hours per day.
   ++help
@@ -118,6 +126,11 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
        <p>Proposition de valeurs standard: 15 heures par jour pour les moutons et 6 heures par jour pour les chèvres. Ces chiffres se rapportent au nombre d'heures de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage.</p>
 
 
+    +++it
+       <p>Nombre d'heures de pâturage, sans la période d'estivage</p>
+       <p>Proposition de valeurs standard: 15 heures par jour pour les moutons et 6 heures par jour pour les chèvres. Ces chiffres se rapportent au nombre d'heures de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage.</p>
+
+
 *** output ***
 
 +grazing_hours
@@ -126,6 +139,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Grazing hours per day.
   ++formula
@@ -137,6 +151,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Grazing days per year.
   ++formula
@@ -148,6 +163,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N excretion during grazing for roughage consuming animals.
   ++formula
@@ -161,6 +177,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual solable N (TAN) excretion during grazing for roughage consuming animals.
   ++formula
@@ -174,6 +191,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = -
      de = -
      fr = -
+     it = -
   ++description
     Annual total NH3 emission from all grazing dairy cows.
   ++formula
@@ -185,6 +203,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual NH3 emission from roughage consuming animals from grazing.
   ++formula
@@ -196,6 +215,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total N2 emission from all grazing roughage consuming animals..
   ++formula
@@ -207,6 +227,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total N2 emission from all grazing roughage consuming animals..
   ++formula
@@ -218,6 +239,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total N2O emission from all grazing roughage consuming animals.
   ++formula
@@ -229,6 +251,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N input on pastures.
   ++formula
@@ -244,6 +267,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N input on pastures.
   ++formula

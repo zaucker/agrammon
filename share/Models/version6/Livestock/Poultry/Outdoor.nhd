@@ -35,6 +35,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = Do the animals have access to a free range?
     de = Haben die Tiere Zugang zu einer Weide?
     fr = Les animaux ont-ils accès à un pâturage?
+    it = Les animaux ont-ils accès à un pâturage?
   ++units  
     en = -
   ++description
@@ -64,6 +65,15 @@ taxonomy = Livestock::Poultry::Outdoor
        <p>Dindes: oui</p>
        <p>Autre volaille: oui</p>
 
+    +++it
+       <p>Pâturage au sens de l'OPD (Ordonnance sur les paiements directs du 23 octobre 2013, état le 14r mars 2023). L'aire à climat extérieur n'est pas comprise dans cette catégorie.</p>
+       <p>Propositions de valeurs standard:</p>
+       <p>Poules pondeuses: oui</p>
+       <p>Poulettes: non</p>
+       <p>Poulets à l'engrais: non</p>
+       <p>Dindes: oui</p>
+       <p>Autre volaille: oui</p>
+
 *** technical ***
 
 +free_range_days_layers
@@ -72,6 +82,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -81,6 +92,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -90,6 +102,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -99,6 +112,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -108,6 +122,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -117,6 +132,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -126,6 +142,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -135,6 +152,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 4% of Day
 
@@ -144,6 +162,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -153,6 +172,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -162,6 +182,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -171,6 +192,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -180,6 +202,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -189,6 +212,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 4% of Day
 
@@ -198,6 +222,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -209,6 +234,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
   ++formula
@@ -224,6 +250,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day.
   ++formula
@@ -239,6 +266,7 @@ taxonomy = Livestock::Poultry::Outdoor
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Share of animals in free range.
   ++formula

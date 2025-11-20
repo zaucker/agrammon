@@ -51,6 +51,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux into the house.
   ++formula
@@ -64,6 +65,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux as TAN into the house.
   ++formula
@@ -77,6 +79,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = -
      de = -
      fr = - 
+     it = -
   ++description
     NH3 emission factor for other cattle housing systems.
   ++formula
@@ -90,6 +93,7 @@ taxonomy = Livestock::OtherCattle::Housing
             en => "NH3 emission factor for other cattle housing systems is greater than (thus will be limited to) 1.",
             de => "NH3 emission factor for other cattle housing systems is greater than (thus will be limited to) 1.",
             fr => "NH3 emission factor for other cattle housing systems is greater than (thus will be limited to) 1.",
+            it => "NH3 emission factor for other cattle housing systems is greater than (thus will be limited to) 1.",
         });
         $c_housing = 1;
     }
@@ -101,6 +105,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual NH3 emission from cattle housing systems per animal place.
   ++formula
@@ -112,6 +117,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux out of housing.
   ++formula
@@ -123,6 +129,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux as TAN out of housing.
   ++formula
@@ -134,6 +141,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux out of housing, slurry or liquid fraction from cattle. 
   ++formula
@@ -145,6 +153,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux as TAN out of housing, slurry or liquid fraction from cattle.
   ++formula
@@ -156,6 +165,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux out of housing, solid manure fraction of N flux.
   ++formula
@@ -167,6 +177,7 @@ taxonomy = Livestock::OtherCattle::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux as TAN out of housing, solid manure fraction of N flux. 
   ++formula

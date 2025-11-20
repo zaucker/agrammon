@@ -41,6 +41,7 @@ taxonomy = Application::Slurry::Applrate
       en = Dilution of slurry (liters of water added to one liter of fresh excreta)
       de = Gülleverdünnung (Liter Wasser pro Liter unverdünnter Gülle)
       fr = Dilution du lisier (litres d'eau par litre de lisier non dilué)
+      it = Dilution du lisier (litres d'eau par litre de lisier non dilué)
     ++units
       en = 1:x
     ++description
@@ -54,6 +55,9 @@ taxonomy = Application::Slurry::Applrate
       +++fr
          <p>Proposition de valeur standard: 1:1</p>
 
+      +++it
+         <p>Proposition de valeur standard: 1:1</p>
+
   +appl_rate
     type  = float
     validator = between(10,120); 
@@ -61,6 +65,7 @@ taxonomy = Application::Slurry::Applrate
       en = Mean dose per application
       de = Mittlere Ausbringungsmenge pro Gabe
       fr = Quantité moyenne apandue par application
+      it = Quantité moyenne apandue par application
     ++units
       en = m3/ha
     ++description
@@ -71,6 +76,8 @@ taxonomy = Application::Slurry::Applrate
       +++de
          <p>Vorschlag für Standardwert: 25 m<sup>3</sup></p>
       +++fr
+         <p>Proposition de valeur standard: 25 m<sup>3</sup></p>
+      +++it
          <p>Proposition de valeur standard: 25 m<sup>3</sup></p>
 ?endif
  

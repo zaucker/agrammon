@@ -26,6 +26,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = Share of poultry manure applied to land without storage
     de = Anteil von direkt ohne Lagerung ausgebrachtem Geflügelmist
     fr = Part des fientes ou du fumier de volaille épandu directement sans stockage
+    it = Part des fientes ou du fumier de volaille épandu directement sans stockage
   ++units 
     en = % 
   ++description
@@ -39,12 +40,17 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
        <p>Proposition de valeur standard: 12%</p>
 
 
+    +++it
+       <p>Proposition de valeur standard: 12%</p>
+
+
 +share_covered_basin  
   type  = percent
   ++labels 
     en = Share of poultry manure covered during storage
     de = Anteil von gedeckt gelagertem Kot oder Mist aus der Geflügelhaltung
     fr = Part des fientes ou du fumier de volaille stockés qui sont couverts
+    it = Part des fientes ou du fumier de volaille stockés qui sont couverts
   ++units 
     en = % 
   ++description
@@ -62,6 +68,10 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
        <p>Cette part comprend les fientes ou le fumier stocké sous une couverture en dur, dans le sens d'un contenant fermé, ou sous un autre type de couverture, p.ex. une bâche. </p>
        <p>Proposition de valeur standard: 70%</p>
 
+    +++it
+       <p>Cette part comprend les fientes ou le fumier stocké sous une couverture en dur, dans le sens d'un contenant fermé, ou sous un autre type de couverture, p.ex. une bâche. </p>
+       <p>Proposition de valeur standard: 70%</p>
+
 ?if !Kantonal_LU
   +free_correction_factor
     type = float
@@ -72,6 +82,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
       en = Additional emission mitigation measure
       de = Zusätzliche emissionsmindernde Massnahme Geflügelmist (siehe Spalte Hilfe)
       fr = Mesure supplémentaire limitant les émissions dues au stockage des fientes ou du fumier de volaille (cf. aide)
+      it = Mesure supplémentaire limitant les émissions dues au stockage des fientes ou du fumier de volaille (cf. aide)
     ++units 
       en = %
     ++description
@@ -115,6 +126,20 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
   	  technologies destinées à limiter les émissions et encore méconnues actuellement.
   	</p>
   	<p>Proposition valeur standard: 0 %.</p>
+      +++it
+  	<p>
+             Hier kann die emissionsmindernde Wirkung einer frei wählbaren Massnahme eingesetzt 
+             werden (z.B. ein neuer Typ Abdeckung). Die eingegebene Zahl entspricht 
+   	   der  Emissionsminderung in Prozent (z.B. Eingabe 30 %; die Emission aus dem 
+  	   Mistlager nimmt um 30% ab). Es wird empfohlen, die gewählte Massnahme in der 
+  	   Spalte Kommentar aufzuführen und den gewählten Wert zur Emissionsminderung zu begründen.
+          </p>
+  	<p>
+  	   Diese Funktion richtet sich vor allem an Anwender/-innen, welche Emissionen 
+             prognostizieren und die Wirkung neuer, aktuell noch nicht bekannter Technologien 
+             zur Emissionsminderung berücksichtigen müssen. 
+          <p>
+  	<p>Vorschlag für Standardwert: 0 %.</p>
 ?endif
 
 *** technical ***
@@ -177,8 +202,10 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
                   de=>"Sie haben eine zusätzliche emissionsmindernde Massnahme für das Geflügelmistlager von "
                       . In(free_correction_factor) 
                       . "\% eingegeben!\n", 
-                  fr=> "Vous avez introduit une mesure supplémentaire limitant les émissions du stock "
-                       . "de fumier de volaille de " . In(free_correction_factor) . "\%.\n" 
+                  fr=>"Vous avez introduit une mesure supplémentaire limitant les émissions du stock "
+                      . "de fumier de volaille de " . In(free_correction_factor) . "\%.\n",
+                  it=>"Vous avez introduit une mesure supplémentaire limitant les émissions du stock "
+                      . "de fumier de volaille de " . In(free_correction_factor) . "\%.\n"
                  });
         return 1 - In(free_correction_factor)/100;
        
@@ -197,7 +224,8 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
         if (  (In(share_applied_direct_poultry_manure) + In(share_covered_basin)) > 100  ) {
         writeLog({en=>"The sum of Share of poultry manure applied to land without storage and Share of poultry manure covered during storage must be equal or lower than 100 %",
                   de=>"Die Summe von Anteil von direkt ohne Lagerung ausgebrachtem Geflügelmist und Anteil von gedeckt gelagertem Kot oder Mist aus der Geflügelhaltung darf maximal 100 % betragen",
-                  fr=>"La somme de Part des fientes ou du fumier de volaille épandu directement sans stockage et de Part des fientes ou du fumier de volaille stockés qui sont couverts ne peut être supérieur à 100 %"
+                  fr=>"La somme de Part des fientes ou du fumier de volaille épandu directement sans stockage et de Part des fientes ou du fumier de volaille stockés qui sont couverts ne peut être supérieur à 100 %",
+                  it=>"La somme de Part des fientes ou du fumier de volaille épandu directement sans stockage et de Part des fientes ou du fumier de volaille stockés qui sont couverts ne peut être supérieur à 100 %"
                  });
     }
     return;
@@ -209,6 +237,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual TAN flux into solid storage from pigs.
   ++formula
@@ -224,6 +253,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from poultry manure storage.
 ?if Kantonal_LU
@@ -261,6 +291,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual TAN immobilized from TAN fraction in solid manure storage.
   ++formula

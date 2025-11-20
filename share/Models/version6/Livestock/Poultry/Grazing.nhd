@@ -55,6 +55,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -64,6 +65,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -73,6 +75,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -82,6 +85,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -91,6 +95,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -100,6 +105,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -109,6 +115,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -118,6 +125,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 4% of Day
 
@@ -127,6 +135,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -136,6 +145,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -145,6 +155,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 12% of Day
 
@@ -154,6 +165,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -163,6 +175,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
 
@@ -172,6 +185,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day, assumed is 4% of Day
 
@@ -181,6 +195,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Average free range animal share per day. This values is corrected for the average excretion fraction during free range time.
 
@@ -218,6 +233,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = Do the animals have access to a free range?
     de = Haben die Tiere Zugang zu einer Weide?
     fr = Les animaux ont-ils accès à un pâturage?
+    it = Les animaux ont-ils accès à un pâturage?
   ++units  
     en = -
   ++description
@@ -247,6 +263,15 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
        <p>Dindes: oui</p>
        <p>Autre volaille: oui</p>
 
+    +++it
+       <p>Pâturage au sens de l'OPD (Ordonnance sur les paiements directs du 23 octobre 2013, état le 14r mars 2023). L'aire à climat extérieur n'est pas comprise dans cette catégorie.</p>
+       <p>Propositions de valeurs standard:</p>
+       <p>Poules pondeuses: oui</p>
+       <p>Poulettes: non</p>
+       <p>Poulets à l'engrais: non</p>
+       <p>Dindes: oui</p>
+       <p>Autre volaille: oui</p>
+
 *** output ***
 
 ### Outdoor.nhd
@@ -257,6 +282,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = days/year
     de = Tage/Jahr
     fr = jours/an
+    it = jours/an
   ++description
     Average free range days per year.
   ++formula
@@ -272,6 +298,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
+    it = heures/jour
   ++description
     Average free range hours per day.
   ++formula
@@ -287,6 +314,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Share of animals in free range.
   ++formula
@@ -334,6 +362,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N excretion free_range (grazing).
   ++formula
@@ -348,6 +377,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N excretion free_range (grazing).
   ++formula
@@ -362,6 +392,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = -
      de = -
      fr = -
+     it = -
   ++description
     Free_range NH3 emission factor from poultry (grazing). 
   ++formula
@@ -373,6 +404,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual free_range NH3 emission from poultry (grazing). 
   ++formula
@@ -384,6 +416,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual free_range N2 emission from poultry (grazing). 
   ++formula
@@ -395,6 +428,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual free_range NO emission from poultry (grazing). 
   ++formula
@@ -406,6 +440,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual free_range N2O emission from poultry (grazing). 
   ++formula
@@ -418,6 +453,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N remaining free_range (on pasture, etc.).
   ++formula
@@ -433,6 +469,7 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N remaining free_range (on pasture, etc.).
   ++formula

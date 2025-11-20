@@ -42,6 +42,7 @@ UNECE 2007. Guidance document on control techniques for preventing and abating e
     en = Exhaust air scrubber
     de = Abluftreinigung
     fr = Traitement des effluents gazeux
+    it = Traitement des effluents gazeux
   ++units  
     en = -
   ++description
@@ -52,6 +53,11 @@ UNECE 2007. Guidance document on control techniques for preventing and abating e
     +++de
        <p>Vorschlag für Standardwert: keine</p>
     +++fr
+       <p>Proposition de valeur standard: aucun</p>
+    
+    
+
+    +++it
        <p>Proposition de valeur standard: aucun</p>
     
     

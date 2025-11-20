@@ -30,6 +30,7 @@ specific housing types for fattening pigs.
     en = Additional emission mitigation measure for the housing (see column Help)
     de = Zusätzliche emissionsmindernde Massnahme Stall (siehe Spalte Hilfe)
     fr = Mesure supplémentaire limitant les émissions dans les stabulations (cf. aide)
+    it = Mesure supplémentaire limitant les émissions dans les stabulations (cf. aide)
   ++units 
     en = %
   ++description
@@ -77,6 +78,22 @@ specific housing types for fattening pigs.
 	</p>
 	<p>Proposition valeur standard: 0 %.</p>
 
+    +++it
+	<p>
+	   Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les 
+	   émissions (p.ex. un nouveau type de sol limitant les émissions). Le chiffre 
+	   introduit correspond à la réduction d'émission en pourcent (p.ex. 30%: l'émission 
+	   provenant de la stabulation diminue de 30%). Il est recommandé de mentionner la 
+	   mesure choisie dans la colonne ‘Commentaire' et de justifier le taux de réduction 
+	   choisi.
+    	</p>
+	<p>
+	   Cette fonction s'adresse principalement aux utilisateurs/trices qui font des 
+	   pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles 
+	   technologies destinées à limiter les émissions et encore méconnues actuellement.
+	</p>
+	<p>Proposition valeur standard: 0 %.</p>
+
 *** technical ***
 
 *** external ***
@@ -97,6 +114,8 @@ specific housing types for fattening pigs.
         de => "Sie haben eine zusätzliche emissionsmindernde Massnahme für einen Stall der Mastschweine von "
               . In(free_correction_factor) . "\% eingegeben.\n", 
         fr => "Vous avez introduit une mesure supplémentaire limitant les émissions dans les "
+              . "stabulations pour porcs à l'engrais de " .  In(free_correction_factor) . "\%.\n",
+        it => "Vous avez introduit une mesure supplémentaire limitant les émissions dans les "
               . "stabulations pour porcs à l'engrais de " .  In(free_correction_factor) . "\%.\n"
       });
       return 1 - In(free_correction_factor)/100;

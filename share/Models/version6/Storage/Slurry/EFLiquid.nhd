@@ -64,6 +64,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en = Type of cover
     de = Abdeckung des Güllelagers
     fr = Type de couverture du stock de lisier
+    it = Type de couverture du stock de lisier
   ++units
     en = -
   ++description
@@ -92,21 +93,35 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
        <p>couverture en dur (béton, bois) qui représente environ 75 % du volume de stockage du lisier.</p>
 
 
+    +++it
+       <p>S'il existe plusieurs stocks avec des couvertures différentes, introduire pour chaque type de couverture un stock avec le volume correspondant. </p>
+       <p>Couverture perforée : seulement en combination avec une aire de sortie avec un sol perforé.</p> 
+        <p>Pour la couverture "Bâche semi-flottante", il faut saisir 50 sous "Mesure supplémentaire limitant les émissions dues au stockage du lisier". Ainsi, une réduction des émissions de 50 % est calculée par rapport à un stock découvert.</p>
+         <p>Pour la couverture "Toit conique": la valeur actuelle enregistrée dans Agrammon (réduction des émissions de 60%) ne correspond plus à l'état des connaissances actuel. Pour une couverture "Toit conique", il est recommandé de sélectionner "découvert" comme type de couverture 
+         et d'inscrire 80 sous "Mesure supplémentaire limitant les émissions dues au stockage du lisier". Ainsi, une réduction des émissions de 80 % est calculée par rapport à un stock découvert. De cette façon, la valeur représente au mieux l'état des connaissances actuelles. Lors de la prochaine révision du modèle
+         (probablement 2024/25), la valeur de réduction des émissions pour la couverture "Toit conique" sera adaptée en conséquence.</p>
+       <p>Proposition de valeur standard:</p>
+       <p>couverture en dur (béton, bois) qui représente environ 75 % du volume de stockage du lisier.</p>
+
+
 +contains_cattle_manure
    type = enum
    ++labels
      en = Contains cattle slurry
      de = Enthält Rindergülle
      fr = Contient du lisier de bovin
+     it = Contient du lisier de bovin
    ++enum
      +++yes
         en = yes
         de = Ja
         fr = Oui
+        it = Oui
      +++no
         en = no
         de = Nein
         fr = Non
+        it = Non
   ++units
     en = -
    ++description
@@ -120,21 +135,28 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
         <p>Proposition de valeur standard: oui </p>
 
 
+     +++it
+        <p>Proposition de valeur standard: oui </p>
+
+
 +contains_pig_manure
    type=enum
    ++labels
      en = Contains pigs slurry
      de = Enthält Schweinegülle
      fr = Contient du lisier de porc
+     it = Contient du lisier de porc
    ++enum
      +++yes
         en = yes
         de = Ja
         fr = Oui
+        it = Oui
      +++no
         en = no
         de = Nein
         fr = Non
+        it = Non
    ++units
      en = -
    ++description
@@ -147,6 +169,9 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
      +++fr
         <p>Proposition de valeur standard: oui </p>
 
+     +++it
+        <p>Proposition de valeur standard: oui </p>
+
 ?if !Kantonal_LU
   +free_correction_factor
     type = float
@@ -157,6 +182,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
       en = Additional emission mitigation measure
       de = Zusätzliche emissionsmindernde Massnahme Güllelager (siehe Spalte Hilfe)
       fr = Mesure supplémentaire limitant les émissions dues au stockage du lisier (cf. aide)
+      it = Mesure supplémentaire limitant les émissions dues au stockage du lisier (cf. aide)
     ++units
       en = %
     ++description
@@ -201,6 +227,20 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
            technologies destinées à limiter les émissions et encore méconnues actuellement.
          </p>
          <p>Proposition valeur standard: 0 %.</p><p> </p>
+      +++it
+         <p>
+           Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les
+           émissions (p.ex. un nouveau type de couverture). Le chiffre introduit correspond
+           à la réduction d'émission en pourcent (p.ex. 30%: l'émission provenant du stock
+           de lisier diminue de 30%). Il est recommandé de mentionner la mesure choisie dans
+           la colonne ‘Commentaire' et de justifier le taux de réduction choisi.
+         </p>
+         <p>
+           Cette fonction s'adresse principalement aux utilisateurs/trices qui font des
+           pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles
+           technologies destinées à limiter les émissions et encore méconnues actuellement.
+         </p>
+         <p>Proposition valeur standard: 0 %.</p><p> </p>
 ?endif
 
 *** technical ***
@@ -212,6 +252,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  kg N/m2/year
     de =  kg N/m2/Jahr
     fr =  kg N/m2/an
+    it = kg N/m2/an
   ++description
     The Emission factor for uncovered storage is based on the review by
     Kupper et al. (2020).
@@ -222,6 +263,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  kg N/m2/year
     de =  kg N/m2/Jahr
     fr =  kg N/m2/an
+    it = kg N/m2/an
   ++description
     The Emission factor for uncovered storage is based on the review by
     Kupper et al. (2020).
@@ -233,6 +275,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  -
     de =  -
     fr =  -
+    it = -
   ++description
     Correction factor for uncovered tanks.
 
@@ -242,6 +285,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  -
     de =  -
     fr =  -
+    it = -
   ++description
     Correction factor for solid cover.
 
@@ -251,6 +295,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  -
     de =  -
     fr =  -
+    it = -
   ++description
     Correction factor for tent cover.
 
@@ -260,6 +305,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  -
     de =  -
     fr =  -
+    it = -
   ++description
     Correction factor for floating cover.
 
@@ -269,6 +315,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  -
     de =  -
     fr =  -
+    it = -
   ++description
     Correction factor for perforated cover.
 
@@ -278,6 +325,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  -
     de =  -
     fr =  -
+    it = -
   ++description
     Correction factor for natural crust.
 
@@ -294,6 +342,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  kg N/m2/year
     de =  kg N/m2/Jahr
     fr =  kg N/m2/an
+    it = kg N/m2/an
   ++description
     Scaled emission factor of a specific liquid storage for pig slurry.
   ++formula
@@ -314,6 +363,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  kg N/m2/year
     de =  kg N/m2/Jahr
     fr =  kg N/m2/an
+    it = kg N/m2/an
   ++description
     Scaled emission factor of a specific liquid storage for cattle slurry.
   ++formula
@@ -343,6 +393,8 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
                       . In(free_correction_factor)
                       . "\% eingegeben!\n",
                   fr=>"Vous avez introduit une mesure supplémentaire limitant les émissions "
+                      . "du stock de lisier de " . In(free_correction_factor) . "\%.\n",
+                  it=>"Vous avez introduit une mesure supplémentaire limitant les émissions "
                       . "du stock de lisier de " . In(free_correction_factor) . "\%.\n" });
               return 1 - In(free_correction_factor)/100;
 

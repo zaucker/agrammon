@@ -37,10 +37,12 @@ Vanderweerden and Jarvis (1997)
     en = Amount of compost (in t fresh matter per year)
     de = Kompost (in t Frischsubstanz pro Jahr)
     fr = Compost (en t matière fraîche par an)
+    it = Compost (en t matière fraîche par an)
   ++units  
     en = t/year
     de = t/Jahr
     fr = t/an
+    it = t/an
   ++description
     Amount of compost (in t fresh matter per year).
     Kompost besteht aus Grünabfällen nicht-landwirtschaflticher Herkunft von gewerblich-industriellen Anlagen oder von Feldrandkompostierung.
@@ -55,6 +57,11 @@ Vanderweerden and Jarvis (1997)
        <p>Le fumier mélangé à du compost ne fait pas partie de cette catégorie.</p>
   
 
+    +++it
+       <p>Le compost est constitué de matières végétales, animales ou microbiennes décomposées de manière appropriée en conditions aérobies (définition de l'Ord. sur les engrais du 10 janvier 2001, état au 1er oct. 2008, art. 5, paragraphe 2, alinéa b1). Il est composé de déchets organiques de provenance non agricole (matières qui ne viennent pas d'exploitations agricoles. Ex: déchets d'épluchage industriel de légumes, déchets verts des communes), qui sont compostés dans des installations industrielles ou au bord des champs. </p> 
+       <p>Le fumier mélangé à du compost ne fait pas partie de cette catégorie.</p>
+  
+
 +solid_digestate
   type  = float
   validator    = ge(0)
@@ -64,10 +71,12 @@ Vanderweerden and Jarvis (1997)
     en = Amount of solid digestate from anaerobic digestion plants (in t fresh matter per year)
     de = Festes Gärgut von gewerblich-industriellen Anlagen (in t Frischsubstanz pro Jahr)
     fr = Quantité de digestats solides issus d'installations industrielles (en t matière fraîche par an)
+    it = Quantité de digestats solides issus d'installations industrielles (en t matière fraîche par an)
   ++units  
     en = t/year
     de = t/Jahr
     fr = t/an
+    it = t/an
   ++description
     Amount of solid digestate form anaerobic digestion plants
   ++help
@@ -80,6 +89,10 @@ Vanderweerden and Jarvis (1997)
        <p>Les digestats solides sont constitués de matières végétales, animales ou microbiennes fermentées de manière appropriée en conditions anaérobies (définition de l'Ord. sur les engrais du 10 janvier 2001, état au 1er oct. 2008, art. 5, paragraphe 2, alinéa b2). Ils sont composés de déchets organiques de provenance non agricole (matières qui ne viennent pas d'exploitations agricoles. Ex: déchets d'épluchage industriel de légumes, déchets verts des communes), qui sont fermentés dans des installations industrielles (p.ex. installations de Compogaz). </p> 
        <p>Les digestats solides sont issus de la séparation des digestats.</p>
 
+    +++it
+       <p>Les digestats solides sont constitués de matières végétales, animales ou microbiennes fermentées de manière appropriée en conditions anaérobies (définition de l'Ord. sur les engrais du 10 janvier 2001, état au 1er oct. 2008, art. 5, paragraphe 2, alinéa b2). Ils sont composés de déchets organiques de provenance non agricole (matières qui ne viennent pas d'exploitations agricoles. Ex: déchets d'épluchage industriel de légumes, déchets verts des communes), qui sont fermentés dans des installations industrielles (p.ex. installations de Compogaz). </p> 
+       <p>Les digestats solides sont issus de la séparation des digestats.</p>
+
 +liquid_digestate
   type  = float
   validator    = ge(0)
@@ -89,10 +102,12 @@ Vanderweerden and Jarvis (1997)
     en = Amount of liquid digestate/presswater from anaerobic digestion plants
     de = Flüssiges Gärgut von gewerblich-industriellen Anlagen
     fr = Quantité de digestats liquides issus d'installations industrielles
+    it = Quantité de digestats liquides issus d'installations industrielles
   ++units
     en = m3/year
     de = m3/Jahr
     fr = m3/an
+    it = m3/an
   ++description
     Amount of liquid digestate form anaerobic digestion plants
   ++help
@@ -106,6 +121,10 @@ Vanderweerden and Jarvis (1997)
        </p>
 
     +++fr
+       <p>Les digestats liquides sont constitués de matières végétales, animales ou microbiennes fermentées de manière appropriée en conditions anaérobies (définition de l'Ord. sur les engrais du 10 janvier 2001, état au 1er oct. 2008, art. 5, paragraphe 2, alinéa b2). Ils sont composés de déchets organiques de provenance non agricole (matières qui ne viennent pas d'exploitations agricoles. Ex: déchets d'épluchage industriel de légumes, déchets verts des communes), qui sont fermentés dans des installations industrielles (p.ex. installations de Compogaz). Les digestats liquides sont issus de la séparation des digestats et ne contiennent pas plus de 12% de matière sèche.</p>
+
+
+    +++it
        <p>Les digestats liquides sont constitués de matières végétales, animales ou microbiennes fermentées de manière appropriée en conditions anaérobies (définition de l'Ord. sur les engrais du 10 janvier 2001, état au 1er oct. 2008, art. 5, paragraphe 2, alinéa b2). Ils sont composés de déchets organiques de provenance non agricole (matières qui ne viennent pas d'exploitations agricoles. Ex: déchets d'épluchage industriel de légumes, déchets verts des communes), qui sont fermentés dans des installations industrielles (p.ex. installations de Compogaz). Les digestats liquides sont issus de la séparation des digestats et ne contiennent pas plus de 12% de matière sèche.</p>
 
 
@@ -151,6 +170,7 @@ Vanderweerden and Jarvis (1997)
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     NH3 emission from compost.
   ++formula
@@ -162,6 +182,7 @@ Vanderweerden and Jarvis (1997)
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     NH3 emission from solid digestate.
   ++formula
@@ -173,6 +194,7 @@ Vanderweerden and Jarvis (1997)
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     NH3 emission from liquid digestate.
   ++formula
@@ -186,10 +208,12 @@ Vanderweerden and Jarvis (1997)
     en = Recycling fertiliser
     de = Recyclingdünger
     fr = Engrais de recyclés
+    it = Engrais de recyclés
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     NH3 emission from total recycling fertiliser.
   ++formula
@@ -206,10 +230,12 @@ Vanderweerden and Jarvis (1997)
     en = Amount of compost (t fresh matter per year)
     de = Kompost (t Frischsubstanz pro Jahr)
     fr = Compost (en t matière fraîche par an)
+    it = Compost (en t matière fraîche par an)
   ++units  
     en = t/year
     de = t/Jahr
     fr = t/an 
+    it = t/an
   ++description
     Amount of compost in t /a.
   ++formula
@@ -223,10 +249,12 @@ Vanderweerden and Jarvis (1997)
     en = Amount of solid digestate (t fresh matter per year)
     de = Festes Gärgut (t Frischsubstanz pro Jahr)
     fr = Quantité de digestats solides issus d'installations industrielles (en t matière fraîche par an)
+    it = Quantité de digestats solides issus d'installations industrielles (en t matière fraîche par an)
   ++units  
     en = t/year
     de = t/Jahr
     fr = t/an
+    it = t/an
   ++description
     Amount of Solid digestate in t /a.
   ++formula
@@ -240,10 +268,12 @@ Vanderweerden and Jarvis (1997)
     en = Amount of liquid digestate (m3 per year)
     de = Flüssiges Gärgut (m3 pro Jahr)
     fr = Quantité de digestats liquides issus d'installations industrielles (en m3 par an)
+    it = Quantité de digestats liquides issus d'installations industrielles (en m3 par an)
   ++units
     en = m3/year
     de = m3/Jahr
     fr = m3/an 
+    it = m3/an
   ++description
     Amount of liquid digestate in m3 /a.
   ++formula

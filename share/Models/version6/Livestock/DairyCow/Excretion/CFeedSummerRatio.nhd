@@ -23,6 +23,7 @@ cow as a function of the summer feed ration.
     en = Proportion of animals receiving hay in summer
     de = Anteil der Tiere, die im Sommer Heu erhalten
     fr = Proportion d'animaux recevant du foin en été
+    it = Proportion d'animaux recevant du foin en été
   ++units 
     en = %
   ++description
@@ -36,12 +37,17 @@ cow as a function of the summer feed ration.
       <p>Proposition de valeur standard: 0%</p>
  
 
+    +++it
+      <p>Proposition de valeur standard: 0%</p>
+ 
+
 +share_maize_silage_summer
   type = percent
   ++labels 
     en = Proportion of animals receiving maize silage in summer
     de = Anteil der Tiere, die im Sommer Maissilage erhalten
     fr = Proportion d'animaux recevant de l'ensilage de maïs en été
+    it = Proportion d'animaux recevant de l'ensilage de maïs en été
   ++units 
     en = %
   ++description
@@ -55,12 +61,17 @@ cow as a function of the summer feed ration.
       <p>Proposition de valeur standard: 0%</p>
  
 
+    +++it
+      <p>Proposition de valeur standard: 0%</p>
+ 
+
 +share_maize_pellets_summer
   type = percent
   ++labels 
     en = Proportion of animals receiving maize pellets in summer
     de = Anteil der Tiere, die im Sommer Maiswürfel erhalten
     fr = Proportion d'animaux recevant des pellets de maïs en été
+    it = Proportion d'animaux recevant des pellets de maïs en été
   ++units 
     en = %
   ++description
@@ -71,6 +82,10 @@ cow as a function of the summer feed ration.
     +++de
       <p>Vorschlag für Standardwert: 0%</p>
     +++fr
+      <p>Proposition de valeur standard: 0%</p>
+ 
+
+    +++it
       <p>Proposition de valeur standard: 0%</p>
  
 

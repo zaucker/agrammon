@@ -50,10 +50,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Liquid
     de = __Flüssig
     fr = __Liquides
+    it = __Liquides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux into liquid manure application. 
   ++formula
@@ -67,10 +69,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Solid
     de = __Fest
     fr = __Solides
+    it = __Solides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux into solid manure application. 
   ++formula
@@ -84,10 +88,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = Into application
     de = In Ausbringung
     fr = Dans l'épandage
+    it = Dans l'épandage
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux into manure application. 
   ++formula
@@ -108,10 +114,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Liquid
     de = __Flüssig
     fr = __Liquides
+    it = __Liquides
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux into liquid manure application. 
   ++formula
@@ -125,10 +133,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Solid
     de = __Fest
     fr = __Solides
+    it = __Solides
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux into solid manure the application. 
   ++formula
@@ -142,10 +152,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = Into application
     de = In Ausbringung
     fr = Dans l'épandage
+    it = Dans l'épandage
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux into manure the application. 
   ++formula
@@ -167,10 +179,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Solid
     de = __Fest
     fr = __Solides
+    it = __Solides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from solid manure application.
   ++formula
@@ -188,10 +202,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Liquid
     de = __Flüssig
     fr = __Liquides
+    it = __Liquides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from liquid manure application.
   ++formula
@@ -205,10 +221,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = Application
     de = Hofdüngerausbringung
     fr = Epandage
+    it = Epandage
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from manure application.
   ++formula
@@ -229,6 +247,7 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from liquid manure application.
   ++formula
@@ -241,6 +260,7 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from solid manure application.
   ++formula
@@ -258,10 +278,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = N2-Emissions from manure application
     de = Hofdüngerausbringung N2-Emission
     fr = Emission de N2 Epandage des engrais de ferme
+    it = Emission de N2 Epandage des engrais de ferme
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from manure application.
   ++formula
@@ -276,6 +298,7 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NO emission from liquid manure application.
   ++formula
@@ -288,6 +311,7 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NO emission from solid manure application.
   ++formula
@@ -305,10 +329,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = NO-Emissions from manure application
     de = Hofdüngerausbringung NO-Emission
     fr = Emission de NO Epandage des engrais de ferme
+    it = Emission de NO Epandage des engrais de ferme
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NO emission from manure application.
   ++formula
@@ -322,6 +348,7 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2O emission from liquid manure application.
   ++formula
@@ -334,6 +361,7 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2O emission from solid manure application.
   ++formula
@@ -351,10 +379,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = Application
     de = Hofdüngerausbringung
     fr = Epandage
+    it = Epandage
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2O emission from manure application.
   ++formula
@@ -377,10 +407,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Liquid
     de = __Flüssig
     fr = __Liquides
+    it = __Liquides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux out of liquid manure application. 
   ++formula
@@ -398,10 +430,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Solid
     de = __Fest
     fr = __Solides
+    it = __Solides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux out of solid manure application. 
   ++formula
@@ -419,10 +453,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = Into soil from application
     de = In Boden von Ausbringung
     fr = Dans le sol suite à l'épandage
+    it = Dans le sol suite à l'épandage
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux out of manure application. 
   ++formula
@@ -444,10 +480,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Liquid
     de = __Flüssig
     fr = __Liquides
+    it = __Liquides
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux out of liquid manure application. 
   ++formula
@@ -466,10 +504,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = __Solid
     de = __Fest
     fr = __Solides
+    it = __Solides
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux out of solid manure application. 
   ++formula
@@ -488,10 +528,12 @@ gui      = Application,Hofdüngerausbringung,Epandage,Application
     en = Into soil from application
     de = In Boden von Ausbringung
     fr = Dans le sol suite à l'épandage
+    it = Dans le sol suite à l'épandage
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux out of manure application. 
   ++formula

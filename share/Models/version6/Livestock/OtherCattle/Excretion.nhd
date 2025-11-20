@@ -78,6 +78,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Animal category
     de = Tierkategorie
     fr = Catégorie d'animaux
+    it = Catégorie d'animaux
   ++units
     en = -
   ++description
@@ -95,6 +96,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
        <p>Bovins à l'engrais: tous les animaux d'engraissement, y c. les veaux destinés à l'engraissement. </p>
 
 
+    +++it
+       <p>Les vâches mères sont introduites dans la catégorie ‚Vâches allaitantes'.</p>
+       <p>La catégorie ‚Remontes' se compose des remontes pour vâches laitières et pour vâches allaitantes. Les veaux d'élevage appartiennent à la catégorie ‚Remontes de moins d'un an'. Les taurillons d'élevage peuvent être mentionnés dans les remontes, dans la catégorie d'âge correspondante. Les taureaux d'élevage sont à mentionner dans la catégorie ‚Remontes âgés de plus de 2 ans'. </p>
+       <p>Bovins à l'engrais: tous les animaux d'engraissement, y c. les veaux destinés à l'engraissement. </p>
+
+
 +animals
   type = float
   validator = ge(0)
@@ -103,6 +110,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Number of animals
     de = Anzahl Tiere
     fr = Nombre d'animaux
+    it = Nombre d'animaux
   ++units
     en = -
   ++description
@@ -115,6 +123,9 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     +++fr
        <p>Nombre effectif d'animaux dans la stabulation.</p>
 
+    +++it
+       <p>Nombre effectif d'animaux dans la stabulation.</p>
+
 +dimensioning_barn
   type = float
   distribute = true
@@ -124,6 +135,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Number of available animal places
     de = Anzahl Tierplätze im Stall
     fr = Nombre de places dans l'étable
+    it = Nombre de places dans l'étable
   ++units  
     en = -
   ++description
@@ -139,6 +151,10 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          <p>Pour les stabulations libres: mentionner toutes les places accessibles aux animaux. Le nombre de places dans l'étable peut être supérieur au cheptel actuel, dans la perspective d'un agrandissement futur de l'exploitation p.ex. Dans les stabulations libres, un nombre de places supérieur au nombre d'animaux signifie une augmentation de la surface souillée par animal. Au contraire, dans les stabulations entravées, un nombre de places supérieur au nombre d'animaux ne conduit pas à une augmentation de la surface souillée par animal, vu que ces places libres ne sont pas accessibles aux animaux. </p>
          <p>Si "Standard" est introduisé, la valeur du nombre d'animaux est utilisée.</p>
 
+      +++it
+         <p>Pour les stabulations libres: mentionner toutes les places accessibles aux animaux. Le nombre de places dans l'étable peut être supérieur au cheptel actuel, dans la perspective d'un agrandissement futur de l'exploitation p.ex. Dans les stabulations libres, un nombre de places supérieur au nombre d'animaux signifie une augmentation de la surface souillée par animal. Au contraire, dans les stabulations entravées, un nombre de places supérieur au nombre d'animaux ne conduit pas à une augmentation de la surface souillée par animal, vu que ces places libres ne sont pas accessibles aux animaux. </p>
+         <p>Si "Standard" est introduisé, la valeur du nombre d'animaux est utilisée.</p>
+
 ?if !Kantonal_LU
   +inp_n_excretion
     type = float
@@ -148,10 +164,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       en = N excretion
       de = N Ausscheidung
       fr = Excrétions azotées
+      it = Excrétions azotées
     ++units
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
+      it = kg N/an
     ++description
       Annual standard N excretion for a dairy cow
     ++help
@@ -181,6 +199,10 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          <p>Si "Standard" est introduisé, la valeur de référence pour les excrétions azotées d'après PRIF 2017 (Richner et al., 2017) est utilisée (PRIF: « Principes de la fertilisation des cultures agricoles en Suisse » ). Si un nombre est introduisé une valeur  pour les excrétions azotées peut être déterminée par l'utilisateur/-trice.</p>
         <p>Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 4/ Eigenschaften und Anwendung von Düngern, in: Richner, W., Sinaj, S. (Eds.), Grundlagen für die Düngung landwirtschaftlicher Kulturen in der Schweiz / GRUD 2017. Agrarforschung Schweiz 8 (6) Spezialpublikation, pp. 4/1-4/23.</p>
 
+      +++it
+         <p>Si "Standard" est introduisé, la valeur de référence pour les excrétions azotées d'après PRIF 2017 (Richner et al., 2017) est utilisée (PRIF: « Principes de la fertilisation des cultures agricoles en Suisse » ). Si un nombre est introduisé une valeur  pour les excrétions azotées peut être déterminée par l'utilisateur/-trice.</p>
+        <p>Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 4/ Eigenschaften und Anwendung von Düngern, in: Richner, W., Sinaj, S. (Eds.), Grundlagen für die Düngung landwirtschaftlicher Kulturen in der Schweiz / GRUD 2017. Agrarforschung Schweiz 8 (6) Spezialpublikation, pp. 4/1-4/23.</p>
+
   +tan_fraction
     type = percent
     default_calc = Standard
@@ -189,10 +211,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       en = TAN fraction of N excretion
       de = TAN Anteil der N Ausscheidung
       fr = Proportion de TAN des excrétions azotées
+      it = Proportion de TAN des excrétions azotées
     ++units
       en = %
       de = %
       fr = %
+      it = %
     ++description
       TAN fraction of the annual standard N excretion
     ++help
@@ -203,6 +227,10 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          <p>Bei Eingabe <b>Standard</b> wird der Anteil von TAN in den Ausscheidungen der Tiere wie vom Modell Agrammon vorgegeben festgelegt. Bei Eingabe einer Zahl kann der Wert für den
             Anteil von TAN in den Ausscheidungen selbst gewählt werden. Diese Option ist für Fälle gedacht, in denen  der Anteil von TAN in den Ausscheidungen beispielsweise aus einem Fütterungsmodell bekannt ist.</p>
       +++fr
+         <p>Si <b>Standard</b> est introduisé le pourcentage de TAN dans les excrétions des animaux est utilisée comme défini par le modèle Agrammon. Si un nombre est introduisé une valeur pour la proportion de TAN
+         dans les excrétions peut être déterminée par l'utilisateur/-trice. Cette option est destinée aux cas où la proportion de TAN dans les excréments est connue, par exemple à partir d'un modèle d'alimentation.</p>
+
+      +++it
          <p>Si <b>Standard</b> est introduisé le pourcentage de TAN dans les excrétions des animaux est utilisée comme défini par le modèle Agrammon. Si un nombre est introduisé une valeur pour la proportion de TAN
          dans les excrétions peut être déterminée par l'utilisateur/-trice. Cette option est destinée aux cas où la proportion de TAN dans les excréments est connue, par exemple à partir d'un modèle d'alimentation.</p>
 
@@ -218,6 +246,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for a 1 year old heifer, according to
     Flisch et al. (2009).
@@ -228,6 +257,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for a 2 year old heifer, according to
     Flisch et al. (2009).
@@ -238,6 +268,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for a 3 year old heifer, according to
     Flisch et al. (2009).
@@ -248,6 +279,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for a beefcattle, according to
     Flisch et al. (2009).
@@ -258,6 +290,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for a fatteningcalves, according to
     Flisch et al. (2009).
@@ -269,6 +302,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for a suckling cow, according to
     Flisch et al. (2009).
@@ -279,6 +313,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for a suckling cow, according to
     Flisch et al. (2009).
@@ -289,6 +324,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for a suckling cow, according to
     GRUDAF 2017
@@ -299,6 +335,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for calves of suckling cows, according to
     Flisch et al. (2009).
@@ -407,6 +444,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual total N excreted per animal.
 ?if Kantonal_LU
@@ -423,6 +461,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The N excretion entered for other cattle differs from the standard by more than 30%!",
             de => "Die eingegebene N-Ausscheidung für übriges Rindvieh weicht um mehr als 30% vom Standard ab!",
             fr => "Les excrétions azotées saisies pour les autres bovins laitières s'écartent de plus de 30 % du standard!",
+            it => "Les excrétions azotées saisies pour les autres bovins laitières s'écartent de plus de 30 % du standard!",
       });
     }
     return $exc;
@@ -434,6 +473,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual total N excreted by an animalgroup of selected cattle category.
   ++formula
@@ -445,6 +485,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual soluble N excreted by an animalgroup of selected cattle category.
 ?if !Kantonal_LU
@@ -458,7 +499,8 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
           writeLog({
             en => "The TAN fraction of N excretion entered for other cattle differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für übriges Rindvieh weicht um mehr als 20% vom Standard ab!",
-            fr => "La proportion du TAN des excrétions azotées saisies pour autres bovins s'écartent de plus de 20 % du standard!"
+            fr => "La proportion du TAN des excrétions azotées saisies pour autres bovins s'écartent de plus de 20 % du standard!",
+            it => "La proportion du TAN des excrétions azotées saisies pour autres bovins s'écartent de plus de 20 % du standard!"
           });
         }
         return $tan * Out(n_excretion);
@@ -511,7 +553,8 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       writeLog({
         en => "The number of available animal places must be equal or higher than the number of animals.",
         de => "Anzahl Tierplätze muss grösser oder gleich der Anzahl der Tiere sein.",
-        fr => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux."
+        fr => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux.",
+        it => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux."
       });
       return "barn dimensioning too small";
     } 

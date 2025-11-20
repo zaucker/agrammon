@@ -47,6 +47,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
+    it = Type de stabulation
   ++units  
     en = -
   ++description
@@ -71,6 +72,19 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
        <p>Masttruten: Bodenhaltung</p>
        <p>Anderes Geflügel: Bodenhaltung</p>
     +++fr
+       <p>Tapis d'évacuation du fumier sans séchage sur tapis à fientes: système comportant des tapis sous la stabulation qui évacuent le fumier dans un contenant à l'extérieur du poulailler. </p>
+       <p>Tapis d'évacuation du fumier avec séchage sur tapis à fientes: comme tapis d'évacuation du fumier sans séchage sur tapis à fientes, sauf que les fientes sont rapidement séchées sur le tapis à un taux d'env. 60% de MS grâce à une ventilation permanente </p>
+       <p>Litière profonde: système comprenant une surface recouverte de litière. C'est le système usuel pour les cheptels de petite taille. </p>
+       <p>Fosse à déjections: système dans lequel le fumier s'accumule pendant un certain temps sous la stabulation. Le stockage du fumier ou des déjections dans un contenant couvert à l'extérieur du poulailler n'est pas compris dans cette catégorie. </p>
+       <p>Propositions de valeurs standard:</p>
+       <p>Poules pondeuses: tapis d'évacuation du fumier sans séchage sur tapis à fientes si plus de 150 animaux; autrement: litière profonde</p>
+       <p>Poulettes: tapis d'évacuation du fumier sans séchage sur tapis à fientes si plus de 150 animaux; autrement: litière profonde</p>
+       <p>Poulets à l'engrais: litière profonde</p>
+       <p>Dindes: litière profonde</p>
+       <p>Autre volaille: litière profonde</p>
+
+
+    +++it
        <p>Tapis d'évacuation du fumier sans séchage sur tapis à fientes: système comportant des tapis sous la stabulation qui évacuent le fumier dans un contenant à l'extérieur du poulailler. </p>
        <p>Tapis d'évacuation du fumier avec séchage sur tapis à fientes: comme tapis d'évacuation du fumier sans séchage sur tapis à fientes, sauf que les fientes sont rapidement séchées sur le tapis à un taux d'env. 60% de MS grâce à une ventilation permanente </p>
        <p>Litière profonde: système comprenant une surface recouverte de litière. C'est le système usuel pour les cheptels de petite taille. </p>
@@ -120,6 +134,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
     en = Manure removal interval (manure belts)
     de = Entmistungsintervall bei Kotbandentmistung
     fr = Fréquence d'évacuation du fumier par le tapis
+    it = Fréquence d'évacuation du fumier par le tapis
   ++units  
     en = -
   ++description
@@ -144,6 +159,13 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
        <p>Plus de 4 fois par mois et moins d'une fois par jour pour les poules pondeuses</p>
        <p>3 à 4 fois par mois pour les poulettes</p>
 
+    +++it
+       <p>Séchage forcé du fumier sur le tapis d'évacuation:</p>
+       <p>Avec ce système, les fientes sont rapidement séchées sur le tapis à un taux d'env. 60% de MS grâce à une ventilation permanente.</p>
+       <p>Proposition de valeurs standard:</p>
+       <p>Plus de 4 fois par mois et moins d'une fois par jour pour les poules pondeuses</p>
+       <p>3 à 4 fois par mois pour les poulettes</p>
+
 +drinking_system
   type  = enum
   ++enum
@@ -161,6 +183,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
     en = Drinking system
     de = Tränkesystem
     fr = Type d'abreuvoir
+    it = Type d'abreuvoir
   ++units  
     en = -
   ++description
@@ -183,6 +206,16 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
        <p>Anderes Geflügel: Wasserbehälter</p>
        <p>Falls Cuptränken vorhanden sind: Nicht tropfendes Tränkesystem auswählen</p>
     +++fr
+       <p>Proposition de valeurs standard:</p>
+       <p>Poules pondeuses: Abreuvoir empêchant les fuites pour un cheptel supérieur à 50 animaux; abreuvoir à bol pour un cheptel inférieur à 50 animaux</p>
+       <p>Poulettes: Abreuvoir empêchant les fuites</p>
+       <p>Poulets à l'engrais: Abreuvoir empêchant les fuites</p>
+       <p>Dindes: Abreuvoir à bol</p>
+       <p>Autre volaille: Abreuvoir à bol</p>
+       <p>Dans le cas d'abreuvoirs à godets, choisir ‚Abreuvoir empêchant les fuites' </p>
+
+
+    +++it
        <p>Proposition de valeurs standard:</p>
        <p>Poules pondeuses: Abreuvoir empêchant les fuites pour un cheptel supérieur à 50 animaux; abreuvoir à bol pour un cheptel inférieur à 50 animaux</p>
        <p>Poulettes: Abreuvoir empêchant les fuites</p>
@@ -316,7 +349,8 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
                       en => "The category manure belt without manure belt drying system is not valid, please select the housing system deep litter for broilers.",
                       de => "Für Mastpoulets ist Kotbandentmistung als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung "
                             . "(für die Berechnung wird Bodenhaltung gesetzt).",
-                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
+                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec ",
+                      it => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
                             . "tapis d'évacuation du fumier. Choisissez plutôt ‘Litière profonde'."
                     });
                   } 
@@ -325,7 +359,8 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
                       en => "Manure belt with manure belt drying system not valid, please select deep litter as housing type for broilers.",
                       de => "Für Mastpoulets ist Kotbandentmistung als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung "
                             . "(für die Berechnung wird Bodenhaltung gesetzt).",
-                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
+                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec ",
+                      it => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
                             . "tapis d'évacuation du fumier. Choisissez plutôt ‘Litière profonde'."
                     });
                 }  
@@ -334,7 +369,8 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
                       en => "Deep pit not valid, please select deep litter as housing type for broilers.",
                       de => "Für Mastpoulets ist Kotgrube als Aufstallung nicht vorgesehen. Wählen Sie stattdessen Bodenhaltung. "
                             . "(für die Berechnung wird Bodenhaltung gesetzt).",
-                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
+                      fr => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec ",
+                      it => "Pour des poulets à l‘engrais, il n'est pas prévu de stabulation avec "
                              . "fosse à déjections. Choisissez plutôt ‘Litière profonde'."
                     });
                 }
@@ -408,7 +444,8 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
           writeLog({
             en => "The category 'No manure belt' is not applicable for housing systems with a manure belt!",
             de => "Kategorie 'keine Kotbandentmistung', ist nicht erlaubt bei Aufstallung, Kotbandentmistung!",
-            fr => "La catégorie ‘Pas de tapis d'évacuation' n'est pas valable pour une "
+            fr => "La catégorie ‘Pas de tapis d'évacuation' n'est pas valable pour une ",
+            it => "La catégorie ‘Pas de tapis d'évacuation' n'est pas valable pour une "
                   . "stabulation avec tapis d'évacuation du fumier!",
           });
          return Tech(c_manure_removal_interval_twice_a_month);  # default no correctios
@@ -420,7 +457,8 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
         writeLog({
           en => "Please enter under manure removal interval 'No manure belt' in combination with the housing systems deep pit or deep litter!",
           de => "Bitte wählen Sie unter Entmistungsintervall 'keine Kotbandentmistung' in Kombination mit der Aufstallung, Bodenhaltung oder Kotgrube!",
-          fr => "Sous ‘Fréquence d'évacuation du fumier', veuillez choisir la catégorie "
+          fr => "Sous ‘Fréquence d'évacuation du fumier', veuillez choisir la catégorie ",
+          it => "Sous ‘Fréquence d'évacuation du fumier', veuillez choisir la catégorie "
                 . "‘Pas de tapis d'évacuation' en combinaison avec la stabulation ‘Litière "
                 . "profonde' ou ‘Fosse à déjections' !",
         });
@@ -445,6 +483,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
         en => "Invalid 'drinking_system' entered!",
         de => "Ungültiges Tränkesystem eingegeben!",
         fr => "Ce type d'abreuvoir n'est pas valable!",
+        it => "Ce type d'abreuvoir n'est pas valable!",
 		  });
       return 1.0;
     }

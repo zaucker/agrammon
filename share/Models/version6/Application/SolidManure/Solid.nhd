@@ -108,6 +108,7 @@ nach der Anwendung von Mist. Agrarforschung 4:328-331.
     en = 
     de = 
     fr = 
+    it = 
   ++description
     NH3 emission rates for solid manure application from all animal categories except poultry.
 ?if Kantonal_LU
@@ -164,6 +165,7 @@ nach der Anwendung von Mist. Agrarforschung 4:328-331.
     en = 
     de = 
     fr = 
+    it = 
   ++description
     N2 emission rates for solid manure application from all animal categories except poultry.
   ++formula
@@ -179,6 +181,7 @@ nach der Anwendung von Mist. Agrarforschung 4:328-331.
     en = 
     de = 
     fr = 
+    it = 
   ++description
     N2 emission rates for solid manure application from all animal categories except poultry.
   ++formula
@@ -194,6 +197,7 @@ nach der Anwendung von Mist. Agrarforschung 4:328-331.
     en = 
     de = 
     fr = 
+    it = 
   ++description
     N2 emission rates for solid manure application from all animal categories except poultry.
   ++formula

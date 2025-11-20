@@ -23,6 +23,7 @@ taxonomy = Application::Slurry::CfreeFactor
     en = Additional emission mitigation measure
     de = Zusätzliche emissionsmindernde Massnahme Gülleausbringung (siehe Spalte Hilfe)
     fr = Mesure supplémentaire limitant les émissions dues à l'épandage de lisier (cf. aide)
+    it = Mesure supplémentaire limitant les émissions dues à l'épandage de lisier (cf. aide)
   ++units 
     en = %
   ++description
@@ -69,6 +70,21 @@ taxonomy = Application::Slurry::CfreeFactor
        <p>
        <p>Proposition de valeur standard: 0 %.</p>
  
+    +++it
+       <p>
+           Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les émissions 
+	   (p.ex. une nouvelle technologie d'épandage). Le chiffre introduit correspond à la 
+	   réduction d'émission en pourcent (p.ex. 30%: l'émission provenant de l'épandage de 
+	   lisier diminue de 30%). Il est recommandé de mentionner la mesure choisie dans la 
+	   colonne ‘Commentaire' et de justifier le taux de réduction choisi.
+       </p>
+       <p>
+           Cette fonction s'adresse principalement aux utilisateurs/trices qui font des
+           pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles 
+ 	   technologies destinées à limiter les émissions et encore méconnues actuellement.
+       <p>
+       <p>Proposition de valeur standard: 0 %.</p>
+ 
 *** technical ***
 
 *** external ***
@@ -89,7 +105,9 @@ taxonomy = Application::Slurry::CfreeFactor
                 de=>"Sie haben eine zusätzliche emissionsmindernde Massnahme für die Ausbringung von Gülle von "
       	            . In(free_correction_factor) 
                     . "\% eingegeben!\n", 
-                fr=>"Vous avez introduit une mesure supplémentaire limitant les émissions dues à l'épandage de lisier de " . In(free_correction_factor) 
+                fr=>"Vous avez introduit une mesure supplémentaire limitant les émissions dues à l'épandage de lisier de " . In(free_correction_factor)
+                    . "\% !\n",
+                it=>"Vous avez introduit une mesure supplémentaire limitant les émissions dues à l'épandage de lisier de " . In(free_correction_factor)
                     . "\% !\n"});
 	    return 1 - In(free_correction_factor)/100;
    } else {

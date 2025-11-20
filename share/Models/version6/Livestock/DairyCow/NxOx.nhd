@@ -253,10 +253,12 @@ TODO!
     en = N2-emissions from solid manure in housing, yard and storage from dairy cows 
     de = FIX: N2-Emission aus Stall, Laufhof und Lagerung Milchkühe
     fr = FIX: Vâches laitières Emissions de N2 stockage, l'étable et parcours extérieur
+    it = FIX: Vâches laitières Emissions de N2 stockage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     FIX: Annual N2 emissions from dairy cows housing, yard and storage.
   ++formula
@@ -270,10 +272,12 @@ TODO!
     en = NO-emissions from solid manure in housing, yard and storage from dairy cows 
     de = FIX: NO-Emission aus Stall, Laufhof und Lagerung Milchkühe
     fr = FIX: Vâches laitières Emissions de NO stockage, l'étable et parcours extérieur
+    it = FIX: Vâches laitières Emissions de NO stockage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     FIX: Annual NO emissions from dairy cows housing, yard and grazing (production).
   ++formula
@@ -286,10 +290,12 @@ TODO!
     en = N2O-emissions from solid manure in housing, yard and storage from dairy cows 
     de = FIX: N2O-Emission aus Stall, Laufhof und Lagerung Milchkühe
     fr = FIX: Vâches laitières Emissions de N2O stockage, l'étable et parcours extérieur
+    it = FIX: Vâches laitières Emissions de N2O stockage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     FIX: Annual N2O emissions from dairy cows housing, yard and grazing (production).
   ++formula
@@ -303,10 +309,12 @@ TODO!
     en = FIX: N2-emissions from liquid manure in housing, yard and storage dairy cow 
     de = FIX: N2-Emission aus Stall, Laufhof und Lagerung Milchkühe
     fr = FIX: Vâches laitières Emissions de N2 stockage, l'étable et parcours extérieur
+    it = FIX: Vâches laitières Emissions de N2 stockage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     FIX: Annual N2 emissions from dairy cows housing, yard and grazing (production).
   ++formula
@@ -321,10 +329,12 @@ TODO!
     en = FIX: N2-emissions from liquid manure in housing, yard and storage dairy cow 
     de = FIX: N2-Emission aus Stall, Laufhof und Lagerung Milchkühe
     fr = FIX: Vâches laitières Emissions de N2 stockage, l'étable et parcours extérieur
+    it = FIX: Vâches laitières Emissions de N2 stockage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     FIX: Annual NO emissions from dairy cows housing, yard and grazing (production).
   ++formula
@@ -338,10 +348,12 @@ TODO!
     en = FIX: N2-emissions from liquid manure in housing, yard and storage dairy cow 
     de = FIX: N2-Emission aus Stall, Laufhof und Lagerung Milchkühe
     fr = FIX: Vâches laitières Emissions de N2 stockage, l'étable et parcours extérieur
+    it = FIX: Vâches laitières Emissions de N2 stockage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     FIX: Annual N2O emissions from dairy cows housing, yard and grazing (production).
   ++formula

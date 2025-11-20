@@ -64,7 +64,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en = Type of cover
     de = Abdeckung des Güllelagers
     fr = Type de couverture du stock de lisier
-    it = Type de couverture du stock de lisier
+    it = Copertura del deposito di liquami
   ++units
     en = -
   ++description
@@ -110,7 +110,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
      en = Contains cattle slurry
      de = Enthält Rindergülle
      fr = Contient du lisier de bovin
-     it = Contient du lisier de bovin
+     it = Contiene liquame bovino
    ++enum
      +++yes
         en = yes
@@ -145,7 +145,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
      en = Contains pigs slurry
      de = Enthält Schweinegülle
      fr = Contient du lisier de porc
-     it = Contient du lisier de porc
+     it = Contiene liquame suino
    ++enum
      +++yes
         en = yes
@@ -182,7 +182,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
       en = Additional emission mitigation measure
       de = Zusätzliche emissionsmindernde Massnahme Güllelager (siehe Spalte Hilfe)
       fr = Mesure supplémentaire limitant les émissions dues au stockage du lisier (cf. aide)
-      it = Mesure supplémentaire limitant les émissions dues au stockage du lisier (cf. aide)
+      it = Misura aggiuntiva di riduzione delle emissioni deposito liquami (vedi colonna Aiuto)
     ++units
       en = %
     ++description
@@ -252,7 +252,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  kg N/m2/year
     de =  kg N/m2/Jahr
     fr =  kg N/m2/an
-    it = kg N/m2/an
+    it = kg N/m2/anno
   ++description
     The Emission factor for uncovered storage is based on the review by
     Kupper et al. (2020).
@@ -263,7 +263,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  kg N/m2/year
     de =  kg N/m2/Jahr
     fr =  kg N/m2/an
-    it = kg N/m2/an
+    it = kg N/m2/anno
   ++description
     The Emission factor for uncovered storage is based on the review by
     Kupper et al. (2020).
@@ -342,7 +342,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  kg N/m2/year
     de =  kg N/m2/Jahr
     fr =  kg N/m2/an
-    it = kg N/m2/an
+    it = kg N/m2/anno
   ++description
     Scaled emission factor of a specific liquid storage for pig slurry.
   ++formula
@@ -363,7 +363,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
     en =  kg N/m2/year
     de =  kg N/m2/Jahr
     fr =  kg N/m2/an
-    it = kg N/m2/an
+    it = kg N/m2/anno
   ++description
     Scaled emission factor of a specific liquid storage for cattle slurry.
   ++formula

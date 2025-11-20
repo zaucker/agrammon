@@ -32,7 +32,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     en = Volume of slurry store (without channels and gutters)
     de = Volumen des Güllelagers
     fr = Volume du stock de lisier (sans les canaux)
-    it = Volume du stock de lisier (sans les canaux)
+    it = Volume del deposito di liquami
   ++units
     en = m3
   ++description
@@ -58,7 +58,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     en = Depth of slurry store
     de = Tiefe des Güllelagers
     fr = Profondeur du stock de lisier
-    it = Profondeur du stock de lisier
+    it = Profondità del deposito di liquami
   ++units
     en = m
   ++description
@@ -112,7 +112,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
       en = Frequency of slurry mixing
       de = Häufigkeit Aufrühren des Güllelagers
       fr = Fréquence de brassage du stock de lisier par an
-      it = Fréquence de brassage du stock de lisier par an
+      it = Frequenza di mescolamento del deposito di liquami
     ++units
       en = -
     ++description
@@ -249,7 +249,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from slurry storage.
 ?if Kantonal_LU
@@ -271,7 +271,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from slurry storage.
 ?if Kantonal_LU

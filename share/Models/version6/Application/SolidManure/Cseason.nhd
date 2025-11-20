@@ -32,7 +32,7 @@ taxonomy = Application::SolidManure::Cseason
       en = Share of solid manure applied June to August (in %)
       de = Ausbringung von Mist im Sommer (Juni, Juli, August): Anteil in Prozent
       fr = Part de fumier épandu en été (de juin à août) (en %)
-      it = Part de fumier épandu en été (de juin à août) (en %)
+      it = Spandimento di letame in estate (giugno, luglio, agosto): quota in percentuale
     ++units
       en = %
     ++description
@@ -58,7 +58,7 @@ taxonomy = Application::SolidManure::Cseason
       en  = Share of solid manure applied September to May (in %)
       de = Ausbringung von Mist von September bis und mit Mai: Anteil in Prozent
       fr = Part de fumier épandu de septembre à mai y.c. (en %)
-      it = Part de fumier épandu de septembre à mai y.c. (en %)
+      it = Spandimento di letame da settembre a maggio incluso: quota in percentuale
     ++units
       en = %
     ++description
@@ -148,11 +148,14 @@ Model calculation according to the model of Katz (Menzi et al. 1997b) with meteo
     	Out(appl_autumn_winter_spring) * Tech(c_autumn_winter_spring)));
     }
     else {
-    	writeLog({en => "Please correct accordingly: the categories of seasonal solid manure incorporated do not add up to 100\%!\n",
-                  de => "Bitte korrigieren: die Summe der Kategorien der saisonalen Einarbeitung von Mist ist nicht gleich 100\%!\n",
-                  fr => "Veuillez corriger : la somme des catégories «Part de fumier incorporé» n'est pas égale à 100% !",
-                  it => "Veuillez corriger : la somme des catégories «Part de fumier incorporé» n'est pas égale à 100% !",
-		 });
+    	writeLog({
+            en => "Please correct accordingly: the categories of seasonal solid manure incorporated do not add up to 100\%!\n",
+            de => "Bitte korrigieren: die Summe der Kategorien der saisonalen Einarbeitung von Mist ist nicht gleich 100\%!\n",
+            fr => "Veuillez corriger : la somme des catégories «Part de fumier incorporé» n'est pas égale à 100% !",
+            it => "TODO",
+	});
     	(1 + ( Out(appl_summer) * Tech(c_summer) +
-        	Out(appl_autumn_winter_spring) * Tech(c_autumn_winter_spring)));
+        	Out(appl_autumn_winter_spring) * Tech(c_autumn_winter_spring)
+             )
+        );
     }

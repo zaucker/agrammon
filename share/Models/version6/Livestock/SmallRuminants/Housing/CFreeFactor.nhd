@@ -23,7 +23,7 @@ Selects the free correction factor for housing emission for roughage consuming.
     en = Additional emission mitigation measure for the housing (see column Help)
     de = Zusätzliche emissionsmindernde Massnahme Stall (siehe Spalte Hilfe)
     fr = Mesure supplémentaire limitant les émissions dans les stabulations (cf. aide)
-    it = Mesure supplémentaire limitant les émissions dans les stabulations (cf. aide)
+    it = Misura aggiuntiva di riduzione delle emissioni stalla (vedi colonna Aiuto)
   ++units 
     en = %
   ++description

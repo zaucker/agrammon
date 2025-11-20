@@ -23,7 +23,7 @@ taxonomy = Application::Slurry::Cfermented
     en = Share of anaerobically digested slurry 
     de = Anteil Gärgülle
     fr = Part de lisier issu de digestion
-    it = Part de lisier issu de digestion
+    it = Quota di liquame digerito
   ++units  
     en = %
   ++description

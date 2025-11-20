@@ -23,7 +23,7 @@ taxonomy = Application::Slurry::CfreeFactor
     en = Additional emission mitigation measure
     de = Zusätzliche emissionsmindernde Massnahme Gülleausbringung (siehe Spalte Hilfe)
     fr = Mesure supplémentaire limitant les émissions dues à l'épandage de lisier (cf. aide)
-    it = Mesure supplémentaire limitant les émissions dues à l'épandage de lisier (cf. aide)
+    it = Misura aggiuntiva di riduzione delle emissioni spandimento liquame (vedi colonna Aiuto)
   ++units 
     en = %
   ++description

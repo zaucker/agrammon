@@ -29,7 +29,7 @@ taxonomy = Application::SolidManure::CincorpTime
     en = Share of solid manure incorporated within 1 hour (in %)
     de = Mist eingearbeitet innerhalb von 1 Stunde: Anteil in Prozent
     fr = Part de fumier incorporé en 1 heure (en %)
-    it = Part de fumier incorporé en 1 heure (en %)
+    it = Letame incorporato entro 1 ora: quota in percentuale
   ++units
     en = %
   ++description
@@ -59,7 +59,7 @@ taxonomy = Application::SolidManure::CincorpTime
       en = Share of solid manure incorporated within 4 hours (in %)
       de = Mist eingearbeitet innerhalb von 4 Stunden: Anteil in Prozent
       fr = Part de fumier incorporé en 4 heures (en %)
-      it = Part de fumier incorporé en 4 heures (en %)
+      it = Letame incorporato entro 4 ore: quota in percentuale
     ++units
       en = %
     ++description
@@ -88,7 +88,7 @@ taxonomy = Application::SolidManure::CincorpTime
       en = Share of solid manure incorporated within 8 hours (in %)
       de = Mist eingearbeitet innerhalb von 8 Stunden: Anteil in Prozent
       fr = Part de fumier incorporé en 8 heures (en %)
-      it = Part de fumier incorporé en 8 heures (en %)
+      it = Letame incorporato entro 8 ore: quota in percentuale
     ++units
       en = %
     ++description
@@ -117,7 +117,7 @@ taxonomy = Application::SolidManure::CincorpTime
     en = Share of solid manure incorporated within 1 day (in %)
     de = Mist eingearbeitet innerhalb von 1 Tag: Anteil in Prozent
     fr = Part de fumier incorporé en 1 jour (en %)
-    it = Part de fumier incorporé en 1 jour (en %)
+    it = Letame incorporato entro 1 giorno: quota in percentuale
   ++units
     en = %
   ++description
@@ -146,7 +146,7 @@ taxonomy = Application::SolidManure::CincorpTime
     en = Share of solid manure incorporated within 3 days (in %)
     de = Mist eingearbeitet innerhalb von 3 Tagen: Anteil in Prozent
     fr = Part de fumier incorporé en 3 jours (en %)
-    it = Part de fumier incorporé en 3 jours (en %)
+    it = Letame incorporato entro 3 giorni: quota in percentuale
   ++units
     en = %
   ++description
@@ -176,7 +176,7 @@ taxonomy = Application::SolidManure::CincorpTime
       en = Share of solid manure incorporated more than 3 days (in %)
       de = Mist eingearbeitet innerhalb von mehr als 3 Tagen: Anteil in Prozent
       fr = Part de fumier incorporé en plus de 3 jours (en %)
-      it = Part de fumier incorporé en plus de 3 jours (en %)
+      it = Letame incorporato oltre 3 giorni: quota in percentuale
     ++units
       en = %
     ++description
@@ -205,7 +205,7 @@ taxonomy = Application::SolidManure::CincorpTime
     en = Share of solid manure not incorporated (in %)
     de = Keine Einarbeitung von Mist: Anteil in Prozent
     fr = Part de fumier non incorporé (en %)
-    it = Part de fumier non incorporé (en %)
+    it = Nessuna incorporazione del letame: quota in percentuale
   ++units
     en = %
   ++description
@@ -339,11 +339,12 @@ taxonomy = Application::SolidManure::CincorpTime
        ) <= 1.000001 
      ){  return 1;  
   }else{
-	writeLog({en=>"Please correct accordingly: the categories of solid manure incorporated do not add up to 100\%!",
-              de=>"Bitte korrigieren: die Summe der Kategorien Einarbeitung von Mist ist nicht gleich 100\%!",
-              fr=>"Veuillez corriger : la somme des catégories «Part de fumier incorporé» n'est pas égale à 100\% !",
-              it =>"Veuillez corriger : la somme des catégories «Part de fumier incorporé» n'est pas égale à 100\% !"
-             } );
+	writeLog({
+            en => "Please correct accordingly: the categories of solid manure incorporated do not add up to 100\%!",
+            de => "Bitte korrigieren: die Summe der Kategorien Einarbeitung von Mist ist nicht gleich 100\%!",
+            fr => "Veuillez corriger : la somme des catégories «Part de fumier incorporé» n'est pas égale à 100\% !",
+            it => "TODO",
+        });
    	return  0;
   }
- 
+

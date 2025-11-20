@@ -26,7 +26,7 @@ Selects other correction factors for the specific housing types for poultry.
     en = Additional emission mitigation measure for the housing (see column Help)
     de = Zusätzliche emissionsmindernde Massnahme Stall (siehe Spalte Hilfe)
     fr = Mesure supplémentaire limitant les émissions dans les stabulations (cf. aide)
-    it = Mesure supplémentaire limitant les émissions dans les stabulations (cf. aide)
+    it = Misura aggiuntiva di riduzione delle emissioni stalla (vedi colonna Aiuto)
   ++units 
     en = %
   ++description
@@ -105,14 +105,10 @@ Selects other correction factors for the specific housing types for poultry.
   ++formula
     if( In(free_correction_factor) != 0 ) {
       writeLog({
-        en => "You have entered an additional emission mitigation measure for a poultry housing of " 
-              . In(free_correction_factor) . "\%!\n", 
-        de => "Sie haben eine zusätzliche emissionsmindernde Massnahme für einen Geflügelstall von "
-              . In(free_correction_factor) . "\% eingegeben!\n", 
-        fr => "Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'une "
-              . "stabulation pour volaille de " . In(free_correction_factor) . "\%.\n",
-        it => "Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'une "
-              . "stabulation pour volaille de " . In(free_correction_factor) . "\%.\n"
+        en => "You have entered an additional emission mitigation measure for a poultry housing of " . In(free_correction_factor) . "\%!\n", 
+        de => "Sie haben eine zusätzliche emissionsmindernde Massnahme für einen Geflügelstall von " . In(free_correction_factor) . "\% eingegeben!\n", 
+        fr => "Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'une stabulation pour volaille de " . In(free_correction_factor) . "\%.\n",
+        it => "TODO",
       });
 	    return 1 - In(free_correction_factor) / 100;
     } 

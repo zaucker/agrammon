@@ -26,7 +26,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = Share of poultry manure applied to land without storage
     de = Anteil von direkt ohne Lagerung ausgebrachtem Geflügelmist
     fr = Part des fientes ou du fumier de volaille épandu directement sans stockage
-    it = Part des fientes ou du fumier de volaille épandu directement sans stockage
+    it = Quota di lettiera di pollame distribuita direttamente senza stoccaggio
   ++units 
     en = % 
   ++description
@@ -50,7 +50,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = Share of poultry manure covered during storage
     de = Anteil von gedeckt gelagertem Kot oder Mist aus der Geflügelhaltung
     fr = Part des fientes ou du fumier de volaille stockés qui sont couverts
-    it = Part des fientes ou du fumier de volaille stockés qui sont couverts
+    it = Quota di deiezioni o lettiera di pollame conservata coperta
   ++units 
     en = % 
   ++description
@@ -82,7 +82,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
       en = Additional emission mitigation measure
       de = Zusätzliche emissionsmindernde Massnahme Geflügelmist (siehe Spalte Hilfe)
       fr = Mesure supplémentaire limitant les émissions dues au stockage des fientes ou du fumier de volaille (cf. aide)
-      it = Mesure supplémentaire limitant les émissions dues au stockage des fientes ou du fumier de volaille (cf. aide)
+      it = Misura aggiuntiva di riduzione delle emissioni lettiera di pollame (vedi colonna Aiuto)
     ++units 
       en = %
     ++description
@@ -225,7 +225,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
         writeLog({en=>"The sum of Share of poultry manure applied to land without storage and Share of poultry manure covered during storage must be equal or lower than 100 %",
                   de=>"Die Summe von Anteil von direkt ohne Lagerung ausgebrachtem Geflügelmist und Anteil von gedeckt gelagertem Kot oder Mist aus der Geflügelhaltung darf maximal 100 % betragen",
                   fr=>"La somme de Part des fientes ou du fumier de volaille épandu directement sans stockage et de Part des fientes ou du fumier de volaille stockés qui sont couverts ne peut être supérieur à 100 %",
-                  it=>"La somme de Part des fientes ou du fumier de volaille épandu directement sans stockage et de Part des fientes ou du fumier de volaille stockés qui sont couverts ne peut être supérieur à 100 %"
+                  it=>"TODO",
                  });
     }
     return;
@@ -237,7 +237,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux into solid storage from pigs.
   ++formula
@@ -253,7 +253,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 emission from poultry manure storage.
 ?if Kantonal_LU
@@ -291,7 +291,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN immobilized from TAN fraction in solid manure storage.
   ++formula

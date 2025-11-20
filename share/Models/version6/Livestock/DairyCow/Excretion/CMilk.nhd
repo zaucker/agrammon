@@ -26,12 +26,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Milk yield per dairy cow
     de = Durchschnittliche Milchleistung pro Kuh
     fr = Production laitière moyenne par vache
-    it = Production laitière moyenne par vache
+    it = Produzione media di latte per vacca
   ++units  
     en = kg/year
     de = kg/Jahr
     fr = kg/an
-    it = kg/an
+    it = kg/anno
   ++description
     Annual milk yield per dairy cow.
   ++help
@@ -57,7 +57,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg/year
     de = kg/Jahr
     fr = kg/an
-    it = kg/an
+    it = kg/anno
   ++description
     Annual standard milk yield per dairy cow.
 

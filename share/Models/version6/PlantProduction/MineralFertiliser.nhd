@@ -53,7 +53,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Soil pH value
     de = pH-Wert des Bodens
     fr = pH du sol
-    it = pH du sol
+    it = Valore pH del suolo
   ++units  
     en = -
   ++description
@@ -106,12 +106,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Ammonium nitrate: amount used
     de = Ammonsalpeter: Verbrauch
     fr = Nitrate d'ammoniaque: quantité d'utilisation
-    it = Nitrate d'ammoniaque: quantité d'utilisation
+    it = Nitrato ammonico: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of ammonium nitrate in kg fertilizer/year.
   ++help
@@ -134,7 +134,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Ammonium nitrate: N-content
     de = Ammonsalpeter: N-Gehalt (siehe Spalte Hilfe)
     fr = Nitrate d'ammoniaque: teneur en N (cf. aide)
-    it = Nitrate d'ammoniaque: teneur en N (cf. aide)
+    it = Nitrato ammonico: contenuto di N (vedi colonna Aiuto)
   ++units  
     en = %
     de = %
@@ -184,12 +184,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Calcium ammonium nitrate: amount used
     de = Kalk-Ammonsalpeter: Verbrauch
     fr = Nitrate calco-magnésien: quantité d'utilisation
-    it = Nitrate calco-magnésien: quantité d'utilisation
+    it = Nitrato ammonico calcico: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of calcium ammonium nitrate in kg fertilizer/year.
   ++help
@@ -212,7 +212,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Calcium ammonium nitrate: N-content
     de = Kalk-Ammonsalpeter: N-Gehalt
     fr = Nitrate calco-magnésien: teneur en N
-    it = Nitrate calco-magnésien: teneur en N
+    it = Nitrato ammonico calcico: contenuto di N
   ++units  
     en = %
     de = %
@@ -240,12 +240,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Ammonium sulphate: amount used
     de = Ammoniumsulfat: Verbrauch
     fr = Sulfate d'ammoniaque: quantité d'utilisation
-    it = Sulfate d'ammoniaque: quantité d'utilisation
+    it = Solfato d'ammonio: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of ammonium sulphate in kg fertilizer/year.
   ++help
@@ -268,7 +268,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Ammonium sulphate: N-content
     de = Ammoniumsulfat: N-Gehalt
     fr = Ammonium sulphate: N-content
-    it = Ammonium sulphate: N-content
+    it = Solfato d'ammonio: contenuto di N
   ++units  
     en = %
     de = %
@@ -298,12 +298,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Urea: amount used
     de = Harnstoff: Verbrauch
     fr = Urée: quantité d'utilisation
-    it = Urée: quantité d'utilisation
+    it = Urea: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of urea in kg fertilizer/year.
   ++help
@@ -326,7 +326,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Urea: N-content
     de = Harnstoff: N-Gehalt
     fr = Urée: teneur en N
-    it = Urée: teneur en N
+    it = Urea: contenuto di N
   ++units  
     en = %
     de = %
@@ -356,12 +356,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Sulfamide: amount used
     de = Sulfamid: Verbrauch
     fr = Sulfamid: quantité d'utilisation
-    it = Sulfamid: quantité d'utilisation
+    it = Solfammide: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of sulfamid in kg fertilizer/year.
   ++help
@@ -384,7 +384,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Sulfamide: N-content
     de = Sulfamid: N-Gehalt
     fr = Sulfamid: teneur en N
-    it = Sulfamid: teneur en N
+    it = Solfammide: contenuto di N
   ++units  
     en = %
     de = %
@@ -412,12 +412,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Calcium nitrate: amount used
     de = Kalksalpeter: Verbrauch
     fr = Nitrate de chaux: quantité d'utilisation
-    it = Nitrate de chaux: quantité d'utilisation
+    it = Nitrato di calcio: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of calcium nitrate (Kalksalpeter) in kg fertilizer/year.
   ++help
@@ -440,7 +440,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Calcium nitrate: N-content
     de = Kalksalpeter: N-Gehalt
     fr = Nitrate de chaux: teneur en N
-    it = Nitrate de chaux: teneur en N
+    it = Nitrato di calcio: contenuto di N
   ++units  
     en = %
     de = %
@@ -468,12 +468,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Calcium cyanamide: amount used
     de = Kalkstickstoff: Verbrauch
     fr = Cyanamide: quantité d'utilisation
-    it = Cyanamide: quantité d'utilisation
+    it = Calciocianammide: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of calcium cyanamid in kg fertilizer/year.
   ++help
@@ -496,7 +496,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Calcium cyanamide: N-content
     de = Kalkstickstoff: N-Gehalt
     fr = Cyanamide: teneur en N
-    it = Cyanamide: teneur en N
+    it = Calciocianammide: contenuto di N
   ++units  
     en = %
     de = %
@@ -524,12 +524,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Entec 26% + 13S: amount used
     de = Entec 26% + 13S: Verbrauch
     fr = Entec 26% + 13S: quantité d'utilisation
-    it = Entec 26% + 13S: quantité d'utilisation
+    it = Entec 26% + 13S: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of entec in kg fertilizer/year.
   ++help
@@ -552,7 +552,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Entec 26% + 13S: N-content
     de = Entec 26% + 13S: N-Gehalt
     fr = Entec 26% + 13S: teneur en N
-    it = Entec 26% + 13S: teneur en N
+    it = Entec 26% + 13S: contenuto di N
   ++units  
     en = %
     de = %
@@ -580,12 +580,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = NP fertilizer: amount used
     de = NP-Dünger: Verbrauch
     fr = Engrais NP: quantité d'utilisation
-    it = Engrais NP: quantité d'utilisation
+    it = Concime NP: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of NP mixtures in kg fertilizer/year.
   ++help
@@ -608,7 +608,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = NP fertilizer: N-content
     de = NP-Dünger: N-Gehalt
     fr = Engrais NP: teneur en N
-    it = Engrais NP: teneur en N
+    it = Concime NP: contenuto di N
   ++units  
     en = %
     de = %
@@ -636,12 +636,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = NK fertilizer: amount used
     de = NK-Dünger: Verbrauch
     fr = Engrais NK: quantité d'utilisation
-    it = Engrais NK: quantité d'utilisation
+    it = Concime NK: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of NK mixtures in kg fertilizer/year.
   ++help
@@ -664,7 +664,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = NK fertilizer: N-content
     de = NK-Dünger: N-Gehalt
     fr = Engrais NK: teneur en N
-    it = Engrais NK: teneur en N
+    it = Concime NK: contenuto di N
   ++units  
     en = %
     de = %
@@ -692,12 +692,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = NPK fertilizer: amount used
     de = NPK-Dünger: Verbrauch
     fr = Engrais NPK: quantité d'utilisation
-    it = Engrais NPK: quantité d'utilisation
+    it = Concime NPK: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of NPK mixtures in kg fertilizer/year.
   ++help
@@ -720,7 +720,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = NPK fertilizer: N-content
     de = NPK-Dünger: N-Gehalt
     fr = Engrais NPK: teneur en N
-    it = Engrais NPK: teneur en N
+    it = Concime NPK: contenuto di N
   ++units  
     en = %
     de = %
@@ -748,12 +748,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Entec as NP, NPK, with/without Mg, S or micronutrients: amount used
     de = Entec als NP, NPK, mit/ohne Mg, S oder Spurenelemente: Verbrauch
     fr = Entec sous forme de NP, NPK avec/sans Mg ou oligo-éléments: quantité d'utilisation
-    it = Entec sous forme de NP, NPK avec/sans Mg ou oligo-éléments: quantité d'utilisation
+    it = Entec come NP, NPK, con/senza Mg, S o oligoelementi: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of Entec2 in kg fertilizer/year.
   ++help
@@ -776,7 +776,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Entec as NP, NPK, with/without Mg, S or micronutrients: N-content
     de = Entec als NP, NPK, mit/ohne Mg, S oder Spurenelemente: N-Gehalt
     fr = Entec sous forme de NP, NPK avec/snas Mg ou oligo-éléments: teneur en N
-    it = Entec sous forme de NP, NPK avec/snas Mg ou oligo-éléments: teneur en N
+    it = Entec come NP, NPK, con/senza Mg, S o oligoelementi: contenuto di N
   ++units  
     en = %
     de = %
@@ -804,12 +804,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Other nitrogen N fertilizer: amount used
     de = Anderer mineralischer N-Dünger: Verbrauch
     fr = Autres types d'engrais minéraux azotés: quantité d'utilisation
-    it = Autres types d'engrais minéraux azotés: quantité d'utilisation
+    it = Altri concimi azotati minerali: consumo
   ++units  
     en = kg fertilizer/year
     de = kg Dünger/Jahr
     fr = kg engrais/an
-    it = kg engrais/an
+    it = kg concime/anno
   ++description
     Amount of other mineral fertilizers in kg fertilizer/year.
   ++help
@@ -832,7 +832,7 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
     en = Other nitrogen N fertilizer: N-content
     de = Anderer mineralischer N-Dünger: N-Gehalt
     fr = Autres types d'engrais minéraux azotés: teneur en N
-    it = Autres types d'engrais minéraux azotés: teneur en N
+    it = Altri concimi azotati minerali: contenuto di N
   ++units  
     en = %
     de = %
@@ -1145,12 +1145,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from ammonium nitrate
       de = Mineralischer Stickstoffdünger NH3-Emission von Ammonsalpeter
       fr = Emission de NH3 engrais azotés minéraux de ammonium nitrate
-      it = Emission de NH3 engrais azotés minéraux de ammonium nitrate
+      it = Concime azotato minerale emissione NH3 da nitrato ammonico
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from ammonium nitrate.
   ++formula
@@ -1167,12 +1167,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from calcium ammonium nitrate
       de = Mineralischer Stickstoffdünger NH3-Emission von Kalk-Ammonsalpeter
       fr = Emission de NH3 engrais azotés minéraux de calcium ammonium nitrate
-      it = Emission de NH3 engrais azotés minéraux de calcium ammonium nitrate
+      it = Concime azotato minerale emissione NH3 da nitrato ammonico calcico
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from calcium ammonium nitrate.
   ++formula
@@ -1189,12 +1189,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from ammonium sulphate
       de = Mineralischer Stickstoffdünger NH3-Emission von Ammoniumsulfat
       fr = Emission de NH3 engrais azotés minéraux d'ammonium sulphate
-      it = Emission de NH3 engrais azotés minéraux d'ammonium sulphate
+      it = Concime azotato minerale emissione NH3 da solfato d'ammonio
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from ammonium sulphate.
   ++formula
@@ -1211,12 +1211,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from urea
       de = Mineralischer Stickstoffdünger NH3-Emission von Harnstoff
       fr = Emission de NH3 engrais azotés minéraux d'urée
-      it = Emission de NH3 engrais azotés minéraux d'urée
+      it = Concime azotato minerale emissione NH3 da urea
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from urea.
   ++formula
@@ -1233,12 +1233,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from sulfmaid
       de = Mineralischer Stickstoffdünger NH3-Emission von Sulfamid
       fr = Emission de NH3 engrais azotés minéraux de sulfamid
-      it = Emission de NH3 engrais azotés minéraux de sulfamid
+      it = Concime azotato minerale emissione NH3 da solfammide
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from sulfamid
   ++formula
@@ -1255,12 +1255,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from calcium nitrate (Kalksalpeter)
       de = Mineralischer Stickstoffdünger NH3-Emission von Kalksalpeter
       fr = Emission de NH3 engrais azotés minéraux de calcium nitrate (Kalksalpeter)
-      it = Emission de NH3 engrais azotés minéraux de calcium nitrate (Kalksalpeter)
+      it = Concime azotato minerale emissione NH3 da nitrato di calcio
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from calcium nitrate (Kalksalpeter)
   ++formula
@@ -1277,12 +1277,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from calcium cyanamid
       de = Mineralischer Stickstoffdünger NH3-Emission von Kalkstickstoff
       fr = Emission de NH3 engrais azotés minéraux de calcium cyanamid
-      it = Emission de NH3 engrais azotés minéraux de calcium cyanamid
+      it = Concime azotato minerale emissione NH3 da calciocianammide
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from calcium cyanamid
   ++formula
@@ -1299,12 +1299,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from Entec
       de = Mineralischer Stickstoffdünger NH3-Emission von Entec
       fr = Emission de NH3 engrais azotés minéraux de Entec
-      it = Emission de NH3 engrais azotés minéraux de Entec
+      it = Concime azotato minerale emissione NH3 da Entec
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from Entec
   ++formula
@@ -1321,12 +1321,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from NP mixtures
       de = Mineralischer Stickstoffdünger NH3-Emission von NP-Dünger
       fr = Emission de NH3 engrais azotés minéraux de NP mixtures
-      it = Emission de NH3 engrais azotés minéraux de NP mixtures
+      it = Concime azotato minerale emissione NH3 da concime NP
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from NP mixtures
   ++formula
@@ -1343,12 +1343,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from NK mixtures
       de = Mineralischer Stickstoffdünger NH3-Emission von NK-Dünger
       fr = Emission de NH3 engrais azotés minéraux de NK mixtures
-      it = Emission de NH3 engrais azotés minéraux de NK mixtures
+      it = Concime azotato minerale emissione NH3 da concime NK
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from NK mixtures
   ++formula
@@ -1365,12 +1365,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from NPK mixtures
       de = Mineralischer Stickstoffdünger NH3-Emission von NPK-Dünger
       fr = Emission de NH3 engrais azotés minéraux de NPK mixtures
-      it = Emission de NH3 engrais azotés minéraux de NPK mixtures
+      it = Concime azotato minerale emissione NH3 da concime NPK
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from NPK mixtures
   ++formula
@@ -1387,12 +1387,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from Entec2
       de = Mineralischer Stickstoffdünger NH3-Emission von Entec2
       fr = Emission de NH3 engrais azotés minéraux de Entec2
-      it = Emission de NH3 engrais azotés minéraux de Entec2
+      it = Concime azotato minerale emissione NH3 da Entec2
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from Entec2
   ++formula
@@ -1409,12 +1409,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser NH3-Emissions from other mineral fertilizers
       de = Mineralischer Stickstoffdünger NH3-Emission von anderen Mineraldüngern
       fr = Emission de NH3 de autre engrais azotés minéraux
-      it = Emission de NH3 de autre engrais azotés minéraux
+      it = Concime azotato minerale emissione NH3 da altri concimi minerali
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application from other mineral fertilizers
   ++formula
@@ -1431,12 +1431,12 @@ gui	     = PlantProduction::MineralFertiliser,Pflanzenbau::Mineralische Sticksto
       en = Mineral fertiliser
       de = Mineralischer Dünger
       fr = Engrais minéral 
-      it = Engrais minéral
+      it = Concime minerale
   ++units  
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
   ++description
     NH3 emission from mineral fertiliser application.
   ++formula

@@ -59,7 +59,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual total N excreted by the specified number of animals.
   ++formula
@@ -71,7 +71,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual total TAN excreted by the specified number of animals.
   ++formula
@@ -89,7 +89,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux into housing.
   ++formula
@@ -101,7 +101,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux into housing.
   ++formula
@@ -113,7 +113,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 loss from housing.
   ++formula
@@ -125,7 +125,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux out of housing, liquid manure.
   ++formula
@@ -137,7 +137,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux out of housing, solid manure.
   ++formula
@@ -149,7 +149,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux out of housing, liquid manure.
   ++formula
@@ -161,7 +161,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux out of housing, solid manure.
   ++formula
@@ -180,7 +180,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux into grazing.
   ++formula
@@ -192,7 +192,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux into grazing.
   ++formula
@@ -204,7 +204,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual NH3 loss from grazing.
   ++formula
@@ -216,7 +216,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N flux out of yard, liquid manure.
   ++formula
@@ -228,7 +228,7 @@ Summarizes the annual N flux from housing to the storage for goats, fattening sh
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual TAN flux out of yard, liquid manure.
   ++formula

@@ -81,7 +81,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N excretion during grazing for a defined cattle category.
   ++formula
@@ -102,7 +102,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual soluble N (TAN) excretion during grazing for a defined cattle category.
   ++formula
@@ -135,7 +135,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual NH3 emission from all grazing cattle.
   ++formula
@@ -147,7 +147,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual total N2 emission from all grazing dairy cows.
   ++formula
@@ -159,7 +159,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual total N2 emission from all grazing dairy cows.
   ++formula
@@ -171,7 +171,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual total N2O emission from all grazing dairy cows.
   ++formula
@@ -183,7 +183,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N input on pastures.
   ++formula
@@ -199,7 +199,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N input on pastures.
   ++formula

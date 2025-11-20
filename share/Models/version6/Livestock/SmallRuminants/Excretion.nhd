@@ -45,7 +45,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Animal category
     de = Tierkategorie
     fr = Catégorie d'animaux
-    it = Catégorie d'animaux
+    it = Categoria di animali
   ++units
     en = -
   ++description
@@ -69,7 +69,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Number of animals (mother animals only)
     de = Anzahl Tiere (nur Muttertiere)
     fr = Nombre d'animaux (mères uniquement)
-    it = Nombre d'animaux (mères uniquement)
+    it = Numero di animali (solo femmine madri)
   ++units
     en = -
   ++description
@@ -94,12 +94,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       en = N_excretion
       de = N_Ausscheidung
       fr = Excrétions_azotées
-      it = Excrétions_azotées
+      it = N_Escrezione
     ++units
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
-      it = kg N/an
+      it = kg N/anno
     ++description
       Annual standard N excretion for a dairy cow
     ++help
@@ -161,7 +161,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       en = TAN fraction of N excretion
       de = TAN Anteil der N Ausscheidung
       fr = Proportion de TAN des excrétions azotées
-      it = Proportion de TAN des excrétions azotées
+      it = Quota TAN dell'escrezione N
     ++units
       en = %
       de = %
@@ -197,7 +197,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for goats according to
     Flisch et al. (2009).
@@ -208,7 +208,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for fattening sheep according to
     Flisch et al. (2009).
@@ -219,7 +219,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for milksheep according
     to Flisch et al. (2009).
@@ -281,7 +281,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual standard N excretion for specified other animal category according to
     Flisch et al. (2009).
@@ -299,7 +299,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The N excretion entered for small ruminants differs from the standard by more than 30%!",
             de => "Die eingegebene N-Ausscheidung für Kleinwiederkäuer weicht um mehr als 30% vom Standard ab!",
             fr => "Les excrétions azotées saisies pour les petits ruminants s'écartent de plus de 30 % du standard!",
-            it => "Les excrétions azotées saisies pour les petits ruminants s'écartent de plus de 30 % du standard!",
+            it => "TODO",
         });
     }
     return $exc;
@@ -311,7 +311,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual N excreted by a specified number of small ruminants.
   ++formula
@@ -323,7 +323,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
-    it = kg N/an
+    it = kg N/anno
   ++description
     Annual soluble N excreted by a specified number of small ruminants.
 ?if !Kantonal_LU
@@ -338,7 +338,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The TAN fraction of N excretion entered for small ruminants differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für Kleinwiederkäuer weicht um mehr als 20% vom Standard ab!",
             fr => "La proportion du TAN des excrétions azotées saisies pour les petits ruminants s'écartent de plus de 20 % du standard!",
-            it => "La proportion du TAN des excrétions azotées saisies pour les petits ruminants s'écartent de plus de 20 % du standard!"
+            it => "TODO",
         });
       }
       return $tan * Out(n_excretion);

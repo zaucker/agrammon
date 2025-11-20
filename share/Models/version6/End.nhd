@@ -24,25 +24,25 @@ Dummy Module marking the startpoint for the Model Parser
      en = Berechnung Baugesuch Ammoniak-Emissionen (in kg N pro Jahr) - Zusammenfassung
      de = Berechnung Baugesuch Ammoniak-Emissionen (in kg N pro Jahr) - Zusammenfassung
      fr = Calcul pour demande de permis de construire émissions d’ammoniaque (en kg de N par année) - résumé
-     it = Calcul pour demande de permis de construire émissions d’ammoniaque (en kg de N par année) - résumé
+     it = Calcolo domanda di costruzione emissioni di ammoniaca (in kg N per anno) - Riepilogo
 ?else
   ++selector
     en = Ammonia emissions (in kg N per year) - summary
     de = Ammoniak-Emissionen (in kg N pro Jahr) - Zusammenfassung
     fr = Emissions d'ammoniaque (en kg de N par année) - résumé
-    it = Emissions d'ammoniaque (en kg de N par année) - résumé
+    it = Emissioni di ammoniaca (in kg N per anno) - Riepilogo
 ?endif
   ++data
     +++SummaryLivestock
       en = Livestock
       de = Tierproduktion
       fr = Production animale
-      it = Production animale
+      it = Produzione animale
     +++SummaryPlantProduction
       en = Plant production
       de = Pflanzenbau
       fr = Production végétale
-      it = Production végétale
+      it = Produzione vegetale
     +++SummaryTotal
       en = Total
       de = Total
@@ -56,48 +56,48 @@ Dummy Module marking the startpoint for the Model Parser
       en = Emissions and fluxes (in kg N per year) - detailed report
       de = Emissionen und Flüsse (in kg N pro Jahr) - Detailreport
       fr = Emissions et flux (en kg de N par année) - détails
-      it = Emissions et flux (en kg de N par année) - détails
+      it = Emissioni e flussi (in kg N per anno) - Rapporto dettagliato
     ++data
        +++LivestockNH3
          en = Livestock production NH3-Emissions
          de = Tierproduktion NH3-Emissionen
          fr = Production animale Emissions de NH3 
-         it = Production animale Emissions de NH3
+         it = Produzione animale emissioni NH3
        +++PlantNH3
          en = Plant production NH3-Emissions
          de = Pflanzenbau NH3-Emissionen
          fr = Production végétale Emissions de NH3
-         it = Production végétale Emissions de NH3
+         it = Produzione vegetale emissioni NH3
       +++SummaryTotal
         en = Total NH3-Emissions
         de = Total NH3-Emissionen
         fr = Totales Emissions de NH3 
-        it = Totales Emissions de NH3
+        it = Totale emissioni NH3
       +++LivestockN2O
         en = Livestock production N2O-Emissions
         de = Tierproduktion N2O-Emissionen
         fr = Production animale Emissions de N2O
-        it = Production animale Emissions de N2O
+        it = Produzione animale emissioni N2O
       +++LivestockNO
         en = Livestock production NO-Emissions
         de = Tierproduktion NO-Emissionen
         fr = Production animale Emissions de NO
-        it = Production animale Emissions de NO
+        it = Produzione animale emissioni NO
       +++LivestockN2
         en = Livestock production N2-Emissions
         de = Tierproduktion N2-Emissionen
         fr = Production animale Emissions de N2
-        it = Production animale Emissions de N2
+        it = Produzione animale emissioni N2
       +++LivestockNtot
         en = Nitrogen flux livestock production
         de = Stickstofffluss Tierproduktion
         fr = Flux d'azote production animale
-        it = Flux d'azote production animale
+        it = Flusso di azoto produzione animale
       +++LivestockTAN
         en = TAN flux livestock production
         de = TAN Fluss Tierproduktion
         fr = Flux de TAN production animale
-        it = Flux de TAN production animale
+        it = Flusso TAN produzione animale
 ?endif
 
 +DetailReportNH3
@@ -106,23 +106,23 @@ Dummy Module marking the startpoint for the Model Parser
     en = NH3 Emissions (in kg N per year) - detailed report
     de = NH3 Emissionen (in kg N pro Jahr) - Detailreport
     fr = Emissions d’ammoniaque (en kg de N par année) - détails
-    it = Emissions d’ammoniaque (en kg de N par année) - détails
+    it = Emissioni NH3 (in kg N per anno) - Rapporto dettagliato
   ++data
      +++LivestockNH3
        en = Livestock production NH3-Emissions
        de = Tierproduktion NH3-Emissionen
        fr = Production animale Emissions de NH3
-       it = Production animale Emissions de NH3
+       it = Produzione animale emissioni NH3
      +++PlantNH3
        en = Plant production NH3-Emissions
        de = Pflanzenbau NH3-Emissionen
        fr = Production végétale Emissions de NH3
-       it = Production végétale Emissions de NH3
+       it = Produzione vegetale emissioni NH3
     +++SummaryTotal
       en = Total NH3-Emissions
       de = Total NH3-Emissionen
       fr = Totales Emissions de NH3
-      it = Totales Emissions de NH3
+      it = Totale emissioni NH3
 
 ?if !Kantonal_LU
   +DetailReportTAN
@@ -131,13 +131,13 @@ Dummy Module marking the startpoint for the Model Parser
       en = TAN fluxes (in kg TAN per year) - detailed report
       de = TAN Flüsse (in kg TAN pro Jahr) - Detailreport
       fr = Flux de TAN (en kg de TAN par année) - détails
-      it = Flux de TAN (en kg de TAN par année) - détails
+      it = Flussi TAN (in kg TAN per anno) - Rapporto dettagliato
     ++data
       +++LivestockTAN
         en = TAN flux livestock production
         de = TAN Fluss Tierproduktion
         fr = Flux de TAN production animale
-        it = Flux de TAN production animale
+        it = Flusso TAN produzione animale
 
   +DetailReportN
     type = reportDetailed
@@ -145,28 +145,28 @@ Dummy Module marking the startpoint for the Model Parser
       en = N2O, NO, N2 emissions and N fluxes (in kg N per year) - detailed report
       de = N2O, NO, N2 Emissionen und N Flüsse (in kg N pro Jahr) - Detailreport
       fr = Emissions de N2O, NO, N2 et flux d'azoté (en kg de N par année) - détails
-      it = Emissions de N2O, NO, N2 et flux d'azoté (en kg de N par année) - détails
+      it = Emissioni N2O, NO, N2 e flussi N (in kg N per anno) - Rapporto dettagliato
     ++data
       +++LivestockN2O
         en = Livestock production N2O-Emissions
         de = Tierproduktion N2O-Emissionen
         fr = Production animale Emissions de N2O
-        it = Production animale Emissions de N2O
+        it = Produzione animale emissioni N2O
       +++LivestockNO
         en = Livestock production NO-Emissions
         de = Tierproduktion NO-Emissionen
         fr = Production animale Emissions de NO
-        it = Production animale Emissions de NO
+        it = Produzione animale emissioni NO
       +++LivestockN2
         en = Livestock production N2-Emissions
         de = Tierproduktion N2-Emissionen
         fr = Production animale Emissions de N2
-        it = Production animale Emissions de N2
+        it = Produzione animale emissioni N2
       +++LivestockNtot
         en = Nitrogen flux livestock production
         de = Stickstofffluss Tierproduktion
         fr = Flux d'azote production animale
-        it = Flux d'azote production animale
+        it = Flusso di azoto produzione animale
 
   +HAFLReport
     type = report
@@ -174,28 +174,28 @@ Dummy Module marking the startpoint for the Model Parser
       en = Summary HAFL
       de = Zusammenfassung HAFL
       fr = Résumé HAFL
-      it = Résumé HAFL
+      it = Riepilogo HAFL
     ++data
       +++LivestockNH3
         en = Livestock production NH3-Emissions
         de = Tierproduktion NH3-Emissionen
         fr = Production animale Emissions de NH3
-        it = Production animale Emissions de NH3
+        it = Produzione animale emissioni NH3
       +++PlantNH3
         en = Plant production NH3-Emissions
         de = Pflanzenbau NH3-Emissionen
         fr = Production végétale Emissions de NH3
-        it = Production végétale Emissions de NH3
+        it = Produzione vegetale emissioni NH3
       +++SummaryTotal
         en = Total NH3-Emissions
         de = Total NH3-Emissionen
         fr = Totales Emissions de NH3
-        it = Totales Emissions de NH3
+        it = Totale emissioni NH3
       +++LivestockTAN
         en = TAN flux livestock production
         de = TAN Fluss Tierproduktion
         fr = Flux de TAN production animale
-        it = Flux de TAN production animale
+        it = Flusso TAN produzione animale
 ?endif
 
 
@@ -206,18 +206,18 @@ Dummy Module marking the startpoint for the Model Parser
     en = Summary Results
     de = Zusammenfassung Resultate
     fr = Résumé des résultats
-    it = Résumé des résultats
+    it = Riepilogo risultati
   ++data
     +++ResultsLivestock
       en = Livestock
       de = Tierproduktion
       fr = Production animale
-      it = Production animale
+      it = Produzione animale
     +++ResultsPlantProduction
       en = Plant production
       de = Pflanzenbau
       fr = Production végétale
-      it = Production végétale
+      it = Produzione vegetale
     +++ResultsTotal
       en = Total
       de = Total

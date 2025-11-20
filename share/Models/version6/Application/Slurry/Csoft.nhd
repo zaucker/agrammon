@@ -33,7 +33,7 @@ taxonomy = Application::Slurry::Csoft
       en = Share of slurry applied in the evening after 18:00
       de = Anteil Gülleausbringung am Abend nach 18:00 Uhr
       fr = Part de lisier épandu le soir après 18:00h
-      it = Part de lisier épandu le soir après 18:00h
+      it = Quota di spandimento di liquame alla sera dopo le 18:00
     ++units  
       en = %
     ++description
@@ -76,7 +76,7 @@ taxonomy = Application::Slurry::Csoft
       en = Frequency of slurry applied on hot days
       de = Bringen Sie Gülle an für die Jahreszeit besonders warmen Tagen aus?
       fr = Epandez-vous du lisier les jours particulièrement chauds pour la saison?
-      it = Epandez-vous du lisier les jours particulièrement chauds pour la saison?
+      it = Spandete il liquame in giorni particolarmente caldi per la stagione?
     ++units 
       en = -
     ++description

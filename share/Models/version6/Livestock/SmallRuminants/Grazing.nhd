@@ -79,12 +79,12 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
     en = Grazing days per year
     de = Jährliche Weidetage
     fr = Jours de pâturage par an
-    it = Jours de pâturage par an
+    it = Giorni di pascolo annuali
   ++units  
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Average grazing days per year.
   ++help
@@ -108,12 +108,12 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
     en = Grazing hours per day
     de = Tägliche Weidestunden
     fr = Heures de pâturage par jour
-    it = Heures de pâturage par jour
+    it = Ore giornaliere di pascolo
   ++units  
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Average grazing hours per day.
   ++help
@@ -140,7 +140,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
-    it = heures/jour
+    it = Ore/giorno
   ++description
     Grazing hours per day.
   ++formula
@@ -152,7 +152,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
     en = days/year
     de = Tage/Jahr
     fr = jours/an
-    it = jours/an
+    it = Giorni/anno
   ++description
     Grazing days per year.
   ++formula
@@ -164,7 +164,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N excretion during grazing for small ruminants.
   ++formula
@@ -178,7 +178,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual solable N (TAN) excretion during grazing for small ruminants.
   ++formula
@@ -204,7 +204,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual NH3 emission from small ruminants from grazing.
   ++formula
@@ -216,7 +216,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual total N2 emission from all grazing dairy cows.
   ++formula
@@ -228,7 +228,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual total N2 emission from all grazing dairy cows.
   ++formula
@@ -240,7 +240,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual total N2O emission from all grazing dairy cows.
   ++formula
@@ -252,7 +252,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N input on pastures.
   ++formula
@@ -268,7 +268,7 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
-     it = kg N/an
+     it = kg N/anno
   ++description
     Annual N input on pastures.
   ++formula

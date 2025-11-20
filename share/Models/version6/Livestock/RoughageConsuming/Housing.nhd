@@ -56,6 +56,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux into the house.
   ++formula
@@ -68,6 +69,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux as TAN into the house.
   ++formula
@@ -80,6 +82,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = -
      de = -
      fr = - 
+     it = -
   ++description
     NH3 emission factor for roughage consuming housing systems.
   ++formula
@@ -91,6 +94,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
             en => "NH3 emission factor for roughage consuming housing systems is greater than (thus will be limited to) 1.",
             de => "NH3 emission factor for roughage consuming housing systems is greater than (thus will be limited to) 1.",
             fr => "NH3 emission factor for roughage consuming housing systems is greater than (thus will be limited to) 1.",
+            it => "NH3 emission factor for roughage consuming housing systems is greater than (thus will be limited to) 1.",
         });
         $ef_nh3 = 1;
     }
@@ -102,6 +106,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual NH3 emission from small ruminants housing systems 
     per animal place.
@@ -114,6 +119,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux out of the housing.
   ++formula
@@ -125,6 +131,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux as TAN out of the housing.
   ++formula
@@ -136,6 +143,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux out of housing, slurry or liquid fraction of N flux.
   ++formula
@@ -147,6 +155,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux as TAN out of housing, slurry or liquid fraction of N flux.
   ++formula
@@ -158,6 +167,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux out of housing, manure fraction of N flux.
   ++formula
@@ -169,6 +179,7 @@ taxonomy = Livestock::RoughageConsuming::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux as TAN out of housing, manure fraction of N flux. 
   ++formula

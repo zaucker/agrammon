@@ -253,10 +253,12 @@ TODO!
      en = housing, yard and storage cattle N2-emissions
         de = Weide, Stall und Laufhof Übriges Rindvieh N2-Emission
         fr = Autres bovins Emissions de N2 pâturage, l'étable et parcours extérieur
+        it = Autres bovins Emissions de N2 pâturage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from cattle housing, yard and grazing (production).
   ++formula
@@ -269,6 +271,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NO emission from cattle housing, yard and grazing (production).
   ++formula
@@ -281,10 +284,12 @@ TODO!
     en = housing, yard and storage cattle N2O-emissions
     de = Stall, Laufhof und Lager andere Rinder N2O-Emission
     fr = Autres bovins Emissions de N2O pâturage, l'étable et parcours extérieur
+    it = Autres bovins Emissions de N2O pâturage, l'étable et parcours extérieur
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2o emission from cattle housing, yard and grazing (production).
   ++formula
@@ -297,10 +302,12 @@ TODO!
      en = housing, yard and storage cattle N2-emissions
         de = Weide, Stall und Laufhof Übriges Rindvieh N2-Emission
         fr = Autres bovins Emissions de N2 pâturage, l'étable et parcours extérieur
+        it = Autres bovins Emissions de N2 pâturage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from cattle housing, yard and grazing (production).
   ++formula
@@ -314,10 +321,12 @@ TODO!
     en = housing, yard and storage cattle NO-emissions
         de = Weide, Stall und Laufhof Rinder NO-Emission
         fr = Autres bovins Emissions de NO pâturage, l'étable et parcours extérieur
+        it = Autres bovins Emissions de NO pâturage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NO emission from cattle housing, yard and grazing (production).
   ++formula
@@ -331,10 +340,12 @@ TODO!
     en = housing, yard and storage cattle N2O-emissions
     de = Weide, Stall und Laufhof Rinder N2O-Emission
     fr = Autres bovins Emissions de N2O pâturage, l'étable et parcours extérieur
+    it = Autres bovins Emissions de N2O pâturage, l'étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2o emission from cattle housing, yard and grazing (production).
   ++formula

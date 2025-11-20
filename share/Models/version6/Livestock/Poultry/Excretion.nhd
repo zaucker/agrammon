@@ -62,6 +62,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = Animal category
     de = Tierkategorie
     fr = Catégorie d'animaux
+    it = Catégorie d'animaux
   ++units
     en = -
   ++description
@@ -74,6 +75,9 @@ Spezialpublikation, pp. 4/1-4/24.
     +++fr
        <p> </p>
 
+    +++it
+       <p> </p>
+
 +animals
   type = float
   validator = ge(0)
@@ -82,6 +86,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en= Number of animals
     de = Anzahl Tiere
     fr = Nombre d'animaux
+    it = Nombre d'animaux
   ++units
     en = -
   ++description
@@ -94,6 +99,9 @@ Spezialpublikation, pp. 4/1-4/24.
     +++fr
        <p> </p>
 
+    +++it
+       <p> </p>
+
 +dimensioning_barn
   type = float
   distribute = true
@@ -103,6 +111,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = Number of available animal places
     de = Anzahl Tierplätze im Stall
     fr = Nombre de places dans l'étable
+    it = Nombre de places dans l'étable
   ++units  
     en = -
   ++description
@@ -118,6 +127,10 @@ Spezialpublikation, pp. 4/1-4/24.
          <p>Si "Standard" est introduisé, la valeur du nombre d'animaux
          est utilisée.</p>
 
+      +++it
+         <p>Si "Standard" est introduisé, la valeur du nombre d'animaux
+         est utilisée.</p>
+
 ?if !Kantonal_LU
   +inp_n_excretion
     type = float
@@ -127,10 +140,12 @@ Spezialpublikation, pp. 4/1-4/24.
       en = N excretion
       de = N Ausscheidung
       fr = Excrétions azotées
+      it = Excrétions azotées
     ++units
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
+      it = kg N/an
     ++description
       Annual standard N excretion for poultry
     ++help
@@ -171,6 +186,20 @@ Spezialpublikation, pp. 4/1-4/24.
             GRUD 2017. Agrarforschung Schweiz 8 (6) Spezialpublikation,
             pp. 4/1-4/23.</p>
 
+      +++it
+         <p>Si "Standard" est introduisé, la valeur de référence pour
+            les excrétions azotées d'après PRIF 2017 (Richner et al., 2017)
+            est utilisée (PRIF: « Principes de la fertilisation des
+            cultures agricoles en Suisse » ). Si un nombre est introduisé
+            une valeur pour les excrétions azotées peut être déterminée par
+            l'utilisateur/-trice.</p>
+         <p>Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner,
+            M., Menzi, H., 2017. 4/ Eigenschaften und Anwendung von
+            Düngern, in: Richner, W., Sinaj, S. (Eds.), Grundlagen für
+            die Düngung landwirtschaftlicher Kulturen in der Schweiz /
+            GRUD 2017. Agrarforschung Schweiz 8 (6) Spezialpublikation,
+            pp. 4/1-4/23.</p>
+
   +tan_fraction
     type = percent
     default_calc = Standard
@@ -179,10 +208,12 @@ Spezialpublikation, pp. 4/1-4/24.
       en = TAN fraction of N excretion
       de = TAN Anteil der N Ausscheidung
       fr = Proportion de TAN des excrétions azotées
+      it = Proportion de TAN des excrétions azotées
     ++units
       en = %
       de = %
       fr = %
+      it = %
     ++description
       TAN fraction of the annual standard N excretion
     ++help
@@ -193,6 +224,10 @@ Spezialpublikation, pp. 4/1-4/24.
          <p>Bei Eingabe <b>Standard</b> wird der Anteil von TAN in den Ausscheidungen der Tiere wie vom Modell Agrammon vorgegeben festgelegt. Bei Eingabe einer Zahl kann der Wert für den
             Anteil von TAN in den Ausscheidungen selbst gewählt werden. Diese Option ist für Fälle gedacht, in denen  der Anteil von TAN in den Ausscheidungen beispielsweise aus einem Fütterungsmodell bekannt ist.</p>
       +++fr
+         <p>Si <b>Standard</b> est introduisé le pourcentage de TAN dans les excrétions des animaux est utilisée comme défini par le modèle Agrammon. Si un nombre est introduisé une valeur pour la proportion de TAN
+         dans les excrétions peut être déterminée par l'utilisateur/-trice. Cette option est destinée aux cas où la proportion de TAN dans les excréments est connue, par exemple à partir d'un modèle d'alimentation.</p>
+
+      +++it
          <p>Si <b>Standard</b> est introduisé le pourcentage de TAN dans les excrétions des animaux est utilisée comme défini par le modèle Agrammon. Si un nombre est introduisé une valeur pour la proportion de TAN
          dans les excrétions peut être déterminée par l'utilisateur/-trice. Cette option est destinée aux cas où la proportion de TAN dans les excréments est connue, par exemple à partir d'un modèle d'alimentation.</p>
 
@@ -208,6 +243,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for poultry category (layers) according to
     Flisch et al. (2009).
@@ -218,6 +254,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for poultry category (growers) according to
     a decission of the Group suisse bilanz.
@@ -228,6 +265,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for poultry category (broilers) according to
     Flisch et al. (2009).
@@ -238,6 +276,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for poultry category according (turkeys) to
     Flisch et al. (2009).
@@ -248,6 +287,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for other poultry category according to
     Flisch et al. (2009).
@@ -324,6 +364,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for specified poultry category according to
     Flisch et al. (2009).
@@ -341,6 +382,7 @@ Spezialpublikation, pp. 4/1-4/24.
             en => "The N excretion entered for poultry differs from the standard by more than 30%!",
             de => "Die eingegebene N-Ausscheidung für Geflügel weicht um mehr als 30% vom Standard ab!",
             fr => "Les excrétions azotées saisies pour les volaille s'écartent de plus de 30 % du standard!",
+            it => "Les excrétions azotées saisies pour les volaille s'écartent de plus de 30 % du standard!"
         });
     }
     return $exc;
@@ -352,6 +394,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N excreted by a specified number of animals.
   ++formula
@@ -364,6 +407,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual soluble N excreted by an animalgroup of selected poultry category.
 ?if !Kantonal_LU
@@ -376,7 +420,8 @@ Spezialpublikation, pp. 4/1-4/24.
         writeLog({
             en => "The TAN fraction of N excretion entered for poultry differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für Geflügel weicht um mehr als 20% vom Standard ab!",
-            fr => "La proportion du TAN des excrétions azotées saisies pour les volaille s'écartent de plus de 20 % du standard!"
+            fr => "La proportion du TAN des excrétions azotées saisies pour les volaille s'écartent de plus de 20 % du standard!",
+            it => "La proportion du TAN des excrétions azotées saisies pour les volaille s'écartent de plus de 20 % du standard!"
         });
       }
       return $tan * Out(n_excretion);
@@ -392,6 +437,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N excreted by poultry.
   ++formula
@@ -410,6 +456,7 @@ Spezialpublikation, pp. 4/1-4/24.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N excreted by poultry.
   ++formula
@@ -465,7 +512,8 @@ Spezialpublikation, pp. 4/1-4/24.
       writeLog({
         en => "The number of available animal places must be equal or higher than the number of animals.",
         de => "Anzahl Tierplätze muss grösser oder gleich der Anzahl der Tiere sein.",
-        fr => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux."
+        fr => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux.",
+        it => "Le nombre de places dans l'étable doit être au moins égal au nombre d'animaux."
       });
       return "barn dimensioning too small";
     } 

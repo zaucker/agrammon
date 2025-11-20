@@ -32,6 +32,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     en = Volume of slurry store (without channels and gutters)
     de = Volumen des Güllelagers
     fr = Volume du stock de lisier (sans les canaux)
+    it = Volume du stock de lisier (sans les canaux)
   ++units
     en = m3
   ++description
@@ -46,6 +47,10 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
        <p>Mentionner le volume du stock de lisier sans compter les caniveaux sous les grilles ni les canaux sous les sols perforés ou bétonnés des stabulations (p.ex. couloirs de déplacement et places d'affouragement) </p>
        <p>Proposition de valeur standard: calcul du volume du stock de lisier à l'aide de la production de lisier d'après PRIF (dilution 1:1; durée de stockage: 5 mois pour les régions de plaine, 6 pour les régions de collines et 7 pour les régions de montagne)</p>
 
+    +++it
+       <p>Mentionner le volume du stock de lisier sans compter les caniveaux sous les grilles ni les canaux sous les sols perforés ou bétonnés des stabulations (p.ex. couloirs de déplacement et places d'affouragement) </p>
+       <p>Proposition de valeur standard: calcul du volume du stock de lisier à l'aide de la production de lisier d'après PRIF (dilution 1:1; durée de stockage: 5 mois pour les régions de plaine, 6 pour les régions de collines et 7 pour les régions de montagne)</p>
+
 +depth
   type  = float
   validator = between(0,7);
@@ -53,6 +58,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     en = Depth of slurry store
     de = Tiefe des Güllelagers
     fr = Profondeur du stock de lisier
+    it = Profondeur du stock de lisier
   ++units
     en = m
   ++description
@@ -63,6 +69,9 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     +++de
        <p>Vorschlag für Standardwert: 2.5 m</p>
     +++fr
+       <p>Proposition de valeur standard: 2.5 m</p>
+
+    +++it
        <p>Proposition de valeur standard: 2.5 m</p>
 
 ?if !Kantonal_LU
@@ -103,6 +112,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
       en = Frequency of slurry mixing
       de = Häufigkeit Aufrühren des Güllelagers
       fr = Fréquence de brassage du stock de lisier par an
+      it = Fréquence de brassage du stock de lisier par an
     ++units
       en = -
     ++description
@@ -113,6 +123,8 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
       +++de
          <p>Vorschlag für Standardwert: 7 bis 12 Mal pro Jahr</p>
       +++fr
+         <p>Proposition de valeur standard: 7-12 fois par an</p>
+      +++it
          <p>Proposition de valeur standard: 7-12 fois par an</p>
 ?endif
 
@@ -237,6 +249,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from slurry storage.
 ?if Kantonal_LU
@@ -258,6 +271,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from slurry storage.
 ?if Kantonal_LU

@@ -73,6 +73,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total N excretion during grazing for dairy cows.
   ++formula
@@ -93,6 +94,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual soluble N (TAN) excretion during grazing for dairy cows.
   ++formula
@@ -113,6 +115,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total NH3 emission from all grazing dairy cows.
   ++formula
@@ -124,6 +127,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total NH3 emission from all grazing dairy cows.
   ++formula
@@ -135,6 +139,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total N2 emission from all grazing dairy cows.
   ++formula
@@ -146,6 +151,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total N2 emission from all grazing dairy cows.
   ++formula
@@ -157,6 +163,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual total N2O emission from all grazing dairy cows.
   ++formula
@@ -168,6 +175,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N input on pasture.
   ++formula
@@ -183,6 +191,7 @@ Voglmeier, K., Jocher, M., Häni, C., Ammann, C. 2018. Ammonia emission measurem
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N input on pasture.
   ++formula

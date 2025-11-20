@@ -88,6 +88,7 @@ nach der Anwendung von Mist. Agrarforschung 4:328-331.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     NH3 emission rate for solid manure application.
   ++formula
@@ -105,6 +106,7 @@ nach der Anwendung von Mist. Agrarforschung 4:328-331.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     N2 emission from solid manure application from poultry.
   ++formula
@@ -119,6 +121,7 @@ nach der Anwendung von Mist. Agrarforschung 4:328-331.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     NO emission from solid manure application from poultry.
   ++formula
@@ -133,6 +136,7 @@ nach der Anwendung von Mist. Agrarforschung 4:328-331.
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     N2O emission from solid manure application from poultry.
   ++formula

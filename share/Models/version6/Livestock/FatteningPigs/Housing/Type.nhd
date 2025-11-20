@@ -47,6 +47,7 @@ Selects the emission rate and other correciton factors for the specific housing 
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
+    it = Type de stabulation
   ++units  
     en = -
   ++description
@@ -69,6 +70,18 @@ Selects the emission rate and other correciton factors for the specific housing 
           freier Lüftung (Aussenklimaställe) und
           Mikroklimabereichen</p>
     +++fr
+       <p>Proposition de valeur standard: système labellisé à aires
+          multiples et parcours extérieur</p>
+       <p>Dans les systèmes de stabulation, on distingue
+          principalement les systèmes conventionnels sans parcours
+          extérieur et les systèmes labellisés à aires multiples et
+          parcours extérieur. Les stabulations à litière profonde et
+          la garde au pâturage sont de moindre importance.</p>
+       <p>Stabulation sans isolation thermique : porcheries sans
+          isolation thermique à ventilation naturelle (stabulation à
+          climat extérieur) et à zones de microclimat</p>
+
+    +++it
        <p>Proposition de valeur standard: système labellisé à aires
           multiples et parcours extérieur</p>
        <p>Dans les systèmes de stabulation, on distingue

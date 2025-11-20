@@ -87,6 +87,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = -
      de = -
      fr = -
+     it = -
   ++description
     Share of annual N excretion into yard.
   ++formula
@@ -107,6 +108,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N excretion on yard for a defined animal category.
   ++formula
@@ -119,6 +121,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual soluble N excretion on yard for a defined animal category.
   ++formula
@@ -131,6 +134,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = -
      de = -
      fr = -
+     it = -
   ++description
     NH3 emission factor for dairy cow yard.
 ?if Kantonal_LU
@@ -150,6 +154,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual NH3 emission from yard.
   ++formula
@@ -161,6 +166,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N flux from liquid part out of yard.
   ++formula
@@ -172,6 +178,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N flux as TAN from liquid part out of yard into storage.
   ++formula
@@ -183,6 +190,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N flux from solid part out of yard.
   ++formula
@@ -195,6 +203,7 @@ livestock. Atmospheric Environment 35:5331-5338.
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N flux as TAN from solid part out of yard into storage.
   ++formula

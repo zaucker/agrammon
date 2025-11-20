@@ -49,6 +49,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from other animals housing and grazing.
   ++formula
@@ -60,6 +61,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NO emission from other animals housing and grazing.
   ++formula
@@ -71,6 +73,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2O emission from other animals housing and grazing.
   ++formula

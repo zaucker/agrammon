@@ -210,10 +210,12 @@ TODO!
      en = Grazing, housing, yard storage fattening pig N2-emissions
         de = Weide, Stall und Laufhof Mastschweine N2-Emission
         fr = Porcs à l'engrais Emissions de N2 pâturage, étable et parcours extérieur
+        it = Porcs à l'engrais Emissions de N2 pâturage, étable et parcours extérieur
   ++units
     en = kg N/year
         de = kg N/Jahr
         fr = kg N/an
+        it = kg N/an
   ++description
     Annual N2 emissions from fattening pigs housing, yard and grazing (production).
   ++formula
@@ -229,10 +231,12 @@ TODO!
     en = Grazing, housing and yard fattening pig NO-emissions
         de = Weide, Stall und Laufhof Mastschweine NO-Emission
         fr = Porcs à l'engrais Emissions de NO pâturage, étable et parcours extérieur
+        it = Porcs à l'engrais Emissions de NO pâturage, étable et parcours extérieur
   ++units
     en = kg N/year
         de = kg N/Jahr
         fr = kg N/an
+        it = kg N/an
   ++description
     Annual NO emissions from fattening pigs housing, yard and grazing (production).
   ++formula
@@ -247,10 +251,12 @@ TODO!
     en = housing, yard and storage fattening pig N2O-emissions
     de = Stall, Laufhof und LagerMastschweine N2O-Emission
     fr = Porcs à l'engrais Emissions de N2O pâturage, étable et parcours extérieur
+    it = Porcs à l'engrais Emissions de N2O pâturage, étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2O emissions from fattening pigs housing, yard and grazing (production).
   ++formula
@@ -266,10 +272,12 @@ TODO!
      en = housing, yard and storage fattening pig N2-emissions
         de = Weide, Stall und Laufhof Mastschweine N2-Emission
         fr = Porcs à l'engrais Emissions de N2 pâturage, étable et parcours extérieur
+        it = Porcs à l'engrais Emissions de N2 pâturage, étable et parcours extérieur
   ++units
     en = kg N/year
         de = kg N/Jahr
         fr = kg N/an
+        it = kg N/an
   ++description
     Annual N2 emissions from fattening pigs housing, yard and grazing (production).
   ++formula
@@ -283,10 +291,12 @@ TODO!
     en = housing, yard and storage fattening pig NO-emissions
         de = Weide, Stall und Laufhof Mastschweine NO-Emission
         fr = Porcs à l'engrais Emissions de NO pâturage, étable et parcours extérieur
+        it = Porcs à l'engrais Emissions de NO pâturage, étable et parcours extérieur
   ++units
     en = kg N/year
         de = kg N/Jahr
         fr = kg N/an
+        it = kg N/an
   ++description
     Annual NO emissions from fattening pigs housing, yard and grazing (production).
   ++formula
@@ -299,10 +309,12 @@ TODO!
     en = Grazing, housing and yard fattening pig N2O-emissions
     de = Weide, Stall und Laufhof Mastschweine N2O-Emission
     fr = Porcs à l'engrais Emissions de N2O pâturage, étable et parcours extérieur
+    it = Porcs à l'engrais Emissions de N2O pâturage, étable et parcours extérieur
   ++units
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2O emissions from fattening pigs housing, yard and grazing (production).
   ++formula

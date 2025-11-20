@@ -38,6 +38,7 @@ taxonomy = Application::Slurry::Ctech
     en = Share of slurry applied with splash plate
     de = Anteil Gülleausbringung mit Prallteller/Werfer
     fr = Part de lisier épandu avec un déflecteur
+    it = Part de lisier épandu avec un déflecteur
   ++units  
     en = %
   ++description
@@ -62,12 +63,22 @@ taxonomy = Application::Slurry::Ctech
        <p>Proposition de valeur standard: 90%</p>
 
 
+    +++it
+       <p>Même si les engrais de ferme ne sont pas valorisés sur l'exploitation, mais via des contrats de reprise, les données relatives à l'épandage de ces engrais sont nécessaires. Dans ce cas, l'épandage par le repreneur est à décrire. </p>
+       <p>Cette catégorie comprend tous les systèmes à répartition large, comme les déflecteurs, les répartiteurs pendulaires, verticaux ou les buses pivotantes et les canons.</p>
+
+       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
+
+       <p>Proposition de valeur standard: 90%</p>
+
+
 +share_trailing_hose  
   type  = percent
   ++labels 
     en = Share of slurry applied with trailing hose
     de = Anteil Gülleausbringung mit Schleppschlauch
     fr = Part de lisier épandu avec une rampe à tuyaux souples
+    it = Part de lisier épandu avec une rampe à tuyaux souples
   ++units  
     en = %
   ++description
@@ -89,6 +100,13 @@ taxonomy = Application::Slurry::Ctech
 
        <p>Proposition de valeur standard: 10%</p>
 
+    +++it
+       <p>Avec ce système, le lisier est conduit directement sur le sol grâce à des tuyaux souples qui pendent derrière la machine. </p>
+
+       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits). </p>
+
+       <p>Proposition de valeur standard: 10%</p>
+
 +share_trailing_shoe 
   type  = percent
 #  validator = between(0,100);
@@ -96,6 +114,7 @@ taxonomy = Application::Slurry::Ctech
     en = Share of slurry applied with trailing shoe
     de = Anteil Gülleausbringung mit Schleppschuh
     fr = Part de lisier épandu à l'aide d'un distributeur à tuyaux semi-rigides avex socs
+    it = Part de lisier épandu à l'aide d'un distributeur à tuyaux semi-rigides avex socs
   ++units  
     en = %
   ++description
@@ -118,12 +137,20 @@ taxonomy = Application::Slurry::Ctech
 
        <p>Proposition de valeur standard: 0%</p>
 
+    +++it
+       <p>Avec ce système, une pièce supplémentaire de métal au sortir du tuyau amène le lisier directement sur le sol, resp. l'introduit très légèrement dans le sol. </p>
+
+       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
+
+       <p>Proposition de valeur standard: 0%</p>
+
 +share_shallow_injection  
   type  = percent
   ++labels 
     en = Share of slurry applied with shallow injection
     de = Anteil Gülleausbringung mit Gülledrill
     fr = Part de lisier épandu avec un système d'enfouissement 
+    it = Part de lisier épandu avec un système d'enfouissement
   ++units  
     en = %
   ++description
@@ -143,12 +170,19 @@ taxonomy = Application::Slurry::Ctech
        <p>Proposition de valeur standard: 0%</p>
 
  
+    +++it
+       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
+
+       <p>Proposition de valeur standard: 0%</p>
+
+ 
 +share_deep_injection  
   type  = percent
   ++labels 
     en = Share of slurry applied with deep injection
     de = Anteil Gülleausbringung mittels tiefer Injektion
     fr = Part de lisier épandu avec injection en profondeur
+    it = Part de lisier épandu avec injection en profondeur
   ++units  
     en = %
   ++description
@@ -163,6 +197,13 @@ taxonomy = Application::Slurry::Ctech
 
        <p>Vorschlag für Standardwert: 0%</p>
     +++fr
+       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits). </p>
+
+       <p>Proposition de valeur standard: 0%</p>
+
+ 
+
+    +++it
        <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits). </p>
 
        <p>Proposition de valeur standard: 0%</p>
@@ -193,6 +234,7 @@ taxonomy = Application::Slurry::Ctech
 	writeLog({en => "Please correct accordingly: the categories of slurry application do not add up to 100\%!\n",
 		  de => "Bitte korrigieren: die Summe der Kategorien Gülleausbringung ist nicht gleich 100\%!\n",
 		  fr => "Veuillez corriger : la somme des catégories «Epandage du lisier» n'est pas égale à 100% !\%!\n"});
+		  it => "Veuillez corriger : la somme des catégories «Epandage du lisier» n'est pas égale à 100% !\%!\n"});
       # Warning + Test!
     }
     return $apptech_sum;

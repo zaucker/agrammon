@@ -49,6 +49,7 @@ Zähner, M., Poteko, J., Zeyer, K., Schrade, S. 2017. Laufflächengestaltung: Em
     en = Mitigation option for loose housing systems
     de = Emissionsmindernde Massnahme bei Laufställen
     fr = Mesures limitant les émissions dans les stabulations pour autres bovins
+    it = Mesures limitant les émissions dans les stabulations pour autres bovins
   ++units 
     en = -
   ++description
@@ -67,6 +68,14 @@ Zähner, M., Poteko, J., Zeyer, K., Schrade, S. 2017. Laufflächengestaltung: Em
        <p>Planbefestigte Laufflächen mit einem Quergefälle von 3 % und einer Längsrinne. Der Boden und die Harnabflussrinne müssen mittels Schieber und Rinnenräumer mindestens alle 2 Stunden gereinigt werden (Steuerung mit einer Zeitschaltuhr). Anwendbar für Laufstall mit Produktion von Vollgülle.</p>
        <p>Vorschlag für Standardwert: keine</p>
     +++fr
+       <p>Stalle d’affouragement surélevée :</p>
+       <p>Ce système se compose d'une aire d'alimentation surélevée et de places d’alimentation avec séparations. Les animaux sont contrôlés au niveau des cornadis ce-qui minimise l’accumulation des excréments dans l'aire d'alimentation. Applicable pour stabulation libre avec production de lisier complet et stabulation libre avec production de lisier et de fumier.</p>
+       <p>Sol non perforé avec pente transversale :</p>
+       <p>Sol non perforé, inclinées à 3 % vers une rigole longitudinale. Le sol et la rigole d’écoulement doivent être nettoyés au moyen d’un dispositif spécial au moins toutes les deux heures (commande munie d’une minuterie). Applicable pour stabulation libre avec production de lisier complet.</p>
+       <p>Proposition de valeur standard: aucune</p>
+
+
+    +++it
        <p>Stalle d’affouragement surélevée :</p>
        <p>Ce système se compose d'une aire d'alimentation surélevée et de places d’alimentation avec séparations. Les animaux sont contrôlés au niveau des cornadis ce-qui minimise l’accumulation des excréments dans l'aire d'alimentation. Applicable pour stabulation libre avec production de lisier complet et stabulation libre avec production de lisier et de fumier.</p>
        <p>Sol non perforé avec pente transversale :</p>

@@ -131,6 +131,7 @@ taxonomy = Livestock::OtherCattle::Yard
     en = -
     de = -
     fr = -
+    it = -
   ++description
     Share of excretion on the yard according the stay on yard with parallel acess to Pasture.
     If the basic feeding is on the yard the share_basicfeeding is assumed. 
@@ -141,7 +142,8 @@ taxonomy = Livestock::OtherCattle::Yard
       writeLog({
         en => "The category \"roughage is exclusively supplied in the exercise yard\" is not compatible with the number of grazing days entered!\n",
         de => "Verabreichung von Grundfutter ausschliesslich auf dem Laufhof ist nicht möglich mit den eingegebenen Weidetagen!\n",
-        fr => "La distribution de fourrage exclusivement dans le parcours extérieur "
+        fr => "La distribution de fourrage exclusivement dans le parcours extérieur ",
+        it => "La distribution de fourrage exclusivement dans le parcours extérieur "
               . "pour les vâches laitières n'est pas possible pendant les jours de pâturage !\n",
       }); 
       return Tech(share_available_roughage_is_partly_supplied_in_the_exercise_yard);
@@ -155,6 +157,7 @@ taxonomy = Livestock::OtherCattle::Yard
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N excretion on yard for a defined animal category.
   ++formula
@@ -174,6 +177,7 @@ taxonomy = Livestock::OtherCattle::Yard
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual soluble N excretion on yard for a defined animal category.
   ++formula
@@ -193,6 +197,7 @@ taxonomy = Livestock::OtherCattle::Yard
      en = -
      de = -
      fr = -
+     it = -
   ++description
     Annual NH3 emission from yard.
 ?if Kantonal_LU
@@ -212,6 +217,7 @@ taxonomy = Livestock::OtherCattle::Yard
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual NH3 emission from yard.
   ++formula
@@ -223,6 +229,7 @@ taxonomy = Livestock::OtherCattle::Yard
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N flux from liquid part out of yard.
   ++formula
@@ -234,6 +241,7 @@ taxonomy = Livestock::OtherCattle::Yard
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N flux as TAN from liquid part out of yard into storage.
   ++formula
@@ -245,6 +253,7 @@ taxonomy = Livestock::OtherCattle::Yard
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N flux from solid part out of yard.
   ++formula
@@ -256,6 +265,7 @@ taxonomy = Livestock::OtherCattle::Yard
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an
+     it = kg N/an
   ++description
     Annual N flux as TAN from solid part out of yard into storage.
   ++formula

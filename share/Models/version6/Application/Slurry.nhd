@@ -152,6 +152,7 @@ Unter den analogen Annahmen resultieren für Schweinegülle Zucht (TAN Gehalt G�
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Total annual NH3 emission from slurry application.
   ++formula
@@ -194,6 +195,7 @@ Unter den analogen Annahmen resultieren für Schweinegülle Zucht (TAN Gehalt G�
     en = -
     de = -
     fr = -
+    it = -
   ++description
     NH3 Emission factor slurry application.
   ++formula
@@ -219,6 +221,7 @@ Unter den analogen Annahmen resultieren für Schweinegülle Zucht (TAN Gehalt G�
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Total annual N2 emission from slurry application.
   ++formula
@@ -233,6 +236,7 @@ Unter den analogen Annahmen resultieren für Schweinegülle Zucht (TAN Gehalt G�
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Total annual NO emission from slurry application.
   ++formula
@@ -247,6 +251,7 @@ Unter den analogen Annahmen resultieren für Schweinegülle Zucht (TAN Gehalt G�
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Total annual N2O emission from slurry application.
   ++formula

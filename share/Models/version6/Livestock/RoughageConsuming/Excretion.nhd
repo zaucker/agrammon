@@ -86,6 +86,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Animal category
     de = Tierkategorie
     fr = Catégorie d'animaux
+    it = Catégorie d'animaux
   ++units
     en = -
   ++description
@@ -107,6 +108,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          des autres jeunes et la part de mâles reproducteurs sont
          compris dans les animaux en lactation. </p>
 
+    +++it
+      <p>N'introduire ici que les animaux en lactation pour toutes les
+         catégories. La remonte des animaux d'élevage, l'engraissement
+         des autres jeunes et la part de mâles reproducteurs sont
+         compris dans les animaux en lactation. </p>
+
 +animals
   type = float
   validator = ge(0)
@@ -115,6 +122,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = Number of animals
     de = Anzahl Tiere
     fr = Nombre d'animaux
+    it = Nombre d'animaux
   ++units
     en = -
   ++description
@@ -131,6 +139,10 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
        <p>Pour daim, cerf et wapiti: mère plus petits jusqu'à 16 mois;
           une unité = deux animaux le jour du recensement</p>
 
+    +++it
+       <p>Pour daim, cerf et wapiti: mère plus petits jusqu'à 16 mois;
+          une unité = deux animaux le jour du recensement</p>
+
 ?if !Kantonal_LU
   +inp_n_excretion
     type = float
@@ -140,10 +152,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       en = N excretion
       de = N Ausscheidung
       fr = Excrétions azotées
+      it = Excrétions azotées
     ++units
       en = kg N/year
       de = kg N/Jahr
       fr = kg N/an
+      it = kg N/an
     ++description
       Annual standard N excretion for a dairy cow
     ++help
@@ -183,6 +197,20 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             GRUD 2017. Agrarforschung Schweiz 8 (6) Spezialpublikation,
             pp. 4/1-4/23.</p>
 
+      +++it
+         <p>Si "Standard" est introduisé, la valeur de référence pour
+            les excrétions azotées d'après PRIF 2017 (Richner et al., 2017)
+            est utilisée (PRIF: « Principes de la fertilisation des
+            cultures agricoles en Suisse » ). Si un nombre est introduisé
+            une valeur pour les excrétions azotées peut être déterminée par
+            l'utilisateur/-trice.</p>
+         <p>Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner,
+            M., Menzi, H., 2017. 4/ Eigenschaften und Anwendung von
+            Düngern, in: Richner, W., Sinaj, S. (Eds.), Grundlagen für
+            die Düngung landwirtschaftlicher Kulturen in der Schweiz /
+            GRUD 2017. Agrarforschung Schweiz 8 (6) Spezialpublikation,
+            pp. 4/1-4/23.</p>
+
   +tan_fraction
     type = percent
     default_calc = Standard
@@ -191,10 +219,12 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
       en = TAN fraction of N excretion
       de = TAN Anteil der N Ausscheidung
       fr = Proportion de TAN des excrétions azotées
+      it = Proportion de TAN des excrétions azotées
     ++units
       en = %
       de = %
       fr = %
+      it = %
     ++description
       TAN fraction of the annual standard N excretion
     ++help
@@ -205,6 +235,10 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          <p>Bei Eingabe <b>Standard</b> wird der Anteil von TAN in den Ausscheidungen der Tiere wie vom Modell Agrammon vorgegeben festgelegt. Bei Eingabe einer Zahl kann der Wert für den
             Anteil von TAN in den Ausscheidungen selbst gewählt werden. Diese Option ist für Fälle gedacht, in denen  der Anteil von TAN in den Ausscheidungen beispielsweise aus einem Fütterungsmodell bekannt ist.</p>
       +++fr
+         <p>Si <b>Standard</b> est introduisé le pourcentage de TAN dans les excrétions des animaux est utilisée comme défini par le modèle Agrammon. Si un nombre est introduisé une valeur pour la proportion de TAN
+         dans les excrétions peut être déterminée par l'utilisateur/-trice. Cette option est destinée aux cas où la proportion de TAN dans les excréments est connue, par exemple à partir d'un modèle d'alimentation.</p>
+
+      +++it
          <p>Si <b>Standard</b> est introduisé le pourcentage de TAN dans les excrétions des animaux est utilisée comme défini par le modèle Agrammon. Si un nombre est introduisé une valeur pour la proportion de TAN
          dans les excrétions peut être déterminée par l'utilisateur/-trice. Cette option est destinée aux cas où la proportion de TAN dans les excréments est connue, par exemple à partir d'un modèle d'alimentation.</p>
 
@@ -221,6 +255,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for fallow deer according to
 	Agridea, BLW (2014)
@@ -231,6 +266,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for according to
 	Agridea, BLW (2014)
@@ -241,6 +277,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for according to
 	Agridea, BLW (2014)
@@ -251,6 +288,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for according to
 	Agridea, BLW (2014)
@@ -261,6 +299,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for according to
 	Agridea, BLW (2014)
@@ -271,6 +310,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for lama older than 2 years according to
 	Agridea, BLW (2014)
@@ -281,6 +321,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for lama younger than 2 yearsaccording to
 	Agridea, BLW (2014)
@@ -291,6 +332,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for alpaca older than 2 years according to
 	Agridea, BLW (2014)
@@ -301,6 +343,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for according to
 	Agridea, BLW (2014)
@@ -311,6 +354,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for rabbit doe including kits (young 35 day) according to
     Agridea, BLW (2014)
@@ -321,6 +365,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for young rabbit ( older than 35 day)  according to
     Agridea, BLW (2014)
@@ -460,6 +505,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual standard N excretion for specified other animal category according to
     Flisch et al. (2009).
@@ -477,6 +523,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             en => "The N excretion entered for other roughage consuming animals differs from the standard by more than 30%!",
             de => "Die eingegebene N-Ausscheidung für andere Raufutterverzehrer weicht um mehr als 30% vom Standard ab!",
             fr => "Les excrétions azotées saisies autres animaux consommant des fourrages grossiers s'écartent de plus de 30 % du standard!",
+            it => "Les excrétions azotées saisies autres animaux consommant des fourrages grossiers s'écartent de plus de 30 % du standard!",
         });
     }
     return $exc;
@@ -488,6 +535,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N excreted by a specified number of small ruminants.
   ++formula
@@ -499,6 +547,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual soluble N excreted by a specified number of small ruminants.
 ?if !Kantonal_LU
@@ -512,7 +561,8 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
         writeLog({
             en => "The TAN fraction of N excretion entered for other roughage consuming animals differs from the standard by more than 20%!",
             de => "Der eingegebene TAN Anteil der N Ausscheidung für andere Raufutterverzehrer weicht um mehr als 20% vom Standard ab!",
-            fr => "La proportion du TAN des excrétions azotées saisies pour les autres animaux consommant des fourrages grossiers s'écartent de plus de 20 % du standard!"
+            fr => "La proportion du TAN des excrétions azotées saisies pour les autres animaux consommant des fourrages grossiers s'écartent de plus de 20 % du standard!",
+            it => "La proportion du TAN des excrétions azotées saisies pour les autres animaux consommant des fourrages grossiers s'écartent de plus de 20 % du standard!"
         });
       }
       return $tan * Out(n_excretion);

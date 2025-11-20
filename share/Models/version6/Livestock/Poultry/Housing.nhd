@@ -53,6 +53,7 @@ taxonomy = Livestock::Poultry::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux into the housing.
   ++formula
@@ -64,6 +65,7 @@ taxonomy = Livestock::Poultry::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux into the housing.
   ++formula
@@ -75,6 +77,7 @@ taxonomy = Livestock::Poultry::Housing
      en = -
      de = -
      fr = - 
+     it = -
   ++description
     NH3 emission factor before air scrubber removal of poultry housing systems.
   ++formula
@@ -89,6 +92,7 @@ taxonomy = Livestock::Poultry::Housing
             en => "NH3 emission factor before air scrubber removal of poultry housing systems is greater than (thus will be limited to) 1.",
             de => "NH3 emission factor before air scrubber removal of poultry housing systems is greater than (thus will be limited to) 1.",
             fr => "NH3 emission factor before air scrubber removal of poultry housing systems is greater than (thus will be limited to) 1.",
+            it => "NH3 emission factor before air scrubber removal of poultry housing systems is greater than (thus will be limited to) 1."
         });
         $ef = 1;
     }
@@ -100,6 +104,7 @@ taxonomy = Livestock::Poultry::Housing
      en = -
      de = -
      fr = - 
+     it = -
   ++description
     NH3 emission factor for poultry housing systems.
   ++formula
@@ -112,6 +117,7 @@ taxonomy = Livestock::Poultry::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual NH3 emission from poultry housing systems 
     per animal place.
@@ -124,6 +130,7 @@ taxonomy = Livestock::Poultry::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N of NH3 emission remaining in air scrubber from poultry housing systems.
   ++formula
@@ -141,6 +148,7 @@ taxonomy = Livestock::Poultry::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux out of the housing excluding N remained in biotrickling filter.
   ++formula
@@ -152,6 +160,7 @@ taxonomy = Livestock::Poultry::Housing
      en = kg N/year
      de = kg N/Jahr
      fr = kg N/an	
+     it = kg N/an
   ++description
     Annual N flux out of the housing excluding N remained in biotrickling filter.
   ++formula

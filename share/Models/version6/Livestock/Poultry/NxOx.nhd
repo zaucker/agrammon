@@ -49,6 +49,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from poultry production (housing and grazing).
   ++formula
@@ -60,6 +61,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2 emission from poultry production housing.
     (grazing not included)
@@ -72,6 +74,7 @@ TODO!
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N2O emission from poultry production housing.
     (outdorr not included)

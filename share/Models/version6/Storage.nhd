@@ -62,10 +62,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = __Liquid
     de = __Flüssig
     fr = __Liquides
+    it = __Liquides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux into liquid storage.
   ++formula
@@ -79,10 +81,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = __Solid
     de = __Fest
     fr = __Solides
+    it = __Solides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux into solid storage.
   ++formula
@@ -100,10 +104,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Without storage (directly applied)
     de = Ohne Lagerung (direkt ausgebracht)
     fr = Sans stockage (épandage directe)
+    it = Sans stockage (épandage directe)
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux directly applied.
   ++formula
@@ -118,10 +124,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Into storage
     de = In Hofdüngerlager
     fr = Dans le stockage
+    it = Dans le stockage
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux into liquid storage.
   ++formula
@@ -143,10 +151,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = __Liquid
     de = __Flüssig
     fr = __Liquides
+    it = __Liquides
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux into liquid storage.
   ++formula
@@ -160,10 +170,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = __Solid
     de = __Fest
     fr = __Solides
+    it = __Solides
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux into solid storage.
   ++formula
@@ -181,10 +193,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Without storage (directly applied)
     de = Ohne Lagerung (direkt ausgebracht)
     fr = Sans stockage (épandage directe)
+    it = Sans stockage (épandage directe)
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux directly applied.
   ++formula
@@ -199,10 +213,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Into storage
     de = In Hofdüngerlager
     fr = Dans le stockage
+    it = Dans le stockage
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux into liquid storage.
   ++formula
@@ -215,6 +231,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux into liquid storage.
   ++formula
@@ -229,6 +246,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux into liquid storage.
   ++formula
@@ -247,10 +265,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = True (1) if a Liquid Storage (Volume) is present.
     de = Wert ist wahr (1) wenn flüssig lager volumen vorhanden ist.
     fr = Indiquer au moyen d'un volume des Stockage des engrais de ferme liquides est present.
+    it = Indiquer au moyen d'un volume des Stockage des engrais de ferme liquides est present.
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     True (1) if a Liquid Storage (Volume) is present.
   ++formula
@@ -264,7 +284,8 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
             {
               en => "No storage for slurry defined although slurry is produced!\n",
               de => "Es ist kein Güllelager eingegeben, obwohl Gülle anfällt!\n",
-              fr => "Aucun stock de lisier n'est mentionné, alors qu'il y a production de lisier!\n"
+              fr => "Aucun stock de lisier n'est mentionné, alors qu'il y a production de lisier!\n",
+              it => "Aucun stock de lisier n'est mentionné, alors qu'il y a production de lisier!\n"
             }
         );  
       }
@@ -284,10 +305,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Mineralization (liquid)
     de = Mineralisierung (flüssig)
     fr = Minéralisation (liquide)
+    it = Minéralisation (liquide)
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN mineralized from not-TAN fraction in liquid storage.
   ++formula
@@ -310,6 +333,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Upper limit of the annual NH3 emission from liquid storage of pig slurry.
   ++formula
@@ -329,6 +353,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from liquid storage of pig slurry.
   ++formula
@@ -342,7 +367,8 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
             {
                 en => "The size of the slurry store induces an NH3 loss which is larger than the TAN flow into the store. NH3 loss from storage liquid is corrected accordingly!\n",
                 de => "Die Grösse des Güllelagers hat zur Folge, dass die NH3 Verluste grösser sind als der TAN Fluss ins Lager. Die NH3 Verluste von Hofdüngerlagerung flüssig werden entsprechend korrigiert!\n",
-                fr => "La dimension de la fosse à lisier induit une perte de NH3 plus élevée que le flux de TAN dans la fosse. La perte de NH3 issue du stockage des engrais de ferme liquide sera ainsi corrigée!\n"
+                fr => "La dimension de la fosse à lisier induit une perte de NH3 plus élevée que le flux de TAN dans la fosse. La perte de NH3 issue du stockage des engrais de ferme liquide sera ainsi corrigée!\n",
+                it => "La dimension de la fosse à lisier induit une perte de NH3 plus élevée que le flux de TAN dans la fosse. La perte de NH3 issue du stockage des engrais de ferme liquide sera ainsi corrigée!\n"
             }
         );  
         Out(tan_available_nh3_nstorage_liquid_pigs);         
@@ -362,6 +388,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Upper limit of the annual NH3 emission from liquid storage of pig slurry.
   ++formula
@@ -381,6 +408,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from liquid storage of cattle slurry.
   ++formula
@@ -394,7 +422,8 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
             {
                 en => "The size of the slurry store induces an NH3 loss which is larger than the TAN flow into the store. NH3 loss from storage liquid is corrected accordingly!\n",
                 de => "Die Grösse des Güllelagers hat zur Folge, dass die NH3 Verluste grösser sind als der TAN Fluss ins Lager. Die NH3 Verluste von Hofdüngerlagerung flüssig werden entsprechend korrigiert!\n",
-                fr => "La dimension de la fosse à lisier induit une perte de NH3 plus élevée que le flux de TAN dans la fosse. La perte de NH3 issue du stockage des engrais de ferme liquide sera ainsi corrigée!\n"
+                fr => "La dimension de la fosse à lisier induit une perte de NH3 plus élevée que le flux de TAN dans la fosse. La perte de NH3 issue du stockage des engrais de ferme liquide sera ainsi corrigée!\n",
+                it => "La dimension de la fosse à lisier induit une perte de NH3 plus élevée que le flux de TAN dans la fosse. La perte de NH3 issue du stockage des engrais de ferme liquide sera ainsi corrigée!\n"
             }
         );  
         Out(tan_available_nh3_nstorage_liquid_cattle);         
@@ -416,10 +445,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = __Liquid
     de = __Flüssig
     fr = __Liquides 
+    it = __Liquides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from storage.
   ++formula
@@ -434,10 +465,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = __Solid
     de = __Fest
     fr = __Solides 
+    it = __Solides
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from storage.
   ++formula
@@ -455,10 +488,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Storage
     de = Hofdüngerlagerung
     fr = Stockage
+    it = Stockage
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual NH3 emission from storage.
   ++formula
@@ -482,10 +517,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Immobilization (solid)
     de = Immobilisierung (fest)
     fr = Immobilisation (solide)
+    it = Immobilisation (solide)
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN immobilized from TAN fraction in solid manure storage.
   ++formula
@@ -511,6 +548,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux out of storage for application.
   ++formula
@@ -526,6 +564,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual N flux as TAN out of storage for application.
   ++formula
@@ -549,6 +588,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux out of storage for manure application.
   ++formula
@@ -566,6 +606,7 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux out of storage for manure application.
   ++formula
@@ -591,10 +632,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Total N into application
     de = Total N in die Hofdüngerausbringung
     fr = N total dans l'Epandage des engrais de ferme
+    it = N total dans l'Epandage des engrais de ferme
   ++units  
     en = kg N/year
     de = kg N/Jahr
     fr = kg N/an
+    it = kg N/an
   ++description
     Annual N flux out of storage for application.
   ++formula
@@ -609,10 +652,12 @@ gui      = Storage,Hofdüngerlager,Stockage,Storage
     en = Total TAN into application
     de = Total Nlös in die Hofdüngerausbringung
     fr = TAN total dans l'Epandage des engrais de ferme
+    it = TAN total dans l'Epandage des engrais de ferme
   ++units  
     en = kg TAN/year
     de = kg TAN/Jahr
     fr = kg TAN/an
+    it = kg TAN/an
   ++description
     Annual TAN flux out of storage for application.
   ++formula

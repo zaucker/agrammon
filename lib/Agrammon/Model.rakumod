@@ -128,7 +128,8 @@ class Agrammon::Model {
             }
             my @gui = $!module.gui-root-module.gui.split(',') if $!module.gui-root-module;
             my $*AGRAMMON-TAXONOMY = my $tax = $!module.taxonomy;
-            my %*AGRAMMON-GUI = %(:de(@gui[1]), :fr(@gui[2]), :en(@gui[3])) if @gui;
+            # use English if Italian is missing
+            my %*AGRAMMON-GUI = %(:de(@gui[1]), :fr(@gui[2]), :en(@gui[3]), :it(@gui[4] // @gui[3])) if @gui;
             my $env = Agrammon::Environment.new(
                     input => $input.input-hash-for($tax),
                     technical => $!module.technical-hash,
@@ -174,7 +175,7 @@ class Agrammon::Model {
             if $gui-root-module {
                 # what a silly inline signaling
                 my @g = $gui-root-module.gui.split(',');
-                %gui-root = :de(@g[1]), :fr(@g[2]), :en(@g[3] // @g[0]), :raw(@g[0]);
+                %gui-root = :de(@g[1]), :fr(@g[2]), :en(@g[3] // @g[0]), :it(@g[4] // @g[0]), :raw(@g[0]);
             }
             if $!module.is-multi {
                 for $input-data.inputs-list-for($tax) -> $multi-input {

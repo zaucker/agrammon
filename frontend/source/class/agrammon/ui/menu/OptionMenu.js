@@ -30,6 +30,7 @@ qx.Class.define('agrammon.ui.menu.OptionMenu', {
         langCommand.addListener("execute",
             function(e) {
                 var locale = e.getData().getLabel();
+                console.log('Setting locale to', locale);
                 qx.locale.Manager.getInstance().setLocale(locale);
         });
         var langMenu = new qx.ui.menu.Menu;
@@ -40,8 +41,8 @@ qx.Class.define('agrammon.ui.menu.OptionMenu', {
         langMenu.add(deButton);
         langMenu.add(frButton);
 
-//        var itButton = new qx.ui.menu.Button("it", null, langCommand);
-//        langMenu.add(itButton);
+        var itButton = new qx.ui.menu.Button("it", null, langCommand);
+        langMenu.add(itButton);
         var langButton = new qx.ui.menu.Button(this.tr("Set language ..."),
                                                null, null, langMenu);
 

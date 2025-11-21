@@ -29,7 +29,7 @@ qx.Class.define('agrammon.module.input.PropTable', {
         qx.event.message.Bus.subscribe('agrammon.PropTable.clear',
                                        this.clear, this);
 
-        this.__langHash = { en: 1, de: 2, fr: 3 };
+        this.__langHash = { en: 1, de: 2, fr: 3, it:4 };
         // cell renderer factory function
         // returns a cell renderer instance
         var propertyCellRendererFactoryFunc = function (cellInfo) {

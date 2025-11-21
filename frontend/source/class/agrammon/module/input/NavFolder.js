@@ -17,28 +17,16 @@ qx.Class.define('agrammon.module.input.NavFolder', {
             // remove instance marker
             this.__labels[key]  = String(labels[key]).replace(/\[\]/, '');
         }
+
         // FIX ME: deal with sub locale
         var locale = qx.locale.Manager.getInstance().getLocale();
         locale = locale.replace(/_.+/,'');
-
-        // FIX ME: this is a hack, should be fixed in model descriptions
-        if (locale == 'en' && this.__labels['it']) {
-            this.setLabel(this.__labels['it']);
-        }
-        else {
-            this.setLabel(this.__labels[locale]);
-        }
+        this.setLabel(this.__labels[locale]);
 
         qx.locale.Manager.getInstance().addListener("changeLocale", function() {
             var locale = qx.locale.Manager.getInstance().getLocale();
             locale = locale.replace(/_.+/,'');
-            // FIX ME: this is a hack, should be fixed in model descriptions
-            if (locale == 'en' && this.__labels['it']) {
-                this.setLabel(this.__labels['it']);
-            }
-            else {
-                this.setLabel(this.__labels[locale]);
-            }
+            this.setLabel(this.__labels[locale]);
         }, this);
 
         if (type != 'isInstance') {

@@ -22,36 +22,36 @@ Selects the emission rate and other correciton factors for the specific housing 
        en = slurry conventional
        de = Konventioneller Stall ohne Auslauf
        fr = Stabulation conventionnelle sans parcours
-       it = Slurry_Conventional
+       it = Stabulazione convenzionale senza uscita all'aperto
     +++Slurry_Label
        en = slurry_label
        de = Labelstall mit Mehrflächenbucht und Auslauf
        fr = Stabulation_labellisée_à_aires_multiples_et_parcours
-       it = Slurry_Label
+       it = Stabulazione certificata con box multisuperficie e uscita all'aperto
     +++Slurry_Label_Open
        en = outdoor climate house
        de = Nicht wärmegedämmter Stall (siehe Spalte Hilfe)
        fr = Stabulation sans isolation thermique (cf. aide)
-       it = Slurry Label Open Front Housing non insulated stables
+       it = Stabulazione non coibentata (vedi colonna Aiuto)
     +++Deep_Litter
        en = deep_litter
        de = Tiefstreustall
        fr = Stabulation_litière_profonde
-       it = Deep_Litter
+       it = Stabulazione a lettiera profonda
     +++Outdoor
        en = outdoor
        de = Weidehaltung
        fr = Plein_air
-       it = Outdoor
-  ++labels 
+       it = Allevamento al pascolo
+  ++labels
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
     it = Tipo di stabulazione
-  ++units  
+  ++units
     en = -
   ++description
-    Type of housing.
+    Type of housing system.
   ++help
     +++en
        <p>Standard values for Switzerland:</p>
@@ -100,31 +100,28 @@ Selects the emission rate and other correciton factors for the specific housing 
        <p>Truies allaitantes: système conventionnel sans parcours extérieur</p>
        <p>Truies en gestation: système labellisé à aires multiples et parcours extérieur</p>
        <p>Remontes: système labellisé à aires multiples et parcours extérieur</p>
-       <p>Porcelets sevrés (jusqu'à 25 kg): système conventionnel sans parcours extérieur </p>
-       <p>Verrats: système labellisé à aires multiples et parcours extérieur </p>
-
+       <p>Porcelets sevrés (jusqu'à 25 kg): système conventionnel sans parcours extérieur</p>
+       <p>Verrats: système labellisé à aires multiples et parcours extérieur</p>
 
     +++it
-       <p>Dans les systèmes de stabulation, on distingue
-          principalement les systèmes conventionnels sans parcours
-          extérieur et les systèmes labellisés à aires multiples et
-          parcours extérieur. Les stabulations à litière profonde et
-          la garde au pâturage sont de moindre importance.  Pour les
-          truies allaitantes, introduire les catégories suivantes:
-          système conventionnel sans parcours extérieur, s'il n'y a
-          pas de parcours extérieur. Cela est valable également pour
-          les systèmes labellisés sans parcours extérieur pour les
-          truies allaitantes.</p>
-       <p>Stabulation sans isolation thermique : porcheries sans
-          isolation thermique à ventilation naturelle (stabulation à
-          climat extérieur) et à zones de microclimat.</p>
+       <p>Nei sistemi di stabulazione si distingue
+          principalmente tra sistemi convenzionali senza uscita all'aperto e
+          stabulazioni certificate con box multisuperficie e uscita all'aperto.
+          Le stabulazioni a lettiera profonda e l'allevamento al pascolo sono
+          di minore importanza. Per le scrofe in lattazione inserire
+          la seguente categoria: stabulazione convenzionale senza uscita all'aperto,
+          se non è presente un'uscita all'aperto. Questo vale anche per
+          le stabulazioni certificate senza uscita all'aperto per le scrofe in lattazione.</p>
+       <p>Stabulazione non coibentata: stabulazione non coibentata con
+          ventilazione libera (stabulazioni a clima esterno) e
+          zone a microclima.</p>
 
-       <p>Proposition de valeurs standard:</p>
-       <p>Truies allaitantes: système conventionnel sans parcours extérieur</p>
-       <p>Truies en gestation: système labellisé à aires multiples et parcours extérieur</p>
-       <p>Remontes: système labellisé à aires multiples et parcours extérieur</p>
-       <p>Porcelets sevrés (jusqu'à 25 kg): système conventionnel sans parcours extérieur </p>
-       <p>Verrats: système labellisé à aires multiples et parcours extérieur </p>
+       <p>Proposta per valori standard:</p>
+       <p>Scrofe in lattazione: stabulazione convenzionale senza uscita all'aperto</p>
+       <p>Scrofe in gestazione: stabulazione certificata con box multisuperficie e uscita all'aperto</p>
+       <p>Rimonta: stabulazione certificata con box multisuperficie e uscita all'aperto</p>
+       <p>Suinetti svezzati (fino a 25 kg): stabulazione convenzionale senza uscita all'aperto</p>
+       <p>Verri: stabulazione certificata con box multisuperficie e uscita all'aperto</p>
 
 
 *** technical ***

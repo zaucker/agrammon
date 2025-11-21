@@ -26,19 +26,19 @@ UNECE 2007. Guidance document on control techniques for preventing and abating e
        en = none
        de = keine
        fr = aucun
-       it = none
+       it = nessuno
     +++acid
        en = acid scrubber
-       de = Chemischer Wäscher
+       de = Chemischer_Wäscher
        fr = Epurateur acide
-       it = acid
+       it = depuratore_acido
     +++biotrickling
        en = biotrickling_filter
        de = Biowäscher
-       fr = Filtre_biologique
-       it = biotrickling_filter
-  ++labels 
-    en = Exhaust air scrubber
+       fr = Biolaveur
+       it = biofiltro_percolatore
+  ++labels
+    en = Exhaust air treatment
     de = Abluftreinigung
     fr = Traitement des effluents gazeux
     it = Depurazione dell'aria di scarico
@@ -57,7 +57,7 @@ UNECE 2007. Guidance document on control techniques for preventing and abating e
     
 
     +++it
-       <p>Proposition de valeur standard: aucun</p>
+       <p>Proposta per valore standard: nessuno</p>
     
     
 

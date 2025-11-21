@@ -3,7 +3,7 @@
 author   = Agrammon Group
 date     = 2008-05-07
 taxonomy = Application
-gui      = Application,Hofdüngerausbringung,Epandage,Application
+gui      = Application,Hofdüngerausbringung,Epandage,Application,Spandimento effluenti
 
 +short
 

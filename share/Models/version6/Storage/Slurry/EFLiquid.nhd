@@ -34,32 +34,32 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
        en = uncovered
        de = ungedeckt
        fr = découvert
-       it = uncovered
+       it = scoperto
     +++solid_cover
        en = solid_cover
        de = feste_Abdeckung_(_Beton,_Holz_)
        fr = Couverture_en_dur
-       it = solid_cover
+       it = copertura_fissa_(_cemento,_legno_)
     +++perforated_cover
        en = perforated_cover
        de = perforierte_Abdeckung
        fr = Couverture_perforée
-       it = perforated_cover
+       it = copertura_perforata
     +++tent
        en = tent
        de = Zeltdach
        fr = Toit conique
-       it = tent
+       it = tetto_a_tenda
     +++floating_cover
        en = floating_cover
        de = Schwimmfolie
        fr = Bâche_flottante
-       it = floating_cover
+       it = telo_galleggiante
     +++natural_crust
        en = natural_crust
        de = natürliche_Schwimmschicht
        fr = Couche_flottante_naturelle
-       it = natural_crust
+       it = strato_galleggiante_naturale
   ++labels
     en = Type of cover
     de = Abdeckung des Güllelagers
@@ -94,14 +94,14 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
 
 
     +++it
-       <p>S'il existe plusieurs stocks avec des couvertures différentes, introduire pour chaque type de couverture un stock avec le volume correspondant. </p>
-       <p>Couverture perforée : seulement en combination avec une aire de sortie avec un sol perforé.</p> 
-        <p>Pour la couverture "Bâche semi-flottante", il faut saisir 50 sous "Mesure supplémentaire limitant les émissions dues au stockage du lisier". Ainsi, une réduction des émissions de 50 % est calculée par rapport à un stock découvert.</p>
-         <p>Pour la couverture "Toit conique": la valeur actuelle enregistrée dans Agrammon (réduction des émissions de 60%) ne correspond plus à l'état des connaissances actuel. Pour une couverture "Toit conique", il est recommandé de sélectionner "découvert" comme type de couverture 
-         et d'inscrire 80 sous "Mesure supplémentaire limitant les émissions dues au stockage du lisier". Ainsi, une réduction des émissions de 80 % est calculée par rapport à un stock découvert. De cette façon, la valeur représente au mieux l'état des connaissances actuelles. Lors de la prochaine révision du modèle
-         (probablement 2024/25), la valeur de réduction des émissions pour la couverture "Toit conique" sera adaptée en conséquence.</p>
-       <p>Proposition de valeur standard:</p>
-       <p>couverture en dur (béton, bois) qui représente environ 75 % du volume de stockage du lisier.</p>
+       <p>Se ci sono più depositi con coperture diverse, creare per ogni tipo di copertura un deposito con il volume corrispondente.</p>
+       <p>Copertura perforata: applicabile solo in combinazione con un'area di esercizio con copertura perforata.</p>
+        <p>La copertura "Telo parzialmente galleggiante" può essere inserita come segue: inserire 50 sotto "Misura aggiuntiva di riduzione delle emissioni deposito liquami". In questo modo viene calcolata una riduzione delle emissioni del 50% rispetto a un deposito scoperto.</p>
+         <p>Per la copertura "Tetto a tenda": l'attuale riduzione delle emissioni del 60% registrata in Agrammon non corrisponde più all'attuale stato delle conoscenze. Si consiglia di inserire per la copertura "Tetto a tenda" sotto copertura "scoperto"
+         e sotto "Misura aggiuntiva di riduzione delle emissioni deposito liquami" 80. In questo modo viene calcolata una riduzione delle emissioni dell'80% rispetto a un deposito scoperto. Così lo stato attuale delle conoscenze è rappresentato in modo appropriato. Nella prossima revisione del modello
+         (presumibilmente 2024/25), la riduzione delle emissioni dovuta alla copertura "Tetto a tenda" sarà adeguata di conseguenza.</p>
+       <p>Proposta per valori standard:</p>
+       <p>copertura solida (cemento, legno), la cui quota rappresenta circa il 75% del volume del deposito di liquame.</p>
 
 
 +contains_cattle_manure
@@ -116,12 +116,12 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
         en = yes
         de = Ja
         fr = Oui
-        it = Oui
+        it = sì
      +++no
         en = no
         de = Nein
         fr = Non
-        it = Non
+        it = no
   ++units
     en = -
    ++description
@@ -136,7 +136,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
 
 
      +++it
-        <p>Proposition de valeur standard: oui </p>
+        <p>Proposta per valore standard: sì</p>
 
 
 +contains_pig_manure
@@ -151,12 +151,12 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
         en = yes
         de = Ja
         fr = Oui
-        it = Oui
+        it = sì
      +++no
         en = no
         de = Nein
         fr = Non
-        it = Non
+        it = no
    ++units
      en = -
    ++description
@@ -170,7 +170,7 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
         <p>Proposition de valeur standard: oui </p>
 
      +++it
-        <p>Proposition de valeur standard: oui </p>
+        <p>Proposta per valore standard: sì</p>
 
 ?if !Kantonal_LU
   +free_correction_factor
@@ -229,18 +229,18 @@ Paper ECE/EB.AIR/120, February 7, 2014. Geneva, Switzerland: United Nations Econ
          <p>Proposition valeur standard: 0 %.</p><p> </p>
       +++it
          <p>
-           Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les
-           émissions (p.ex. un nouveau type de couverture). Le chiffre introduit correspond
-           à la réduction d'émission en pourcent (p.ex. 30%: l'émission provenant du stock
-           de lisier diminue de 30%). Il est recommandé de mentionner la mesure choisie dans
-           la colonne ‘Commentaire' et de justifier le taux de réduction choisi.
+           Qui può essere inserito l'effetto di riduzione delle emissioni di una misura liberamente selezionabile
+           (ad es. un nuovo tipo di copertura). Il numero inserito corrisponde alla
+           riduzione delle emissioni in percentuale (ad es. inserimento 30%; le emissioni dal deposito di liquame
+           diminuiscono del 30%). Si consiglia di indicare la misura scelta nella colonna Commento
+           e di giustificare il valore scelto per la riduzione delle emissioni.
          </p>
          <p>
-           Cette fonction s'adresse principalement aux utilisateurs/trices qui font des
-           pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles
-           technologies destinées à limiter les émissions et encore méconnues actuellement.
+           Questa funzione si rivolge soprattutto agli utenti che
+           prevedono le emissioni e devono tenere conto dell'effetto di nuove tecnologie
+           per la riduzione delle emissioni attualmente ancora sconosciute.
          </p>
-         <p>Proposition valeur standard: 0 %.</p><p> </p>
+         <p>Proposta per valore standard: 0%.</p><p> </p>
 ?endif
 
 *** technical ***

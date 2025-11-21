@@ -22,27 +22,27 @@ Selects the emission rate and other correciton factors for the specific housing 
        en = slurry_conventional
        de = Konventioneller_Stall_ohne_Auslauf
        fr = Stabulation_conventionnelle_sans_parcours
-       it = Slurry_Conventional
+       it = Stabulazione convenzionale senza uscita all'aperto
     +++Slurry_Label
        en = slurry_label
        de = Labelstall_mit_Mehrflächenbucht_und_Auslauf
        fr = Stabulation_labellisée_à_aires_multiples_et_parcours
-       it = Slurry_Label
+       it = Stabulazione certificata con box multisuperficie e uscita all'aperto
     +++Slurry_Label_Open
        en = outdoor climate house
        de = Nicht wärmegedämmter Stall (siehe Spalte Hilfe)
        fr = Stabulation labellisée à aires multiples et parcours comme stabulation à front ouvert/étable froide
-       it = Slurry Label Open Front Housing non insulated stables
+       it = Stabulazione non coibentata (vedi colonna Aiuto)
     +++Deep_Litter
        en = deep_litter
        de = Tiefstreustall
        fr = Stabulation_litière_profonde
-       it = Deep_Litter
+       it = Stabulazione a lettiera profonda
     +++Outdoor
        en = outdoor
        de = Weidehaltung
        fr = Plein_air
-       it = Outdoor
+       it = Allevamento al pascolo
   ++labels 
     en = Housing system
     de = Aufstallung
@@ -80,18 +80,17 @@ Selects the emission rate and other correciton factors for the specific housing 
        <p>Stabulation sans isolation thermique : porcheries sans
           isolation thermique à ventilation naturelle (stabulation à
           climat extérieur) et à zones de microclimat</p>
-
     +++it
-       <p>Proposition de valeur standard: système labellisé à aires
-          multiples et parcours extérieur</p>
-       <p>Dans les systèmes de stabulation, on distingue
-          principalement les systèmes conventionnels sans parcours
-          extérieur et les systèmes labellisés à aires multiples et
-          parcours extérieur. Les stabulations à litière profonde et
-          la garde au pâturage sont de moindre importance.</p>
-       <p>Stabulation sans isolation thermique : porcheries sans
-          isolation thermique à ventilation naturelle (stabulation à
-          climat extérieur) et à zones de microclimat</p>
+       <p>Proposta per valore standard: stabulazione certificata con box
+          multisuperficie e uscita all'aperto</p>
+       <p>Nei sistemi di stabulazione si distingue
+          principalmente tra sistemi convenzionali senza uscita all'aperto e
+          stabulazioni certificate con box multisuperficie e uscita all'aperto.
+          Le stabulazioni a lettiera profonda e l'allevamento al pascolo sono
+          di minore importanza.</p>
+       <p>Stabulazione non coibentata: stabulazione non coibentata con
+          ventilazione libera (stabulazioni a clima esterno) e
+          zone a microclima</p>
 
 *** technical ***
 
@@ -104,7 +103,6 @@ Selects the emission rate and other correciton factors for the specific housing 
     to +5\% increase in the NH3 emission.
 
 *** external ***
-
 +..::Excretion
 +Type::Slurry_Conventional
 +Type::Slurry_Label

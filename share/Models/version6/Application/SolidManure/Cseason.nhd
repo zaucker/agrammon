@@ -47,10 +47,9 @@ taxonomy = Application::SolidManure::Cseason
       +++fr
          <p>La somme des catégories «Part de fumier épandu en été (de juin à août)» et «Part de fumier épandu de septembre à mai y c.» doit donner 100%. </p>
          <p>Proposition de valeur standard: région de plaine: 34%; région de collines: 28%; région de montagne: 22%. Moyenne de toutes les régions: 30%.</p>
-
       +++it
-         <p>La somme des catégories «Part de fumier épandu en été (de juin à août)» et «Part de fumier épandu de septembre à mai y c.» doit donner 100%. </p>
-         <p>Proposition de valeur standard: région de plaine: 34%; région de collines: 28%; région de montagne: 22%. Moyenne de toutes les régions: 30%.</p>
+         <p>La somma delle categorie "Spandimento di letame in estate (giugno, luglio, agosto)" e "Spandimento di letame da settembre a maggio incluso" deve dare il 100%.</p>
+         <p>Proposta di valori standard: regione di pianura: 34%; regione collinare: 28%; regione montana: 22%. Media di tutte le regioni: 30%.</p>
 
   +appl_autumn_winter_spring
     type  = percent
@@ -77,9 +76,9 @@ taxonomy = Application::SolidManure::Cseason
          <p>Proposition de valeur standard: région de plaine: 66%; région de collines: 72%; région de montagne: 78%. Moyenne de toutes les régions: 70%.</p>
          <p>Selon l'annexe 2.6, chiffre 3.2.1 de l'Ord. sur la réduction des risques liés aux produits chimiques (ORRChim), paragraphe 1, l'épandage d'engrais contenant de l'azote n'est autorisé que pendant les périodes où les plantes peuvent absorber l'azote.</p>
       +++it
-         <p>La somme des catégories «Part de fumier épandu en été (de juin à août)» et «Part de fumier épandu de septembre à mai y c.» doit donner 100%. </p>
-         <p>Proposition de valeur standard: région de plaine: 66%; région de collines: 72%; région de montagne: 78%. Moyenne de toutes les régions: 70%.</p>
-         <p>Selon l'annexe 2.6, chiffre 3.2.1 de l'Ord. sur la réduction des risques liés aux produits chimiques (ORRChim), paragraphe 1, l'épandage d'engrais contenant de l'azote n'est autorisé que pendant les périodes où les plantes peuvent absorber l'azote.</p>
+         <p>La somma delle categorie "Spandimento di letame in estate (giugno, luglio, agosto)" e "Spandimento di letame da settembre a maggio incluso" deve dare il 100%.</p>
+         <p>Proposta di valori standard: regione di pianura: 66%; regione collinare: 72%; regione montana: 78%. Media di tutte le regioni: 70%.</p>
+         <p>Secondo l'allegato 2.6, numero 3.2.1 dell'Ordinanza sulla riduzione dei rischi nell'utilizzazione di determinate sostanze, preparati e oggetti particolarmente pericolosi (ORRPChim), paragrafo 1, i concimi contenenti azoto possono essere distribuiti solo nei periodi in cui le piante sono in grado di assorbire l'azoto.</p>
 ?endif
  
 *** technical ***

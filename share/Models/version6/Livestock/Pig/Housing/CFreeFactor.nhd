@@ -73,25 +73,23 @@ Selects other correciton factors for the specific housing types for pigs.
 	<p>
 	   Cette fonction s'adresse principalement aux utilisateurs/trices qui font des 
 	   pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles 
-	   technologies destinées à limiter les émissions et encore méconnues actuellement.
-	</p>
-	<p>Proposition valeur standard: 0 %.</p>
-
+           technologies destinées à limiter les émissions et encore méconnues actuellement.
+        </p>
+        <p>Proposition valeur standard: 0 %.</p>
     +++it
-	<p>
-	   Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les 
-	   émissions (p.ex. un nouveau type de sol limitant les émissions). Le chiffre 
-	   introduit correspond à la réduction d'émission en pourcent (p.ex. 30%: l'émission 
-	   provenant de la stabulation diminue de 30%). Il est recommandé de mentionner la 
-	   mesure choisie dans la colonne ‘Commentaire' et de justifier le taux de réduction 
-	   choisi.
-    	</p>
-	<p>
-	   Cette fonction s'adresse principalement aux utilisateurs/trices qui font des 
-	   pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles 
-	   technologies destinées à limiter les émissions et encore méconnues actuellement.
-	</p>
-	<p>Proposition valeur standard: 0 %.</p>
+        <p>
+          Qui può essere inserito l'effetto di riduzione delle emissioni di una misura liberamente selezionabile
+          (ad es. un nuovo tipo di pavimento che riduce le emissioni). Il numero inserito corrisponde
+          alla riduzione delle emissioni in percentuale (ad es. immissione 30%; le emissioni dalla
+          stalla diminuiscono del 30%). Si raccomanda di indicare la misura scelta nella
+          colonna Commento e di giustificare il valore scelto per la riduzione delle emissioni.
+        </p>
+        <p>
+          Questa funzione è rivolta soprattutto agli utenti che
+          prevedono le emissioni e devono considerare l'effetto di nuove tecnologie
+          per la riduzione delle emissioni attualmente non ancora conosciute.
+        </p>
+        <p>Proposta valeur standard: 0 %.</p>
 
 *** technical ***
 

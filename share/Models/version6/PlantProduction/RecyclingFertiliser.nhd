@@ -3,7 +3,7 @@
 author   = Agrammon Group
 date     = 2008-03-30
 taxonomy = PlantProduction::RecyclingFertiliser
-gui	 = PlantProduction::RecyclingFertiliser,Pflanzenbau::Recyclingdünger,Production végétale::Engrais de recyclage,Plant production::Recycling fertiliser
+gui	 = PlantProduction::RecyclingFertiliser,Pflanzenbau::Recyclingdünger,Production végétale::Engrais de recyclage,Plant production::Recycling fertiliser,Produzione vegetale::Concimi di riciclo
 
 +short
 
@@ -58,8 +58,8 @@ Vanderweerden and Jarvis (1997)
   
 
     +++it
-       <p>Le compost est constitué de matières végétales, animales ou microbiennes décomposées de manière appropriée en conditions aérobies (définition de l'Ord. sur les engrais du 10 janvier 2001, état au 1er oct. 2008, art. 5, paragraphe 2, alinéa b1). Il est composé de déchets organiques de provenance non agricole (matières qui ne viennent pas d'exploitations agricoles. Ex: déchets d'épluchage industriel de légumes, déchets verts des communes), qui sont compostés dans des installations industrielles ou au bord des champs. </p> 
-       <p>Le fumier mélangé à du compost ne fait pas partie de cette catégorie.</p>
+       <p>Il compost è materiale vegetale, animale o microbico decomposto professionalmente con apporto d'aria (definizione secondo l'Ordinanza sui concimi del 10 gennaio 2001 (stato al 1° ottobre 2008), art. 5, comma 2, lett. b1.). È costituito da rifiuti organici di origine non agricola (materiale che non proviene da aziende agricole. Esempi: scarti di lavorazione di aziende di trasformazione, materiale verde da comuni), che viene lavorato in impianti industriali o mediante compostaggio ai bordi dei campi.</p>
+       <p>Il compost di letame non rientra in questa categoria (inserimento sotto letame).</p>
   
 
 +solid_digestate
@@ -90,8 +90,8 @@ Vanderweerden and Jarvis (1997)
        <p>Les digestats solides sont issus de la séparation des digestats.</p>
 
     +++it
-       <p>Les digestats solides sont constitués de matières végétales, animales ou microbiennes fermentées de manière appropriée en conditions anaérobies (définition de l'Ord. sur les engrais du 10 janvier 2001, état au 1er oct. 2008, art. 5, paragraphe 2, alinéa b2). Ils sont composés de déchets organiques de provenance non agricole (matières qui ne viennent pas d'exploitations agricoles. Ex: déchets d'épluchage industriel de légumes, déchets verts des communes), qui sont fermentés dans des installations industrielles (p.ex. installations de Compogaz). </p> 
-       <p>Les digestats solides sont issus de la séparation des digestats.</p>
+       <p>Il digestato solido è materiale vegetale, animale o microbico digerito professionalmente in assenza di aria (definizione secondo l'Ordinanza sui concimi del 10 gennaio 2001, stato al 1° ottobre 2008, art. 5, comma 2, lett. b2). È costituito da rifiuti organici di origine non agricola (materiale che non proviene da aziende agricole. Esempi: scarti di lavorazione di aziende di trasformazione, materiale verde da comuni), che viene lavorato in impianti industriali (ad es. impianti Kompogas).</p>
+       <p>Il digestato solido si ottiene dopo la separazione del digestato.</p>
 
 +liquid_digestate
   type  = float
@@ -125,7 +125,11 @@ Vanderweerden and Jarvis (1997)
 
 
     +++it
-       <p>Les digestats liquides sont constitués de matières végétales, animales ou microbiennes fermentées de manière appropriée en conditions anaérobies (définition de l'Ord. sur les engrais du 10 janvier 2001, état au 1er oct. 2008, art. 5, paragraphe 2, alinéa b2). Ils sont composés de déchets organiques de provenance non agricole (matières qui ne viennent pas d'exploitations agricoles. Ex: déchets d'épluchage industriel de légumes, déchets verts des communes), qui sont fermentés dans des installations industrielles (p.ex. installations de Compogaz). Les digestats liquides sont issus de la séparation des digestats et ne contiennent pas plus de 12% de matière sèche.</p>
+       <p>Il digestato liquido è materiale vegetale, animale o microbico digerito professionalmente in assenza di aria (definizione secondo l'Ordinanza sui concimi del 10 gennaio 2001, stato al 1° ottobre 2008, art. 5, comma 2, lett. b2). È costituito da rifiuti organici di origine non agricola (materiale che non proviene da aziende agricole. Esempi: scarti di lavorazione di aziende di trasformazione, materiale verde da comuni), che viene lavorato in impianti industriali (ad es. impianti Kompogas). Il digestato liquido, chiamato anche acqua di pressatura, si ottiene dopo la separazione del digestato e non contiene più del 12% di sostanza secca.</p>
+       <p>
+	Le emissioni calcolate dopo la distribuzione di digestato liquido
+	valgono per la distribuzione mediante tubo flessibile di trascinamento.
+       </p>
 
 
 *** technical ***

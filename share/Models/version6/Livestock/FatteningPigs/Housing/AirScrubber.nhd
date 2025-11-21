@@ -36,9 +36,8 @@ UNECE 2007. Guidance document on control techniques for preventing and abating e
     +++biotrickling
        en = biotrickling filter
        de = Biowäscher
-       fr = Filtre biologique
-       it = biotrickling
-  ++labels 
+       fr = Biolaveur
+       it = Biolavatore
     en = Exhaust air scrubber
     de = Abluftreinigung
     fr = Traitement des effluents gazeux
@@ -58,7 +57,7 @@ UNECE 2007. Guidance document on control techniques for preventing and abating e
     
 
     +++it
-       <p>Proposition de valeur standard: aucun</p>
+       <p>Proposta per valore standard: nessuno</p>
     
     
 

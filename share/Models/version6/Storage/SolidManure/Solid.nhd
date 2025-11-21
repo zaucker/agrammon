@@ -42,8 +42,10 @@ taxonomy = Storage::SolidManure::Solid
        <p>Proposition de valeur standard: 25% </p>
 
     +++it
-       <p>Part du fumier de bovins, chevaux, autres équides et petits ruminants  épandu directement sans stockage </p>
-       <p>Proposition de valeur standard: 25% </p>
+       <p>Quota di letame bovino distribuito direttamente senza stoccaggio.
+         Qui sono inclusi: letame di cavalli e letame di piccoli ruminanti.
+       </p>
+       <p>Proposta per valore standard: 25%</p>
 
 +share_covered_basin_cattle_manure
   type  = percent
@@ -76,9 +78,13 @@ taxonomy = Storage::SolidManure::Solid
        <p>Proposition de valeur standard: 0% </p>
 
     +++it
-       <p>Ici, le fumier produit par les chevaux et autre équidés et les petits ruminants est inclu.</p>
-       <p>Cette part comprend le fumier stocké sous une couverture en dur, dans le sens d'un contenant fermé, ou sous un autre type de couverture, p.ex. une bâche.</p> 
-       <p>Proposition de valeur standard: 0% </p>
+       <p>Qui sono inclusi: letame di cavalli e letame di piccoli ruminanti.</p>
+       <p>
+         Coperture che impediscono lo scambio d'aria tra la superficie del deposito di letame
+         e l'aria ambiente, come ad es. un contenitore chiuso o
+         un'altra copertura come un telo resistente allo strappo.
+       </p>
+       <p>Proposta per valore standard: 0%</p>
 
 ?if !Kantonal_LU
   +free_correction_factor_cattle_manure
@@ -137,18 +143,18 @@ taxonomy = Storage::SolidManure::Solid
          <p>Proposition valeur standard: 0 %.</p>
       +++it
          <p>
-  	  Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les 
-  	  émissions (p.ex. un nouveau type de couverture). Le chiffre introduit correspond 
-  	  à la réduction d'émission en pourcent (p.ex. 30%: l'émission provenant du stock 
-  	  de fumier diminue de 30%). Il est recommandé de mentionner la mesure choisie dans 
-  	  la colonne ‘Commentaire' et de justifier le taux de réduction choisi.
+  	  Qui può essere inserito l'effetto di riduzione delle emissioni di una misura liberamente selezionabile
+  	  (ad es. un nuovo tipo di copertura). Il numero inserito corrisponde alla
+  	  riduzione delle emissioni in percentuale (ad es. inserimento 30%; le emissioni dal
+  	  deposito di letame diminuiscono del 30%). Si consiglia di indicare la misura scelta nella
+  	  colonna Commento e di giustificare il valore scelto per la riduzione delle emissioni.
          </p>
          <p>
-            Cette fonction s'adresse principalement aux utilisateurs/trices qui font des 
-  	  pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles 
-  	  technologies destinées à limiter les émissions et encore méconnues actuellement.
+            Questa funzione si rivolge soprattutto agli utenti che
+  	  prevedono le emissioni e devono tenere conto dell'effetto di nuove
+  	  tecnologie per la riduzione delle emissioni attualmente ancora sconosciute.
          </p>
-         <p>Proposition valeur standard: 0 %.</p>
+         <p>Proposta per valore standard: 0%.</p>
 ?endif
 
 +share_applied_direct_pig_manure
@@ -171,7 +177,7 @@ taxonomy = Storage::SolidManure::Solid
        <p>Proposition de valeur standard: 0% </p>
 
     +++it
-       <p>Proposition de valeur standard: 0% </p>
+       <p>Proposta per valore standard: 0%</p>
 
 +share_covered_basin_pig_manure
   type  = percent
@@ -201,8 +207,12 @@ taxonomy = Storage::SolidManure::Solid
        <p>Proposition de valeur standard: 0% </p>
 
     +++it
-       <p>Cette part comprend le fumier stocké sous une couverture en dur, dans le sens d'un contenant fermé, ou sous un autre type de couverture, p.ex. une bâche. </p>
-       <p>Proposition de valeur standard: 0% </p>
+       <p>
+         Coperture che impediscono lo scambio d'aria tra la superficie del
+         deposito di letame e l'aria ambiente, come ad es. un contenitore chiuso
+         o un'altra copertura come un telo resistente allo strappo.
+       </p>
+       <p>Proposta per valore standard: 0%</p>
 
 ?if !Kantonal_LU
   +free_correction_factor_pig_manure
@@ -254,18 +264,18 @@ taxonomy = Storage::SolidManure::Solid
          <p>Proposition valeur standard: 0 %.</p>
       +++it
          <p>
-  	  Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les 
-  	  émissions (p.ex. un nouveau type de couverture). Le chiffre introduit correspond 
-  	  à la réduction d'émission en pourcent (p.ex. 30%: l'émission provenant du stock 
-  	  de fumier diminue de 30%). Il est recommandé de mentionner la mesure choisie dans 
-  	  la colonne ‘Commentaire' et de justifier le taux de réduction choisi.
+  	  Qui può essere inserito l'effetto di riduzione delle emissioni di una misura liberamente selezionabile
+  	  (ad es. un nuovo tipo di copertura). Il numero inserito corrisponde alla
+  	  riduzione delle emissioni in percentuale (ad es. inserimento 30%; le emissioni dal
+  	  deposito di letame diminuiscono del 30%). Si consiglia di indicare la misura scelta nella
+  	  colonna Commento e di giustificare il valore scelto per la riduzione delle emissioni.
          </p>
          <p>
-            Cette fonction s'adresse principalement aux utilisateurs/trices qui font des 
-  	  pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles 
-  	  technologies destinées à limiter les émissions et encore méconnues actuellement.
+            Questa funzione si rivolge soprattutto agli utenti che
+  	  prevedono le emissioni e devono tenere conto dell'effetto di nuove
+  	  tecnologie per la riduzione delle emissioni attualmente ancora sconosciute.
          </p>
-         <p>Proposition valeur standard: 0 %.</p>
+         <p>Proposta per valore standard: 0%.</p>
 ?endif
 
 *** technical ***
@@ -364,8 +374,8 @@ taxonomy = Storage::SolidManure::Solid
                   fr=>"Vous avez introduit une mesure supplémentaire limitant les émissions du "
                       . "stock de fumier des porcs de " . In(free_correction_factor_cattle_manure)
                       . "\%.\n",
-                  it=>"Vous avez introduit une mesure supplémentaire limitant les émissions du "
-                      . "stock de fumier des porcs de " . In(free_correction_factor_cattle_manure)
+                  it=>"Ha inserito una misura aggiuntiva di riduzione delle emissioni per il deposito "
+                      . "di letame bovino del " . In(free_correction_factor_cattle_manure)
                       . "\%.\n"
                   });
   	    return 1 - In(free_correction_factor_cattle_manure)/100;
@@ -391,8 +401,8 @@ taxonomy = Storage::SolidManure::Solid
                   fr=>"'Vous avez introduit une mesure supplémentaire limitant les émissions du "
                       . "stock de fumier des bovins de" . In(free_correction_factor_pig_manure)
                       . "\%.\n",
-                  it=>"'Vous avez introduit une mesure supplémentaire limitant les émissions du "
-                      . "stock de fumier des bovins de" . In(free_correction_factor_pig_manure)
+                  it=>"Ha inserito una misura aggiuntiva di riduzione delle emissioni per il deposito "
+                      . "di letame suino del " . In(free_correction_factor_pig_manure)
                       . "\%.\n"
                  });
         return 1 - In(free_correction_factor_pig_manure)/100;

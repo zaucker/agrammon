@@ -44,10 +44,9 @@ taxonomy = Livestock::DairyCow::Excretion::CConcentrates
       <p>Vorschlag für Standardwert: 1.5 kg pro Kuh und Tag</p>
     +++fr
       <p>Proposition de valeur standard: 1.5 kg par vache et par jour</p>
-
     +++it
-      <p>Proposition de valeur standard: 1.5 kg par vache et par jour</p>
-
+      <p>Proposta per valore standard: 0 kg/anno e animale</p
+>
 +amount_winter
   type = float
   validator = between(0,6);
@@ -70,9 +69,8 @@ taxonomy = Livestock::DairyCow::Excretion::CConcentrates
       <p>Vorschlag für Standardwert: 2.5 kg pro Kuh und Tag</p>
     +++fr
       <p>Proposition de valeur standard: 2.5 kg par vache et par jour</p>
-
     +++it
-      <p>Proposition de valeur standard: 2.5 kg par vache et par jour</p>
+      <p>Proposta per valore standard: 1.5 kg/anno e animale</p>
 
 *** technical ***
       

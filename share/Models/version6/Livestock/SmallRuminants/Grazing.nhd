@@ -98,8 +98,8 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
        <p>Proposition de valeurs standard: 220 jours par an pour les moutons et 200 jours par an pour les chèvres (valeur moyenne pour les régions de plaine, de collines et de montagne). Ces chiffres se rapportent au nombre de jours de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage.</p>
 
     +++it
-       <p>Nombre de jours de pâturage sans la période d'estivage</p>
-       <p>Proposition de valeurs standard: 220 jours par an pour les moutons et 200 jours par an pour les chèvres (valeur moyenne pour les régions de plaine, de collines et de montagne). Ces chiffres se rapportent au nombre de jours de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage.</p>
+       <p>Numero di giorni di pascolo senza il periodo di alpeggio</p>
+       <p>Proposta per valori standard: 220 giorni all'anno per le pecore e 200 giorni all'anno per le capre (valore medio per le regioni di pianura, collinari e montane). Queste cifre si riferiscono al numero di giorni di pascolo nell'azienda di base. Non comprendono il pascolo negli alpeggi delle aziende d'estivazione.</p>
 
 +grazing_hours
   type  = float
@@ -128,8 +128,8 @@ Ross CA, Jarvis SC 2001. Measurement of emission and deposition pattern of ammon
 
 
     +++it
-       <p>Nombre d'heures de pâturage, sans la période d'estivage</p>
-       <p>Proposition de valeurs standard: 15 heures par jour pour les moutons et 6 heures par jour pour les chèvres. Ces chiffres se rapportent au nombre d'heures de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage.</p>
+       <p>Numero di ore di pascolo, senza il periodo di alpeggio</p>
+       <p>Proposta per valori standard: 15 ore al giorno per le pecore e 6 ore al giorno per le capre. Queste cifre si riferiscono al numero di ore di pascolo nell'azienda di base. Non comprendono il pascolo negli alpeggi delle aziende d'estivazione.</p>
 
 
 *** output ***

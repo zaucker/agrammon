@@ -21,27 +21,27 @@ taxonomy = Livestock::OtherCattle::Housing::Type
        en = tied_housing_slurry
        de = Anbindestall_mit_Produktion_von_Vollgülle
        fr = Stabulation_entravée_avec_production_de_lisier_complet
-       it = Tied_Housing_Slurry
+       it = Stabulazione_a_posta_fissa_con_produzione_di_liquame_completo
     +++Tied_Housing_Slurry_Plus_Solid_Manure
        en = tied_housing_slurry_plus_solid_manure
        de = Anbindestall_mit_Produktion_von_Gülle_und_Mist
        fr = Stabulation_entravée_avec_production_de_lisier_et_de_fumier
-       it = Tied_Housing_Slurry_Plus_Solid_Manure
+       it = Stabulazione_a_posta_fissa_con_produzione_di_liquame_e_letame
     +++Loose_Housing_Slurry
        en = loose_housing_slurry
        de = Laufstall_mit_Produktion_von_Vollgülle
        fr = Stabulation_libre_avec_production_de_lisier_complet
-       it = Loose_Housing_Slurry
+       it = Stabulazione_libera_con_produzione_di_liquame_completo
     +++Loose_Housing_Slurry_Plus_Solid_Manure
        en = loose_housing_slurry_plus_solid_manure
        de = Laufstall_mit_Produktion_von_Gülle_und_Mist
        fr = Stabulation_libre_avec_production_de_lisier_et_de_fumier
-       it = Loose_Housing_Slurry_Plus_Solid_Manure
+       it = Stabulazione_libera_con_produzione_di_liquame_e_letame
     +++Loose_Housing_Deep_Litter
        en = loose_housing_deep_litter
        de = Laufstall_mit_Tiefstreu_oder_Tretmist
        fr = Stabulation_libre_avec_litière_profonde_ou_litière_sur_plan_incliné
-       it = Loose_Housing_Deep_Litter
+       it = Stabulazione_libera_con_lettiera_profonda_o_letame_compattato
   ++labels 
     en = Housing system
     de = Aufstallung
@@ -96,22 +96,22 @@ taxonomy = Livestock::OtherCattle::Housing::Type
 
     +++it
 <dl>
-    		<dt>Stabulation libre avec production de lisier complet:</dt>
-    	 	<dd>Stabulation libre à aires multiples, stabulation libre équipée de logettes</dd>
-    		<dd>Stabulation libre à aire unique avec sol perforé</dd>
-    		<dt>Stabulation libre avec production de lisier et de fumier:</dt>
-    		<dd>Stabulation libre à aires multiples, stabulation libre équipée de logettes avec production de lisier et de quantités importantes de fumier</dd>
-    		<dd>Stabulation libre à aires multiples, aire de repos avec litière profonde ou litière sur plan incliné</dd>
-    		<dt>Stabulation libre avec litière profonde ou litière sur plan incliné:</dt>
-    		<dd>Stabulation libre à aire unique avec litière profonde ou litière sur plan incliné (uniquement du fumier)</dd>
+    		<dt>Stabulazione libera con produzione di liquame completo:</dt>
+    	 	<dd>Stabulazione libera a zone multiple, stabulazione libera con cuccette</dd>
+    		<dd>Stabulazione libera a zona unica con pavimento perforato</dd>
+    		<dt>Stabulazione libera con produzione di liquame e letame:</dt>
+    		<dd>Stabulazione libera a zone multiple, stabulazione libera con cuccette con produzione di liquame e quantità significative di letame</dd>
+    		<dd>Stabulazione libera a zone multiple, area di riposo con lettiera profonda o lettiera su piano inclinato</dd>
+    		<dt>Stabulazione libera con lettiera profonda o lettiera su piano inclinato:</dt>
+    		<dd>Stabulazione libera a zona unica con lettiera profonda o lettiera su piano inclinato (solo letame)</dd>
     	</dl>
     	<p/>
-      <p>Proposition de valeurs standard:</p>
+      <p>Proposta per valori standard:</p>
       <dl>
-        <dt>Toutes les catégories sauf veaux à l'engrais:</dt>
-        <dd>Stabulation libre avec production de lisier et de fumier</dd>
-        <dt>Veaux à l'engrais:</dt>
-        <dd>Stabulation libre avec litière profonde ou litière sur plan incliné</dd>
+        <dt>Tutte le categorie eccetto vitelli da ingrasso:</dt>
+        <dd>Stabulazione libera con produzione di liquame e letame</dd>
+        <dt>Vitelli da ingrasso:</dt>
+        <dd>Stabulazione libera con lettiera profonda o lettiera su piano inclinato</dd>
 
        
 

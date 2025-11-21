@@ -262,15 +262,14 @@ Menzi H, Shariatmadari H, Meierhans D, Wiedmer H 1997: Nähr- und Schadstoffbela
        <p>Poulets à l'engrais: non</p>
        <p>Dindes: oui</p>
        <p>Autre volaille: oui</p>
-
     +++it
-       <p>Pâturage au sens de l'OPD (Ordonnance sur les paiements directs du 23 octobre 2013, état le 14r mars 2023). L'aire à climat extérieur n'est pas comprise dans cette catégorie.</p>
-       <p>Propositions de valeurs standard:</p>
-       <p>Poules pondeuses: oui</p>
-       <p>Poulettes: non</p>
-       <p>Poulets à l'engrais: non</p>
-       <p>Dindes: oui</p>
-       <p>Autre volaille: oui</p>
+       <p>Pascolo come definito dall'OPD (Ordinanza sui Pagamenti Diretti del 23 ottobre 2013, in vigore dal 14 marzo 2023). Le aree esterne non sono incluse in questa categoria.</p>
+       <p>Valore standard proposto:</p>
+       <p>Galline ovaiole: sì</p>
+       <p>Pollastre: no</p>
+       <p>Polli da ingrasso: no</p>
+       <p>Tacchini: sì</p>
+       <p>Altro pollame: sì</p>
 
 *** output ***
 

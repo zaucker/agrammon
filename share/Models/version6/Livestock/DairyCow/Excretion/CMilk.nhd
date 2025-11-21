@@ -27,7 +27,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     de = Durchschnittliche Milchleistung pro Kuh
     fr = Production laitière moyenne par vache
     it = Produzione media di latte per vacca
-  ++units  
+  ++units
     en = kg/year
     de = kg/Jahr
     fr = kg/an
@@ -40,12 +40,9 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
     +++de
       <p>Vorschlag für Standardwert: 7500 kg pro Jahr</p>
     +++fr
-      <p>Proposition de valeur standard: 7500 kg par an </p>
- 
-
-
+      <p>Proposition de valeur standard: 7500 kg par an</p>
     +++it
-      <p>Proposition de valeur standard: 7500 kg par an </p>
+      <p>Proposta per valore standard: 7500 kg all'anno</p>
  
 
 

@@ -29,29 +29,29 @@ Zähner, M., Poteko, J., Zeyer, K., Schrade, S. 2017. Laufflächengestaltung: Em
        en =none
        de =keine
        fr =aucune
-       it =none
+       it =nessuna
      +++raised_feeding_stands
        en = elevated feed stalls
        de = Fressstand erhöht zum Laufgang
        fr = Stalle d'affouragement surélevée
-       it = raised_feeding_stands
+       it = Postazione_di_alimentazione_rialzata
     +++floor_with_cross_slope_and_collection_gutter
        en = double-sloped solid floor operating with urine gutter
        de = Boden mit Quergefälle und Harnsammelrinne
        fr = Sol non perforé avec pente transversale
-       it = floor_with_cross_slope_and_collection_gutter
+       it = Pavimento_con_pendenza_trasversale_e_canale_di_raccolta_urina
     +++floor_with_cross_slope_and_collection_gutter_and_raised_feeding_stands
        en = sloped solid floor with urine gutter and elevated feed stalls
        de = Boden mit Quergefälle und Harnsammelrinne und erhöhte Fressstände
        fr = Sol non perforé avec pente transv. + stalle d'affouragement
-       it = floor_with_cross_slope_and_collection_gutter_and_raised_feeding_stands
+       it = Pavimento_con_pendenza_trasversale_e_canale_di_raccolta_urina_e_postazioni_alimentazione_rialzate
+  ++units 
+    en = -
   ++labels 
     en = Mitigation option for loose housing systems
     de = Emissionsmindernde Massnahme bei Laufställen
-    fr = Mesures limitant les émissions dans les stabulations pour autres bovins
-    it = Misura di riduzione delle emissioni per stalle a stabulazione libera
-  ++units 
-    en = -
+    fr = Mesure limitant les émissions dans les stabulations libres
+    it = Misura di riduzione delle emissioni nelle stabulazioni libere
   ++description
     Mitigation options for loose housing systems for cattle.
   ++help
@@ -73,14 +73,12 @@ Zähner, M., Poteko, J., Zeyer, K., Schrade, S. 2017. Laufflächengestaltung: Em
        <p>Sol non perforé avec pente transversale :</p>
        <p>Sol non perforé, inclinées à 3 % vers une rigole longitudinale. Le sol et la rigole d’écoulement doivent être nettoyés au moyen d’un dispositif spécial au moins toutes les deux heures (commande munie d’une minuterie). Applicable pour stabulation libre avec production de lisier complet.</p>
        <p>Proposition de valeur standard: aucune</p>
-
-
     +++it
-       <p>Stalle d’affouragement surélevée :</p>
-       <p>Ce système se compose d'une aire d'alimentation surélevée et de places d’alimentation avec séparations. Les animaux sont contrôlés au niveau des cornadis ce-qui minimise l’accumulation des excréments dans l'aire d'alimentation. Applicable pour stabulation libre avec production de lisier complet et stabulation libre avec production de lisier et de fumier.</p>
-       <p>Sol non perforé avec pente transversale :</p>
-       <p>Sol non perforé, inclinées à 3 % vers une rigole longitudinale. Le sol et la rigole d’écoulement doivent être nettoyés au moyen d’un dispositif spécial au moins toutes les deux heures (commande munie d’une minuterie). Applicable pour stabulation libre avec production de lisier complet.</p>
-       <p>Proposition de valeur standard: aucune</p>
+       <p>Postazione di alimentazione rialzata:</p>
+       <p>Questo sistema è costituito da un'area di alimentazione rialzata (podio) e separazioni tra i posti di alimentazione. Gli animali sono controllati alla greppia in modo da ridurre al minimo l'accumulo di escrementi nell'area di alimentazione. Applicabile per stabulazione libera con produzione di liquame completo e stabulazione libera con produzione di liquame e letame.</p>
+       <p>Pavimento con pendenza trasversale e canale di raccolta dell'urina:</p>
+       <p>Pavimento non perforato con pendenza trasversale del 3% e canale longitudinale. Il pavimento e il canale di deflusso dell'urina devono essere puliti con un raschiatore e un pulitore del canale almeno ogni 2 ore (controllato da un timer). Applicabile per stabulazione libera con produzione di liquame completo.</p>
+       <p>Proposta per valore standard: nessuna</p>
 
 
 *** technical ***

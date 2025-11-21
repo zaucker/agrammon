@@ -3,7 +3,7 @@
 author   = Agrammon Group                 
 date     = 2017-07-10
 taxonomy = Application::Slurry
-gui      = Application::Slurry,Hofdüngerausbringung::Gülle,Epandage::Lisier,Application::Slurry
+gui      = Application::Slurry,Hofdüngerausbringung::Gülle,Epandage::Lisier,Application::Slurry,Spandimento effluenti::Liquame
 
 +short
 

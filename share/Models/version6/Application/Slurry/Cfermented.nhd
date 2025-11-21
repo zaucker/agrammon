@@ -43,9 +43,9 @@ taxonomy = Application::Slurry::Cfermented
  
 
     +++it
-       <p>Part de lisier produit sur l'exploitation et épandu en tant que lisier issu de digestion après avoir passé dans une installation de biogaz. Lisier issu de digestion: ensemble des substrats après la méthanisation de produits d'origine agricole comportant au plus 20% MF (matière fraîche) de produits d'origine non agricole. </p>
-       <p>Agridea, OFAG. 2020. Guide Suisse-Bilanz. Edition 1.16. Agridea, Lindau. Office fédéral de l'agriculture OFAG , Berne.</p>
-       <p>Proposition de valeur standard: 0%</p>
+       <p>Quota di liquame prodotto nell'azienda che viene sparso come liquame digerito dopo la fermentazione in un impianto di biogas. Liquame digerito: substrato totale dopo la fermentazione di materiale di origine agricola più al massimo il 20% di materiale di origine non agricola (sostanza fresca).</p>
+       <p>Agridea, UFAG. 2020. Guida Suisse-Bilanz. Edizione 1.16. Agridea, Lindau. Ufficio federale dell'agricoltura UFAG, Berna.</p>
+       <p>Proposta per valore standard: 0%</p>
  
 
 *** technical ***

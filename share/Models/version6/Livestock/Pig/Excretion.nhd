@@ -30,27 +30,27 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
        en = nursing_sows
        de = Säugende_Sauen
        fr = Truies_allaitantes
-       it = nursing_sows
+       it = scrofe_lattanti
     +++dry_sows
        en = dry_sows
        de = Galtsauen
        fr = Truies_gestantes
-       it = dry_sows
+       it = scrofe_gestanti
     +++gilts
        en = gilts
        de = Remonten
        fr = Truies_de_remonte
-       it = gilts
+       it = rimonta
     +++weaned_piglets_up_to_25kg
        en = weaned_piglets_up_to_25kg
        de = Ferkel_abgesetzt_bis_25_kg
        fr = Porcelets_sevrés_jusqu'_à_25_kg
-       it = weaned_piglets_up_to_25kg
+       it = suinetti_svezzati_fino_a_25_kg
     +++boars
        en = boars
        de = Eber
        fr = Verrats
-       it = boars
+       it = verri
   ++labels
     en = Animal category
     de = Tierkategorie

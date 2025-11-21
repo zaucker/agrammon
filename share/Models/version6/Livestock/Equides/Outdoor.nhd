@@ -40,7 +40,7 @@ taxonomy = Livestock::Equides::Outdoor
         <p>Proposition de valeurs standard: 220 jours pour an (moyenne des régions de plaine, collines et montagne) </p>
 
      +++it
-        <p>Proposition de valeurs standard: 220 jours pour an (moyenne des régions de plaine, collines et montagne) </p>
+        <p>Proposta per valori standard: 220 giorni all'anno (media delle regioni di pianura, collina e montagna)</p>
 
 +grazing_hours
   type  = float
@@ -50,7 +50,7 @@ taxonomy = Livestock::Equides::Outdoor
     de = Tägliche Weidestunden
     fr = Heures de pâturage par jour
     it = Ore giornaliere di pascolo
-  ++units  
+  ++units
     en = hours/day
     de = Stunden/Tag
     fr = heures/jour
@@ -68,7 +68,7 @@ taxonomy = Livestock::Equides::Outdoor
 # Yard
 
      +++it
-        <p>Proposition de valeurs standard: 8 heures par jour (moyenne des régions de plaine, collines et montagne)</p>
+        <p>Proposta per valori standard: 8 ore al giorno (media delle regioni di pianura, collina e montagna)</p>
 
 # Yard
 
@@ -96,7 +96,7 @@ taxonomy = Livestock::Equides::Outdoor
         <p>Proposition de valeurs standard: 250 jours pour les chevaux et 220 jours pour les autres équidés</p>
 
      +++it
-        <p>Proposition de valeurs standard: 250 jours pour les chevaux et 220 jours pour les autres équidés</p>
+        <p>Proposta per valori standard: 250 giorni per i cavalli e 220 giorni per gli altri equini</p>
 
 +yard_hours
   type  = float
@@ -123,7 +123,7 @@ taxonomy = Livestock::Equides::Outdoor
 
 
      +++it
-        <p>Proposition de valeurs standard: 10 heures pour les chevaux et 12 heures pour les autres équidés </p>
+        <p>Proposta per valori standard: 10 ore per i cavalli e 12 ore per gli altri equini</p>
 
 
 +floor_properties_exercise_yard
@@ -133,18 +133,18 @@ taxonomy = Livestock::Equides::Outdoor
        en = solid_floor
        de = Boden_planbefestigt
        fr = sol_en_dur
-       it = solid_floor
+       it = pavimentazione_solida
     +++unpaved_floor
        en = unpaved_floor
        de = Boden_unbefestigt
        fr = sol_sans_revêtement_dur
-       it = unpaved_floor
+       it = pavimentazione_non_solida
 ?if !Kantonal_LU
     +++paddock_or_pasture_used_as_exercise_yard
        en = paddock_or_pasture_used_as_exercise_yard
        de = kein_Laufhof:_Auslauf_auf_Weide
        fr = pas_de_parcours:_accès_au_pâturage
-       it = paddock_or_pasture_used_as_exercise_yard
+       it = nessun_cortile_esercizio:_accesso_al_pascolo
 ?endif
   ++labels 
     en = Type of exercise yard
@@ -177,12 +177,12 @@ taxonomy = Livestock::Equides::Outdoor
 
      +++it
      <dl>
-        <dt>Sol en dur:</dt>
-        <dd> Parcours avec sol bétonné ou asphalté (imperméable à l'eau). Les sols pavés (perméables à l'eau) sont considérés comme des sols en dur.</dd>
-	<dt>Sol sans revêtement dur:</dt>
-    	<dd> Parcours avec des sols perméables à l'eau, p.ex. recouverts de gravier, de sable, de marne, de copeaux de bois, de dalles gazon etc.</dd>
+        <dt>Pavimentazione solida:</dt>
+        <dd>Area esterna con pavimentazione in calcestruzzo o asfalto (impermeabile all'acqua). Le superfici pavimentate (permeabili all'acqua) sono equiparate alle pavimentazioni solide.</dd>
+	<dt>Pavimentazione non solida:</dt>
+    	<dd>Area esterna con pavimentazione permeabile all'acqua, ad es. ricoperta di ghiaia, sabbia, marna, trucioli di legno, grigliato erboso ecc.</dd>
      </dl>
-        <p>Proposition de valeur standard: sol sans revêtement dur</p>
+        <p>Proposta per valore standard: pavimentazione non solida</p>
 
 ?if !Kantonal_LU
   +free_correction_factor
@@ -242,19 +242,18 @@ taxonomy = Livestock::Equides::Outdoor
   	<p>Proposition valeur standard: 0 %.</p>
       +++it
   	<p>
-  	   Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les 
-  	   émissions (p.ex. un nouveau type de sol limitant les émissions). Le chiffre 
-  	   introduit correspond à la réduction d'émission en pourcent (p.ex. 30%: l'émission 
-  	   provenant du parcours extérieur diminue de 30%). Il est recommandé de mentionner 
-  	   la mesure choisie dans la colonne ‘Commentaire' et de justifier le taux de réduction 
-  	   choisi.
+  	   Qui è possibile inserire l'effetto di una misura aggiuntiva di riduzione delle emissioni
+  	   (ad es. un nuovo tipo di pavimentazione che riduce le emissioni). Il numero inserito
+  	   corrisponde alla riduzione delle emissioni in percentuale (ad es. 30%: le emissioni
+  	   dall'area esterna diminuiscono del 30%). Si raccomanda di menzionare la misura scelta
+  	   nella colonna 'Commento' e di giustificare il valore scelto per la riduzione delle emissioni.
   	</p>
   	<p>
-  	   Cette fonction s'adresse principalement aux utilisateurs/trices qui font des pronostiques 
-  	   d'émissions et qui doivent prendre en compte l'effet de nouvelles technologies destinées à
-  	   limiter les émissions et encore méconnues actuellement.
+  	   Questa funzione è rivolta principalmente agli utenti che effettuano previsioni delle
+  	   emissioni e devono considerare l'effetto di nuove tecnologie destinate alla riduzione
+  	   delle emissioni attualmente ancora sconosciute.
   	</p>
-  	<p>Proposition valeur standard: 0 %.</p>
+  	<p>Proposta per valore standard: 0%.</p>
 ?endif
 
 *** output ***
@@ -364,9 +363,11 @@ taxonomy = Livestock::Equides::Outdoor
                       . "Pferde und andere Equiden von " 
                       . In(free_correction_factor) 
                       . "\% eingegeben!\n", 
-                  fr=>"Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'un ",
-                  it =>"Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'un "
-          . "parcours extérieur pour chevaux et autres équidés de " . In(free_correction_factor) 
+                  fr=>"Vous avez introduit une mesure supplémentaire limitant les émissions provenant d'un "
+                      . "parcours extérieur pour chevaux et autres équidés de " . In(free_correction_factor)
+                      . "\%.\n",
+                  it =>"Ha inserito una misura aggiuntiva di riduzione delle emissioni per un "
+                      . "cortile d'esercizio per cavalli e altri equini del " . In(free_correction_factor)
                       . "\%.\n" });
         return 1 - In(free_correction_factor) / 100;  
     } else {

@@ -4,7 +4,7 @@ author    = Agrammon Group
 date      = 2008-02-19
 taxonomy  = Livestock::Pig
 instances = multi
-gui       = Livestock::Pig,Tierhaltung::Zuchtschweine,Production animale::Porcs,Livestock::Pigs
+gui       = Livestock::Pig,Tierhaltung::Zuchtschweine,Production animale::Porcs,Livestock::Pigs,Produzione animale::Altri suini
 
 +short
 

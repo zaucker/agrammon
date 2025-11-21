@@ -4,7 +4,7 @@ author   = Agrammon Group
 date     = 2008-05-20
 taxonomy = Storage::Slurry
 instances = multi
-gui       = Storage::Slurry,Hofdüngerlager::Gülle,Stockage::Lisier,Storage::Slurry
+gui       = Storage::Slurry,Hofdüngerlager::Gülle,Stockage::Lisier,Storage::Slurry,Stoccaggio effluenti::Liquame
 
 +short
 
@@ -48,8 +48,8 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
        <p>Proposition de valeur standard: calcul du volume du stock de lisier à l'aide de la production de lisier d'après PRIF (dilution 1:1; durée de stockage: 5 mois pour les régions de plaine, 6 pour les régions de collines et 7 pour les régions de montagne)</p>
 
     +++it
-       <p>Mentionner le volume du stock de lisier sans compter les caniveaux sous les grilles ni les canaux sous les sols perforés ou bétonnés des stabulations (p.ex. couloirs de déplacement et places d'affouragement) </p>
-       <p>Proposition de valeur standard: calcul du volume du stock de lisier à l'aide de la production de lisier d'après PRIF (dilution 1:1; durée de stockage: 5 mois pour les régions de plaine, 6 pour les régions de collines et 7 pour les régions de montagne)</p>
+       <p>Indicare il volume del deposito di liquame senza depositi/cantine di liquame e canali sotto pavimenti perforati o completamente pavimentati di stalle (ad es. corridoi di passaggio e zone di alimentazione di stalle a stabulazione libera, canali di lavaggio in stalle a posta fissa).</p>
+       <p>Proposta per valori standard: calcolo del volume del deposito di liquame mediante produzione di liquame secondo PRIF (diluizione 1:1; durata di stoccaggio: 5 mesi per la regione di pianura, 6 mesi per la regione collinare e 7 mesi per la regione di montagna)</p>
 
 +depth
   type  = float
@@ -72,7 +72,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
        <p>Proposition de valeur standard: 2.5 m</p>
 
     +++it
-       <p>Proposition de valeur standard: 2.5 m</p>
+       <p>Proposta per valore standard: 2.5 m</p>
 
 ?if !Kantonal_LU
   +mixing_frequency
@@ -82,32 +82,32 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
          en = at_most_2_times_per_year
          de = maximal_2_mal_jährlich
          fr = au_maximum_2_fois_par_an
-         it = at_most_2_times_per_year
+         it = massimo_2_volte_all_anno
       +++3_to_6_times_per_year
          en = 3_to_6_times_per_year
          de = 3_bis_6_mal_pro_Jahr
          fr = 3_à_6_fois_par_an
-         it = 3_to_6_times_per_year
+         it = da_3_a_6_volte_all_anno
       +++7_to_12_times_per_year
          en = 7_to_12_times_per_year
          de = 7_bis_12_mal_pro_Jahr
          fr = 7_à_12_fois_par_an
-         it = 7_to_12_times_per_year
+         it = da_7_a_12_volte_all_anno
       +++13_to_20_times_per_year
          en = 13_to_20_times_per_year
          de = 13_bis_20_mal_pro_Jahr
          fr = 13_à_20_fois_par_an
-         it = 13_to_20_times_per_year
+         it = da_13_a_20_volte_all_anno
       +++21_to_30_times_per_year
          en = 21_to_30_times_per_year
          de = 21_bis_30_mal_pro_Jahr
          fr = 21_à_30_fois_par_an
-         it = 21_to_30_times_per_year
+         it = da_21_a_30_volte_all_anno
       +++more_than_30_times_per_year
          en = more_than_30_times_per_year
          de = mehr_als_30_mal_pro_Jahr
          fr = plus_que_30_fois_par_an
-         it = more_than_30_times_per_year
+         it = più_di_30_volte_all_anno
     ++labels
       en = Frequency of slurry mixing
       de = Häufigkeit Aufrühren des Güllelagers
@@ -125,7 +125,7 @@ Menzi H, Frick R, Kaufmann R, 1997a. Ammoniak-Emissionen in der Schweiz: Ausmass
       +++fr
          <p>Proposition de valeur standard: 7-12 fois par an</p>
       +++it
-         <p>Proposition de valeur standard: 7-12 fois par an</p>
+         <p>Proposta per valore standard: da 7 a 12 volte all'anno</p>
 ?endif
 
 

@@ -56,7 +56,7 @@ taxonomy = Application::Slurry::Applrate
          <p>Proposition de valeur standard: 1:1</p>
 
       +++it
-         <p>Proposition de valeur standard: 1:1</p>
+         <p>Proposta per valore standard: 1:1</p>
 
   +appl_rate
     type  = float
@@ -78,7 +78,7 @@ taxonomy = Application::Slurry::Applrate
       +++fr
          <p>Proposition de valeur standard: 25 m<sup>3</sup></p>
       +++it
-         <p>Proposition de valeur standard: 25 m<sup>3</sup></p>
+         <p>Proposta per valore standard: 25 m<sup>3</sup></p>
 ?endif
  
 *** technical ***

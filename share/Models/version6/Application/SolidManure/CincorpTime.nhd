@@ -46,11 +46,10 @@ taxonomy = Application::SolidManure::CincorpTime
        <p>Incorporation avec la charrue en l'espace d'1 heure. </p>
        <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
        <p>Proposition de valeur standard: 0%</p>
-
     +++it
-       <p>Incorporation avec la charrue en l'espace d'1 heure. </p>
-       <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
-       <p>Proposition de valeur standard: 0%</p>
+       <p>Incorporamento con l'aratro entro 1 ora.</p>
+       <p>La somma delle categorie Incorporamento del letame deve dare il 100%. Ogni categoria Incorporamento del letame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
+       <p>Proposta per valore standard: 0%</p>
 
 ?if !Kantonal_LU
   +incorp_lw4h
@@ -76,11 +75,10 @@ taxonomy = Application::SolidManure::CincorpTime
          <p>Incorporation avec la charrue après plus d'1 heure et en l'espace de max. 4 heures. </p>
          <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
          <p>Proposition de valeur standard: 0%</p>
-
       +++it
-         <p>Incorporation avec la charrue après plus d'1 heure et en l'espace de max. 4 heures. </p>
-         <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
-         <p>Proposition de valeur standard: 0%</p>
+         <p>Incorporamento con l'aratro dopo più di 1 ora ed entro un massimo di 4 ore.</p>
+         <p>La somma delle categorie Incorporamento del letame deve dare il 100%. Ogni categoria Incorporamento del letame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
+         <p>Proposta per valore standard: 0%</p>
 
   +incorp_lw8h
     type  = percent
@@ -106,9 +104,9 @@ taxonomy = Application::SolidManure::CincorpTime
          <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
          <p>Proposition de valeur standard: 0%</p>
       +++it
-         <p>Incorporation avec la charrue après plus de 4 heures et en l'espace de max. 8 heures. </p>
-         <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
-         <p>Proposition de valeur standard: 0%</p>
+         <p>Incorporamento con l'aratro dopo più di 4 ore ed entro un massimo di 8 ore.</p>
+         <p>La somma delle categorie Incorporamento del letame deve dare il 100%. Ogni categoria Incorporamento del letame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
+         <p>Proposta per valore standard: 0%</p>
 ?endif
 
 +incorp_lw1d  
@@ -136,9 +134,9 @@ taxonomy = Application::SolidManure::CincorpTime
        <p>Proposition de valeur standard: 20%</p>
 
     +++it
-       <p>Incorporation avec la charrue après plus de 8 heures et en l'espace de max. 24 heures. </p>
-       <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
-       <p>Proposition de valeur standard: 20%</p>
+       <p>Incorporamento con l'aratro dopo più di 8 ore ed entro un massimo di 24 ore.</p>
+       <p>La somma delle categorie Incorporamento del letame deve dare il 100%. Ogni categoria Incorporamento del letame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
+       <p>Proposta per valore standard: 30%</p>
 
 +incorp_lw3d  
   type  = percent
@@ -165,10 +163,9 @@ taxonomy = Application::SolidManure::CincorpTime
        <p>Proposition de valeur standard: 20%</p>
 
     +++it
-       <p>Incorporation avec la charrue après plus d'1 jour et en l'espace de max. 3 jours. </p>
-       <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
-       <p>Proposition de valeur standard: 20%</p>
-
+       <p>Incorporamento con l'aratro dopo più di 1 giorno ed entro un massimo di 3 giorni.</p>
+       <p>La somma delle categorie Incorporamento del letame deve dare il 100%. Ogni categoria Incorporamento del letame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
+       <p>Proposta per valore standard: 20%</p>
 ?if !Kantonal_LU
   +incorp_gt3d
     type  = percent
@@ -194,11 +191,10 @@ taxonomy = Application::SolidManure::CincorpTime
          <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
          <p>Proposition de valeur standard: 10%</p>
       +++it
-         <p>Incorporation avec la charrue après plus de 3 jours et en l'espace de max. 10 jours. </p>
-         <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
-         <p>Proposition de valeur standard: 10%</p>
+         <p>Incorporamento con l'aratro dopo più di 3 giorni ed entro un massimo di 10 giorni.</p>
+         <p>La somma delle categorie Incorporamento del letame deve dare il 100%. Ogni categoria Incorporamento del letame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
+         <p>Proposta per valore standard: 10%</p>
 ?endif
-
 +incorp_none
   type  = percent
   ++labels 
@@ -225,10 +221,9 @@ taxonomy = Application::SolidManure::CincorpTime
 
 
     +++it
-       <p>Incorporation du fumier après plus de 10 jours ou pas d'incorporation de fumier. </p>
-       <p>La somme des catégories «Part de fumier incorporé» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
-       <p>Proposition de valeur standard: 50%</p>
-
+       <p>Incorporamento del letame dopo più di 10 giorni o nessun incorporamento del letame.</p>
+       <p>La somma delle categorie Incorporamento del letame deve dare il 100%. Ogni categoria Incorporamento del letame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
+       <p>Proposta per valore standard: 50%</p>
 
 *** technical ***
 

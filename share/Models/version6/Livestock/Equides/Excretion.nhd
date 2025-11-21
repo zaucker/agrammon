@@ -31,22 +31,22 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
        en = horses_older_than_3yr
        de = Pferde_über_3-jährig
        fr = Chevaux_de_plus_de_3_ans
-       it = horses_older_than_3yr
+       it = cavalli_oltre_3_anni
     +++horses_younger_than_3yr
        en = horses_younger_than_3yr
        de = Pferde_unter_3-jährig
        fr = Chevaux_de_moins_de_3_ans
-       it = horses_younger_than_3yr
+       it = cavalli_sotto_3_anni
     +++mules
        en = mules
        de = Maultiere_und_Maulesel_jeden_Alters
        fr = Mulets_et_baudets
-       it = mules
+       it = muli_e_bardotti_tutte_eta
     +++ponies_and_asses
        en = ponies_and_asses
        de = Ponies_Kleinpferde_und_Esel_jeden_Alters
        fr = Anes_et_poneys
-       it = ponies_and_asses
+       it = pony_cavalli_piccoli_e_asini_tutte_eta
   ++labels
     en = Animal category
     de = Tierkategorie

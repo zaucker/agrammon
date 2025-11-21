@@ -1,3 +1,5 @@
+  - Add Italian translations
+
 - 6.6.0, 2025-11-13, fritz.zaucker@oetiker.ch
 
 - 6.5.3, 2025-05-27, fritz.zaucker@oetiker.ch

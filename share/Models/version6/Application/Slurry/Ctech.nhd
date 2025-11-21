@@ -64,12 +64,12 @@ taxonomy = Application::Slurry::Ctech
 
 
     +++it
-       <p>Même si les engrais de ferme ne sont pas valorisés sur l'exploitation, mais via des contrats de reprise, les données relatives à l'épandage de ces engrais sont nécessaires. Dans ce cas, l'épandage par le repreneur est à décrire. </p>
-       <p>Cette catégorie comprend tous les systèmes à répartition large, comme les déflecteurs, les répartiteurs pendulaires, verticaux ou les buses pivotantes et les canons.</p>
+       <p>Anche se i concimi aziendali non vengono valorizzati nell'azienda ma tramite contratti di cessione, sono necessari i dati relativi allo spandimento di questi concimi. In questo caso occorre descrivere come lo spandimento dei concimi aziendali viene effettuato dal/i cessionario/i.</p>
+       <p>In questa categoria rientrano tutti i distributori a largo spargimento come piatti deflettori, distributori a pendolo o oscillanti, distributori a testa d'urto o distributori a ugelli multipli.</p>
 
-       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
+       <p>La somma delle categorie Quota di spandimento di liquame deve dare il 100%. Ogni categoria Quota di spandimento di liquame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
 
-       <p>Proposition de valeur standard: 90%</p>
+       <p>Proposta per valore standard: 90%</p>
 
 
 +share_trailing_hose  
@@ -101,11 +101,11 @@ taxonomy = Application::Slurry::Ctech
        <p>Proposition de valeur standard: 10%</p>
 
     +++it
-       <p>Avec ce système, le lisier est conduit directement sur le sol grâce à des tuyaux souples qui pendent derrière la machine. </p>
+       <p>Con il tubo flessibile trascinato il liquame viene condotto direttamente sul suolo mediante tubi che strisciano dietro l'attrezzatura sul terreno.</p>
 
-       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits). </p>
+       <p>La somma delle categorie Quota di spandimento di liquame deve dare il 100%. Ogni categoria Quota di spandimento di liquame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
 
-       <p>Proposition de valeur standard: 10%</p>
+       <p>Proposta per valore standard: 10%</p>
 
 +share_trailing_shoe 
   type  = percent
@@ -138,11 +138,11 @@ taxonomy = Application::Slurry::Ctech
        <p>Proposition de valeur standard: 0%</p>
 
     +++it
-       <p>Avec ce système, une pièce supplémentaire de métal au sortir du tuyau amène le lisier directement sur le sol, resp. l'introduit très légèrement dans le sol. </p>
+       <p>Con il distributore a scarpe striscianti il liquame viene depositato direttamente sul terreno con pattini metallici aggiuntivi dai tubi, rispettivamente viene leggermente inciso.</p>
 
-       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
+       <p>La somma delle categorie Quota di spandimento di liquame deve dare il 100%. Ogni categoria Quota di spandimento di liquame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
 
-       <p>Proposition de valeur standard: 0%</p>
+       <p>Proposta per valore standard: 0%</p>
 
 +share_shallow_injection  
   type  = percent
@@ -171,9 +171,9 @@ taxonomy = Application::Slurry::Ctech
 
  
     +++it
-       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits).</p>
+       <p>La somma delle categorie Quota di spandimento di liquame deve dare il 100%. Ogni categoria Quota di spandimento di liquame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
 
-       <p>Proposition de valeur standard: 0%</p>
+       <p>Proposta per valore standard: 0%</p>
 
  
 +share_deep_injection  
@@ -204,9 +204,9 @@ taxonomy = Application::Slurry::Ctech
  
 
     +++it
-       <p>La somme des catégories «Part de lisier épandu» doit donner 100%. Chaque catégorie doit avoir un pourcentage entre 0 et 100 (les 0% doivent aussi être introduits). </p>
+       <p>La somma delle categorie Quota di spandimento di liquame deve dare il 100%. Ogni categoria Quota di spandimento di liquame deve avere una voce compresa tra 0% e 100% (anche lo 0% deve essere indicato).</p>
 
-       <p>Proposition de valeur standard: 0%</p>
+       <p>Proposta per valore standard: 0%</p>
 
  
 

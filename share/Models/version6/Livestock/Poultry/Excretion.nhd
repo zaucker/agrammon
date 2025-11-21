@@ -37,27 +37,27 @@ Spezialpublikation, pp. 4/1-4/24.
        en = layers
        de = Legehennen
        fr = Poules_pondeuses
-       it = layers
+       it = galline_ovaiole
     +++growers
        en = growers
        de = Junghennen
        fr = Poulettes
-       it = growers
+       it = pollastre
     +++broilers
        en = broilers
        de = Mastpoulets
        fr = Poulets_à_l'engrais
-       it = broilers
+       it = polli_da_ingrasso
     +++turkeys
        en = turkeys
        de = Masttruten
        fr = Dindes
-       it = turkeys
+       it = tacchini_da_ingrasso
     +++other_poultry
        en = other_poultry
        de = Anderes_Geflügel
        fr = Autre_volaille
-       it = other_poultry
+       it = altri_volatili
   ++labels
     en = Animal category
     de = Tierkategorie

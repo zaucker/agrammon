@@ -28,59 +28,59 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
   ++enum
     +++fallow_deer
        en = Fallow deer; dam plus offspring until 16 months
-       de = Damhirsch; Muttertier plus Nachwuchs bis 16 Mt
+       de = Damhirsch;_Muttertier_plus_Nachwuchs_bis_16_Mt
        fr = Daim; mère plus petits jusqu'à 16 mois
-       it = fallow deer
+       it = daino;_femmina_più_prole_fino_a_16_mesi
     +++red_deer
        en = Red deer; dam plus offspring until 16 months
-       de = Rothirsch; Muttertier plus Nachwuchs bis 16 Mt
+       de = Rothirsch;_Muttertier_plus_Nachwuchs_bis_16_Mt
        fr = Cerf; mère plus petits jusqu'à 16 mois
-       it = red deer
+       it = cervo;_femmina_più_prole_fino_a_16_mesi
     +++wapiti
        en = Wapiti; dam plus offspring until 16 months
-       de = Wapiti; Muttertier plus Nachwuchs bis 16 Mt
+       de = Wapiti;_Muttertier_plus_Nachwuchs_bis_16_Mt
        fr = Wapiti; mère plus petits jusqu'à 16 mois
-       it = Wapito
+       it = wapiti;_femmina_più_prole_fino_a_16_mesi
     +++bison_older_than_3yr
        en = Bison older than 3yr
-       de = Bison über 3-jährig
+       de = Bison_über_3-jährig
        fr = Bison de plus de 3 ans
-       it = Bison older than 3yr
+       it = bisonte_oltre_3_anni
     +++bison_younger_than_3yr
        en = Bison younger than 3yr
-       de = Bison unter 3-jährig
+       de = Bison_unter_3-jährig
        fr = Bison de moins de 3 ans
-       it = bison younger than_3yr
+       it = bisonte_sotto_3_anni
     +++lama_older_than_2yr
        en = Lama older than 3yr
-       de = Lama über 3-jährig
+       de = Lama_über_3-jährig
        fr = Lama de plus de 3 ans
-       it = lama older than 2yr
+       it = lama_oltre_3_anni
     +++lama_younger_than_2yr
        en = Lama younger than 3yr
-       de = Lama unter 3-jährig
+       de = Lama_unter_3-jährig
        fr = Lama de moins de 3 ans
-       it = lama younger than 2yr
+       it = lama_sotto_3_anni
     +++alpaca_older_than_2yr
        en = Alpaca older than 2yr
-       de = Alpaca über 3-jährig
+       de = Alpaca_über_3-jährig
        fr = Alpaga de plus de 3 ans
-       it = alpaca older than 2yr
+       it = alpaca_oltre_3_anni
     +++alpaca_younger_than_2yr
        en = Alpaca younger than 3yr
-       de = Alpaca unter 3-jährig
+       de = Alpaca_unter_3-jährig
        fr = Alpaga de moins de 3 ans
-       it = alpaca younger than 2yr
+       it = alpaca_sotto_3_anni
     +++rabbit_doe_kits
        en = Nursing rabbit incl. offspring until 35 d
-       de = Kaninchen: Zibbe inkl. Jungtiere bis 35 Tage
+       de = Kaninchen:_Zibbe_inkl._Jungtiere_bis_35_Tage
        fr = Lapin: lapereau inclus jusqu'à 35 jours
-       it = Nursing rabbit incl. offspring until 35 d
+       it = coniglio:_coniglia_incl._cuccioli_fino_a_35_giorni
     +++rabbit_young
        en = Young rabbit older than 35 days
-       de = Kaninchen: Jungtiere ab ca. 35 Tagen
+       de = Kaninchen:_Jungtiere_ab_ca._35_Tagen
        fr = Lapin: lapereau à partir de 35 jours
-       it = Young rabbit older than 35 days
+       it = coniglio:_giovani_da_ca._35_giorni
 
  ++labels
     en = Animal category

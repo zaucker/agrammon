@@ -22,33 +22,33 @@ Selects the emission rate and other correction factors for the specific housing 
        en = tied_housing_slurry
        de = Anbindestall_mit_Produktion_von_Vollgülle
        fr = Stabulation_entravée_avec_production_de_lisier_complet
-       it = Tied_Housing_Slurry
+       it = Stabulazione_a_posta_fissa_con_produzione_di_liquame_completo
     +++Tied_Housing_Slurry_Plus_Solid_Manure
        en = tied_housing_slurry_plus_solid_manure
        de = Anbindestall_mit_Produktion_von_Gülle_und_Mist
        fr = Stabulation_entravée_avec_production_de_lisier_et_de_fumier
-       it = Tied_Housing_Slurry_Plus_Solid_Manure
+       it = Stabulazione_a_posta_fissa_con_produzione_di_liquame_e_letame
     +++Loose_Housing_Slurry
        en = loose_housing_slurry
        de = Laufstall_mit_Produktion_von_Vollgülle
        fr = Stabulation_libre_avec_production_de_lisier_complet
-       it = Loose_Housing_Slurry
+       it = Stabulazione_libera_con_produzione_di_liquame_completo
     +++Loose_Housing_Slurry_Plus_Solid_Manure
        en = loose_housing_slurry_plus_solid_manure
        de = Laufstall_mit_Produktion_von_Gülle_und_Mist
        fr = Stabulation_libre_avec_production_de_lisier_et_de_fumier
-       it = Loose_Housing_Slurry_Plus_Solid_Manure
+       it = Stabulazione_libera_con_produzione_di_liquame_e_letame
     +++Loose_Housing_Deep_Litter
        en = loose_housing_deep_litter
        de = Laufstall_mit_Tiefstreu_oder_Tretmist
        fr = Stabulation_libre_avec_litière_profonde_ou_litière_sur_plan_incliné
-       it = Loose_Housing_Deep_Litter
+       it = Stabulazione_libera_con_lettiera_profonda_o_lettiera_accumulata
   ++labels 
     en = Housing system
     de = Aufstallung
     fr = Type de stabulation
     it = Tipo di stabulazione
-  ++units  
+  ++units
     en = -
   ++description
     Type of housing.
@@ -79,19 +79,18 @@ Selects the emission rate and other correction factors for the specific housing 
       </dl>
       <p/>
       <p>Proposition de valeurs standard: stabulation libre avec production de lisier complet</p>
-
     +++it
        <dl>
-               <dt>Stabulation libre avec production de lisier complet:</dt>
-               <dd>Stabulation libre à aires multiples, stabulation libre équipée de logettes</dd>
-               <dt>Stabulation libre avec production de lisier et de fumier:</dt>
-               <dd>Stabulation libre à aires multiples, stabulation libre équipée de logettes avec production de lisier et de quantités importantes de fumier</dd>
-               <dd>Stabulation libre à aires multiples, aire de repos avec litière profonde ou litière sur plan incliné</dd>
-               <dt>Stabulation libre avec litière profonde ou litière sur plan incliné:</dt>
-               <dd>Stabulation libre à aire unique avec litière profonde ou litière sur plan incliné (uniquement du fumier)</dd>
+               <dt>Stabulazione libera con produzione di liquame completo:</dt>
+               <dd>Stabulazione libera multi-area, area di riposo con cuccette</dd>
+               <dt>Stabulazione libera con produzione di liquame e letame:</dt>
+               <dd>Stabulazione libera multi-area, area di riposo con cuccette (liquame e quantità significative di letame)</dd>
+               <dd>Stabulazione libera multi-area, area di riposo con lettiera permanente/lettiera accumulata</dd>
+               <dt>Stabulazione libera con lettiera permanente/lettiera accumulata:</dt>
+               <dd>Stabulazione libera mono-area con lettiera permanente/lettiera accumulata (esclusivamente letame)</dd>
       </dl>
       <p/>
-      <p>Proposition de valeurs standard: stabulation libre avec production de lisier complet</p>
+      <p>Proposta per valore standard: stabulazione libera con produzione di liquame completo</p>
 
 *** technical ***
 

@@ -47,7 +47,7 @@ taxonomy = Application::Slurry::Csoft
          <p>Proposition de valeur standard: 20%</p>
    
       +++it
-         <p>Proposition de valeur standard: 20%</p>
+         <p>Proposta per valore standard: 20%</p>
    
   +appl_hotdays
     type  = enum
@@ -89,7 +89,7 @@ taxonomy = Application::Slurry::Csoft
       +++fr
          <p>Proposition de valeur standard: Parfois</p>
       +++it
-         <p>Proposition de valeur standard: Parfois</p>
+         <p>Proposta per valore standard: Talvolta</p>
 ?endif         
 
 *** technical ***

@@ -4,7 +4,7 @@ author    = Agrammon Group
 date      = 2017-07-12
 taxonomy  = Livestock::Equides
 instances = multi
-gui       = Livestock::Equides,Tierhaltung::Pferde und andere Equiden,Production animale::Chevaux et autres équidés,Livestock::Horses and other equids
+gui       = Livestock::Equides,Tierhaltung::Pferde und andere Equiden,Production animale::Chevaux et autres équidés,Livestock::Horses and other equids,Produzione animale::Cavalli e altri equidi
 
 +short
   Collects the annual emission of NH3 and the N flux for equides.

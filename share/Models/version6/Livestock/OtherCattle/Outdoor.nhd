@@ -238,72 +238,70 @@ taxonomy = Livestock::OtherCattle::Outdoor
           <td align="center" > 80 </td>
          </tr>
       </table>
-
-
     +++it
-       <p>Les bovins gardés à l'attache doivent avoir accès régulièrement à un parcours extérieur, au moins pendant 60 jours durant la période de végétation et pendant 30 jours durant la période d'affouragement d'hiver (Ord. sur la protection des animaux du 23 avril 2008, état au 1er juin 2022). </p>
-       <p>Proposition de valeurs standard</p>
-       <table border="1" style='font-family: Tahoma,"Liberation Sans",Arial; font-size: 8pt'> 
+       <p>I bovini tenuti alla posta devono avere regolarmente accesso a un'area esterna, almeno per 60 giorni durante il periodo vegetativo e per 30 giorni durante il periodo di foraggiamento invernale (Ordinanza sulla protezione degli animali del 23 aprile 2008, stato al 1° giugno 2022).</p>
+       <p>Proposta per valori standard</p>
+       <table border="1" style='font-family: Tahoma,"Liberation Sans",Arial; font-size: 8pt'>
          <tr>
            <td>&#160;</td>
            <td align="center" >
-             Stabulation libre
-           </td> 
+             Stabulazione libera
+           </td>
            <td align="center" >
-             Stabulation entravée 
-           </td> 
+             Stabulazione fissa
+           </td>
          </tr>
          <tr>
            <td>&#160;</td>
            <td align="center" colspan="2" >
-             Jours par an 
-           </td> 
+             Giorni all'anno
+           </td>
          </tr>
          <tr>
           <td align="left" valign="top" cellspacing="0">
-             Vâches allaitantes
+             Vacche nutrici
           </td>
           <td align="center" > 200 </td>
           <td align="center" > 145 </td>
          </tr>
          <tr>
           <td align="left" valign="top" cellspacing="0">
-             Remontes de moins d'un an
+             Giovani bovini di meno di 1 anno
           </td>
           <td align="center" > 245 </td>
           <td align="center" > 100 </td>
          </tr>
          <tr>
           <td align="left" valign="top" cellspacing="0">
-            Remontes âgées entre 1 et 2 ans
+            Giovani bovini da 1 a 2 anni
           </td>
           <td align="center" > 240 </td>
           <td align="center" > 105 </td>
          </tr>
          <tr>
           <td align="left" valign="top" cellspacing="0">
-            Remontes âgées de plus de 2 ans
+            Giovani bovini oltre 2 anni
           </td>
           <td align="center" > 260 </td>
           <td align="center" > 110 </td>
          </tr>
          <tr>
           <td align="left" valign="top" cellspacing="0">
-            Veaux à l'engrais
+            Vitelli da ingrasso
           </td>
           <td align="center" > 60 </td>
           <td align="center" > - </td>
          </tr>
          <tr>
           <td align="left" valign="top" cellspacing="0">
-            Veaux de vâches allaitantes
+            Vitelli di vacche nutrici
           </td>
           <td align="center" > 200 </td>
           <td align="center" > - </td>
          </tr>
          <tr>
           <td align="left" valign="top" cellspacing="0">
-            Bovins à l'engrais
+            Bovini da ingrasso
           </td>
           <td align="center" > 160 </td>
           <td align="center" > 80 </td>
@@ -318,22 +316,22 @@ taxonomy = Livestock::OtherCattle::Outdoor
        en = not_available
        de = nicht_vorhanden
        fr = non_disponible
-       it = not_available
+       it = non_disponibile
     +++available_roughage_is_not_supplied_in_the_exercise_yard
        en = available_roughage_is_not_supplied_in_the_exercise_yard
        de = vorhanden:_keine_Verabreichung_von_Grundfutter_im_Laufhof
        fr =  disponible:_sans_fourrage_à_disposition_dans_le_parcours
-       it = available_roughage_is_not_supplied_in_the_exercise_yard
+       it = disponibile:_nessuna_somministrazione_di_foraggio_grezzo_nell_area_esterna
     +++available_roughage_is_partly_supplied_in_the_exercise_yard
        en = available_roughage_is_partly_supplied_in_the_exercise_yard
        de = vorhanden:_Verabreichung_von_Grundfutter_teilweise_im_Laufhof
        fr = disponible:_fourrage_en_partie_à_disposition_dans_le_parcours
-       it = available_roughage_is_partly_supplied_in_the_exercise_yard
+       it = disponibile:_somministrazione_parziale_di_foraggio_grezzo_nell_area_esterna
     +++available_roughage_is_exclusively_supplied_in_the_exercise_yard
        en = available_roughage_is_exclusively_supplied_in_the_exercise_yard
        de = vorhanden:_Verabreichung_von_Grundfutter_ausschliesslich_im_Laufhof
        fr = disponible:_fourrage_à_disposition_exclusivement_dans_le_parcours
-       it = available_roughage_is_exclusively_supplied_in_the_exercise_yard
+       it = disponibile:_somministrazione_esclusiva_di_foraggio_grezzo_nell_area_esterna
   ++labels 
     en = Exercise yard
     de = Laufhof
@@ -352,10 +350,9 @@ taxonomy = Livestock::OtherCattle::Outdoor
     +++fr
        <p>La distribution de fourrage dans le parcours extérieur n'est recommandée que si le parcours a un sol en dur ou un sol perforé. La variante ‚Fourrage à disposition exclusivement dans le parcours extérieur' n'est possible que lorsque le parcours est intégré dans la stabulation libre. </p>
        <p>Proposition de valeur standard: sans fourrage à disposition  dans le parcours </p>
-
     +++it
-       <p>La distribution de fourrage dans le parcours extérieur n'est recommandée que si le parcours a un sol en dur ou un sol perforé. La variante ‚Fourrage à disposition exclusivement dans le parcours extérieur' n'est possible que lorsque le parcours est intégré dans la stabulation libre. </p>
-       <p>Proposition de valeur standard: sans fourrage à disposition  dans le parcours </p>
+       <p>La somministrazione di foraggio grezzo nell'area esterna è raccomandata solo per aree esterne con pavimentazione solida o perforata. La somministrazione esclusiva di foraggio grezzo nell'area esterna si verifica solo quando l'area esterna è integrata nella stabulazione libera.</p>
+       <p>Proposta per valore standard: nessuna somministrazione di foraggio grezzo nell'area esterna</p>
 
 +floor_properties_exercise_yard
   type  = enum
@@ -364,23 +361,23 @@ taxonomy = Livestock::OtherCattle::Outdoor
        en = solid_floor
        de = Boden_planbefestigt
        fr = sol_en_dur
-       it = solid_floor
+       it = pavimentazione_solida
      +++perforated_floor
        en = perforated_floor
        de = Boden_perforiert
        fr = sol_perforé
-       it = perforated_floor
+       it = pavimentazione_perforata
 ?if !Kantonal_LU
      +++unpaved_floor
        en = unpaved_floor
        de = Boden_unbefestigt
        fr = sol_sans_revêtement_dur
-       it = unpaved_floor
+       it = pavimentazione_non_solida
      +++paddock_or_pasture_used_as_exercise_yard
        en = paddock_or_pasture_used_as_exercise_yard
        de = kein_Laufhof:_Auslauf_auf_Weide
        fr = pas_de_parcours:_accès_au_pâturage
-       it = paddock_or_pasture_used_as_exercise_yard
+       it = nessuna_area_esterna:_accesso_al_pascolo
 ?endif
   ++labels 
     en = Type of exercise yard
@@ -423,20 +420,20 @@ taxonomy = Livestock::OtherCattle::Outdoor
        <dt>Sol perforé:</dt>
        <dd> Caillebotis ou sols à trous; au moins ¾ de la surface du parcours doit être un sol perforé. Si moins de ¾ de la surface est perforée, alors introduire ‚Sol en dur'. </dd>
     +++it
-       <dl>  
-       <dt>Sol en dur: </dt>
-       <dd>Parcours avec un sol bétonné ou asphalté (imperméable à l'eau). Les surfaces pavées (perméables à l'eau) sont considérées également comme des sols en dur. </dd>
-       <dt>Sol perforé:</dt>
-       <dd> Caillebotis ou sols à trous; au moins ¾ de la surface du parcours doit être un sol perforé. Si moins de ¾ de la surface est perforée, alors introduire ‚Sol en dur'. </dd>
-?if !Kantonal_LU       
-       <dt>Sol sans revêtement dur:</dt>
-       <dd> Parcours avec des sols non durs ou perméables à l'eau comme les sols recouverts de gravier, de sable, de marne, de copeaux de bois ou de dalles gazon, etc. </dd>
+       <dl>
+       <dt>Pavimentazione solida:</dt>
+       <dd>Area esterna con pavimentazione in calcestruzzo o asfalto (impermeabile all'acqua). Le superfici pavimentate (permeabili all'acqua) sono equiparate alle pavimentazioni solide.</dd>
+       <dt>Pavimentazione perforata:</dt>
+       <dd>Pavimento fessurato o forato; almeno ¾ della superficie dell'area esterna deve avere una pavimentazione perforata. Se meno di ¾ della superficie dell'area esterna ha una pavimentazione perforata: inserire pavimentazione solida. Applicabile solo in caso di pulizia regolare del pavimento, fessure/fori permeabili del pavimento e stoccaggio di una parte significativa del liquame dell'azienda nella fossa sotto il pavimento perforato.</dd>
+?if !Kantonal_LU
+       <dt>Pavimentazione non solida:</dt>
+       <dd>Area esterna con pavimentazione non solida o permeabile all'acqua come ghiaia, sabbia, marna, trucioli di legno, grigliato erboso ecc.</dd>
   </dl>
-       <p>Les parcours extérieurs avec des sols sans revêtement dur ne doivent pas être accessibles de manière permanente (max. 2 heures par jour). </p>
+       <p>Le aree esterne con superficie non solida non devono essere accessibili permanentemente (max. 2 ore al giorno).</p>
 ?else
-       </dl>  
+       </dl>
 ?endif
-       <p>Proposition de valeur standard: sol en dur</p>
+       <p>Proposta per valore standard: pavimentazione solida</p>
 
 ?if !Kantonal_LU
   +free_correction_factor
@@ -496,19 +493,19 @@ taxonomy = Livestock::OtherCattle::Outdoor
           <p>Proposition valeur standard: 0 %.</p>
       +++it
           <p>
-            Ici, vous pouvez introduire l'effet d'une mesure supplémentaire limitant les 
-            émissions (p.ex. un nouveau type de sol limitant les émissions). Le chiffre 
-            introduit correspond à la réduction d'émission en pourcent (p.ex. 30%: l'émission 
-            provenant du parcors extérieur diminue de 30%). Il est recommandé de mentionner
-            la mesure choisie dans la colonne ‘Commentaire' et de justifier le taux de 
-            réduction choisi.
+            Qui è possibile inserire l'effetto di una misura aggiuntiva di riduzione delle
+            emissioni (ad es. un nuovo tipo di pavimentazione che riduce le emissioni). Il
+            numero inserito corrisponde alla riduzione delle emissioni in percentuale (ad es. 30%:
+            le emissioni dall'area esterna diminuiscono del 30%). Si raccomanda di menzionare
+            la misura scelta nella colonna 'Commento' e di giustificare il valore scelto per
+            la riduzione delle emissioni.
           </p>
           <p>
-            Cette fonction s'adresse principalement aux utilisateurs/trices qui font des 
-            pronostiques d'émissions et qui doivent prendre en compte l'effet de nouvelles 
-            technologies destinées à limiter les émissions et encore méconnues actuellement.
+            Questa funzione è rivolta principalmente agli utenti che effettuano previsioni delle
+            emissioni e devono considerare l'effetto di nuove tecnologie destinate alla riduzione
+            delle emissioni attualmente ancora sconosciute.
           </p>
-          <p>Proposition valeur standard: 0 %.</p>
+          <p>Proposta per valore standard: 0%.</p>
 ?endif
 
 #### Grazing
@@ -696,59 +693,59 @@ taxonomy = Livestock::OtherCattle::Outdoor
 
 
     +++it
-       <p>Ces chiffres se rapportent au nombre de jours de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage.</p>
-       <p>Propositions de valeurs standard:</p>
-     <table border="1" style='font-family: Tahoma,"Liberation Sans",Arial; font-size: 8pt'> 
+       <p>Questi numeri si riferiscono al numero di giorni di pascolo nell'azienda principale. Non includono il pascolo negli alpeggi delle aziende d'estivazione.</p>
+       <p>Proposta per valori standard:</p>
+     <table border="1" style='font-family: Tahoma,"Liberation Sans",Arial; font-size: 8pt'>
    <tr>
            <td>&#160;</td>
      <td align="center" >
-             Nombre de jours de pâturage par an  <br/>(Moyenne régions de plaine, collines et montagne) 
-           </td> 
+             Giorni di pascolo all'anno<br/>(Media regioni di pianura, collina e montagna)
+           </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-       Vâches allaitantes
+       Vacche nutrici
           </td>
           <td align="center" > 170 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-             Remontes de moins d'un an
+             Giovani bovini di meno di 1 anno
           </td>
           <td align="center" > 140 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Remontes âgées entre 1 et 2 ans
+            Giovani bovini da 1 a 2 anni
           </td>
           <td align="center" > 170 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Remontes âgées de plus de 2 ans
+            Giovani bovini oltre 2 anni
           </td>
           <td align="center" > 160 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Veaux à l'engrais
+            Vitelli da ingrasso
           </td>
           <td align="center" > 0 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Veaux de vâches allaitantes
+            Vitelli di vacche nutrici
           </td>
           <td align="center" > 170 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Bovins à l'engrais *
+            Bovini da ingrasso *
           </td>
           <td align="center" > 170* </td>
    </tr>
       </table>
-       <p>* Seul. valable pour les exploitations qui pratiquent l'engraissement au pâturage. Env. 50% des animaux à l'engrais ne vont pas au pâturage. </p>
+       <p>* Applicabile solo per aziende che praticano l'ingrasso al pascolo. Circa il 50% dei bovini da ingrasso non va al pascolo.</p>
 
 
 +grazing_hours
@@ -937,60 +934,60 @@ taxonomy = Livestock::OtherCattle::Outdoor
 
 
     +++it
-       <p>Ces chiffres se rapportent au nombre d'heures de pâturage sur l'exploitation de base. Ils ne comprennent pas le pâturage dans les alpages des exploitations d'estivage. </p>
+       <p>Questi numeri si riferiscono al numero di ore di pascolo nell'azienda principale. Non includono il pascolo negli alpeggi delle aziende d'estivazione.</p>
 
-       <p>Propositions de valeurs standard</p>
-      <table border="1" style='font-family: Tahoma,"Liberation Sans",Arial; font-size: 8pt'> 
+       <p>Proposta per valori standard</p>
+      <table border="1" style='font-family: Tahoma,"Liberation Sans",Arial; font-size: 8pt'>
    <tr>
            <td>&#160;</td>
      <td align="center" >
-             Heures de pâturage par jour
-           </td> 
+             Ore di pascolo al giorno
+           </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-       Vâches allaitantes
+       Vacche nutrici
           </td>
           <td align="center" > 16 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-             Remontes de moins d'un an
+             Giovani bovini di meno di 1 anno
           </td>
           <td align="center" > 12 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Remontes âgées entre 1 et 2 ans
+            Giovani bovini da 1 a 2 anni
           </td>
           <td align="center" > 17 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Remontes âgées de plus de 2 ans
+            Giovani bovini oltre 2 anni
           </td>
           <td align="center" > 15 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Veaux à l'engrais
+            Vitelli da ingrasso
           </td>
           <td align="center" > 0 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Veaux de vâches allaitantes
+            Vitelli di vacche nutrici
           </td>
           <td align="center" > 16 </td>
          </tr>
          <tr>
     <td align="left" valign="top" cellspacing="0">
-            Bovins à l'engrais *
+            Bovini da ingrasso *
           </td>
           <td align="center" > 16* </td>
    </tr>
       </table>
-      <p> * Seul. valable pour les exploitations qui pratiquent l'engraissement au pâturage. Env. 50% des animaux à l'engrais ne vont pas au pâturage. </p>
+      <p>* Applicabile solo per aziende che praticano l'ingrasso al pascolo. Circa il 50% dei bovini da ingrasso non va al pascolo.</p>
 
 
 *** output ***

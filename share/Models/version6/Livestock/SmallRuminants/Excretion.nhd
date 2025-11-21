@@ -30,17 +30,17 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
        en = fattening_sheep
        de = Schafe
        fr = Moutons_à_l'engrais
-       it = fattening_sheep
+       it = pecore_da_ingrasso
     +++milksheep
        en = milksheep
        de = Milchschafe
        fr = Brebis_laitières
-       it = milksheep
+       it = pecore_da_latte
     +++goats
        en = goats
        de = Ziegen
        fr = Chèvres
-       it = goats
+       it = capre
   ++labels
     en = Animal category
     de = Tierkategorie

@@ -33,47 +33,47 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
        en = suckling cows, light-weight
        de = Mutterkühe, leicht
        fr = Vache _allaitantes, races légères
-       it = suckling_cows
+       it = vacche_nutrici_leggere
     +++suckling_cows
        en = suckling cows medium-weight
        de = Mutterkühe, mittelschwer
        fr = Vâches allaitantes, races moyennes
-       it = suckling_cows
+       it = vacche_nutrici_peso_medio
     +++suckling_cows_gt700
        en = suckling cows, heavy-weight
        de = Mutterkühe, schwer
        fr = Vâches allaitantes, races lourdes
-       it = suckling_cows
+       it = vacche_nutrici_pesanti
     +++heifers_1st_yr
        en = heifers_1st_yr
        de = Aufzuchtrinder_unter_1-jährig
        fr = Remontes_d'élevage_âgées_de_moins_d'un_an
-       it = heifers_1st_yr
+       it = giovani_bovini_sotto_1_anno
     +++heifers_2nd_yr
        en = heifers_2nd_yr
        de = Aufzuchtrinder_1-_bis_2-jährig
        fr = Remontes_d'élevage_âgées_entre_1_et_2_ans
-       it = heifers_2nd_yr
+       it = giovani_bovini_da_1_a_2_anni
     +++heifers_3rd_yr
        en = heifers_3rd_yr
        de = Aufzuchtrinder_über_2-jährig
        fr = Remontes_d'élevage_âgées_de_plus_de_2_ans
-       it = heifers_3rd_yr
+       it = giovani_bovini_oltre_2_anni
     +++fattening_calves
        en = fattening_calves
        de = Mastkälber
        fr = Veaux_à_l'engrais
-       it = fattening_calves
+       it = vitelli_da_ingrasso
     +++calves_suckling_cows
        en = calves_suckling_cows
        de = Mutterkuhkälber
        fr = Veaux_de_vâches_allaitantes
-       it = calves_suckling_cows
+       it = vitelli_di_vacche_nutrici
     +++beef_cattle
        en = beef_cattle
        de = Masttiere_Rindviehmast
        fr = Bovins_à_l'engrais
-       it = beef_cattle
+       it = bovini_da_ingrasso
   ++labels
     en = Animal category
     de = Tierkategorie
@@ -152,8 +152,8 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          <p>Si "Standard" est introduisé, la valeur du nombre d'animaux est utilisée.</p>
 
       +++it
-         <p>Pour les stabulations libres: mentionner toutes les places accessibles aux animaux. Le nombre de places dans l'étable peut être supérieur au cheptel actuel, dans la perspective d'un agrandissement futur de l'exploitation p.ex. Dans les stabulations libres, un nombre de places supérieur au nombre d'animaux signifie une augmentation de la surface souillée par animal. Au contraire, dans les stabulations entravées, un nombre de places supérieur au nombre d'animaux ne conduit pas à une augmentation de la surface souillée par animal, vu que ces places libres ne sont pas accessibles aux animaux. </p>
-         <p>Si "Standard" est introduisé, la valeur du nombre d'animaux est utilisée.</p>
+         <p>Per le stabulazioni libere: indicare tutti i posti stalla accessibili agli animali. Il numero di posti stalla può essere superiore all'effettivo attuale, ad esempio in prospettiva di un futuro ampliamento dell'azienda. Nelle stabulazioni libere, un numero di posti superiore al numero di animali significa un aumento della superficie sporca per animale. Al contrario, nelle stabulazioni a posta fissa, un numero di posti superiore al numero di animali non porta ad un aumento della superficie sporca per animale, poiché questi posti liberi non sono accessibili agli animali.</p>
+         <p>Selezionando "Standard", il numero di posti stalla viene equiparato al numero di animali inserito.</p>
 
 ?if !Kantonal_LU
   +inp_n_excretion

@@ -4,7 +4,7 @@ author    = Agrammon Group
 date      = 2008-02-22
 taxonomy  = Livestock::Poultry
 instances = multi 
-gui       = Livestock::Poultry,Tierhaltung::Geflügel,Production animale::Volaille,Livestock::Poultry
+gui       = Livestock::Poultry,Tierhaltung::Geflügel,Production animale::Volaille,Livestock::Poultry,Produzione animale::Pollame
 
 +short
  Collects the emission of NH3, the N excretion, and the N flux for the diffrent poultry categories per year.

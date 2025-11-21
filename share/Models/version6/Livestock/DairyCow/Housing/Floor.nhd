@@ -31,27 +31,27 @@ Zähner, M., Poteko, J., Zeyer, K., Schrade, S. 2017. Laufflächengestaltung: Em
        en = none
        de = keine
        fr = aucune
-       it = none
+       it = nessuna
     +++raised_feeding_stands
        en = elevated feed stalls
        de = Fressstand erhöht zum Laufgang
        fr = Stalle d'affouragement surélevée
-       it = raised_feeding_stands
+       it = postazione_alimentazione_rialzata_rispetto_al_corridoio
     +++floor_with_cross_slope_and_collection_gutter
        en = double-sloped solid floor operating with urine gutter
        de = Boden mit Quergefälle und Harnsammelrinne
        fr = Sol non perforé avec pente transversale
-       it = floor_with_cross_slope_and_collection_gutter
+       it = pavimento_con_pendenza_trasversale_e_canale_raccolta_urina
     +++floor_with_cross_slope_and_collection_gutter_and_raised_feeding_stands
        en = sloped solid floor with urine gutter and elevated feed stalls
        de = Boden mit Quergefälle und Harnsammelrinne und erhöhte Fressstände
        fr = Sol non perforé avec pente transv. + stalle d'affouragement
-       it = floor_with_cross_slope_and_collection_gutter_and_raised_feeding_stands
-  ++labels 
-    en = Mitigation options for loose housing systems
-    de = Emissionsmindernde Massnahmen bei Laufställen
-    fr = Mesures limitant les émissions dans les stabulations pour vâches laitières
-    it = Misure di riduzione delle emissioni per stalle a stabulazione libera
+       it = pavimento_con_pendenza_trasversale_e_canale_raccolta_urina_e_postazione_alimentazione_rialzata
+  ++labels
+    en = Emission mitigation options: floor
+    de = Emissionsmindernde Massnahmen Stallboden
+    fr = Mesures limitant les émissions sur les sols
+    it = Misure di riduzione delle emissioni pavimento della stalla
   ++units 
     en = -
   ++description
@@ -75,13 +75,12 @@ Zähner, M., Poteko, J., Zeyer, K., Schrade, S. 2017. Laufflächengestaltung: Em
        <p>Sol non perforé avec pente transversale :</p>
        <p>Sol non perforé, inclinées à 3 % vers une rigole longitudinale. Le sol et la rigole d’écoulement doivent être nettoyés au moyen d’un dispositif spécial au moins toutes les deux heures (commande munie d’une minuterie). Applicable pour stabulation libre avec production de lisier complet.</p>
        <p>Proposition de valeur standard: aucune</p>
-
     +++it
-       <p>Stalle d’affouragement surélevée :</p>
-       <p>Ce système se compose d'une aire d'alimentation surélevée et de places d’alimentation avec séparations. Les animaux sont contrôlés au niveau des cornadis ce-qui minimise l’accumulation des excréments dans l'aire d'alimentation. Applicable pour stabulation libre avec production de lisier complet et stabulation libre avec production de lisier et de fumier.</p>
-       <p>Sol non perforé avec pente transversale :</p>
-       <p>Sol non perforé, inclinées à 3 % vers une rigole longitudinale. Le sol et la rigole d’écoulement doivent être nettoyés au moyen d’un dispositif spécial au moins toutes les deux heures (commande munie d’une minuterie). Applicable pour stabulation libre avec production de lisier complet.</p>
-       <p>Proposition de valeur standard: aucune</p>
+       <p>Postazione di alimentazione rialzata rispetto al corridoio:</p>
+       <p>Questo sistema consiste in un'area di alimentazione rialzata (podio) e separazioni tra le postazioni di alimentazione. Gli animali sono controllati alla rastrelliera in modo che si accumulino il minor numero possibile di escrementi sulle superfici di stazionamento dell'area di alimentazione. Applicabile per stabulazione libera con produzione di liquame completo e stabulazione libera con produzione di liquame e letame.</p>
+       <p>Pavimento con pendenza trasversale e canale di raccolta urina:</p>
+       <p>Superfici di percorrenza con pavimentazione piana con pendenza trasversale del 3% e un canale longitudinale. Il pavimento e il canale di scolo dell'urina devono essere puliti con raschiatore e pulitore del canale almeno ogni 2 ore (controllo con timer). Applicabile per stabulazione libera con produzione di liquame completo.</p>
+       <p>Proposta per valore standard: nessuna</p>
 
 *** technical ***
 

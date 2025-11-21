@@ -51,8 +51,8 @@ is applied.
    
    
       +++it
-         <p>La somme des catégories‚ «Part de lisier épandu en été (de juin à août)» et‚ «Part de lisier épandu de septembre à mai y c.» doit donner 100%.  </p>
-         <p>Proposition de valeur standard: région de plaine: 48%; région de collines: 57%; région de montagne: 60%. Moyenne de toutes les régions: 53%. </p>
+         <p>La somma delle categorie Spandimento di liquame in estate (giugno, luglio, agosto) e Spandimento di liquame da settembre a maggio incluso deve dare il 100%. </p>
+         <p>Proposta per valori standard: regione di pianura: 48%; regione collinare: 57%; regione montana: 60%. Media di tutte le regioni: 53%.</p>
    
    
   +appl_autumn_winter_spring
@@ -94,20 +94,19 @@ is applied.
          </p>
       +++it
          <p>
-  	  La somme des catégories‚ «Part de lisier épandu en été (de juin à août)» et «Part de lisier 
-  	  épandu de septembre à mai y c.» doit donner 100%. 
+  	  La somma delle categorie Spandimento di liquame in estate (giugno, luglio, agosto) e Spandimento di liquame da settembre a maggio incluso deve dare il 100%. 
          </p>
          <p>
-            Proposition de valeur standard: région de plaine: 52%; région de collines: 43%; région
-            de montagne: 40%. Moyenne de toutes les régions: 47%.
+            Proposta per valori standard: regione di pianura: 52%; regione collinare: 43%; regione
+            montana: 40%. Media di tutte le regioni: 47%.
          </p>
          <p>
-            Selon l'annexe 2.6, chiffre 3.2.1 de l'Ord. sur la réduction des risques liés aux 
-            produits chimiques (ORRChim), paragraphe 1, l'épandage d'engrais contenant de l'azote 
-            n'est autorisé que pendant les périodes où les plantes peuvent absorber l'azote. Selon 
-            le paragraphe 2, l'épandage d'engrais liquides n'est autorisé que si le sol est apte à
-            les absorber. Ils ne doivent surtout pas être épandus lorsque le sol est saturé d'eau, 
-            gelé, couvert de neige ou desséché.
+            Secondo l'allegato 2.6, cifra 3.2.1 dell'Ordinanza sulla riduzione dei rischi nell'utilizzazione 
+            di determinate sostanze, preparati e oggetti particolarmente pericolosi (ORRPChim), paragrafo 1, i concimi 
+            contenenti azoto possono essere applicati solo nei periodi in cui le piante possono assorbire l'azoto. Secondo 
+            il paragrafo 2, i concimi liquidi possono essere applicati solo se il suolo è assorbente e 
+            recettivo. In particolare, non devono essere applicati quando il suolo è saturo d'acqua, 
+            gelato, coperto di neve o disseccato.
          </p>
 ?endif
 

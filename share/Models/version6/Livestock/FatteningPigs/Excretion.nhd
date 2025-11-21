@@ -32,7 +32,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
        en = Fattening pigs
        de = Mastschweine
        fr = Porcs à l'engrais
-       it = Porcs à l'engrais
+       it = Suini da ingrasso
   ++labels
     en = Animal category
     de = Tierkategorie
@@ -51,7 +51,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
      <p><Für Mastschweine sind keine Unterkategorien vorgesehen./p>
 
   +++it
-     <p><Für Mastschweine sind keine Unterkategorien vorgesehen./p>
+     <p>Per i suini da ingrasso non sono previste sottocategorie.</p>
 
 +animals
   type = float
@@ -75,7 +75,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
         <p>Porcs à l'engrais: animaux pesant de 25 kg jusqu'à l'abattage </p>
 
      +++it
-        <p>Porcs à l'engrais: animaux pesant de 25 kg jusqu'à l'abattage </p>
+        <p>Suini da ingrasso: animali con peso vivo da 25 kg fino alla macellazione</p>
 
 +dimensioning_barn
   type = float
@@ -100,7 +100,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          <p>Si "Standard" est introduisé, la valeur du nombre d'animaux est utilisée.</p>
 
       +++it
-         <p>Si "Standard" est introduisé, la valeur du nombre d'animaux est utilisée.</p>
+         <p>Se si seleziona "Standard", viene utilizzato il valore del numero di animali.</p>
 
 ?if !Kantonal_LU
   +inp_n_excretion
@@ -157,12 +157,11 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
             pp. 4/1-4/23.</p>
 
       +++it
-         <p>Si "Standard" est introduisé, la valeur de référence pour
-            les excrétions azotées d'après PRIF 2017 (Richner et al., 2017)
-            est utilisée (PRIF: « Principes de la fertilisation des
-            cultures agricoles en Suisse » ). Si un nombre est introduisé
-            une valeur pour les excrétions azotées peut être déterminée par
-            l'utilisateur/-trice.</p>
+         <p>Se si seleziona <b>Standard</b>, viene utilizzato il valore di riferimento per
+            l'escrezione di azoto secondo GRUD 2017 (Richner et al., 2017)
+            (GRUD: Principi per la concimazione delle colture agricole in Svizzera).
+            Se viene inserito un numero, il valore per l'escrezione di azoto
+            può essere determinato dall'utente.</p>
          <p>Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner,
             M., Menzi, H., 2017. 4/ Eigenschaften und Anwendung von
             Düngern, in: Richner, W., Sinaj, S. (Eds.), Grundlagen für
@@ -198,8 +197,8 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          dans les excrétions peut être déterminée par l'utilisateur/-trice. Cette option est destinée aux cas où la proportion de TAN dans les excréments est connue, par exemple à partir d'un modèle d'alimentation.</p>
 
       +++it
-         <p>Si <b>Standard</b> est introduisé le pourcentage de TAN dans les excrétions des animaux est utilisée comme défini par le modèle Agrammon. Si un nombre est introduisé une valeur pour la proportion de TAN
-         dans les excrétions peut être déterminée par l'utilisateur/-trice. Cette option est destinée aux cas où la proportion de TAN dans les excréments est connue, par exemple à partir d'un modèle d'alimentation.</p>
+         <p>Se si seleziona <b>Standard</b>, la quota di TAN nelle escrezioni degli animali viene utilizzata come definito dal modello Agrammon. Se viene inserito un numero, un valore per la quota di TAN
+         nelle escrezioni può essere determinato dall'utente. Questa opzione è destinata ai casi in cui la quota di TAN nelle escrezioni è nota, ad esempio da un modello di alimentazione.</p>
 
 ?endif
 
@@ -289,28 +288,25 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
 
 
    +++it
-    <p>Les teneurs des aliments utilisés sur l'exploitation doivent être introduites.</p>
+    <p>Devono essere inseriti i dati del mangime utilizzato nell'azienda.</p>
         <ul>
-          <li>En cas d'alimentation monophase (aucun changement d'aliment pendant toute la
-            durée de l'engraissement de 25 kg jusqu'à l'abattage),
-            introduire la teneur en matière azotée de l'aliment utilisé,
-            puis introduire la valeur de la catégorie Phase
-            d'engraissement 1 plus bas dans les catégories Phase
-            d'engraissement 2 et 3.</li>
-          <li>En cas d'alimentation par phase: introduire la teneur en
-             matière azotée de l'aliment utilisé sur l'exploitation pendant
-             la phase 1. </li>
+          <li>In caso di alimentazione monofase (da 25 kg fino alla macellazione stesso mangime
+              utilizzato): inserire il contenuto di PG del mangime monofase utilizzato
+              e inserire lo stesso valore per la fase d'ingrasso 1 nelle
+              fasi d'ingrasso 2 e 3 sotto.</li>
+          <li>In caso di alimentazione per fasi: inserire il contenuto di PG del mangime
+             utilizzato nell'azienda nella fase d'ingrasso 1.</li>
         </ul>
 
-	<p>Proposition de valeurs standard:</p>
+	<p>Valori standard da inserire se i contenuti del mangime utilizzato nell'azienda non sono noti:</p>
 
         <ul>
-        <li>En cas d'alimentation monophase: 151 g MA /kg</li>
-          <li>Pour la phase d’engraissement 1 en cas d’alimentation en 2 phases : 160 g MA /kg; pour la phase d’engraissement 1 en cas d’alimentation en 3 phases : 165 g MA /kg</li>
+        <li>In caso di alimentazione monofase: 151 g PG /kg</li>
+          <li>Fase d'ingrasso 1 in caso di alimentazione a 2 fasi: 160 g PG /kg e in caso di alimentazione a 3 fasi: 165 g PG /kg</li>
         </ul>
-        <p>Si <b>Standard</b> est introduit l'excrétion de N est calculée sur la basé d'alimentation monophase avec 151 g MA /kg.</p>
+        <p>Se si seleziona <b>Standard</b>, l'escrezione di N viene calcolata per alimentazione monofase con 151 g PG /kg.</p>
 
-         <p>Source des teneurs indiquées : von Wyl, H., Küng, T., Kupper, T., Spring, P. 2023. Rohproteingehalte in Schweinefutter: Bestandsaufnahme 2021. Agrarforschung Schweiz 14: 116–121.</p>
+         <p>Fonte dei contenuti indicati: von Wyl, H., Küng, T., Kupper, T., Spring, P. 2023. Rohproteingehalte in Schweinefutter: Bestandsaufnahme 2021. Agrarforschung Schweiz 14: 116–121.</p>
 
 
 +feeding_phase_2_crude_protein
@@ -387,21 +383,21 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
 
 
    +++it
-    <p>Les teneurs des aliments utilisés sur l'exploitation doivent être introduites.</p>
+    <p>Devono essere inseriti i dati del mangime utilizzato nell'azienda.</p>
       </p><ul>
-          <li>En cas d'alimentation monophase: introduire la valeur de la catégorie Phase d'engraissement 1.</li>
-          <li>En cas d'alimentation en 2 phases: introduire la teneur en matière azotée de l'aliment utilisé sur l'exploitation pendant la phase 2.</li>
-          <li>En cas d'alimentation en 3 phases: introduire la teneur en matière azotée de l'aliment utilisé sur l'exploitation pendant la phase 2.</li>
+          <li>In caso di alimentazione monofase: inserire lo stesso valore della fase d'ingrasso 1.</li>
+          <li>In caso di alimentazione a 2 fasi: inserire il contenuto di PG del mangime utilizzato nell'azienda nella fase d'ingrasso 2 e inserire lo stesso valore per la fase d'ingrasso 3 sotto.</li>
+          <li>In caso di alimentazione a 3 fasi: inserire il contenuto di PG del mangime utilizzato nell'azienda nella fase d'ingrasso 2.</li>
         </ul>
 
-	<p>Proposition de valeurs standard:</p>
+	<p>Proposta per valori standard:</p>
 
         <ul>
-          <li>Pour la phase d’engraissement 2 en cas d’alimentation en 2 phases : 136 g MA /kg; pour la phase d’engraissement 2 en cas d’alimentation en 3 phases : 140 g MA /kg</li>
+          <li>Fase d'ingrasso 2 in caso di alimentazione a 2 fasi: 136 g PG /kg e in caso di alimentazione a 3 fasi: 140 g PG /kg</li>
         </ul>
-        <p>Si <b>Standard</b> est introduit l'excrétion de N est calculée sur la basé d'alimentation monophase avec 151 g MA /kg.</p>
+        <p>Se si seleziona <b>Standard</b>, l'escrezione di N viene calcolata per alimentazione monofase con 151 g PG /kg.</p>
 
-         <p>Source des teneurs indiquées : von Wyl, H., Küng, T., Kupper, T., Spring, P. 2023. Rohproteingehalte in Schweinefutter: Bestandsaufnahme 2021. Agrarforschung Schweiz 14: 116–121.</p>
+         <p>Fonte dei contenuti indicati: von Wyl, H., Küng, T., Kupper, T., Spring, P. 2023. Rohproteingehalte in Schweinefutter: Bestandsaufnahme 2021. Agrarforschung Schweiz 14: 116–121.</p>
 
 
 +feeding_phase_3_crude_protein
@@ -475,21 +471,21 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
 
 
    +++it
-    <p>Les teneurs des aliments utilisés sur l'exploitation doivent être introduites.</p>
+    <p>Devono essere inseriti i dati del mangime utilizzato nell'azienda.</p>
         <ul>
-          <li>En cas d'alimentation monophase: introduire la valeur de la catégorie Phase d'engraissement 1.</li>
-          <li>En cas d'alimentation en 2 phases: introduire la valeur de la catégorie Phase d'engraissement 2.</li>
-          <li>En cas d'alimentation en 3 phases: introduire la teneur en matière azotée de l'aliment utilisé sur l'exploitation pendant la phase 3.</li>
+          <li>In caso di alimentazione monofase: inserire lo stesso valore della fase d'ingrasso 1.</li>
+          <li>In caso di alimentazione a 2 fasi: inserire lo stesso valore della fase d'ingrasso 2.</li>
+          <li>In caso di alimentazione a 3 fasi: inserire il contenuto di PG del mangime utilizzato nell'azienda nella fase d'ingrasso 3.</li>
         </ul>
 
-	<p>Proposition de valeurs standard:</p>
+	<p>Proposta per valori standard:</p>
 
         <ul>
-          <li>Pour la phase d'engraissement 3 en cas d'alimentation en 3 phases: 130 g MA /kg</li>
+          <li>Fase d'ingrasso 3 in caso di alimentazione a 3 fasi: 130 g PG /kg</li>
         </ul>
-        <p>Si <b>Standard</b> est introduit l'excrétion de N est calculée sur la basé d'alimentation monophase avec 151 g MA /kg.</p>
+        <p>Se si seleziona <b>Standard</b>, l'escrezione di N viene calcolata per alimentazione monofase con 151 g PG /kg.</p>
 
-         <p>Source des teneurs indiquées : von Wyl, H., Küng, T., Kupper, T., Spring, P. 2023. Rohproteingehalte in Schweinefutter: Bestandsaufnahme 2021. Agrarforschung Schweiz 14: 116–121.</p>
+         <p>Fonte dei contenuti indicati: von Wyl, H., Küng, T., Kupper, T., Spring, P. 2023. Rohproteingehalte in Schweinefutter: Bestandsaufnahme 2021. Agrarforschung Schweiz 14: 116–121.</p>
 
 
 +energy_content
@@ -537,11 +533,11 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
 
 
     +++it
-       <p>Proposition de valeurs standard: 13.9 MJ EDP /kg</p>
+       <p>Proposta per valore standard: 13.9 MJ UFL /kg</p>
 
-       <p>Si <b>Standard</b> est introduit l'excrétion de N est calculée sur la basé d'alimentation monophase avec 13.9 MJ EDP /kg.</p>
+       <p>Se si seleziona <b>Standard</b>, l'escrezione di N viene calcolata per alimentazione monofase con 13.9 MJ UFL /kg.</p>
 
-         <p>Source des teneurs indiquées : von Wyl, H., Küng, T., Kupper, T., Spring, P. 2023. Rohproteingehalte in Schweinefutter: Bestandsaufnahme 2021. Agrarforschung Schweiz 14: 116–121.</p>
+         <p>Fonte dei contenuti indicati: von Wyl, H., Küng, T., Kupper, T., Spring, P. 2023. Rohproteingehalte in Schweinefutter: Bestandsaufnahme 2021. Agrarforschung Schweiz 14: 116–121.</p>
 
 
 *** technical ***
@@ -758,8 +754,7 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
                 . "The excretion was set to " . Tech(minimal_N_excretion_fattening_pigs) . " kg N per animal!",
           de => "Die gewählte N Ausscheidung liegt unterhalb des Minimums für Mastschweine! \n"
                 . "Die Ausscheidung wurde auf ". Tech(minimal_N_excretion_fattening_pigs) ." kg N pro Tier gesetzt!",
-          fr => "La teneur de la ration en énergie et en matière azotée engendrent une ",
-              ."excrétion  de N inférieure au minimum prévu pour les porcs à l'engrais. L'excrétion a été fixée à ". Tech(minimal_N_excretion_fattening_pigs) ."kg N par animal. \n",
+          fr => "La teneur de la ration en énergie et en matière azotée engendrent une excrétion de N inférieure au minimum prévu pour les porcs à l'engrais. L'excrétion a été fixée à ". Tech(minimal_N_excretion_fattening_pigs) ."kg N par animal. \n",
           it => "Il contenuto selezionato di energia e proteine grezze della razione causano una escrezione di N al di sotto del minimo per i suini da ingrasso!\nL'escrezione è stata impostata su " . Tech(minimal_N_excretion_fattening_pigs) . " kg N per animale!",
         });
         return Tech(minimal_N_excretion_fattening_pigs);

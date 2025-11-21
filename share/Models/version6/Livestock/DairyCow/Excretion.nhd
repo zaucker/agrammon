@@ -103,8 +103,8 @@ Richner, W., Flisch, R., Mayer, J., Schlegel, P., Zähner, M., Menzi, H., 2017. 
          <p>Si "Standard" est sélectionné, la valeur du nombre d'animaux est utilisée.</p>
 
       +++it
-         <p>Pour les stabulations libres: mentionner toutes les places accessibles aux animaux. Le nombre de places dans l'étable peut être supérieur au cheptel actuel, dans la perspective d'un agrandissement futur de l'exploitation p.ex. Dans les stabulations libres, un nombre de places supérieur au nombre d'animaux signifie une augmentation de la surface souillée par animal. Au contraire, dans les stabulations entravées, un nombre de places supérieur au nombre d'animaux ne conduit pas à une augmentation de la surface souillée par animal, vu que ces places libres ne sont pas accessibles aux animaux.  </p>
-         <p>Si "Standard" est sélectionné, la valeur du nombre d'animaux est utilisée.</p>
+         <p>Per le stabulazioni libere: indicare tutti i posti stalla accessibili agli animali. Il numero di posti stalla può essere superiore all'effettivo attuale, ad esempio in prospettiva di un futuro ampliamento dell'azienda. Nelle stabulazioni libere, un numero di posti superiore al numero di animali significa un aumento della superficie sporca per animale. Al contrario, nelle stabulazioni a posta fissa, un numero di posti superiore al numero di animali non porta ad un aumento della superficie sporca per animale, poiché questi posti liberi non sono accessibili agli animali.</p>
+         <p>Selezionando "Standard", il numero di posti stalla viene equiparato al numero di animali inserito.</p>
 
 ?if !Kantonal_LU
   +inp_n_excretion

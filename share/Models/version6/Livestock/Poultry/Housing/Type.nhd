@@ -27,22 +27,22 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
         en = manure_belt_with_manure_belt_drying_system
 	de = Kotbandentmistung_mit_Kotbandtrocknung
 	fr = Tapis_d'évacuation_du_fumier_avec_séchage_sur_tapis_à_fiente
-	it = manure_belt_with_manure_belt_drying_system
+	it = Rimozione_letame_nastro_con_essiccazione
     +++manure_belt_without_manure_belt_drying_system
         en = manure_belt_without_manure_belt_drying_system
 	de = Kotbandentmistung_ohne_Kotbandtrocknung
 	fr = Tapis_d'évacuation_du_fumier_sans_séchage_sur_tapis_à_fiente
-	it = manure_belt_without_manure_belt_drying_system
+	it = Rimozione_letame_nastro_senza_essiccazione
     +++deep_pit
         en = deep_pit
 	de = Kotgrube
 	fr = Fosse_à_déjections
-	it = deep_pit
+	it = Fossa_letame
     +++deep_litter
         en = deep_litter
 	de = Bodenhaltung
 	fr = Litière_profonde
-	it = deep_litter
+	it = Allevamento_a_terra
   ++labels 
     en = Housing system
     de = Aufstallung
@@ -85,16 +85,16 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
 
 
     +++it
-       <p>Tapis d'évacuation du fumier sans séchage sur tapis à fientes: système comportant des tapis sous la stabulation qui évacuent le fumier dans un contenant à l'extérieur du poulailler. </p>
-       <p>Tapis d'évacuation du fumier avec séchage sur tapis à fientes: comme tapis d'évacuation du fumier sans séchage sur tapis à fientes, sauf que les fientes sont rapidement séchées sur le tapis à un taux d'env. 60% de MS grâce à une ventilation permanente </p>
-       <p>Litière profonde: système comprenant une surface recouverte de litière. C'est le système usuel pour les cheptels de petite taille. </p>
-       <p>Fosse à déjections: système dans lequel le fumier s'accumule pendant un certain temps sous la stabulation. Le stockage du fumier ou des déjections dans un contenant couvert à l'extérieur du poulailler n'est pas compris dans cette catégorie. </p>
-       <p>Propositions de valeurs standard:</p>
-       <p>Poules pondeuses: tapis d'évacuation du fumier sans séchage sur tapis à fientes si plus de 150 animaux; autrement: litière profonde</p>
-       <p>Poulettes: tapis d'évacuation du fumier sans séchage sur tapis à fientes si plus de 150 animaux; autrement: litière profonde</p>
-       <p>Poulets à l'engrais: litière profonde</p>
-       <p>Dindes: litière profonde</p>
-       <p>Autre volaille: litière profonde</p>
+       <p>Rimozione del letame tramite nastro trasportatore senza essiccazione: sistema con nastri trasportatori sotto la stabulazione che trasportano il letame in un contenitore all'esterno della stalla.</p>
+       <p>Rimozione del letame tramite nastro trasportatore con essiccazione: come la rimozione del letame tramite nastro trasportatore senza essiccazione; inoltre il letame viene rapidamente essiccato tramite ventilazione fino a circa il 60% di sostanza secca</p>
+       <p>Allevamento a terra: sistema con superficie lettiera. L'allevamento a terra è il sistema abituale per gli allevamenti di piccole dimensioni.</p>
+       <p>Fossa del letame: sistema in cui il letame si accumula sotto la stabulazione per un periodo di tempo prolungato. Lo stoccaggio del letame o delle deiezioni in un contenitore coperto all'esterno della stalla non rientra in questa categoria.</p>
+       <p>Proposta di valori standard:</p>
+       <p>Galline ovaiole: rimozione del letame tramite nastro trasportatore senza essiccazione per allevamenti di oltre 150 animali; altrimenti: allevamento a terra</p>
+       <p>Pollastre: rimozione del letame tramite nastro trasportatore senza essiccazione per allevamenti di oltre 150 animali; altrimenti: allevamento a terra</p>
+       <p>Polli da ingrasso: allevamento a terra</p>
+       <p>Tacchini da ingrasso: allevamento a terra</p>
+       <p>Altri volatili: allevamento a terra</p>
 
 
 +manure_removal_interval
@@ -104,32 +104,32 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
         en = less_than_twice_a_month
 	de = weniger_als_2_mal_pro_Monat
 	fr = moins_de_2_fois_par_mois
-	it = less_than_twice_a_month
+	it = meno_di_2_volte_al_mese
     +++twice_a_month
         en = twice_a_month
 	de = zweimal_pro_Monat
 	fr = 2_fois_par_mois
-	it = twice_a_month
+	it = 2_volte_al_mese
     +++3_to_4_times_a_month
         en = 3_to_4_times_a_month
 	de = 3_bis_4_mal_pro_Monat
 	fr = 3_à_4_fois_par_mois
-	it = 3_to_4_times_a_month
+	it = da_3_a_4_volte_al_mese
     +++more_than_4_times_a_month
         en = more than 4 times a month but less than once a day
 	de = Mehr_als_4_mal_pro_Monat_bis_weniger_als_1_mal_pro_Tag
 	fr = plus_de_4_fois_par_mois_et_moins_d'une_fois_par_jour
-	it = more_than_4_times_a_month_and_less_than_once_a_day
+	it = più_di_4_volte_al_mese_fino_a_meno_di_1_volta_al_giorno
     +++once_a_day
         en = once_a_day
 	de = 1_mal_pro_Tag
 	fr = une_fois_par_jour
-	it = once_a_day
+	it = 1_volta_al_giorno
     +++no_manure_belt
         en = no_manure_belt
 	de = keine_Kotbandentmistung
 	fr = pas_de_tapis_d'évacuation
-	it = no_manure_belt
+	it = nessun_nastro_rimozione_letame
   ++labels 
     en = Manure removal interval (manure belts)
     de = Entmistungsintervall bei Kotbandentmistung
@@ -160,11 +160,11 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
        <p>3 à 4 fois par mois pour les poulettes</p>
 
     +++it
-       <p>Séchage forcé du fumier sur le tapis d'évacuation:</p>
-       <p>Avec ce système, les fientes sont rapidement séchées sur le tapis à un taux d'env. 60% de MS grâce à une ventilation permanente.</p>
-       <p>Proposition de valeurs standard:</p>
-       <p>Plus de 4 fois par mois et moins d'une fois par jour pour les poules pondeuses</p>
-       <p>3 à 4 fois par mois pour les poulettes</p>
+       <p>Essiccazione del letame sul nastro trasportatore:</p>
+       <p>Il letame deve essere asciutto e conservato in contenitore chiuso o coperto con telo impermeabile</p>
+       <p>Proposta di valori standard:</p>
+       <p>Più di 4 volte al mese fino a meno di 1 volta al giorno per galline ovaiole</p>
+       <p>3 a 4 volte al mese per pollastre</p>
 
 +drinking_system
   type  = enum
@@ -173,12 +173,12 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
         en = Non-leaking drinking system
 	de = Nicht_tropfendes_Tränkesystem
 	fr = Abreuvoir_empêchant_les_fuites
-	it = drinking_nipples
+	it = Sistema_abbeveraggio_non_gocciolante
     +++bell_drinkers
         en = bell_drinkers
 	de = Wasserbehälter
 	fr = Abreuvoir_à_bol
-	it = bell_drinkers 
+	it = Abbeveratoi_a_vaschetta
   ++labels 
     en = Drinking system
     de = Tränkesystem
@@ -216,13 +216,14 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
 
 
     +++it
-       <p>Proposition de valeurs standard:</p>
-       <p>Poules pondeuses: Abreuvoir empêchant les fuites pour un cheptel supérieur à 50 animaux; abreuvoir à bol pour un cheptel inférieur à 50 animaux</p>
-       <p>Poulettes: Abreuvoir empêchant les fuites</p>
-       <p>Poulets à l'engrais: Abreuvoir empêchant les fuites</p>
-       <p>Dindes: Abreuvoir à bol</p>
-       <p>Autre volaille: Abreuvoir à bol</p>
-       <p>Dans le cas d'abreuvoirs à godets, choisir ‚Abreuvoir empêchant les fuites' </p>
+       <p>Proposta di valori standard:</p>
+       <p>Galline ovaiole: sistema di abbeveraggio non gocciolante per allevamenti da 50 animali o più</p>
+       <p>Galline ovaiole: abbeveratoi a vaschetta per allevamenti di meno di 50 animali</p>
+       <p>Pollastre: sistema di abbeveraggio non gocciolante</p>
+       <p>Polli da ingrasso: sistema di abbeveraggio non gocciolante</p>
+       <p>Tacchini da ingrasso: abbeveratoi a vaschetta</p>
+       <p>Altri volatili: abbeveratoi a vaschetta</p>
+       <p>Se sono presenti abbeveratoi a tazza: selezionare sistema di abbeveraggio non gocciolante</p>
 
 
 *** technical ***
@@ -451,7 +452,7 @@ Reidy B, Webb J, Misselbrook TH, Menzi H, Luesink HH, Hutchings NJ, Eurich-Mende
           en => "Please enter under manure removal interval 'No manure belt' in combination with the housing systems deep pit or deep litter!",
           de => "Bitte wählen Sie unter Entmistungsintervall 'keine Kotbandentmistung' in Kombination mit der Aufstallung, Bodenhaltung oder Kotgrube!",
           fr => "Sous ‘Fréquence d'évacuation du fumier', veuillez choisir la catégorie ‘Pas de tapis d'évacuation' en combinaison avec la stabulation ‘Litière profonde' ou ‘Fosse à déjections' !",
-          it => "Selezionare "nessuna rimozione del nastro del letame" nell'intervallo di rimozione del letame in combinazione con alloggiamento, alloggiamento a pavimento o fossa del letame!",
+          it => "Selezionare 'nessuna rimozione del nastro del letame' nell'intervallo di rimozione del letame in combinazione con alloggiamento, alloggiamento a pavimento o fossa del letame!",
         });
       }
       return 1; # default no correctios

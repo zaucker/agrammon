@@ -41,7 +41,7 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
 
 
     +++it
-       <p>Proposition de valeur standard: 12%</p>
+       <p>Proposta per valore standard: 12%</p>
 
 
 +share_covered_basin  
@@ -69,8 +69,8 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
        <p>Proposition de valeur standard: 70%</p>
 
     +++it
-       <p>Cette part comprend les fientes ou le fumier stocké sous une couverture en dur, dans le sens d'un contenant fermé, ou sous un autre type de couverture, p.ex. une bâche. </p>
-       <p>Proposition de valeur standard: 70%</p>
+       <p>Come copertura si intende una copertura solida, nel senso di un contenitore chiuso, o un'altra copertura come ad es. un telo. Coperture che impediscono lo scambio d'aria tra la superficie del deposito di letame e l'aria ambiente, come ad es. un contenitore chiuso o un'altra copertura come un telo resistente allo strappo.</p>
+       <p>Proposta per valore standard: 70%</p>
 
 ?if !Kantonal_LU
   +free_correction_factor
@@ -128,18 +128,18 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
   	<p>Proposition valeur standard: 0 %.</p>
       +++it
   	<p>
-             Hier kann die emissionsmindernde Wirkung einer frei wählbaren Massnahme eingesetzt 
-             werden (z.B. ein neuer Typ Abdeckung). Die eingegebene Zahl entspricht 
-   	   der  Emissionsminderung in Prozent (z.B. Eingabe 30 %; die Emission aus dem 
-  	   Mistlager nimmt um 30% ab). Es wird empfohlen, die gewählte Massnahme in der 
-  	   Spalte Kommentar aufzuführen und den gewählten Wert zur Emissionsminderung zu begründen.
+             Qui può essere inserito l'effetto di riduzione delle emissioni di una misura liberamente selezionabile
+             (ad es. un nuovo tipo di copertura). Il numero inserito corrisponde alla
+   	   riduzione delle emissioni in percentuale (ad es. inserimento 30%; le emissioni dal
+  	   deposito di letame diminuiscono del 30%). Si consiglia di indicare la misura scelta nella
+  	   colonna Commento e di giustificare il valore scelto per la riduzione delle emissioni.
           </p>
   	<p>
-  	   Diese Funktion richtet sich vor allem an Anwender/-innen, welche Emissionen 
-             prognostizieren und die Wirkung neuer, aktuell noch nicht bekannter Technologien 
-             zur Emissionsminderung berücksichtigen müssen. 
+  	   Questa funzione si rivolge soprattutto agli utenti che
+             prevedono le emissioni e devono tenere conto dell'effetto di nuove tecnologie
+             per la riduzione delle emissioni attualmente ancora sconosciute.
           <p>
-  	<p>Vorschlag für Standardwert: 0 %.</p>
+  	<p>Proposta per valore standard: 0%.</p>
 ?endif
 
 *** technical ***
@@ -204,8 +204,8 @@ European Agricultural Gaseous Emissions Inventory Researchers Network
                       . "\% eingegeben!\n", 
                   fr=>"Vous avez introduit une mesure supplémentaire limitant les émissions du stock "
                       . "de fumier de volaille de " . In(free_correction_factor) . "\%.\n",
-                  it=>"Vous avez introduit une mesure supplémentaire limitant les émissions du stock "
-                      . "de fumier de volaille de " . In(free_correction_factor) . "\%.\n"
+                  it=>"Ha inserito una misura aggiuntiva di riduzione delle emissioni per il deposito "
+                      . "di lettiera di pollame del " . In(free_correction_factor) . "\%.\n"
                  });
         return 1 - In(free_correction_factor)/100;
        

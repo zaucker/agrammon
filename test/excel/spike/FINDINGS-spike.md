@@ -502,7 +502,7 @@ cosmetic exact-XML mismatches). Each is a KNOWN limitation of the string path:
 1. **new-basic — column widths dropped.** The fast serializer rebuilds only
    `<sheetData>`; it does not re-emit `<cols>` (column `custom-width`/`width`).
    On reload `worksheets[0].columns[0]` is an undefined `Any`, so the test dies:
-   `No such method 'custom-width' for invocant of type 'Any'` (styles.rakutest:176).
+   `No such method 'custom-width' for invocant of type 'Any'` (new-basic.rakutest:176).
    Everything BEFORE the column assertions passed under fast, including the
    Text-cell and Number-cell value round-trips (tests 56–59) — so the cell
    payload is correct; the gap is purely the missing `<cols>` block.

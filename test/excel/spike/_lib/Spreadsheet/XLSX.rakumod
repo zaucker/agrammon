@@ -292,6 +292,9 @@ class Spreadsheet::XLSX does Spreadsheet::XLSX::Root {
         # path. $fast defaults to the Bool type object (undefined) when not
         # passed, so // correctly falls through to the env check; passing
         # :fast / :!fast overrides it.
+        # NOTE (spike harness only): any non-empty env value is truthy, so
+        # AGRAMMON_XLSX_FORCE_FAST="0"/"false" still forces fast — UNSET the var
+        # to disable. This trigger also reaches save() (it delegates to to-blob).
         my $use-fast = $fast // ?%*ENV<AGRAMMON_XLSX_FORCE_FAST>;
         if $use-fast {
             # Lazy require breaks the use-cycle (StringSerializer -> compare ->

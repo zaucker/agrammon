@@ -287,7 +287,13 @@ class Spreadsheet::XLSX does Spreadsheet::XLSX::Root {
     #| needs a byte baseline of all package parts; it obtains that via dom-blob
     #| (NOT to-blob) so it never re-enters this fast path -> no recursion.
     method to-blob(Bool :$fast --> Blob) {
-        if $fast {
+        # Explicit :fast wins; env var AGRAMMON_XLSX_FORCE_FAST is the fallback so
+        # UNMODIFIED upstream tests (plain .to-blob) can route through the fast
+        # path. $fast defaults to the Bool type object (undefined) when not
+        # passed, so // correctly falls through to the env check; passing
+        # :fast / :!fast overrides it.
+        my $use-fast = $fast // ?%*ENV<AGRAMMON_XLSX_FORCE_FAST>;
+        if $use-fast {
             # Lazy require breaks the use-cycle (StringSerializer -> compare ->
             # Spreadsheet::XLSX). Resolves to the StringSerializer on the -I path
             # (test/excel/spike/lib).

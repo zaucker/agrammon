@@ -437,3 +437,115 @@ needed.
   string-serializer-only artifact; the DOM path emits no such attribute), while
   `compare-workbooks` still reports 0 diffs. So: real delegation, byte-different,
   semantically identical, no recursion.
+
+## 2026-06-01 — Task 9: upstream WRITE tests through the `:fast` path
+
+### Upstream source
+Cloned the matching suite into `test/excel/spike/upstream-checkout/`
+(git-ignored; nested clone, NOT committed):
+
+    git clone --depth 1 --branch 0.3.5 \
+      https://github.com/raku-community-modules/Spreadsheet-XLSX upstream-checkout
+
+- Tag: **0.3.5** (clean — META6.json `"version": "0.3.5"`).
+- Commit: **0a1d559b3ee2bd844fdcc5b58dfd26c58e21facd**.
+- No version drift: the suite matches the `_src`/`_lib` we extracted from 0.3.5.
+
+### Write subset identified
+`grep -rl "to-blob\|create-worksheet\|\.save" upstream-checkout/t/`:
+
+- `new-basic.rakutest`     — create-worksheet, Text+Number cells, **column widths (`<cols>`)**, full `to-blob` → `load` round-trip, core-properties.
+- `set-convenience.rakutest` — `.set` convenience (bold/font/number-format styles), round-trip of styled Text+Number cells.
+- `styles.rakutest`        — loads `test-data/stylish.xlsx` (rich styles + **rich-text / shared-string** cells), then `to-blob` → `load` and re-asserts the full style + cell model.
+- `escaping.rakutest`      — Text cells with `&` and `<`, round-trip.
+
+OUT OF SCOPE (read-only, never call `to-blob`/create/save): `0-load-test`,
+`1-README-examples`, `read-basic`. Not run against `:fast`.
+
+### Step 3 — BASELINE (normal DOM path, `-Itest/excel/spike/_lib`)
+All four write tests **PASS** unmodified — confirms the copied `_lib` is sound
+before touching `:fast`. No pre-existing baseline failures.
+(styles resolves its fixture via `$*PROGRAM.parent.add('test-data/stylish.xlsx')`,
+so no `-I` / CWD adjustment was needed; the only delta vs the fast run is the
+env var.)
+
+    PERL5LIB=Inline/perl5 raku -Itest/excel/spike/_lib <test-file>   # all 4: exit 0
+
+### Step 4 — env-var fast trigger
+`_lib/Spreadsheet/XLSX.rakumod` `to-blob` now honors
+`AGRAMMON_XLSX_FORCE_FAST` as a FALLBACK; explicit `:fast` / `:!fast` still wins:
+
+    my $use-fast = $fast // ?%*ENV<AGRAMMON_XLSX_FORCE_FAST>;
+
+Verified the `//` precedence empirically: unset `:fast` is the `Bool` type
+object (undefined) so it falls through to the env check; `:fast`/`:!fast`
+override. Re-ran the spike's own `t/02-fast-seam.rakutest` after the edit:
+**still 3/3** (incl. "0 diffs vs DOM" and the `xml:space` delegation proof).
+
+Runner: `test/excel/spike/run-upstream-tests.sh` (chmod +x) — same `-I` set as
+the baseline, only adds `AGRAMMON_XLSX_FORCE_FAST=1`.
+
+### Step 5 — RESULTS through `:fast`
+
+| upstream test       | feature(s) exercised                                  | baseline | fast | failure class |
+|---------------------|-------------------------------------------------------|----------|------|---------------|
+| escaping            | Text cells w/ `&` `<` (xml-escape), round-trip        | PASS     | **PASS** | — |
+| set-convenience     | `.set` styles (bold/font/number-format), Text+Number round-trip | PASS | **PASS** | — |
+| new-basic           | Text+Number round-trip PASS, then **column widths** round-trip | PASS | **FAIL** (got 59/68 ok, then dies) | GENUINE GAP |
+| styles              | round-trip of **rich-text / shared-string** cells     | PASS     | **FAIL** (dies in deserialization subtest) | GENUINE GAP |
+
+**Headline: 2 of 4 upstream write tests pass through `:fast`.**
+
+Both failures are GENUINE correctness gaps (not pre-existing `_lib` issues, not
+cosmetic exact-XML mismatches). Each is a KNOWN limitation of the string path:
+
+1. **new-basic — column widths dropped.** The fast serializer rebuilds only
+   `<sheetData>`; it does not re-emit `<cols>` (column `custom-width`/`width`).
+   On reload `worksheets[0].columns[0]` is an undefined `Any`, so the test dies:
+   `No such method 'custom-width' for invocant of type 'Any'` (styles.rakutest:176).
+   Everything BEFORE the column assertions passed under fast, including the
+   Text-cell and Number-cell value round-trips (tests 56–59) — so the cell
+   payload is correct; the gap is purely the missing `<cols>` block.
+
+2. **styles — rich-text / shared-string cells produce unreadable XML.** The
+   stylish.xlsx fixture has a shared-string rich-text cell (A7 = 5 styled runs)
+   and other shared-string cells. The fast path emits EVERY non-Number cell as
+   an `inlineStr` `<is><t xml:space="preserve">…</t></is>` built from
+   `$cell.value`. For shared-string / empty-value cells this yields a `<t>`
+   the loader rejects on reload:
+
+       Simple property element 't' doesn't have a value
+         in sub bad-property (XMLHelpers.rakumod:108)
+         in sub cell-from-xml (Cell.rakumod:190)
+         ... in styles.rakutest:162
+
+   i.e. the fast sheet round-trips its cells back through the loader and the
+   loader cannot parse the inlineStr `<t>` the fast path wrote for these cells.
+   This is WRONG output (data the library can't read back), not merely
+   different-but-equivalent.
+
+### Root cause (systemic, not 2 unrelated bugs)
+Both failures trace to the SAME design choice: the fast path rebuilds ONLY
+`<sheetData>` for the cell kinds it understands (Number → `<v>`, everything
+else → `inlineStr`) and reproduces nothing else of the worksheet. So:
+- structural worksheet features outside `<sheetData>` are lost → `<cols>`
+  (new-basic), and by the same token merged cells / spans / formulas would be
+  too;
+- cell kinds beyond Number/plain-Text are coerced to a single flattened
+  `inlineStr`, which (a) loses the rich-text run structure / shared-string
+  identity and (b) for empty/structured values emits a `<t>` the loader can't
+  reload (styles).
+
+The two tests that PASS (escaping, set-convenience) only ever write plain
+Text + Number cells with simple styles and no `<cols>` — exactly the subset the
+fast path supports — which is why they round-trip cleanly.
+
+### Bearing on the recommendation
+For the Agrammon exporter (its real workload is plain Number/Text cells with
+styles, no rich-text, no per-column width round-trip dependence) the fast path
+is adequate — and the upstream tests that match that profile pass. But as a
+*drop-in* `Spreadsheet::XLSX` replacement it is NOT complete: `<cols>` and
+rich-text/shared-string round-trip are genuine gaps that must be closed (or the
+fast path gated to "Number/Text + styles only" workbooks) before it could pass
+the full upstream write suite.
+

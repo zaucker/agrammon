@@ -1,0 +1,15 @@
+use lib $*PROGRAM.parent.parent.add('_src').Str;
+use lib $*PROGRAM.parent.parent.add('spike').Str;
+use Test;
+use Spreadsheet::XLSX;
+use fixture;
+
+plan 4;
+
+my $wb = build-fixture();
+isa-ok $wb, Spreadsheet::XLSX, 'fixture returns a workbook';
+is $wb.worksheets.elems, 2, 'fixture has 2 worksheets';
+
+my $blob = $wb.to-blob;
+isa-ok $blob, Blob, 'fixture workbook serializes via DOM to a Blob';
+ok $blob.bytes > 0, 'DOM blob is non-empty';

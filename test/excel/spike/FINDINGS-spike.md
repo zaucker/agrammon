@@ -319,3 +319,42 @@ the in-place seam removes the redundant double work.
 6aec518e, 51e3ff69, 46d10f8f. All spike work is under `test/excel/spike/` (scratch); no
 library or production code touched. Pre-existing uncommitted change `Applrate.nhd` is
 unrelated — leave it.
+
+## 2026-06-01 — Task 7: standalone string-serialize vs DOM benchmark
+Benchmark: `test/excel/spike/bench.raku`. Method = micro7-style median of 3 per size,
+8 columns/row (alternating Number/Text), sizes 200/800/2000 rows. Run:
+`PERL5LIB=Inline/perl5 raku -Itest/excel/_src -Itest/excel/spike -Itest/excel/spike/lib test/excel/spike/bench.raku`
+
+Result table (seconds, median of 3):
+
+```
+# rows | DOM to-blob (s) | string-serialize (s) | speedup
+  200 |          4.521 |              4.686 |    1.0x
+  800 |         18.347 |             19.506 |    0.9x
+ 2000 |         46.294 |             49.227 |    0.9x
+# DONE
+```
+
+EXTENT-HINTS NOTE: `string-serialize` is called WITH the extent hints matching
+big-wb's geometry — `:max-row($rows-1), :max-col(7)` (8 cols -> max-col 7). This is
+MANDATORY: without hints, sheet-xml probes a fixed 1024x64 grid (65,536 `:exists`
+lookups/sheet) — that would measure the phantom-grid probe, not the serializer, AND
+would SILENTLY DROP every cell at row >= 1024 (the 2000-row case exceeds that).
+Sanity-checked: the 2000-row hinted serialize round-trips to a 74,308-byte blob whose
+reloaded `max-row = 1999` (all 2000 rows present) — hint is effective. (No-hint path
+would have truncated at row 1023.)
+
+"ONE INTERNAL DOM PASS" CAVEAT (decisive): `string-serialize` calls `$wb.to-blob`
+ONCE internally for the byte baseline of every non-sheet part, THEN rebuilds sheetData
+as strings, THEN re-zips. So this measures DOM-pass + string-rebuild + re-zip — it can
+only ever be SLOWER than a bare DOM `.to-blob`, and indeed it is (~0.9-1.0x, i.e. 3-6%
+slower). This is the REALISTIC standalone opt-in number, NOT the bare sheet-only floor.
+
+VERDICT (honest negative): the STANDALONE serializer offers NO speedup — it strictly
+adds work on top of the DOM pass it cannot avoid. Any real win must come from an
+IN-PLACE seam (Task 8) that REPLACES the DOM sheetData build instead of duplicating it
+(skip the DOM `<sheetData>` construction entirely, keep only the cheap scaffold parts).
+The Task-7 numbers therefore set the conservative ceiling: standalone = break-even at
+best; the in-place path is the only one that can beat DOM. The absolute per-call times
+(seconds, not ms) also confirm the DOM sheetData build is the dominant cost worth
+targeting in Task 8.

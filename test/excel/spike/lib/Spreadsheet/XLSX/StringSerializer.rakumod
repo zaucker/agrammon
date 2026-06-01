@@ -140,6 +140,13 @@ my sub sheet-num(Str $path --> Int) {
 #| fixed-grid `:exists` probe (see sheet-xml's comment); when omitted the
 #| no-hint probe behaviour is preserved unchanged.
 sub string-serialize(Spreadsheet::XLSX $wb, Int :$max-row, Int :$max-col --> Blob) is export {
+    # ORDERING DEPENDENCY: sheet-xml reads $cell.style.style-id, which only
+    #  resolves correctly AFTER $wb.to-blob has FULLY returned (all cell-formats
+    #  committed). The Cell.style accessor (_src/Spreadsheet/XLSX/Cell.rakumod
+    #  ~line 57-65) throws X::Spreadsheet::XLSX::Format if a cell's style-id
+    #  isn't yet in styles.cell-formats — so never hoist sheet-xml into the DOM
+    #  sync loop (matters for the Task 8 in-place seam). The to-blob call below
+    #  MUST stay ahead of every sheet-xml call.
     # 1. DOM baseline: all parts as bytes.
     my %parts := unzip-parts-local($wb.to-blob);
 

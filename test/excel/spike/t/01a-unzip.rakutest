@@ -1,0 +1,14 @@
+use lib $*PROGRAM.parent.parent.add('_src').Str;
+use lib $*PROGRAM.parent.parent.add('spike').Str;
+use Test;
+use Spreadsheet::XLSX;
+use fixture;
+use compare;
+
+plan 3;
+
+my $blob = build-fixture().to-blob;
+my %parts = unzip-parts($blob);
+ok %parts{'[Content_Types].xml'}:exists, 'zip contains [Content_Types].xml';
+ok %parts.keys.grep(*.starts-with('xl/worksheets/')), 'zip contains worksheet parts';
+ok %parts{'xl/workbook.xml'}:exists, 'zip contains workbook.xml';

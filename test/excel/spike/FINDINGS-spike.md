@@ -70,3 +70,62 @@ Verification (all pass):
 - Planted TYPE diff (number[1;1] value 6 → Text "6"): diffs=1 →
   `sheet0 [1;1]: type Spreadsheet::XLSX::Cell::Number vs Spreadsheet::XLSX::Cell::Text`.
   (Before this fix the same scenario gave diffs=0 — the bug.)
+
+## 2026-06-01 — Task 5: standalone string serializer, value round-trip clean
+Implemented `string-serialize(Spreadsheet::XLSX $wb --> Blob)` in
+test/excel/spike/lib/Spreadsheet/XLSX/StringSerializer.rakumod.
+
+Approach (as designed): call DOM `$wb.to-blob` once for the byte-for-byte
+baseline of every package part, unzip it (local copy of the read side from
+compare.rakumod), then REPLACE only `xl/worksheets/sheetN.xml` with
+string-built sheetData read from the public `$wb.worksheets[*].cells` model,
+and re-zip with Libarchive. Result: t/01-roundtrip.rakutest → **3/3 PASS, 0
+diffs** (oracle vs spike semantically equivalent, type+value+presence).
+
+Libarchive WRITE API copied verbatim from
+lib/Agrammon/OutputFormatter/XLSXWriter.rakumod (`Workbook.to-blob`):
+```
+my $buffer = Buf.new;
+given archive-write($buffer, format => 'zip') -> $archive {
+    for ... { $archive.write($path, $bytes); }
+    $archive.close;
+}
+$buffer   # the filled Buf is the .xlsx Blob
+```
+i.e. `archive-write(Buf, format => 'zip')` -> object with `.write(path, Blob)`
+and `.close`; the Buf passed in is mutated in place and returned. Parts are
+written as `%parts{$path}` (already-decompressed bytes); the replaced
+sheet parts are `sheet-xml($ws).encode('utf-8')`.
+
+KEY FINDING — style index `s="..."` is OMITTED (intentionally, per task gate
+= value+type parity; Task 6 owns style parity). Reason it MUST be omitted now:
+the resolved style id is **not publicly reachable from the in-memory cell
+model pre-serialize**. In XLSX/Cell.rakumod the style index is a *private*
+attribute `has UInt $!style-id is built is xml-attr<s>` with NO public
+accessor. The only public surface is `.style`, which lazily constructs a
+`Spreadsheet::XLSX::CellStyle` object (Cell.rakumod:57-65) — it does not return
+the integer index, and reaching `$!style-id` would require touching a private
+attr (forbidden). So the string path cannot carry `s=` from the in-memory
+model without either (a) the DOM serialization step assigning indices, or (b)
+the library exposing a public style-id accessor. This is a load-bearing
+constraint for the in-place (Task 8) design: the fast path must run AFTER (or
+as part of) the style-resolution the DOM path performs, or the library needs a
+public style-id getter added.
+
+SECONDARY GOTCHA — `Cells.max-row` is unreliable for a *built* (vs *loaded*)
+workbook. `max-row` returns `@!backing-rows.end` (Worksheet.rakumod:108-111),
+and `@!backing-rows` is only populated from a backing XML document
+(`!load-backing-rows`, lines 137-148). A freshly `create-worksheet`+assigned
+workbook has NO backing, so `max-row` == -1 even though `@!rows` holds data.
+Likewise there is no public max-col. The in-memory data is only reachable via
+the public `:exists` / AT-POS grid API. The spike therefore probes a fixed
+grid (rows 0..1023 × cols 0..63) via `:exists`; ample for the fixture. A
+production in-place writer should instead walk the worksheet's private
+`@!rows` directly (it lives inside the library, so that's legitimate there).
+
+Caveats / non-issues for value round-trip:
+- Did NOT reproduce the DOM's column `spans` attribute, `<cols>`, or original
+  column ordering — not needed; the loader reconstructs values regardless and
+  the comparator (value+type+presence) reports 0 diffs.
+- DOM output uses inline strings (not sharedStrings) for these cells, and so
+  do we, so string representation matches; no shared-string discrepancy arose.

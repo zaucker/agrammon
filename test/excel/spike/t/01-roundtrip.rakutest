@@ -1,0 +1,19 @@
+use lib $*PROGRAM.parent.parent.add('_src').Str;
+use lib $*PROGRAM.parent.parent.add('spike').Str;
+use lib $*PROGRAM.parent.parent.add('spike/lib').Str;
+use Test;
+use Spreadsheet::XLSX;
+use fixture;
+use compare;
+use Spreadsheet::XLSX::StringSerializer;
+
+plan 3;
+
+my $wb = build-fixture();
+my $oracle = $wb.to-blob;
+my $spike  = string-serialize($wb);
+isa-ok $spike, Blob, 'string serializer returns a Blob';
+ok $spike.bytes > 0, 'spike blob non-empty';
+
+my @diffs = compare-workbooks($oracle, $spike);
+is @diffs.elems, 0, "round-trip: oracle vs spike equivalent (diffs: {@diffs.gist})";

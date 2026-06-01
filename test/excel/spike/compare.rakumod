@@ -52,7 +52,15 @@ sub compare-workbooks(Blob $oracle, Blob $spike --> List) is export {
                     @diffs.push: "sheet$si [$r;$c]: presence oracle={$ov.defined} spike={$sv.defined}";
                     next;
                 }
-                if ($ov.value // '') ne ($sv.value // '') {
+                # Check cell TYPE first, then value. Type matters because a
+                # NUMBER cell `6` and a TEXT cell "6" stringify identically, so a
+                # value-only (Str-coerced) comparison would treat them as equal.
+                # The string serializer under test can silently emit numbers as
+                # inline strings; this catches that number-vs-text confusion.
+                if !($ov.WHAT =:= $sv.WHAT) {
+                    @diffs.push: "sheet$si [$r;$c]: type {$ov.^name} vs {$sv.^name}";
+                }
+                elsif ($ov.value // '') ne ($sv.value // '') {
                     @diffs.push: "sheet$si [$r;$c]: value '{$ov.value}' vs '{$sv.value}'";
                 }
             }

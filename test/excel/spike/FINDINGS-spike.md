@@ -43,3 +43,30 @@ content is genuine; only the assumed marker string differed. Verified via decode
 
 Test: test/excel/spike/t/01a-unzip.rakutest — 3/3 PASS.
 Helper: test/excel/spike/compare.rakumod exporting `unzip-parts(Blob --> Hash)`.
+
+## 2026-06-01 — Task 4 follow-up: comparator now flags number-vs-text type mismatch
+Code review found a trust hole: `compare-workbooks` compared cells via
+`($ov.value // '') ne ($sv.value // '')`, which Str-coerces both sides. A NUMBER cell `6`
+and a TEXT cell "6" therefore compared EQUAL. This matters because Task 5's string
+serializer's key failure mode is emitting numbers as inline strings — the oracle must
+catch exactly that.
+
+Fix: per-cell comparison now checks cell TYPE first (`$ov.WHAT =:= $sv.WHAT`), pushing
+`"sheet$si [$r;$c]: type {oracle.^name} vs {spike.^name}"` on mismatch; value comparison
+still runs for same-typed cells. Presence + sheet-count logic unchanged.
+
+ORACLE CAPABILITY CONFIRMED (good news): the library PRESERVES the number-vs-text
+distinction across a save→reload round-trip. After `Spreadsheet::XLSX.load`, a number cell
+reloads as `Spreadsheet::XLSX::Cell::Number` (with `.value` an Int/Numeric) and a text cell
+as `Spreadsheet::XLSX::Cell::Text` (`.value` a Str). So comparing `.^name` / `.WHAT` on the
+loaded model reliably distinguishes them — no need to fall back to inspecting `.value`'s
+Numeric-vs-Str-ness. The reload preserves type, so the round-trip oracle CAN detect a
+serializer that mis-encodes numbers as inline strings.
+
+Verification (all pass):
+- Existing DOM-vs-DOM self-compare: t/01b-compare-self.rakutest → 1/1 (got: []).
+- Planted VALUE diff (text[0;0] "Name"→"CHANGED"): diffs=1 →
+  `sheet0 [0;0]: value 'Name' vs 'CHANGED'`.
+- Planted TYPE diff (number[1;1] value 6 → Text "6"): diffs=1 →
+  `sheet0 [1;1]: type Spreadsheet::XLSX::Cell::Number vs Spreadsheet::XLSX::Cell::Text`.
+  (Before this fix the same scenario gave diffs=0 — the bug.)

@@ -160,3 +160,59 @@ Verification:
   and compare-workbooks(oracle, hinted) → 0 diffs. Byte-identical (the probe
   emitted no trailing empty rows/cols for this fixture, so trimming changed
   nothing).
+
+---
+
+## ⏯️ RESUME POINTER (session clear, 2026-06-01)
+
+**Where we are:** Phase 1 of the Spreadsheet::XLSX fast-write spike is COMPLETE
+(Tasks 1–5 done, both Task 5 code-review fixes applied). HEAD = `46d10f8f` on branch
+`feature/model-run-perf`.
+
+**To resume in a fresh session, say:**
+> Continue the Spreadsheet::XLSX fast-write spike. Plan:
+> `docs/superpowers/plans/2026-06-01-spreadsheet-xlsx-fast-write-spike.md`.
+> Tasks 1–5 done (HEAD 46d10f8f); next is Task 6. Execute remaining tasks 6–10
+> via superpowers:subagent-driven-development (fresh implementer per task +
+> spec-review then code-quality-review, proportionate to spike code). Read this
+> FINDINGS-spike.md first.
+
+**Tasks remaining (from the plan):**
+- Task 6 — Style parity in the oracle (bold + number-format) + write Phase 1
+  conclusions. NOTE: depends on the key finding below — style-id is NOT publicly
+  reachable from the in-memory cell model pre-serialize, so the standalone
+  serializer currently omits `s=`. Task 6 must either obtain the id where it IS
+  reachable (after sync/load) or document the limitation; this directly shapes
+  where the Task 8 in-place seam must live.
+- Task 7 — Benchmark standalone vs DOM. USE THE EXTENT HINTS
+  (`string-serialize($wb, :max-row(...), :max-col(...))`) so the benchmark does NOT
+  measure the 1024×64 `:exists` grid probe (the no-hint default still probes). Build
+  realistic sheet sizes; reuse micro7 methodology (median of runs, µs/cell, vs-DOM).
+- Task 8 — Copy `_src` → `test/excel/spike/_lib/`, add `to-blob(:fast)` seam routing to
+  the string serializer; extract original DOM body to `!to-blob-dom` + public `dom-blob`
+  shim to avoid recursion (string-serialize calls `$wb.dom-blob`, not `to-blob`).
+- Task 9 — Clone upstream `raku-community-modules/Spreadsheet-XLSX` (tag 0.3.5) tests;
+  run the WRITE subset through `:fast` (env-forced via `AGRAMMON_XLSX_FORCE_FAST` in the
+  `_lib` to-blob, no shim — see plan Task 9 Step 4 NOTE); record per-feature pass/fail.
+- Task 10 — Write `test/excel/spike/SPIKE.md`: correctness table, perf table, wiring
+  verdict, productization recommendation (in-place PR vs standalone module vs both).
+
+**Key findings so far (full detail above in this file):**
+1. Libarchive read = `Libarchive::Simple` `archive-read` → `.pathname`/`.is-file`/`.data`
+   (decompressed Blob). Write = `archive-write(Buf,:format<zip>).write(path,blob).close`.
+2. The round-trip comparator IS a trustworthy oracle: type-aware (catches number-vs-text),
+   and the library loader PRESERVES cell type across save→reload, so it can detect a
+   serializer that mis-encodes numbers as inline strings.
+3. Serializer strategy = DOM `.to-blob` as byte baseline, replace ONLY
+   `xl/worksheets/sheetN.xml` with string-built sheetData; all other parts byte-identical.
+   Verified: worksheet parts DIFF, all other parts SAME.
+4. CONSTRAINTS for productization: (a) resolved style-id is a private attr with no public
+   accessor pre-serialize; (b) `Cells.max-row` is unreliable for a BUILT (non-loaded)
+   workbook (returns -1) and there's no public max-col — a real in-place writer must walk
+   the worksheet's private `@!rows`. Both are why an in-place seam (Task 8) may be cleaner
+   than a standalone-on-public-API writer.
+
+**Spike commits (all on feature/model-run-perf):** b0fe3f6b, 6dbd2a40, 39bc8ebf, 5d2e09c6,
+6aec518e, 51e3ff69, 46d10f8f. All spike work is under `test/excel/spike/` (scratch); no
+library or production code touched. Pre-existing uncommitted change `Applrate.nhd` is
+unrelated — leave it.

@@ -6,7 +6,7 @@ use Spreadsheet::XLSX;
 use fixture;
 use compare;
 
-plan 2;
+plan 3;
 
 my $wb = build-fixture();
 my $slow = $wb.to-blob;             # DOM
@@ -14,3 +14,12 @@ my $fast = build-fixture().to-blob(:fast);   # seam under test (fresh wb; to-blo
 isa-ok $fast, Blob, 'to-blob(:fast) returns a Blob';
 my @diffs = compare-workbooks($slow, $fast);
 is @diffs.elems, 0, "to-blob(:fast) equivalent to DOM (diffs: {@diffs.gist})";
+
+# POSITIVE proof the fast (string-serializer) path was actually taken, not just the
+# DOM path silently swallowing an unknown :fast arg via implicit *%_. The string
+# serializer emits xml:space="preserve" in worksheet XML; the DOM path NEVER does.
+my %fast-parts = unzip-parts($fast);
+my $sheet-xml = %fast-parts.pairs.grep({ .key.contains('worksheets/sheet') })
+                   .map({ .value.decode('utf-8') }).join;
+ok $sheet-xml.contains('xml:space="preserve"'),
+   'fast path genuinely delegated to string serializer (xml:space marker present, DOM never emits it)';

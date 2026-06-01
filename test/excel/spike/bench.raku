@@ -28,11 +28,13 @@ use Spreadsheet::XLSX;
 use Spreadsheet::XLSX::Cell;
 use Spreadsheet::XLSX::StringSerializer;
 
+constant COLS = 8;
+
 sub big-wb(Int $rows --> Spreadsheet::XLSX) {
     my $wb = Spreadsheet::XLSX.new;
     my $s = $wb.create-worksheet('S');
     for ^$rows -> $r {
-        for ^8 -> $c {
+        for ^COLS -> $c {
             $s.cells[$r;$c] = $c %% 2
                 ?? Spreadsheet::XLSX::Cell::Number.new(value => ($r * 8 + $c) * 1.5)
                 !! Spreadsheet::XLSX::Cell::Text.new(value => "r{$r}c{$c}");
@@ -51,7 +53,7 @@ sub med(@t) { @t.sort[@t.elems div 2] }
 {
     my $rows = 2000;
     my $wb = big-wb($rows);
-    my $blob = string-serialize($wb, :max-row($rows - 1), :max-col(7));
+    my $blob = string-serialize($wb, :max-row($rows - 1), :max-col(COLS - 1));
     # Reload the produced .xlsx and ask the library for the populated extent.
     my $rt = Spreadsheet::XLSX.load($blob);
     my $got = $rt.worksheets[0].cells.max-row;
@@ -69,7 +71,7 @@ for 200, 800, 2000 -> $rows {
         my $t0 = now; $wb.to-blob;            @dom.push: (now - $t0).Num;
         my $wb2 = big-wb($rows);
         # Hints REQUIRED — see CAVEAT 1 at top of file.
-        my $t1 = now; string-serialize($wb2, :max-row($rows - 1), :max-col(7));
+        my $t1 = now; string-serialize($wb2, :max-row($rows - 1), :max-col(COLS - 1));
         @str.push: (now - $t1).Num;
     }
     printf "%5d | %14.3f | %18.3f | %6.1fx\n",

@@ -350,6 +350,12 @@ as strings, THEN re-zips. So this measures DOM-pass + string-rebuild + re-zip �
 only ever be SLOWER than a bare DOM `.to-blob`, and indeed it is (~0.9-1.0x, i.e. 3-6%
 slower). This is the REALISTIC standalone opt-in number, NOT the bare sheet-only floor.
 
+ORDERING NOTE (transparency): within each iteration the benchmark always times the DOM
+`.to-blob` path FIRST and the string-serialize path SECOND (fixed ordering, not
+interleaved/randomized) — a minor uncontrolled variable (slight JIT/GC warmup favoring
+the second-timed path) that does NOT reverse the negative "no speedup" verdict; recorded
+for completeness.
+
 VERDICT (honest negative): the STANDALONE serializer offers NO speedup — it strictly
 adds work on top of the DOM pass it cannot avoid. Any real win must come from an
 IN-PLACE seam (Task 8) that REPLACES the DOM sheetData build instead of duplicating it

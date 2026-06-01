@@ -129,3 +129,34 @@ Caveats / non-issues for value round-trip:
   the comparator (value+type+presence) reports 0 diffs.
 - DOM output uses inline strings (not sharedStrings) for these cells, and so
   do we, so string representation matches; no shared-string discrepancy arose.
+
+## 2026-06-01 — Task 5 follow-up: optional extent hints (benchmark-safe)
+Code review (must-fix-before-benchmarking): the no-hint `sheet-xml` probes a
+FIXED grid rows 0..1023 × cols 0..63 via `:exists` = 65,536 lookups per sheet
+regardless of how many cells exist, AND silently drops any cell at row>=1024 or
+col>=64. On the sparse/tall sheets Task 7 will benchmark, that phantom-grid
+probe would dominate the timing → the benchmark would measure probing, not the
+serializer.
+
+Fix (minimal, default behaviour UNCHANGED): added OPTIONAL 0-based extent hints.
+- `string-serialize(Spreadsheet::XLSX $wb, Int :$max-row, Int :$max-col --> Blob)`
+  threads both hints to every worksheet's `sheet-xml`.
+- `sheet-xml($ws, Int :$max-row, Int :$max-col)`:
+  - row bound `$rmax = $max-row // (($cells.max-row // -1) max (MAX-ROW-PROBE-1))`
+  - col bound `$cmax = $max-col // (MAX-COL-PROBE-1)`
+  i.e. a hint, when given, becomes the loop bound and the fixed-grid probe is
+  bypassed; when absent it falls back to the EXISTING probe ceiling. So the
+  no-hint path (and the fixture round-trip test, which calls
+  `string-serialize($wb)`) is byte-identical to before.
+This is the seam a real in-place writer uses too: it knows its own `@!rows`
+extent and would pass it, never probing. (Recall the public Cells model exposes
+no usable max-row/max-col for a *built* workbook — see Task 5 entry above — which
+is exactly why hints have to come from the caller.)
+
+Verification:
+- t/01-roundtrip.rakutest (no-hint path) → 3/3 PASS, diffs [].
+- Fixture data fits both bounds, so hinted == probed: `string-serialize($wb)`
+  vs `string-serialize($wb, :max-row(2), :max-col(1))` → same-bytes:True,
+  and compare-workbooks(oracle, hinted) → 0 diffs. Byte-identical (the probe
+  emitted no trailing empty rows/cols for this fixture, so trimming changed
+  nothing).

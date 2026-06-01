@@ -20,3 +20,43 @@ sub unzip-parts(Blob $zip --> Hash) is export {
     }
     %out
 }
+
+use Spreadsheet::XLSX;
+
+#| Compare two .xlsx blobs SEMANTICALLY by re-loading each with the library's own
+#| loader and diffing the resulting model: per sheet, per populated cell, compare
+#| value + presence. Returns a list of human-readable discrepancy strings
+#| (empty list == equivalent).
+sub compare-workbooks(Blob $oracle, Blob $spike --> List) is export {
+    my @diffs;
+    my $o = Spreadsheet::XLSX.load($oracle);
+    my $s = Spreadsheet::XLSX.load($spike);
+
+    my @osheets = $o.worksheets;
+    my @ssheets = $s.worksheets;
+    if @osheets.elems != @ssheets.elems {
+        @diffs.push: "sheet count: oracle {@osheets.elems} vs spike {@ssheets.elems}";
+        return @diffs;
+    }
+
+    for ^@osheets.elems -> $si {
+        my $oc = @osheets[$si].cells;
+        my $sc = @ssheets[$si].cells;
+        my $maxrow = ($oc.max-row // -1) max ($sc.max-row // -1);
+        for 0..$maxrow -> $r {
+            for 0..15 -> $c {
+                my $ov = ($oc[$r;$c]:exists) ?? $oc[$r;$c] !! Nil;
+                my $sv = ($sc[$r;$c]:exists) ?? $sc[$r;$c] !! Nil;
+                next if !$ov.defined && !$sv.defined;
+                if $ov.defined != $sv.defined {
+                    @diffs.push: "sheet$si [$r;$c]: presence oracle={$ov.defined} spike={$sv.defined}";
+                    next;
+                }
+                if ($ov.value // '') ne ($sv.value // '') {
+                    @diffs.push: "sheet$si [$r;$c]: value '{$ov.value}' vs '{$sv.value}'";
+                }
+            }
+        }
+    }
+    return @diffs;
+}

@@ -1,0 +1,16 @@
+use lib $*PROGRAM.parent.parent.add('_src').Str;
+use lib $*PROGRAM.parent.parent.add('spike').Str;
+use Test;
+use Spreadsheet::XLSX;
+use fixture;
+use compare;
+
+plan 1;
+
+# Serialize the same workbook twice via the DOM path; the comparator must find
+# them equivalent (sanity-checks the comparator itself before we trust it on the
+# spike serializer).
+my $a = build-fixture().to-blob;
+my $b = build-fixture().to-blob;
+my @diffs = compare-workbooks($a, $b);
+is @diffs.elems, 0, "comparator: DOM-vs-DOM has no discrepancies (got: {@diffs.gist})";

@@ -25,8 +25,8 @@ use Spreadsheet::XLSX;
 
 #| Compare two .xlsx blobs SEMANTICALLY by re-loading each with the library's own
 #| loader and diffing the resulting model: per sheet, per populated cell, compare
-#| value + presence. Returns a list of human-readable discrepancy strings
-#| (empty list == equivalent).
+#| value + presence + type + style (bold + number-format). Returns a list of
+#| human-readable discrepancy strings (empty list == equivalent).
 sub compare-workbooks(Blob $oracle, Blob $spike --> List) is export {
     my @diffs;
     my $o = Spreadsheet::XLSX.load($oracle);
@@ -62,6 +62,26 @@ sub compare-workbooks(Blob $oracle, Blob $spike --> List) is export {
                 }
                 elsif ($ov.value // '') ne ($sv.value // '') {
                     @diffs.push: "sheet$si [$r;$c]: value '{$ov.value}' vs '{$sv.value}'";
+                }
+
+                # Style parity. We compare the two style features the fixture
+                # exercises and that the library round-trips: bold and
+                # number-format. `.style` is read from the RE-LOADED model, so
+                # it reflects what each blob actually persisted (it does not
+                # suffer the to-blob non-idempotency that the in-memory build
+                # model does — see FINDINGS-spike.md, Task 6). Guard for cells
+                # whose `.style` is undefined.
+                my $os = $ov.?style;
+                my $ss = $sv.?style;
+                my $ob = $os.defined ?? ($os.bold // False) !! False;
+                my $sb = $ss.defined ?? ($ss.bold // False) !! False;
+                if ?$ob != ?$sb {
+                    @diffs.push: "sheet$si [$r;$c]: bold oracle={?$ob} spike={?$sb}";
+                }
+                my $onf = $os.defined ?? ($os.number-format // '') !! '';
+                my $snf = $ss.defined ?? ($ss.number-format // '') !! '';
+                if $onf ne $snf {
+                    @diffs.push: "sheet$si [$r;$c]: number-format oracle='$onf' spike='$snf'";
                 }
             }
         }

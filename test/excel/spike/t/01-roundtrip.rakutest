@@ -7,13 +7,32 @@ use fixture;
 use compare;
 use Spreadsheet::XLSX::StringSerializer;
 
-plan 3;
+plan 5;
 
-my $wb = build-fixture();
-my $oracle = $wb.to-blob;
-my $spike  = string-serialize($wb);
+# IMPORTANT: build a SEPARATE fixture per serialization. `to-blob` is NOT
+# idempotent w.r.t. style resolution — its sync pass mutates the shared
+# CellStyle/format state, so a SECOND to-blob on the same workbook reads back
+# style-id 0 for every cell (see FINDINGS-spike.md, Task 6). The string
+# serializer reads the resolved style-id via the public $cell.style.style-id
+# accessor immediately after ITS OWN (single) to-blob, so it must operate on a
+# workbook that has not already been serialized. Each fixture is serialized
+# exactly once here, which is also how a real caller uses it.
+my $oracle = build-fixture().to-blob;
+my $spike  = string-serialize(build-fixture());
 isa-ok $spike, Blob, 'string serializer returns a Blob';
 ok $spike.bytes > 0, 'spike blob non-empty';
 
 my @diffs = compare-workbooks($oracle, $spike);
 is @diffs.elems, 0, "round-trip: oracle vs spike equivalent (diffs: {@diffs.gist})";
+
+# style parity: the bold header cell and the number-formatted cell must survive
+my $o2 = Spreadsheet::XLSX.load($oracle);
+my $s2 = Spreadsheet::XLSX.load($spike);
+my $ob = $o2.worksheets[0].cells[0;0].style.bold;
+my $sb = $s2.worksheets[0].cells[0;0].style.bold;
+is $sb, $ob, "bold style preserved on A1 (oracle=$ob spike=$sb)";
+
+# number-format parity on the formatted number cell B3
+my $on = $o2.worksheets[0].cells[2;1].style.number-format;
+my $sn = $s2.worksheets[0].cells[2;1].style.number-format;
+is $sn, $on, "number-format preserved on B3 (oracle=$on spike=$sn)";

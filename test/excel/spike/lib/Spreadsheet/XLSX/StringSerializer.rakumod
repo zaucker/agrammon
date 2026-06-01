@@ -17,9 +17,11 @@ use Spreadsheet::XLSX::Cell;
 # small parts ([Content_Types].xml, styles.xml, rels, workbook.xml) are
 # identical by construction.
 #
-# Value+TYPE parity is the gate here (Task 6 handles style parity): numbers are
-# emitted as <v> number cells, text as t="inlineStr". See FINDINGS-spike.md re:
-# why the style index s="..." is OMITTED (not publicly reachable in-memory).
+# Value+TYPE+STYLE parity: numbers are emitted as <v> number cells, text as
+# t="inlineStr", and the resolved style index is emitted as s="..." read from
+# the PUBLIC $cell.style.style-id accessor. That id is only populated AFTER the
+# DOM sync pass that $wb.to-blob performs (Task 6 finding), which is why this
+# serializer's to-blob-first strategy makes it reachable. See FINDINGS-spike.md.
 # ---------------------------------------------------------------------------
 
 unit module Spreadsheet::XLSX::StringSerializer;
@@ -94,13 +96,27 @@ my sub sheet-xml($ws, Int :$max-row, Int :$max-col --> Str) {
         for @cols -> $c {
             my $cell := $cells[$r;$c];
             my $ref  := col-name($c) ~ $rownum;
+
+            # Style index `s="..."`. The resolved integer style id is reachable
+            # via the PUBLIC accessor $cell.style.style-id, but ONLY AFTER the
+            # DOM `sync-to-archive`/sync-sheet-data-xml pass has assigned it.
+            # string-serialize calls $wb.to-blob (which runs that pass) BEFORE
+            # invoking sheet-xml, and $cell.style is memoized (Cell.rakumod:58),
+            # so the same CellStyle the DOM mutated is what we read here. We emit
+            # `s=` only when the id is a non-zero integer (id 0 is the default
+            # cell format and is written WITHOUT an `s` attribute by the DOM
+            # path, so we mirror that to stay byte-aligned with styles.xml /
+            # cellXfs index 0). See FINDINGS-spike.md (Task 6).
+            my $s  = $cell.style.style-id;
+            my $sa = ($s.defined && $s != 0) ?? ' s="' ~ $s ~ '"' !! '';
+
             # TYPE-aware: Number cells -> <v>; everything else -> inlineStr.
             if $cell ~~ Spreadsheet::XLSX::Cell::Number {
-                @p.push: '<c r="' ~ $ref ~ '"><v>' ~ $cell.value ~ '</v></c>';
+                @p.push: '<c r="' ~ $ref ~ '"' ~ $sa ~ '><v>' ~ $cell.value ~ '</v></c>';
             }
             else {
                 my $t = xml-escape($cell.value // '');
-                @p.push: '<c r="' ~ $ref ~ '" t="inlineStr"><is><t xml:space="preserve">'
+                @p.push: '<c r="' ~ $ref ~ '"' ~ $sa ~ ' t="inlineStr"><is><t xml:space="preserve">'
                          ~ $t ~ '</t></is></c>';
             }
         }

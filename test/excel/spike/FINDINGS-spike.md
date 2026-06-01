@@ -161,6 +161,109 @@ Verification:
   emitted no trailing empty rows/cols for this fixture, so trimming changed
   nothing).
 
+## 2026-06-01 — Task 6: style parity in the oracle + Phase 1 conclusions
+
+Goal: make the round-trip oracle style-aware (bold + number-format) and decide,
+from EVIDENCE, whether the standalone *public-API-only* string serializer can
+preserve cell styles.
+
+### TDD outcome
+Added the bold-parity assertion (`is $sb, $ob, ...`) and bumped `plan 3 → 4`.
+First run FAILED exactly as the Task-5 finding predicted:
+```
+not ok 4 - bold style preserved on A1 (oracle=True spike=)
+#   expected: 'True'
+#        got: (Any)
+```
+The spike dropped `s=`, so the reloaded A1 had no style → `.style.bold` = Any.
+
+### Investigation — the resolved style-id IS reachable via PUBLIC API (revises the Task-5 finding)
+The Task-5 note said the id is "not publicly reachable". That is true of the
+*Cell* object (`has UInt $!style-id` is private, Cell.rakumod:45, no accessor),
+but it is the WRONG place to look. The id lives on the **CellStyle**, which has
+a **PUBLIC** accessor `has Int $.style-id;` (CellStyle.rakumod:198), and the
+DOM sync pass populates it:
+- `Worksheet::Cells.sync-sheet-data-xml` calls `$cell.style.sync-style-id($styles)`
+  (Worksheet.rakumod:211-212).
+- `CellStyle.sync-style-id` (public, CellStyle.rakumod:283-303) resolves the id,
+  **assigns `$!style-id = $styles.id-for(...)`** (line 299), and returns it.
+- `$cell.style` is memoized (`$!style //= ...`, Cell.rakumod:58), so the very
+  object the DOM mutated is what the public `.style` accessor returns afterward.
+
+Because `string-serialize` calls `$wb.to-blob` FIRST (its byte baseline), that
+sync pass has already run by the time `sheet-xml` reads cells. Empirically, after
+ONE `to-blob` on the fixture:
+```
+A1.style.style-id = 1   B1 = 1   A2/B2 = 0   B3 = 2
+```
+So the serializer now emits `s="<id>"` from `$cell.style.style-id` (omitting it
+for id 0, the default cellXfs entry, to mirror the DOM which writes `s="0"` but
+the loader treats absent==0 identically; round-trip confirms equivalence). The
+`styles.xml`/`cellXfs` that those ids index into is byte-identical to the DOM
+output (we delegate styles.xml unchanged) — verified `styles.xml SAME? True`.
+Result: bold AND number-format now round-trip; **plan 5, all green.**
+
+### KEY NEW FINDING — `to-blob` is NOT idempotent w.r.t. style resolution
+`sync-style-id` mutates shared `$!format`/`%!changes` state and calls `!RESET`,
+which consumes the pending changes. A SECOND `to-blob` on the SAME workbook
+therefore re-resolves every cell to **style-id 0** (bold/number-format lost):
+```
+after 1st to-blob: A1.style-id=1 B3.style-id=2
+after 2nd to-blob: A1.style-id=0 B3.style-id=0
+```
+Consequence for the TEST: the original `my $wb = build-fixture(); $oracle =
+$wb.to-blob; $spike = string-serialize($wb)` double-serialized ONE object — by
+the spike's (2nd) to-blob the style state was already destroyed, so even with
+correct code the spike read 0s. Fix: the test now builds a SEPARATE fixture per
+serialization (`build-fixture().to-blob` and `string-serialize(build-fixture())`),
+i.e. each workbook is serialized exactly once — which is also how a real caller
+uses it. This is a property of the LIBRARY, not the spike, and it constrains any
+fast-write design: the seam must read style-ids from the SAME (first) sync pass,
+never re-run to-blob on an already-serialized workbook.
+
+### Oracle is now style-aware
+`compare-workbooks` (compare.rakumod) now diffs, per populated cell, `.style.bold`
+and `.style.number-format` (guarded for undefined `.style`), in addition to
+presence/type/value. Negative control confirms it bites: comparing a bold/
+number-formatted oracle against a plain workbook yields exactly
+`bold oracle=True spike=False` (×2) + `number-format oracle='#,##0.00' spike=''`.
+On the real oracle-vs-spike it reports 0 diffs.
+
+---
+
+## ✅ PHASE 1 RESULT (conclusions)
+
+What the standalone STRING serializer carries, and how:
+- **Values** (text + number) — built as strings from the public cell model
+  (`<v>` for Number, `t="inlineStr"` for text). Round-trips, type-preserving.
+- **Cell styles (bold + number-format)** — carried as the `s="<id>"` index,
+  read from the PUBLIC `$cell.style.style-id` AFTER the DOM sync pass. Reachable
+  via public API, **but only on the first/single to-blob** (non-idempotent).
+- **styles.xml / cellXfs / fonts / numFmts** — DELEGATED to DOM verbatim (the
+  string path only rewrites `xl/worksheets/sheetN.xml`; every other part is the
+  byte-for-byte `to-blob` baseline). So styling correctness rides on the DOM
+  having already produced styles.xml + resolved the indices.
+
+Not reachable / not attempted via public API:
+- A resolved style-id from the cell model WITHOUT first running the DOM sync
+  (i.e. there is no standalone "resolve styles" public entry point); and the id
+  is corrupted by a second to-blob. So a purely-public standalone writer is
+  viable ONLY in the to-blob-first shape used here (DOM does styles+resolution,
+  string path does sheetData). It cannot independently resolve styles.
+- Per-built-workbook extent: `Cells.max-row` returns -1 for a built (non-loaded)
+  workbook and there is no public max-col (Task-5 finding, still stands) — hence
+  the extent hints.
+
+Implication for the in-place seam (Task 8): the seam must run **inside / right
+after** the existing style-resolution sync (where ids ARE assigned and BEFORE
+the state is reset), reading the worksheet's own `@!rows` and each cell's
+resolved style-id directly. That is strictly cleaner than the standalone shape,
+which is forced to (a) run the full DOM pass anyway for styles.xml + id
+resolution and (b) tiptoe around to-blob's non-idempotency. Net: full
+value+style fidelity IS achievable; the only open question Phase 2 answers is
+whether replacing just sheetData is actually faster than the DOM, and whether
+the in-place seam removes the redundant double work.
+
 ---
 
 ## ⏯️ RESUME POINTER (session clear, 2026-06-01)

@@ -148,7 +148,15 @@ sub string-serialize(Spreadsheet::XLSX $wb, Int :$max-row, Int :$max-col --> Blo
     #  sync loop (matters for the Task 8 in-place seam). The to-blob call below
     #  MUST stay ahead of every sheet-xml call.
     # 1. DOM baseline: all parts as bytes.
-    my %parts := unzip-parts-local($wb.to-blob);
+    #    Capability-guarded so this serializer works under BOTH library copies:
+    #      - _lib (Task 8 seam): $wb.dom-blob exists -> call it, which runs the
+    #        DOM path directly and NEVER re-enters to-blob(:fast) -> no recursion.
+    #      - _src (Phase 1, unmodified): no dom-blob -> fall back to to-blob,
+    #        whose only path IS the DOM path -> also no recursion.
+    #    ^can returns a (possibly empty) list of Method objects; an empty list is
+    #    falsy, a non-empty one truthy, so it reads cleanly as a boolean here.
+    my $baseline = $wb.^can('dom-blob') ?? $wb.dom-blob !! $wb.to-blob;
+    my %parts := unzip-parts-local($baseline);
 
     # 2. Map worksheets[$i] to the i-th sheet part in numeric order, and replace
     #    its sheetData XML with the string-built version.

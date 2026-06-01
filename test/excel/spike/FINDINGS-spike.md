@@ -364,3 +364,76 @@ The Task-7 numbers therefore set the conservative ceiling: standalone = break-ev
 best; the in-place path is the only one that can beat DOM. The absolute per-call times
 (seconds, not ms) also confirm the DOM sheetData build is the dominant cost worth
 targeting in Task 8.
+
+---
+
+## Task 8 — `to-blob(:fast)` seam in a local library copy
+
+**Goal:** mount the standalone string serializer behind a `:fast` flag on
+`Spreadsheet::XLSX.to-blob`, in an EDITABLE copy of the library (`_lib`), without
+breaking the Phase 1 round-trip test (which runs against the UNMODIFIED `_src`).
+
+### How invasive was the library edit?
+Small and localized to a single method. In `_lib/Spreadsheet/XLSX.rakumod`:
+
+1. **Signature change:** `method to-blob(--> Blob)` → `method to-blob(Bool :$fast --> Blob)`.
+   (Note: the original already accepted extra named args via the implicit `*%_`,
+   so a `:fast` call against the *unmodified* method silently no-ops — meaning a
+   naive seam test passes trivially against the DOM path. The real seam below is
+   what makes `:fast` actually route to the string serializer.)
+2. **Private extraction:** the original DOM body (sync-to-archive + archive-write
+   loop) moved VERBATIM into `method !to-blob-dom(--> Blob)`. Byte-identical
+   logic; no behavioural change to the DOM path.
+3. **Public shim:** `method dom-blob(--> Blob) { self!to-blob-dom }` — lets the
+   string serializer fetch the DOM baseline WITHOUT re-entering the fast path.
+4. **Dispatch:** `to-blob(:fast)` does a lazy `require` of the serializer and
+   delegates; `to-blob` (no flag) calls `!to-blob-dom`.
+
+Verdict: **low-friction**. Three additions (one renamed/extracted method, one
+one-line shim, a 4-line dispatch guard) plus a signature widening. No other
+library code touched. A real upstream patch would be of comparable size.
+
+### Recursion avoidance
+`string-serialize` needs the DOM bytes as its baseline (it only replaces
+`sheetData`). If it called `$wb.to-blob` under the `:fast` seam it would re-enter
+the fast path → infinite recursion. Fix: it requests the baseline through the new
+`dom-blob` shim, which goes straight to `!to-blob-dom` (the DOM path), never back
+through the `:fast` branch.
+
+### Keeping BOTH phases green (capability guard)
+`StringSerializer.rakumod` is SHARED: Phase 1 runs it against `_src` (no
+`dom-blob`), Phase 2 against `_lib` (has `dom-blob`). A hard `$wb.dom-blob` call
+would crash Phase 1 with "no such method". The serializer therefore uses a
+capability-guarded baseline:
+
+```raku
+my $baseline = $wb.^can('dom-blob') ?? $wb.dom-blob !! $wb.to-blob;
+```
+
+- Under `_lib` (Phase 2): `dom-blob` exists → call it → DOM path, no recursion.
+- Under `_src` (Phase 1): no `dom-blob` → fall back to `to-blob`, whose ONLY path
+  is the DOM path → also no recursion.
+
+`^can('dom-blob')` returns a (possibly empty) list of `Method`s; empty is falsy,
+non-empty truthy, so it reads cleanly as a boolean. Verified, not assumed.
+
+### Import mechanism: lazy `require`, not top-of-file `use`
+Used `require Spreadsheet::XLSX::StringSerializer <&string-serialize>;` INSIDE
+the `:fast` branch. A top-of-file `use` would create a load CYCLE
+(`Spreadsheet::XLSX` → StringSerializer → `compare` → `Spreadsheet::XLSX`). The
+lazy `require` defers the import to call time, breaking the cycle. It worked
+cleanly on the first try (Rakudo current): `&string-serialize` resolves to the
+copy on the `-I` path (`test/excel/spike/lib`) with the expected signature
+`(Spreadsheet::XLSX $wb, Int :$max-row, Int :$max-col --> Blob)`. No adjustment
+needed.
+
+### Verification
+- `t/02-fast-seam.rakutest` (Phase 2, `-Itest/excel/spike/_lib`): **2/2 pass**,
+  0 semantic diffs vs DOM.
+- `t/01-roundtrip.rakutest` (Phase 1, `-Itest/excel/_src`): **5/5 still pass**.
+- Proof the `:fast` path REALLY routes through the string serializer (not the
+  swallowed-`*%_` no-op): the fast blob is NOT byte-identical to the DOM blob
+  (2943 vs 2998 bytes) and its `sheet1.xml` carries `xml:space="preserve"` (a
+  string-serializer-only artifact; the DOM path emits no such attribute), while
+  `compare-workbooks` still reports 0 diffs. So: real delegation, byte-different,
+  semantically identical, no recursion.

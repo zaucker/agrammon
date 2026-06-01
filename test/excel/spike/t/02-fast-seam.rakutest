@@ -1,0 +1,16 @@
+use lib $*PROGRAM.parent.parent.add('spike/_lib').Str;
+use lib $*PROGRAM.parent.parent.add('spike').Str;
+use lib $*PROGRAM.parent.parent.add('spike/lib').Str;
+use Test;
+use Spreadsheet::XLSX;
+use fixture;
+use compare;
+
+plan 2;
+
+my $wb = build-fixture();
+my $slow = $wb.to-blob;             # DOM
+my $fast = build-fixture().to-blob(:fast);   # seam under test (fresh wb; to-blob may mutate)
+isa-ok $fast, Blob, 'to-blob(:fast) returns a Blob';
+my @diffs = compare-workbooks($slow, $fast);
+is @diffs.elems, 0, "to-blob(:fast) equivalent to DOM (diffs: {@diffs.gist})";

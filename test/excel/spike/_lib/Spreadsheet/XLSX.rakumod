@@ -316,6 +316,10 @@ class Spreadsheet::XLSX does Spreadsheet::XLSX::Root {
 
     #| Public shim so the string serializer can request the DOM baseline without
     #| re-entering the fast path (avoids infinite recursion).
+    #| ORDERING: callers that read $cell.style.style-id (the string serializer)
+    #| MUST call this first -- style IDs are not populated until sync-to-archive
+    #| runs inside !to-blob-dom, and Cell.style throws if its id isn't yet in
+    #| styles.cell-formats.
     method dom-blob(--> Blob) { self!to-blob-dom }
 
     #| Saves the Excel workbook to the file path identified by the given string.

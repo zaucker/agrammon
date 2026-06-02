@@ -1,7 +1,7 @@
 # SPIKE.md — opt-in fast write path for `Spreadsheet::XLSX`
 
 **Date:** 2026-06-01
-**Branch / HEAD:** `feature/model-run-perf` @ `fb6ec444`
+**Branch / HEAD:** `feature/model-run-perf` @ `d6646c79`
 **Spec:** `docs/superpowers/specs/2026-06-01-spreadsheet-xlsx-fast-write-spike-design.md`
 **Plan:** `docs/superpowers/plans/2026-06-01-spreadsheet-xlsx-fast-write-spike.md`
 **Running log (primary source):** `test/excel/spike/FINDINGS-spike.md`

@@ -1,3 +1,10 @@
+- Unreleased
+
+  - The browser tab now shows an icon: the ammonia molecule (blue
+    nitrogen, three white hydrogens), the same as on agrammon.ch. Before,
+    the tab showed no icon at all, and `/favicon.ico` below the model
+    path (e.g. `/single/v7.0.0/favicon.ico`) returned 404.
+
 - 7.0.7, 2026-06-25, fritz.zaucker@oetiker.ch
 
   - Fix flattened distribution percentages entered cell-by-cell not

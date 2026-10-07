@@ -104,7 +104,7 @@ sub static-content($root) is export {
             }
 
             get -> 'favicon.ico' {
-                static "$root/resource/Agrammon/favicon.ico"
+                static "$root/resource/agrammon/favicon.ico"
             }
 
             get -> 'agrammon', *@path {
